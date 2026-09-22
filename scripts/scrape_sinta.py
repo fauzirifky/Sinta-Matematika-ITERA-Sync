@@ -12,13 +12,10 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import urljoin
+from urllib.parse import urlencode, urljoin
 
-import requests
 from bs4 import BeautifulSoup, Tag
-from curl_cffi import requests as browser_requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+from playwright.sync_api import Page, sync_playwright
 
 
 REPOSITORY_URL = "https://github.com/fauzirifky/Sinta-Matematika-ITERA-Sync"
@@ -88,95 +85,138 @@ def absolute_url(base_url: str, href: str | None) -> str | None:
 
 
 class SintaSession:
-    """Small HTTP client with a browser-TLS transport and a requests fallback."""
+    """Load public SINTA pages in a real headless Chromium browser."""
 
     def __init__(self, timeout: float):
         self.timeout = timeout
-        self.headers = {
-            "User-Agent": (
-                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-                "(KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
-            ),
-            "Accept": (
-                "text/html,application/xhtml+xml,application/xml;q=0.9,"
-                "image/avif,image/webp,*/*;q=0.8"
-            ),
-            "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
-            "Cache-Control": "no-cache",
-            "Pragma": "no-cache",
-            "Sec-Fetch-Dest": "document",
-            "Sec-Fetch-Mode": "navigate",
-            "Sec-Fetch-Site": "same-origin",
-            "Upgrade-Insecure-Requests": "1",
-        }
-
-        # curl_cffi is only a few MB and reproduces Chrome's TLS/HTTP2 fingerprint.
-        # This avoids installing a full browser in GitHub Actions.
-        self.browser = browser_requests.Session(impersonate="chrome")
-        self.browser.headers.update(self.headers)
-
-        retry = Retry(
-            total=3,
-            connect=3,
-            read=3,
-            backoff_factor=1.5,
-            status_forcelist=(429, 500, 502, 503, 504),
-            allowed_methods=("GET",),
-            respect_retry_after_header=True,
+        self.timeout_ms = max(int(timeout * 1000), 1_000)
+        self.playwright = sync_playwright().start()
+        self.browser = self.playwright.chromium.launch(
+            headless=True,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--disable-dev-shm-usage",
+                "--no-sandbox",
+            ],
         )
-        self.standard = requests.Session()
-        self.standard.headers.update(self.headers)
-        self.standard.mount("https://", HTTPAdapter(max_retries=retry))
+        self.context = self.browser.new_context(
+            locale="id-ID",
+            timezone_id="Asia/Jakarta",
+            viewport={"width": 1440, "height": 1000},
+            user_agent=(
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+            ),
+            extra_http_headers={
+                "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
+            },
+        )
+        self.context.add_init_script(
+            "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+        )
+        self.context.route(
+            "**/*",
+            lambda route: route.abort()
+            if route.request.resource_type in {"image", "media", "font"}
+            else route.continue_(),
+        )
         self._warmed = False
-        self._announced_transport: str | None = None
+        self._announced = False
 
-    def _warm_up(self) -> None:
-        """Open SINTA's public home page once so cookies/referer resemble navigation."""
+    def _warm_up(self, page: Page) -> None:
+        """Visit SINTA's home page once so the profile request has browser state."""
         if self._warmed:
             return
         self._warmed = True
-        for transport in (self.browser, self.standard):
-            try:
-                transport.get(
-                    SINTA_ORIGIN,
-                    headers={**self.headers, "Sec-Fetch-Site": "none"},
-                    timeout=self.timeout,
-                )
-            except Exception:
-                # The real profile request below produces the useful error.
-                pass
+        try:
+            page.goto(SINTA_ORIGIN, wait_until="domcontentloaded", timeout=self.timeout_ms)
+            page.wait_for_timeout(1_500)
+        except Exception:
+            # The target request below creates diagnostics and the useful error.
+            pass
+
+    @staticmethod
+    def _target_url(url: str, params: dict[str, Any] | None) -> str:
+        if not params:
+            return url
+        separator = "&" if "?" in url else "?"
+        return f"{url}{separator}{urlencode(params)}"
+
+    @staticmethod
+    def _safe_debug_name(target_url: str) -> str:
+        view_match = re.search(r"[?&]view=([a-z]+)", target_url, re.I)
+        id_match = re.search(r"/profile/(\d+)", target_url)
+        sinta_id = id_match.group(1) if id_match else "unknown"
+        view = view_match.group(1) if view_match else "profile"
+        return f"{sinta_id}-{view}"
+
+    def _save_diagnostics(self, page: Page, target_url: str) -> None:
+        debug_dir = Path("debug")
+        debug_dir.mkdir(parents=True, exist_ok=True)
+        name = self._safe_debug_name(target_url)
+        try:
+            page.screenshot(path=str(debug_dir / f"{name}.png"), full_page=True)
+        except Exception:
+            pass
+        try:
+            (debug_dir / f"{name}.html").write_text(page.content(), encoding="utf-8")
+        except Exception:
+            pass
 
     def get(self, url: str, params: dict[str, Any] | None = None):
-        self._warm_up()
-        request_headers = {**self.headers, "Referer": SINTA_ORIGIN}
-        failures: list[str] = []
+        target_url = self._target_url(url, params)
+        page = self.context.new_page()
+        try:
+            self._warm_up(page)
+            navigation = page.goto(
+                target_url,
+                referer=SINTA_ORIGIN,
+                wait_until="domcontentloaded",
+                timeout=self.timeout_ms,
+            )
+            page.wait_for_timeout(2_500)
+            status = navigation.status if navigation else None
 
-        for label, transport in (
-            ("Chrome TLS", self.browser),
-            ("standard requests", self.standard),
-        ):
             try:
-                response = transport.get(
-                    url,
-                    params=params,
-                    headers=request_headers,
-                    timeout=self.timeout,
+                page.locator(".content-box").first.wait_for(
+                    state="attached",
+                    timeout=min(self.timeout_ms, 15_000),
                 )
-                response.raise_for_status()
-                if self._announced_transport != label:
-                    print(f"  HTTP transport: {label}", flush=True)
-                    self._announced_transport = label
-                return response
-            except Exception as exc:
-                status = getattr(getattr(exc, "response", None), "status_code", None)
-                detail = f"HTTP {status}" if status else clean_text(str(exc)) or type(exc).__name__
-                failures.append(f"{label}: {detail}")
+            except Exception:
+                self._save_diagnostics(page, target_url)
+                title = clean_text(page.title()) or "untitled page"
+                raise RuntimeError(
+                    f"Chromium did not receive SINTA public content "
+                    f"(HTTP {status or 'unknown'}, title: {title}). "
+                    "Download the sinta-browser-diagnostics artifact from this run."
+                )
 
-        raise RuntimeError(
-            "SINTA rejected all public-page transports ("
-            + "; ".join(failures)
-            + "). The GitHub runner IP may be temporarily blocked."
-        )
+            if not self._announced:
+                print("  Browser transport: headless Chromium", flush=True)
+                self._announced = True
+
+            html = page.evaluate("document.documentElement.outerHTML")
+            return BrowserResponse(
+                text=html,
+                url=page.url,
+                headers={"Content-Type": "text/html; charset=UTF-8"},
+            )
+        finally:
+            page.close()
+
+    def close(self) -> None:
+        self.context.close()
+        self.browser.close()
+        self.playwright.stop()
+
+
+class BrowserResponse:
+    def __init__(self, text: str, url: str, headers: dict[str, str]):
+        self.text = text
+        self.url = url
+        self.headers = headers
 
 
 def make_session(timeout: float) -> SintaSession:
@@ -649,22 +689,25 @@ def main() -> int:
     if args.delay < 0:
         raise ValueError("--delay cannot be negative.")
 
-    session = make_session(args.timeout)
     results: list[tuple[dict[str, Any], bool]] = []
     fatal_errors: list[str] = []
-    for author in authors:
-        print(f"Scraping {author['name']} (SINTA ID {author['sinta_id']})...", flush=True)
-        try:
-            payload, had_errors = scrape_author(session, author, args.output, args.delay)
-            results.append((payload, had_errors))
-            print(
-                f"  saved {args.output / (author['sinta_id'] + '.json')}"
-                + (" with partial/stale sections" if had_errors else ""),
-                flush=True,
-            )
-        except Exception as exc:
-            fatal_errors.append(f"{author['name']} ({author['sinta_id']}): {exc}")
-            print(f"  ERROR: {exc}", file=sys.stderr, flush=True)
+    session = make_session(args.timeout)
+    try:
+        for author in authors:
+            print(f"Scraping {author['name']} (SINTA ID {author['sinta_id']})...", flush=True)
+            try:
+                payload, had_errors = scrape_author(session, author, args.output, args.delay)
+                results.append((payload, had_errors))
+                print(
+                    f"  saved {args.output / (author['sinta_id'] + '.json')}"
+                    + (" with partial/stale sections" if had_errors else ""),
+                    flush=True,
+                )
+            except Exception as exc:
+                fatal_errors.append(f"{author['name']} ({author['sinta_id']}): {exc}")
+                print(f"  ERROR: {exc}", file=sys.stderr, flush=True)
+    finally:
+        session.close()
 
     if results:
         manifest = build_manifest(args.output, results)

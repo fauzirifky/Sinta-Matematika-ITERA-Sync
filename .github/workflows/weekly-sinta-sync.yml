@@ -28,8 +28,11 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - name: Install lightweight dependencies
+      - name: Install Python dependencies
         run: python -m pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
 
       - name: Validate configuration and parser
         run: |
@@ -38,6 +41,15 @@ jobs:
 
       - name: Scrape public SINTA pages
         run: python scripts/scrape_sinta.py
+
+      - name: Upload browser diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sinta-browser-diagnostics
+          path: debug/
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Commit updated JSON
         run: |
