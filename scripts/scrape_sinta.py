@@ -1,0 +1,619 @@
+#!/usr/bin/env python3
+"""Scrape public SINTA author pages into stable, versioned JSON files."""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import re
+import sys
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+from urllib.parse import urljoin
+
+import requests
+from bs4 import BeautifulSoup, Tag
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+
+REPOSITORY_URL = "https://github.com/fauzirifky/Sinta-Matematika-ITERA-Sync"
+DEFAULT_BASE_URL = "https://sinta.kemdiktisaintek.go.id/authors/profile"
+SCHEMA_VERSION = 1
+
+COLLECTIONS = {
+    "scopus": "scopus",
+    "garuda": "garuda",
+    "google_scholar": "googlescholar",
+    "rama": "rama",
+    "researches": "researches",
+    "community_services": "services",
+    "iprs": "iprs",
+    "books": "books",
+}
+
+
+def clean_text(value: str | None) -> str | None:
+    if value is None:
+        return None
+    cleaned = re.sub(r"\s+", " ", value).strip()
+    return cleaned or None
+
+
+def integer_from_text(value: str | None) -> int | None:
+    if not value:
+        return None
+    match = re.search(r"-?\d[\d.,]*", value)
+    if not match:
+        return None
+    digits = re.sub(r"[^\d-]", "", match.group(0))
+    try:
+        return int(digits)
+    except ValueError:
+        return None
+
+
+def value_after_label(text: str, label: str) -> str | None:
+    match = re.search(rf"{re.escape(label)}\s*:\s*(.+?)(?=(?:\s{{2,}}|$))", text, re.I)
+    return clean_text(match.group(1)) if match else None
+
+
+def labeled_value_from_nodes(item: Tag, label: str) -> str | None:
+    """Read a labelled value from one SINTA element without swallowing neighbours."""
+    prefix = re.compile(rf"^{re.escape(label)}\s*:\s*", re.I)
+    # Labels on SINTA records are individual anchors/spans. Avoid container divs,
+    # whose text also contains the neighbouring scheme or holder.
+    for node in item.select("a, span"):
+        text = clean_text(node.get_text(" ", strip=True))
+        if text and prefix.match(text):
+            value = prefix.sub("", text, count=1)
+            return clean_text(value)
+    return None
+
+
+def stable_id(collection: str, title: str | None, url: str | None) -> str:
+    material = f"{collection}|{title or ''}|{url or ''}".encode("utf-8")
+    return hashlib.sha256(material).hexdigest()[:20]
+
+
+def absolute_url(base_url: str, href: str | None) -> str | None:
+    if not href or href == "#!":
+        return None
+    return urljoin(base_url, href)
+
+
+def make_session(timeout: float) -> requests.Session:
+    retry = Retry(
+        total=3,
+        connect=3,
+        read=3,
+        backoff_factor=1.5,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=("GET",),
+        respect_retry_after_header=True,
+    )
+    session = requests.Session()
+    session.headers.update(
+        {
+            "User-Agent": (
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+            ),
+            "From": REPOSITORY_URL,
+            "Accept": "text/html,application/xhtml+xml",
+            "Accept-Language": "id,en;q=0.8",
+        }
+    )
+    session.mount("https://", HTTPAdapter(max_retries=retry))
+    session.request_timeout = timeout  # type: ignore[attr-defined]
+    return session
+
+
+def fetch_soup(
+    session: requests.Session,
+    url: str,
+    *,
+    params: dict[str, Any] | None = None,
+) -> tuple[BeautifulSoup, str]:
+    timeout = getattr(session, "request_timeout", 45.0)
+    response = session.get(url, params=params, timeout=timeout)
+    response.raise_for_status()
+    if "text/html" not in response.headers.get("Content-Type", "text/html"):
+        raise RuntimeError(f"Unexpected content type from {response.url}")
+    soup = BeautifulSoup(response.text, "html.parser")
+    if not soup.select_one(".content-box"):
+        raise RuntimeError(f"SINTA content was not found at {response.url}")
+    return soup, response.url
+
+
+def parse_profile(soup: BeautifulSoup, configured_id: str) -> dict[str, Any]:
+    name_node = soup.select_one(".content-box h3 a")
+    meta = soup.select_one(".meta-profile")
+    avatar = soup.select_one(".content-box img[alt='avatar']")
+
+    affiliation = None
+    affiliation_url = None
+    department = None
+    department_url = None
+    discovered_id = configured_id
+
+    if meta:
+        for link in meta.select("a"):
+            href = link.get("href")
+            text = clean_text(link.get_text(" ", strip=True))
+            if href and "/affiliations/profile/" in href:
+                affiliation = text
+                affiliation_url = href
+            elif href and "/departments/profile/" in href:
+                department = text
+                department_url = href
+            elif text and "SINTA ID" in text.upper():
+                match = re.search(r"SINTA\s*ID\s*:\s*(\d+)", text, re.I)
+                if match:
+                    discovered_id = match.group(1)
+
+    scores: dict[str, int | str | None] = {}
+    for block in soup.select(".stat-profile .col-4"):
+        label = clean_text(block.select_one(".pr-txt").get_text(" ", strip=True)) if block.select_one(".pr-txt") else None
+        number = clean_text(block.select_one(".pr-num").get_text(" ", strip=True)) if block.select_one(".pr-num") else None
+        if label:
+            scores[label] = integer_from_text(number) if integer_from_text(number) is not None else number
+
+    subjects = [
+        clean_text(node.get_text(" ", strip=True))
+        for node in soup.select(".profile-subject .subject-list a")
+    ]
+
+    return {
+        "name": clean_text(name_node.get_text(" ", strip=True)) if name_node else None,
+        "sinta_id": discovered_id,
+        "affiliation": affiliation,
+        "affiliation_url": affiliation_url,
+        "department": department,
+        "department_url": department_url,
+        "avatar_url": avatar.get("src") if isinstance(avatar, Tag) else None,
+        "subjects": [subject for subject in subjects if subject],
+        "scores": scores,
+    }
+
+
+def parse_pagination(soup: BeautifulSoup) -> tuple[int, int | None]:
+    pagination = soup.select_one(".pagination-text")
+    if not pagination:
+        return 1, None
+    text = clean_text(pagination.get_text(" ", strip=True)) or ""
+    page_match = re.search(r"Page\s+\d+\s+of\s+(\d+)", text, re.I)
+    total_match = re.search(r"Total\s+Records\s+(\d+)", text, re.I)
+    pages = int(page_match.group(1)) if page_match else 1
+    total = int(total_match.group(1)) if total_match else None
+    return max(pages, 1), total
+
+
+def parse_common_item(item: Tag, collection: str, page_url: str) -> dict[str, Any]:
+    title_link = item.select_one(".ar-title a")
+    title = clean_text(title_link.get_text(" ", strip=True)) if title_link else None
+    item_url = absolute_url(page_url, title_link.get("href")) if title_link else None
+    raw_text = clean_text(item.get_text(" ", strip=True))
+    year_node = item.select_one(".ar-year")
+    year = integer_from_text(year_node.get_text(" ", strip=True)) if year_node else None
+
+    record: dict[str, Any] = {
+        "id": stable_id(collection, title, item_url),
+        "title": title,
+        "url": item_url,
+        "year": year,
+        "source_page": page_url,
+    }
+
+    if collection in {"scopus", "garuda", "google_scholar", "rama"}:
+        publication = item.select_one(".ar-pub")
+        quartile = item.select_one(".ar-quartile")
+        cited = item.select_one(".ar-cited")
+        record.update(
+            {
+                "classification": clean_text(quartile.get_text(" ", strip=True)) if quartile else None,
+                "publication": clean_text(publication.get_text(" ", strip=True)) if publication else None,
+                "publication_url": absolute_url(page_url, publication.get("href")) if publication else None,
+                "author_order": labeled_value_from_nodes(item, "Author Order"),
+                "creator": labeled_value_from_nodes(item, "Creator"),
+                "citations": integer_from_text(cited.get_text(" ", strip=True)) if cited else None,
+            }
+        )
+    elif collection in {"researches", "community_services"}:
+        scheme = item.select_one(".ar-pub")
+        personnel = []
+        for link in item.select("a[href*='/authors/profile/']"):
+            person_name = clean_text(link.get_text(" ", strip=True))
+            if person_name:
+                personnel.append(
+                    {
+                        "name": person_name.rstrip(";"),
+                        "url": absolute_url(page_url, link.get("href")),
+                    }
+                )
+        funding_match = re.search(r"Rp\.?\s*([\d.]+)", raw_text or "", re.I)
+        source_match = re.search(r"\b(BIMA|INTERNAL)\s+SOURCE\b", raw_text or "", re.I)
+        status_match = re.search(r"\b(Approved|Rejected|Proposed|Draft)\b", raw_text or "", re.I)
+        record.update(
+            {
+                "leader": labeled_value_from_nodes(item, "Leader"),
+                "scheme": clean_text(scheme.get_text(" ", strip=True)) if scheme else None,
+                "personnel": personnel,
+                "funding_idr": integer_from_text(funding_match.group(1)) if funding_match else None,
+                "status": status_match.group(1) if status_match else None,
+                "funding_source_type": source_match.group(1).upper() if source_match else None,
+            }
+        )
+    elif collection == "iprs":
+        holder = item.select_one(".ar-pub")
+        cited_nodes = [clean_text(node.get_text(" ", strip=True)) for node in item.select(".ar-cited")]
+        application_number = None
+        status = None
+        for text in cited_nodes:
+            if not text:
+                continue
+            if text.lower().startswith("nomor permohonan"):
+                application_number = value_after_label(text, "Nomor Permohonan")
+            elif text.lower().startswith("status"):
+                status = value_after_label(text, "Status")
+        ipr_type = item.select_one(".ar-quartile")
+        record.update(
+            {
+                "inventors": labeled_value_from_nodes(item, "Inventor"),
+                "holder": clean_text(holder.get_text(" ", strip=True)) if holder else None,
+                "application_number": application_number,
+                "status": status,
+                "ipr_type": clean_text(ipr_type.get_text(" ", strip=True)) if ipr_type else None,
+            }
+        )
+    elif collection == "books":
+        publisher = item.select_one(".ar-pub")
+        category_match = re.search(r"Category\s*:\s*(.+?)(?=\s{2,}|$)", raw_text or "", re.I)
+        isbn_match = re.search(r"ISBN\s*:\s*([\dXx-]+)", raw_text or "", re.I)
+        meta_blocks = item.select(".ar-meta")
+        authors = None
+        if len(meta_blocks) >= 2:
+            author_block = meta_blocks[1]
+            author_text = clean_text(author_block.get_text(" ", strip=True)) or ""
+            publisher_text = clean_text(publisher.get_text(" ", strip=True)) if publisher else None
+            if publisher_text and author_text.endswith(publisher_text):
+                author_text = clean_text(author_text[: -len(publisher_text)]) or ""
+            authors = author_text or None
+        record.update(
+            {
+                "category": labeled_value_from_nodes(item, "Category")
+                or (clean_text(category_match.group(1)) if category_match else None),
+                "authors": authors,
+                "publisher": clean_text(publisher.get_text(" ", strip=True)) if publisher else None,
+                "isbn": isbn_match.group(1) if isbn_match else None,
+            }
+        )
+
+    return record
+
+
+def parse_collection_page(
+    soup: BeautifulSoup,
+    collection: str,
+    page_url: str,
+) -> list[dict[str, Any]]:
+    return [
+        parse_common_item(item, collection, page_url)
+        for item in soup.select(".profile-article .ar-list-item")
+    ]
+
+
+def is_publicly_limited(soup: BeautifulSoup) -> bool:
+    return any(
+        "View more" in (clean_text(link.get_text(" ", strip=True)) or "")
+        and "/logins" in (link.get("href") or "")
+        for link in soup.select("a")
+    )
+
+
+def scrape_collection(
+    session: requests.Session,
+    profile_url: str,
+    collection: str,
+    view: str,
+    delay: float,
+) -> dict[str, Any]:
+    soup, page_url = fetch_soup(session, profile_url, params={"view": view, "page": 1})
+    total_pages, reported_total = parse_pagination(soup)
+    records = parse_collection_page(soup, collection, page_url)
+    limited = is_publicly_limited(soup)
+
+    for page in range(2, total_pages + 1):
+        time.sleep(delay)
+        page_soup, next_url = fetch_soup(
+            session,
+            profile_url,
+            params={"view": view, "page": page},
+        )
+        records.extend(parse_collection_page(page_soup, collection, next_url))
+        limited = limited or is_publicly_limited(page_soup)
+
+    unique_records = {record["id"]: record for record in records}
+    ordered = list(unique_records.values())
+    return {
+        "view": view,
+        "reported_total": reported_total,
+        "records_collected": len(ordered),
+        "public_access_limited": limited,
+        "records": ordered,
+    }
+
+
+def parse_metrics(soup: BeautifulSoup, page_url: str) -> dict[str, Any]:
+    summary: dict[str, dict[str, int | str | None]] = {}
+    stat_table = soup.select_one("table.stat-table")
+    if stat_table:
+        headers = [clean_text(th.get_text(" ", strip=True)) for th in stat_table.select("thead th")]
+        sources = [header for header in headers[1:] if header]
+        for row in stat_table.select("tbody tr"):
+            cells = [clean_text(cell.get_text(" ", strip=True)) for cell in row.select("th, td")]
+            if not cells or not cells[0]:
+                continue
+            values: dict[str, int | str | None] = {}
+            for source, value in zip(sources, cells[1:]):
+                parsed = integer_from_text(value)
+                values[source] = parsed if parsed is not None else value
+            summary[cells[0]] = values
+
+    score_rows: list[dict[str, Any]] = []
+    metrics_table = next(
+        (table for table in soup.select("table.table") if not "stat-table" in (table.get("class") or [])),
+        None,
+    )
+    if metrics_table:
+        for row in metrics_table.select("tr"):
+            cells = [clean_text(cell.get_text(" ", strip=True)) for cell in row.select(":scope > th, :scope > td")]
+            if len(cells) < 13 or not cells[1] or not re.fullmatch(r"[A-Z]+\d+", cells[1]):
+                continue
+            score_rows.append(
+                {
+                    "code": cells[1],
+                    "name": cells[2],
+                    "sinta_weight": integer_from_text(cells[3]),
+                    "sinta_overall_value": integer_from_text(cells[4]),
+                    "sinta_overall_total": integer_from_text(cells[5]),
+                    "sinta_3yr_value": integer_from_text(cells[6]),
+                    "sinta_3yr_total": integer_from_text(cells[7]),
+                    "affiliation_weight": integer_from_text(cells[8]),
+                    "affiliation_overall_value": integer_from_text(cells[9]),
+                    "affiliation_overall_total": integer_from_text(cells[10]),
+                    "affiliation_3yr_value": integer_from_text(cells[11]),
+                    "affiliation_3yr_total": integer_from_text(cells[12]),
+                }
+            )
+
+    return {
+        "source_page": page_url,
+        "summary": summary,
+        "score_rows": score_rows,
+    }
+
+
+def load_json(path: Path, default: Any) -> Any:
+    if not path.exists():
+        return default
+    with path.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def write_json(path: Path, payload: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    with temporary.open("w", encoding="utf-8") as handle:
+        json.dump(payload, handle, ensure_ascii=False, indent=2, sort_keys=False)
+        handle.write("\n")
+    temporary.replace(path)
+
+
+def validate_author(author: dict[str, Any]) -> dict[str, Any]:
+    name = clean_text(str(author.get("name", "")))
+    sinta_id = clean_text(str(author.get("sinta_id", "")))
+    if not name:
+        raise ValueError("Each author must have a non-empty 'name'.")
+    if not sinta_id or not sinta_id.isdigit():
+        raise ValueError(f"Author {name!r} must have a numeric 'sinta_id'.")
+    profile_url = clean_text(str(author.get("profile_url", ""))) or f"{DEFAULT_BASE_URL}/{sinta_id}"
+    if not profile_url.startswith("https://sinta.kemdiktisaintek.go.id/authors/profile/"):
+        raise ValueError(f"Author {name!r} has an unsupported SINTA profile URL.")
+    return {
+        "name": name,
+        "sinta_id": sinta_id,
+        "profile_url": profile_url,
+        "enabled": bool(author.get("enabled", True)),
+    }
+
+
+def scrape_author(
+    session: requests.Session,
+    author: dict[str, Any],
+    output_dir: Path,
+    delay: float,
+) -> tuple[dict[str, Any], bool]:
+    author_path = output_dir / f"{author['sinta_id']}.json"
+    previous = load_json(author_path, {})
+    now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+    profile_soup, profile_page_url = fetch_soup(
+        session,
+        author["profile_url"],
+        params={"view": "scopus"},
+    )
+    profile = parse_profile(profile_soup, author["sinta_id"])
+    if profile.get("sinta_id") != author["sinta_id"]:
+        raise RuntimeError(
+            f"Configured SINTA ID {author['sinta_id']} does not match page ID {profile.get('sinta_id')}"
+        )
+
+    collections: dict[str, Any] = {}
+    statuses: dict[str, Any] = {}
+    had_errors = False
+    previous_collections = previous.get("collections", {}) if isinstance(previous, dict) else {}
+
+    for collection, view in COLLECTIONS.items():
+        time.sleep(delay)
+        try:
+            collections[collection] = scrape_collection(
+                session,
+                author["profile_url"],
+                collection,
+                view,
+                delay,
+            )
+            statuses[collection] = {"status": "ok", "checked_at": now}
+        except Exception as exc:  # Preserve the last known-good section.
+            had_errors = True
+            if collection in previous_collections:
+                collections[collection] = previous_collections[collection]
+                statuses[collection] = {
+                    "status": "stale",
+                    "checked_at": now,
+                    "error": str(exc),
+                }
+            else:
+                collections[collection] = {
+                    "view": view,
+                    "reported_total": None,
+                    "records_collected": 0,
+                    "public_access_limited": False,
+                    "records": [],
+                }
+                statuses[collection] = {
+                    "status": "failed",
+                    "checked_at": now,
+                    "error": str(exc),
+                }
+
+    time.sleep(delay)
+    try:
+        metrics_soup, metrics_url = fetch_soup(
+            session,
+            author["profile_url"],
+            params={"view": "matrics"},
+        )
+        metrics = parse_metrics(metrics_soup, metrics_url)
+        statuses["metrics"] = {"status": "ok", "checked_at": now}
+    except Exception as exc:
+        had_errors = True
+        metrics = previous.get("metrics", {}) if isinstance(previous, dict) else {}
+        statuses["metrics"] = {
+            "status": "stale" if metrics else "failed",
+            "checked_at": now,
+            "error": str(exc),
+        }
+
+    payload = {
+        "schema_version": SCHEMA_VERSION,
+        "generated_at": now,
+        "source": {
+            "service": "SINTA - Science and Technology Index",
+            "profile_url": profile_page_url,
+            "access": "public pages only",
+        },
+        "configured_author": author,
+        "profile": profile,
+        "collections": collections,
+        "metrics": metrics,
+        "collection_status": statuses,
+    }
+    write_json(author_path, payload)
+    return payload, had_errors
+
+
+def build_manifest(output_dir: Path, results: list[tuple[dict[str, Any], bool]]) -> dict[str, Any]:
+    generated_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    authors = []
+    for payload, had_errors in results:
+        profile = payload["profile"]
+        counts = {
+            key: value.get("records_collected", 0)
+            for key, value in payload["collections"].items()
+        }
+        authors.append(
+            {
+                "name": profile.get("name") or payload["configured_author"]["name"],
+                "sinta_id": profile.get("sinta_id"),
+                "file": f"{profile.get('sinta_id')}.json",
+                "status": "partial" if had_errors else "ok",
+                "counts": counts,
+            }
+        )
+    manifest = {
+        "schema_version": SCHEMA_VERSION,
+        "generated_at": generated_at,
+        "authors_count": len(authors),
+        "authors": authors,
+    }
+    write_json(output_dir / "index.json", manifest)
+    return manifest
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--config", type=Path, default=Path("config/authors.json"))
+    parser.add_argument("--output", type=Path, default=Path("data"))
+    parser.add_argument("--author-id", help="Only scrape one configured SINTA ID")
+    parser.add_argument("--delay", type=float, default=2.0, help="Polite delay between requests")
+    parser.add_argument("--timeout", type=float, default=45.0, help="HTTP timeout in seconds")
+    parser.add_argument("--check-config", action="store_true", help="Validate config and exit")
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
+    raw_authors = load_json(args.config, None)
+    if not isinstance(raw_authors, list):
+        raise ValueError(f"{args.config} must contain a JSON array.")
+
+    authors = [validate_author(author) for author in raw_authors]
+    authors = [author for author in authors if author["enabled"]]
+    if args.author_id:
+        authors = [author for author in authors if author["sinta_id"] == args.author_id]
+    if not authors:
+        raise ValueError("No enabled authors matched the requested configuration.")
+
+    if args.check_config:
+        print(f"Configuration is valid: {len(authors)} enabled author(s).")
+        return 0
+
+    if args.delay < 0:
+        raise ValueError("--delay cannot be negative.")
+
+    session = make_session(args.timeout)
+    results: list[tuple[dict[str, Any], bool]] = []
+    fatal_errors: list[str] = []
+    for author in authors:
+        print(f"Scraping {author['name']} (SINTA ID {author['sinta_id']})...", flush=True)
+        try:
+            payload, had_errors = scrape_author(session, author, args.output, args.delay)
+            results.append((payload, had_errors))
+            print(
+                f"  saved {args.output / (author['sinta_id'] + '.json')}"
+                + (" with partial/stale sections" if had_errors else ""),
+                flush=True,
+            )
+        except Exception as exc:
+            fatal_errors.append(f"{author['name']} ({author['sinta_id']}): {exc}")
+            print(f"  ERROR: {exc}", file=sys.stderr, flush=True)
+
+    if results:
+        manifest = build_manifest(args.output, results)
+        print(f"Saved manifest for {manifest['authors_count']} author(s).", flush=True)
+
+    if fatal_errors:
+        print("Fatal author failures:", file=sys.stderr)
+        for error in fatal_errors:
+            print(f"- {error}", file=sys.stderr)
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

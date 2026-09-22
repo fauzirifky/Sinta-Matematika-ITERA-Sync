@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-22T10:21:14.313676Z",
+  "authors_count": 1,
+  "authors": [
+    {
+      "name": "RIFKY FAUZI",
+      "sinta_id": "6750161",
+      "file": "6750161.json",
+      "status": "ok",
+      "counts": {
+        "scopus": 10,
+        "garuda": 9,
+        "google_scholar": 8,
+        "rama": 0,
+        "researches": 8,
+        "community_services": 4,
+        "iprs": 4,
+        "books": 1
+      }
+    }
+  ]
+}
