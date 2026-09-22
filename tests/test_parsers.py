@@ -7,7 +7,29 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from scrape_sinta import is_publicly_limited, parse_collection_page, parse_profile  # noqa: E402
+from scrape_sinta import (  # noqa: E402
+    is_publicly_limited,
+    parse_collection_page,
+    parse_profile,
+    scrape_collection,
+)
+
+
+class FakeResponse:
+    def __init__(self, html: str, url: str):
+        self.text = html
+        self.url = url
+        self.headers = {"Content-Type": "text/html; charset=UTF-8"}
+
+
+class FakeSession:
+    def __init__(self, html: str):
+        self.html = html
+        self.calls = []
+
+    def get(self, url, params=None):
+        self.calls.append({"url": url, "params": params})
+        return FakeResponse(self.html, f"{url}?view={params['view']}")
 
 
 class ParserTests(unittest.TestCase):
@@ -33,6 +55,21 @@ class ParserTests(unittest.TestCase):
 
     def test_public_limit(self):
         self.assertTrue(is_publicly_limited(self.soup))
+
+    def test_collection_fetches_only_initial_public_page(self):
+        html = (ROOT / "tests" / "fixtures" / "sinta_sample.html").read_text(encoding="utf-8")
+        session = FakeSession(html)
+        result = scrape_collection(
+            session,
+            "https://sinta.example/authors/profile/6750161",
+            "scopus",
+            "scopus",
+        )
+
+        self.assertEqual(len(session.calls), 1)
+        self.assertEqual(session.calls[0]["params"], {"view": "scopus"})
+        self.assertEqual(result["scope"], "public_first_page_only")
+        self.assertEqual(result["pages_collected"], 1)
 
 
 if __name__ == "__main__":

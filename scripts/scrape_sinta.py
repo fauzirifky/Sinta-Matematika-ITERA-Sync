@@ -16,13 +16,15 @@ from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup, Tag
+from curl_cffi import requests as browser_requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 
 REPOSITORY_URL = "https://github.com/fauzirifky/Sinta-Matematika-ITERA-Sync"
 DEFAULT_BASE_URL = "https://sinta.kemdiktisaintek.go.id/authors/profile"
-SCHEMA_VERSION = 1
+SINTA_ORIGIN = "https://sinta.kemdiktisaintek.go.id/"
+SCHEMA_VERSION = 2
 
 COLLECTIONS = {
     "scopus": "scopus",
@@ -85,48 +87,115 @@ def absolute_url(base_url: str, href: str | None) -> str | None:
     return urljoin(base_url, href)
 
 
-def make_session(timeout: float) -> requests.Session:
-    retry = Retry(
-        total=3,
-        connect=3,
-        read=3,
-        backoff_factor=1.5,
-        status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=("GET",),
-        respect_retry_after_header=True,
-    )
-    session = requests.Session()
-    session.headers.update(
-        {
+class SintaSession:
+    """Small HTTP client with a browser-TLS transport and a requests fallback."""
+
+    def __init__(self, timeout: float):
+        self.timeout = timeout
+        self.headers = {
             "User-Agent": (
                 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-                "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+                "(KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
             ),
-            "From": REPOSITORY_URL,
-            "Accept": "text/html,application/xhtml+xml",
-            "Accept-Language": "id,en;q=0.8",
+            "Accept": (
+                "text/html,application/xhtml+xml,application/xml;q=0.9,"
+                "image/avif,image/webp,*/*;q=0.8"
+            ),
+            "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+            "Sec-Fetch-Dest": "document",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "same-origin",
+            "Upgrade-Insecure-Requests": "1",
         }
-    )
-    session.mount("https://", HTTPAdapter(max_retries=retry))
-    session.request_timeout = timeout  # type: ignore[attr-defined]
-    return session
+
+        # curl_cffi is only a few MB and reproduces Chrome's TLS/HTTP2 fingerprint.
+        # This avoids installing a full browser in GitHub Actions.
+        self.browser = browser_requests.Session(impersonate="chrome")
+        self.browser.headers.update(self.headers)
+
+        retry = Retry(
+            total=3,
+            connect=3,
+            read=3,
+            backoff_factor=1.5,
+            status_forcelist=(429, 500, 502, 503, 504),
+            allowed_methods=("GET",),
+            respect_retry_after_header=True,
+        )
+        self.standard = requests.Session()
+        self.standard.headers.update(self.headers)
+        self.standard.mount("https://", HTTPAdapter(max_retries=retry))
+        self._warmed = False
+        self._announced_transport: str | None = None
+
+    def _warm_up(self) -> None:
+        """Open SINTA's public home page once so cookies/referer resemble navigation."""
+        if self._warmed:
+            return
+        self._warmed = True
+        for transport in (self.browser, self.standard):
+            try:
+                transport.get(
+                    SINTA_ORIGIN,
+                    headers={**self.headers, "Sec-Fetch-Site": "none"},
+                    timeout=self.timeout,
+                )
+            except Exception:
+                # The real profile request below produces the useful error.
+                pass
+
+    def get(self, url: str, params: dict[str, Any] | None = None):
+        self._warm_up()
+        request_headers = {**self.headers, "Referer": SINTA_ORIGIN}
+        failures: list[str] = []
+
+        for label, transport in (
+            ("Chrome TLS", self.browser),
+            ("standard requests", self.standard),
+        ):
+            try:
+                response = transport.get(
+                    url,
+                    params=params,
+                    headers=request_headers,
+                    timeout=self.timeout,
+                )
+                response.raise_for_status()
+                if self._announced_transport != label:
+                    print(f"  HTTP transport: {label}", flush=True)
+                    self._announced_transport = label
+                return response
+            except Exception as exc:
+                status = getattr(getattr(exc, "response", None), "status_code", None)
+                detail = f"HTTP {status}" if status else clean_text(str(exc)) or type(exc).__name__
+                failures.append(f"{label}: {detail}")
+
+        raise RuntimeError(
+            "SINTA rejected all public-page transports ("
+            + "; ".join(failures)
+            + "). The GitHub runner IP may be temporarily blocked."
+        )
+
+
+def make_session(timeout: float) -> SintaSession:
+    return SintaSession(timeout)
 
 
 def fetch_soup(
-    session: requests.Session,
+    session: SintaSession,
     url: str,
     *,
     params: dict[str, Any] | None = None,
 ) -> tuple[BeautifulSoup, str]:
-    timeout = getattr(session, "request_timeout", 45.0)
-    response = session.get(url, params=params, timeout=timeout)
-    response.raise_for_status()
+    response = session.get(url, params=params)
     if "text/html" not in response.headers.get("Content-Type", "text/html"):
         raise RuntimeError(f"Unexpected content type from {response.url}")
     soup = BeautifulSoup(response.text, "html.parser")
     if not soup.select_one(".content-box"):
         raise RuntimeError(f"SINTA content was not found at {response.url}")
-    return soup, response.url
+    return soup, str(response.url)
 
 
 def parse_profile(soup: BeautifulSoup, configured_id: str) -> dict[str, Any]:
@@ -308,38 +377,31 @@ def parse_collection_page(
 
 def is_publicly_limited(soup: BeautifulSoup) -> bool:
     return any(
-        "View more" in (clean_text(link.get_text(" ", strip=True)) or "")
+        "view more" in (clean_text(link.get_text(" ", strip=True)) or "").lower()
         and "/logins" in (link.get("href") or "")
         for link in soup.select("a")
     )
 
 
 def scrape_collection(
-    session: requests.Session,
+    session: SintaSession,
     profile_url: str,
     collection: str,
     view: str,
-    delay: float,
 ) -> dict[str, Any]:
-    soup, page_url = fetch_soup(session, profile_url, params={"view": view, "page": 1})
-    total_pages, reported_total = parse_pagination(soup)
+    # Intentionally request only the initial public page. We never follow SINTA's
+    # pagination or its login-only "View more" link.
+    soup, page_url = fetch_soup(session, profile_url, params={"view": view})
+    _available_pages, reported_total = parse_pagination(soup)
     records = parse_collection_page(soup, collection, page_url)
     limited = is_publicly_limited(soup)
-
-    for page in range(2, total_pages + 1):
-        time.sleep(delay)
-        page_soup, next_url = fetch_soup(
-            session,
-            profile_url,
-            params={"view": view, "page": page},
-        )
-        records.extend(parse_collection_page(page_soup, collection, next_url))
-        limited = limited or is_publicly_limited(page_soup)
 
     unique_records = {record["id"]: record for record in records}
     ordered = list(unique_records.values())
     return {
         "view": view,
+        "scope": "public_first_page_only",
+        "pages_collected": 1,
         "reported_total": reported_total,
         "records_collected": len(ordered),
         "public_access_limited": limited,
@@ -432,7 +494,7 @@ def validate_author(author: dict[str, Any]) -> dict[str, Any]:
 
 
 def scrape_author(
-    session: requests.Session,
+    session: SintaSession,
     author: dict[str, Any],
     output_dir: Path,
     delay: float,
@@ -465,7 +527,6 @@ def scrape_author(
                 author["profile_url"],
                 collection,
                 view,
-                delay,
             )
             statuses[collection] = {"status": "ok", "checked_at": now}
         except Exception as exc:  # Preserve the last known-good section.
@@ -480,6 +541,8 @@ def scrape_author(
             else:
                 collections[collection] = {
                     "view": view,
+                    "scope": "public_first_page_only",
+                    "pages_collected": 0,
                     "reported_total": None,
                     "records_collected": 0,
                     "public_access_limited": False,
@@ -515,7 +578,7 @@ def scrape_author(
         "source": {
             "service": "SINTA - Science and Technology Index",
             "profile_url": profile_page_url,
-            "access": "public pages only",
+            "access": "first public page only; no login and no View more",
         },
         "configured_author": author,
         "profile": profile,

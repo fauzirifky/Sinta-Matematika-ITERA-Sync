@@ -1,6 +1,6 @@
 # Sinta Matematika ITERA Sync
 
-Scraper ringan untuk merekam data **publik** profil dosen dari SINTA ke JSON secara otomatis setiap minggu. Repository ini mula-mula dikonfigurasi untuk Rifky Fauzi, Program Studi Matematika, Institut Teknologi Sumatera.
+Scraper ringan untuk merekam data **halaman publik pertama** profil dosen dari SINTA ke JSON secara otomatis setiap minggu. Repository ini mula-mula dikonfigurasi untuk Rifky Fauzi, Program Studi Matematika, Institut Teknologi Sumatera.
 
 Data yang diambil:
 
@@ -35,7 +35,7 @@ Workflow [`.github/workflows/weekly-sinta-sync.yml`](.github/workflows/weekly-si
 Workflow akan:
 
 1. memvalidasi konfigurasi dan parser;
-2. mengakses halaman publik SINTA dengan jeda antarkoneksi;
+2. mengakses hanya halaman pertama yang tersedia tanpa login;
 3. memperbarui JSON di folder `data/`;
 4. melakukan commit dan push menggunakan `GITHUB_TOKEN` bawaan.
 
@@ -72,7 +72,9 @@ Riwayat Git berfungsi sebagai catatan perubahan mingguan. Jika satu kategori gag
 
 ## Batasan penting
 
-Scraper ini hanya membaca halaman yang dapat diakses tanpa login. Jika SINTA membatasi daftar publik dengan tombol **View more** menuju halaman login, JSON akan menandai `public_access_limited: true`. Program tidak mencoba melewati autentikasi, CAPTCHA, atau pembatasan akses.
+Scraper ini hanya membaca halaman pertama yang dapat diakses tanpa login. Program tidak mengikuti pagination dan tidak pernah membuka tombol **View more**. Jika tombol tersebut tersedia, JSON akan menandai `public_access_limited: true`.
+
+GitHub Actions memakai koneksi HTTP ringan dengan fingerprint TLS Chrome karena SINTA dapat menolak koneksi Python biasa dengan respons `403 Forbidden`. Ini tidak menjalankan browser, JavaScript, login, CAPTCHA, atau akses data privat. Jika kedua jenis koneksi tetap ditolak, workflow berhenti dengan pesan bahwa IP runner GitHub mungkin sedang diblokir; JSON lama di repository tidak ditimpa.
 
 Struktur HTML SINTA dapat berubah. Periksa status workflow dan sesuaikan parser jika selector halaman berubah. Gunakan frekuensi yang wajar, patuhi ketentuan layanan sumber, dan jangan mengumpulkan data pribadi yang tidak diperlukan.
 
