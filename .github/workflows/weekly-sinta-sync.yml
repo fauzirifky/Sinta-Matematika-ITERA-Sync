@@ -16,7 +16,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repository
@@ -31,27 +31,23 @@ jobs:
       - name: Install Python dependencies
         run: python -m pip install --disable-pip-version-check -r requirements.txt
 
-      - name: Install Chromium
-        run: python -m playwright install --with-deps chromium
-
       - name: Validate configuration and parser
         run: |
           python scripts/scrape_sinta.py --check-config
           python -m unittest discover -s tests -v
 
       - name: Scrape public SINTA pages
+        id: scrape
+        continue-on-error: true
         run: python scripts/scrape_sinta.py
 
-      - name: Upload browser diagnostics on failure
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: sinta-browser-diagnostics
-          path: debug/
-          if-no-files-found: ignore
-          retention-days: 7
+      - name: Report access warning
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "::warning::SINTA menolak request dari IP GitHub runner. JSON lama dipertahankan."
 
       - name: Commit updated JSON
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

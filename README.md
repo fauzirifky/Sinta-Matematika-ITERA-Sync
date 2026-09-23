@@ -35,10 +35,13 @@ Workflow [`.github/workflows/weekly-sinta-sync.yml`](.github/workflows/weekly-si
 Workflow akan:
 
 1. memvalidasi konfigurasi dan parser;
-2. membuka halaman publik pertama menggunakan Chromium headless;
-3. membaca DOM/HTML halaman yang telah dimuat, seperti struktur pada Inspect Element;
-4. memperbarui JSON di folder `data/`;
-5. melakukan commit dan push menggunakan `GITHUB_TOKEN` bawaan.
+2. membuka beranda SINTA untuk memperoleh cookie sesi publik;
+3. meminta HTML profil dan tab publik dengan sesi serta `Referer` yang sama;
+4. membaca HTML tersebut menggunakan selector yang sama dengan Inspect Element;
+5. memperbarui JSON di folder `data/`;
+6. melakukan commit dan push menggunakan `GITHUB_TOKEN` bawaan.
+
+Tidak diperlukan API key, secret, browser, proxy, atau layanan eksternal. Satu dosen memerlukan sekitar sembilan request halaman per sinkronisasi.
 
 Untuk repository hasil fork, pastikan **Settings → Actions → General → Workflow permissions** mengizinkan **Read and write permissions** jika kebijakan akun tidak mengizinkannya secara otomatis.
 
@@ -48,7 +51,6 @@ Untuk repository hasil fork, pastikan **Settings → Actions → General → Wor
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
-python -m playwright install chromium
 python scripts/scrape_sinta.py
 ```
 
@@ -76,7 +78,9 @@ Riwayat Git berfungsi sebagai catatan perubahan mingguan. Jika satu kategori gag
 
 Scraper ini hanya membaca halaman pertama yang dapat diakses tanpa login. Program tidak mengikuti pagination dan tidak pernah membuka tombol **View more**. Jika tombol tersebut tersedia, JSON akan menandai `public_access_limited: true`.
 
-GitHub Actions menggunakan Chromium headless agar halaman dimuat sebagaimana browser, kemudian membaca `document.documentElement.outerHTML`. Program tidak melakukan login, tidak menekan **View more**, dan tidak mencoba mengakses data privat. Jika halaman tetap ditolak, workflow mengunggah artifact `sinta-browser-diagnostics` berisi tangkapan layar dan HTML respons untuk diagnosis; JSON lama di repository tidak ditimpa.
+GitHub Actions tidak memasang Chromium atau browser lainnya. Program hanya memakai cookie sesi publik yang diberikan otomatis oleh SINTA, tidak melakukan login, tidak memakai cookie akun, tidak menekan **View more**, dan tidak mencoba mengakses data privat.
+
+SINTA dapat menolak rentang IP pusat data milik GitHub. Jika itu terjadi setelah sesi publik dibuat, workflow menampilkan peringatan dan mempertahankan JSON lama. Header atau cookie sesi publik tidak dapat mengatasi pemblokiran yang memang diterapkan berdasarkan alamat IP.
 
 Struktur HTML SINTA dapat berubah. Periksa status workflow dan sesuaikan parser jika selector halaman berubah. Gunakan frekuensi yang wajar, patuhi ketentuan layanan sumber, dan jangan mengumpulkan data pribadi yang tidak diperlukan.
 

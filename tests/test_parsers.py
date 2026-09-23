@@ -12,6 +12,9 @@ from scrape_sinta import (  # noqa: E402
     parse_collection_page,
     parse_profile,
     scrape_collection,
+    BROWSER_HEADERS,
+    SINTA_ORIGIN,
+    SintaSession,
 )
 
 
@@ -30,6 +33,40 @@ class FakeSession:
     def get(self, url, params=None):
         self.calls.append({"url": url, "params": params})
         return FakeResponse(self.html, f"{url}?view={params['view']}")
+
+
+class FakeHttpResponse:
+    def __init__(self, url):
+        self.status_code = 200
+        self.text = "<html><div class='content-box'></div></html>"
+        self.headers = {"Content-Type": "text/html; charset=UTF-8"}
+        self.url = url
+
+    def raise_for_status(self):
+        pass
+
+
+class FakeHttp:
+    def __init__(self):
+        self.calls = []
+        self.cookies = []
+        self.headers = {}
+
+    def get(self, url, params=None, headers=None, timeout=None, allow_redirects=None):
+        self.calls.append(
+            {
+                "url": url,
+                "params": params,
+                "headers": headers,
+                "timeout": timeout,
+                "allow_redirects": allow_redirects,
+            }
+        )
+        suffix = "?view=" + params["view"] if params else ""
+        return FakeHttpResponse(url + suffix)
+
+    def close(self):
+        pass
 
 
 class ParserTests(unittest.TestCase):
@@ -70,6 +107,30 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(session.calls[0]["params"], {"view": "scopus"})
         self.assertEqual(result["scope"], "public_first_page_only")
         self.assertEqual(result["pages_collected"], 1)
+
+    def test_public_session_bootstrap_and_referer(self):
+        session = SintaSession(45)
+        fake_http = FakeHttp()
+        session.http.close()
+        session.http = fake_http
+
+        response = session.get(
+            "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
+            params={"view": "researches"},
+        )
+
+        self.assertEqual(len(fake_http.calls), 2)
+        bootstrap, profile = fake_http.calls
+        self.assertEqual(bootstrap["url"], f"{SINTA_ORIGIN}/")
+        self.assertEqual(bootstrap["headers"]["Sec-Fetch-Site"], "none")
+        self.assertEqual(profile["params"], {"view": "researches"})
+        self.assertEqual(profile["headers"]["Referer"], f"{SINTA_ORIGIN}/")
+        self.assertEqual(profile["headers"]["Sec-Fetch-Site"], "same-origin")
+        self.assertIn("view=researches", response.url)
+
+    def test_browser_headers_are_present(self):
+        self.assertIn("Mozilla/5.0", BROWSER_HEADERS["User-Agent"])
+        self.assertIn("text/html", BROWSER_HEADERS["Accept"])
 
 
 if __name__ == "__main__":

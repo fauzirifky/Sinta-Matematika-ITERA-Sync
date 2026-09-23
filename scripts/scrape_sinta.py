@@ -12,16 +12,35 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlencode, urljoin
+from urllib.parse import urljoin
 
+import requests
 from bs4 import BeautifulSoup, Tag
-from playwright.sync_api import Page, sync_playwright
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
-REPOSITORY_URL = "https://github.com/fauzirifky/Sinta-Matematika-ITERA-Sync"
 DEFAULT_BASE_URL = "https://sinta.kemdiktisaintek.go.id/authors/profile"
-SINTA_ORIGIN = "https://sinta.kemdiktisaintek.go.id/"
+SINTA_ORIGIN = "https://sinta.kemdiktisaintek.go.id"
 SCHEMA_VERSION = 2
+
+BROWSER_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/151.0.0.0 Safari/537.36"
+    ),
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;q=0.9,"
+        "image/avif,image/webp,image/apng,*/*;q=0.8"
+    ),
+    "Accept-Language": "en-US,en;q=0.9,id;q=0.8",
+    "Cache-Control": "max-age=0",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+}
 
 COLLECTIONS = {
     "scopus": "scopus",
@@ -85,138 +104,76 @@ def absolute_url(base_url: str, href: str | None) -> str | None:
 
 
 class SintaSession:
-    """Load public SINTA pages in a real headless Chromium browser."""
+    """Keep one browser-like public session for all SINTA page requests."""
 
     def __init__(self, timeout: float):
-        self.timeout = timeout
-        self.timeout_ms = max(int(timeout * 1000), 1_000)
-        self.playwright = sync_playwright().start()
-        self.browser = self.playwright.chromium.launch(
-            headless=True,
-            args=[
-                "--disable-blink-features=AutomationControlled",
-                "--disable-dev-shm-usage",
-                "--no-sandbox",
-            ],
+        self.timeout = max(timeout, 30.0)
+        retry = Retry(
+            total=3,
+            connect=3,
+            read=3,
+            backoff_factor=2,
+            status_forcelist=(429, 500, 502, 503, 504),
+            allowed_methods=("GET",),
+            respect_retry_after_header=True,
         )
-        self.context = self.browser.new_context(
-            locale="id-ID",
-            timezone_id="Asia/Jakarta",
-            viewport={"width": 1440, "height": 1000},
-            user_agent=(
-                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-                "(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
-            ),
-            extra_http_headers={
-                "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
-                "Cache-Control": "no-cache",
-                "Pragma": "no-cache",
-            },
-        )
-        self.context.add_init_script(
-            "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
-        )
-        self.context.route(
-            "**/*",
-            lambda route: route.abort()
-            if route.request.resource_type in {"image", "media", "font"}
-            else route.continue_(),
-        )
-        self._warmed = False
-        self._announced = False
+        self.http = requests.Session()
+        self.http.headers.update(BROWSER_HEADERS)
+        self.http.mount("https://", HTTPAdapter(max_retries=retry))
+        self._bootstrapped = False
+        self._referer = f"{SINTA_ORIGIN}/"
 
-    def _warm_up(self, page: Page) -> None:
-        """Visit SINTA's home page once so the profile request has browser state."""
-        if self._warmed:
+    def bootstrap(self) -> None:
+        """Visit SINTA first so its public ``ci_session`` cookie is retained."""
+        if self._bootstrapped:
             return
-        self._warmed = True
-        try:
-            page.goto(SINTA_ORIGIN, wait_until="domcontentloaded", timeout=self.timeout_ms)
-            page.wait_for_timeout(1_500)
-        except Exception:
-            # The target request below creates diagnostics and the useful error.
-            pass
 
-    @staticmethod
-    def _target_url(url: str, params: dict[str, Any] | None) -> str:
-        if not params:
-            return url
-        separator = "&" if "?" in url else "?"
-        return f"{url}{separator}{urlencode(params)}"
-
-    @staticmethod
-    def _safe_debug_name(target_url: str) -> str:
-        view_match = re.search(r"[?&]view=([a-z]+)", target_url, re.I)
-        id_match = re.search(r"/profile/(\d+)", target_url)
-        sinta_id = id_match.group(1) if id_match else "unknown"
-        view = view_match.group(1) if view_match else "profile"
-        return f"{sinta_id}-{view}"
-
-    def _save_diagnostics(self, page: Page, target_url: str) -> None:
-        debug_dir = Path("debug")
-        debug_dir.mkdir(parents=True, exist_ok=True)
-        name = self._safe_debug_name(target_url)
-        try:
-            page.screenshot(path=str(debug_dir / f"{name}.png"), full_page=True)
-        except Exception:
-            pass
-        try:
-            (debug_dir / f"{name}.html").write_text(page.content(), encoding="utf-8")
-        except Exception:
-            pass
+        response = self.http.get(
+            f"{SINTA_ORIGIN}/",
+            headers={
+                "Sec-Fetch-Site": "none",
+                "Sec-Fetch-Mode": "navigate",
+                "Sec-Fetch-User": "?1",
+            },
+            timeout=self.timeout,
+            allow_redirects=True,
+        )
+        if response.status_code == 403:
+            raise RuntimeError(
+                "SINTA returned HTTP 403 while opening its public homepage. "
+                "The GitHub-hosted runner IP is being rejected by SINTA."
+            )
+        response.raise_for_status()
+        self._referer = response.url
+        self._bootstrapped = True
+        print(
+            f"  Public SINTA session ready ({len(self.http.cookies)} cookie(s))",
+            flush=True,
+        )
 
     def get(self, url: str, params: dict[str, Any] | None = None):
-        target_url = self._target_url(url, params)
-        page = self.context.new_page()
-        try:
-            self._warm_up(page)
-            navigation = page.goto(
-                target_url,
-                referer=SINTA_ORIGIN,
-                wait_until="domcontentloaded",
-                timeout=self.timeout_ms,
+        self.bootstrap()
+        response = self.http.get(
+            url,
+            params=params,
+            headers={
+                "Referer": self._referer,
+                "Sec-Fetch-Site": "same-origin",
+            },
+            timeout=self.timeout,
+            allow_redirects=True,
+        )
+        if response.status_code == 403:
+            raise RuntimeError(
+                f"SINTA returned HTTP 403 for {response.url}. The public session "
+                "was initialized, but SINTA still rejected the GitHub-hosted runner IP."
             )
-            page.wait_for_timeout(2_500)
-            status = navigation.status if navigation else None
-
-            try:
-                page.locator(".content-box").first.wait_for(
-                    state="attached",
-                    timeout=min(self.timeout_ms, 15_000),
-                )
-            except Exception:
-                self._save_diagnostics(page, target_url)
-                title = clean_text(page.title()) or "untitled page"
-                raise RuntimeError(
-                    f"Chromium did not receive SINTA public content "
-                    f"(HTTP {status or 'unknown'}, title: {title}). "
-                    "Download the sinta-browser-diagnostics artifact from this run."
-                )
-
-            if not self._announced:
-                print("  Browser transport: headless Chromium", flush=True)
-                self._announced = True
-
-            html = page.evaluate("document.documentElement.outerHTML")
-            return BrowserResponse(
-                text=html,
-                url=page.url,
-                headers={"Content-Type": "text/html; charset=UTF-8"},
-            )
-        finally:
-            page.close()
+        response.raise_for_status()
+        self._referer = response.url
+        return response
 
     def close(self) -> None:
-        self.context.close()
-        self.browser.close()
-        self.playwright.stop()
-
-
-class BrowserResponse:
-    def __init__(self, text: str, url: str, headers: dict[str, str]):
-        self.text = text
-        self.url = url
-        self.headers = headers
+        self.http.close()
 
 
 def make_session(timeout: float) -> SintaSession:
@@ -432,6 +389,15 @@ def scrape_collection(
     # Intentionally request only the initial public page. We never follow SINTA's
     # pagination or its login-only "View more" link.
     soup, page_url = fetch_soup(session, profile_url, params={"view": view})
+    return collection_result_from_soup(soup, collection, view, page_url)
+
+
+def collection_result_from_soup(
+    soup: BeautifulSoup,
+    collection: str,
+    view: str,
+    page_url: str,
+) -> dict[str, Any]:
     _available_pages, reported_total = parse_pagination(soup)
     records = parse_collection_page(soup, collection, page_url)
     limited = is_publicly_limited(soup)
@@ -543,23 +509,33 @@ def scrape_author(
     previous = load_json(author_path, {})
     now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
-    profile_soup, profile_page_url = fetch_soup(
-        session,
-        author["profile_url"],
-        params={"view": "scopus"},
-    )
+    # The plain profile URL is SINTA's default public Scopus view. Request it
+    # exactly like the first browser navigation shown in DevTools.
+    profile_soup, profile_page_url = fetch_soup(session, author["profile_url"])
     profile = parse_profile(profile_soup, author["sinta_id"])
     if profile.get("sinta_id") != author["sinta_id"]:
         raise RuntimeError(
             f"Configured SINTA ID {author['sinta_id']} does not match page ID {profile.get('sinta_id')}"
         )
 
-    collections: dict[str, Any] = {}
-    statuses: dict[str, Any] = {}
+    # Reuse the first response for Scopus to avoid a duplicate network request.
+    collections: dict[str, Any] = {
+        "scopus": collection_result_from_soup(
+            profile_soup,
+            "scopus",
+            "scopus",
+            profile_page_url,
+        )
+    }
+    statuses: dict[str, Any] = {
+        "scopus": {"status": "ok", "checked_at": now}
+    }
     had_errors = False
     previous_collections = previous.get("collections", {}) if isinstance(previous, dict) else {}
 
     for collection, view in COLLECTIONS.items():
+        if collection == "scopus":
+            continue
         time.sleep(delay)
         try:
             collections[collection] = scrape_collection(
@@ -663,7 +639,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--config", type=Path, default=Path("config/authors.json"))
     parser.add_argument("--output", type=Path, default=Path("data"))
     parser.add_argument("--author-id", help="Only scrape one configured SINTA ID")
-    parser.add_argument("--delay", type=float, default=2.0, help="Polite delay between requests")
+    parser.add_argument("--delay", type=float, default=1.0, help="Delay between page requests")
     parser.add_argument("--timeout", type=float, default=45.0, help="HTTP timeout in seconds")
     parser.add_argument("--check-config", action="store_true", help="Validate config and exit")
     return parser.parse_args()
