@@ -125,11 +125,17 @@ class SintaSession:
         try:
             response = self.http.get(
                 ZENROWS_ENDPOINT,
+                # params={
+                #     "apikey": self.api_key,
+                #     "url": target_url,
+                #     "premium_proxy": "true",
+                #     "proxy_country": "id",
+                #     "session_id": self.session_id,
+                # }
                 params={
                     "apikey": self.api_key,
                     "url": target_url,
-                    "premium_proxy": "true",
-                    "proxy_country": "id",
+                    "mode": "auto",
                     "session_id": self.session_id,
                 },
                 timeout=self.timeout,
