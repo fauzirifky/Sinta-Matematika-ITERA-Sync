@@ -1,10 +1,10 @@
 {
-  "schema_version": 1,
-  "generated_at": "2026-09-22T10:20:51.027490Z",
+  "schema_version": 2,
+  "generated_at": "2026-09-24T10:38:44.256791Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
-    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=scopus",
-    "access": "public pages only"
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
+    "access": "first public page only; no login and no View more"
   },
   "configured_author": {
     "name": "Rifky Fauzi",
@@ -36,6 +36,8 @@
   "collections": {
     "scopus": {
       "view": "scopus",
+      "scope": "public_first_page_only",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 10,
       "public_access_limited": true,
@@ -45,7 +47,7 @@
           "title": "Electrocoagulation for Hospital Wastewater Treatment: Comparing Neural Network Models for Performance Simulation",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105005996899&origin=resultslist",
           "year": 2026,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=scopus&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
           "classification": "Q1 as Journal",
           "publication": "Biomedical Materials and Devices",
           "publication_url": "https://www.scopus.com/sourceid/21101239951",
@@ -58,7 +60,7 @@
           "title": "A semi-analytic prediction of reserve under pandemic risk: covid-19 in Indonesia as a case study",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105044621598&origin=resultslist",
           "year": 2026,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=scopus&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
           "classification": "Q2 as Journal",
           "publication": "Scandinavian Actuarial Journal",
           "publication_url": "https://www.scopus.com/sourceid/20043",
@@ -71,7 +73,7 @@
           "title": "Modeling dengue transmission in Bandung: Integrating vehicle mobility data for enhanced insights",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105029772885&origin=resultslist",
           "year": 2026,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=scopus&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
           "classification": "Q1 as Journal",
           "publication": "Applied Mathematical Modelling",
           "publication_url": "https://www.scopus.com/sourceid/28065",
@@ -84,7 +86,7 @@
           "title": "Inventory control of raw materials using period order quantity method in preventing the stock-out occurrence",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009596517&origin=resultslist",
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=scopus&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
           "classification": "Q4 as Conference Proceedin",
           "publication": "Aip Conference Proceedings",
           "publication_url": "https://www.scopus.com/sourceid/26916",
@@ -97,7 +99,7 @@
           "title": "On the Interaction between Trichogramma chilonis and Jatiroto Flies with Stem Borer Pests in Sugarcane Plantation",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105006656455&origin=resultslist",
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=scopus&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
           "classification": "Q2 as Journal",
           "publication": "Journal of Mathematical and Fundamental Sciences",
           "publication_url": "https://www.scopus.com/sourceid/21100268424",
@@ -110,7 +112,7 @@
           "title": "Numerical simulation of granular landslide using predictor-corrector method",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85177548795&origin=resultslist",
           "year": 2023,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=scopus&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
           "classification": "Q4 as Conference Proceedin",
           "publication": "Aip Conference Proceedings",
           "publication_url": "https://www.scopus.com/sourceid/26916",
@@ -123,7 +125,7 @@
           "title": "Modeling and descriptive analysis of dengue cases in Palu City, Indonesia",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85165441896&origin=resultslist",
           "year": 2023,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=scopus&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
           "classification": "Q1 as Journal",
           "publication": "Physica A Statistical Mechanics and Its Applications",
           "publication_url": "https://www.scopus.com/sourceid/29115",
@@ -136,7 +138,7 @@
           "title": "The effects of wind on the generation of surface wave in a shallow water",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098330372&origin=resultslist",
           "year": 2020,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=scopus&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
           "classification": "Q4 as Conference Proceedin",
           "publication": "Iop Conference Series Earth and Environmental Science",
           "publication_url": "https://www.scopus.com/sourceid/19900195068",
@@ -149,7 +151,7 @@
           "title": "Predictor-corrector scheme for simulating wave propagation on shallow water region",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85050509319&origin=resultslist",
           "year": 2018,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=scopus&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
           "classification": "Q4 as Conference Proceedin",
           "publication": "Iop Conference Series Earth and Environmental Science",
           "publication_url": "https://www.scopus.com/sourceid/19900195068",
@@ -162,7 +164,7 @@
           "title": "On the staggered scheme for shallow water model down an inclined channel",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85028014745&origin=resultslist",
           "year": 2017,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=scopus&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161",
           "classification": "Q4 as Conference Proceedin",
           "publication": "Aip Conference Proceedings",
           "publication_url": "https://www.scopus.com/sourceid/26916",
@@ -174,6 +176,8 @@
     },
     "garuda": {
       "view": "garuda",
+      "scope": "public_first_page_only",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 9,
       "public_access_limited": true,
@@ -183,7 +187,7 @@
           "title": "Smart Money for Smart Students: Pelatihan Literasi Keuangan melalui Pengelolaan Uang Jajan dan Pembiasaan Menabung bagi Siswa SMPN 3 Jati Agung",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/6120424",
           "year": 2026,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda",
           "classification": "Accred : Sinta 4",
           "publication": "Jurnal SOLMA Vol. 15 No. 1 (2026)229-237",
           "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/11433",
@@ -196,7 +200,7 @@
           "title": "Comparative Assessment of Empirical Methods for Bored Pile Capacity Prediction Against Static Load Test Data in Indonesia",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/6326311",
           "year": 2026,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda",
           "classification": "Accred : Sinta 3",
           "publication": "Rekayasa Sipil Vol. 20 No. 2 (2026): Rekayasa Sipil Vol. 20 No. 2207-215",
           "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/7370",
@@ -209,7 +213,7 @@
           "title": "PEMBAGIAN TUGAS APEL PAGI MINGGUAN PEGAWAI INSTANSI XYZ DENGAN MENGGUNAKAN PEWARNAAN GRAF BESERTA ANALISIS BEBAN PENUGASAN: Distribution Of Weekly Morning Call Assignments Of XYZ Agency Employees Using Graph Coloring And Assignment Load Analysis",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4753361",
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda",
           "classification": "Accred : Sinta 4",
           "publication": "Al-Aqlu: Jurnal Matematika, Teknik dan Sains Vol. 3 No. 1 (2025): Januari 202531-42",
           "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/31276",
@@ -222,7 +226,7 @@
           "title": "Raw Material Inventory Control Using The Period Order Quantity (POQ) Method to Reduce Stockout and Overstock Risks",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/5574617",
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda",
           "classification": "Accred : Sinta 3",
           "publication": "Vygotsky: Jurnal Pendidikan Matematika dan Matematika Vol. 7 No. 2 (2025): Vygotsky: Jurnal Pendidikan Matematika dan Matematika97-110",
           "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/16188",
@@ -235,7 +239,7 @@
           "title": "Data-Efficient LSTM Modeling for Climate-based Dengue Early Warning in Lampung, Indonesia",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/5793294",
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda",
           "classification": "Accred : Sinta 2",
           "publication": "ZERO: Jurnal Sains, Matematika dan Terapan Vol 9, No 2 (2025): Zero: Jurnal Sains Matematika dan Terapan600-611",
           "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/13266",
@@ -248,7 +252,7 @@
           "title": "Raw Material Inventory Control Using The Period Order Quantity (POQ) Method to Reduce Stockout and Overstock Risks",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/6053265",
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda",
           "classification": "Accred : Sinta 3",
           "publication": "Vygotsky: Jurnal Pendidikan Matematika dan Matematika Vol. 7 No. 2 (2025): Vygotsky: Jurnal Pendidikan Matematika dan Matematika97-110",
           "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/16188",
@@ -261,7 +265,7 @@
           "title": "Raw Material Inventory Control Using The Period Order Quantity (POQ) Method to Reduce Stockout and Overstock Risks",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/6490603",
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda",
           "classification": "Accred : Sinta 3",
           "publication": "Vygotsky: Jurnal Pendidikan Matematika dan Matematika Vol. 7 No. 2 (2025): Vygotsky: Jurnal Pendidikan Matematika dan Matematika97-110",
           "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/16188",
@@ -274,7 +278,7 @@
           "title": "Analisis Pengaruh Kasus Covid-19 Terhadap Perjalanan Instansi XYZ Lampung",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4170888",
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda",
           "classification": "Accred : Unknown",
           "publication": "Basis : Jurnal Ilmiah Matematika Vol. 3 No. 2 (2024): BASIS: Jurnal Ilmiah Matematika15-30",
           "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/29848",
@@ -287,7 +291,7 @@
           "title": "Estimasi Parameter pada Model Matematis Perubahan Suhu Dinding Rumah menggunakan Algoritma Genetika",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4495873",
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=garuda",
           "classification": "Accred : Sinta 5",
           "publication": "Jurnal EurekaMatika Vol 12, No 1 (2024): Jurnal EurekaMatika55-66",
           "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/23268",
@@ -299,29 +303,18 @@
     },
     "google_scholar": {
       "view": "googlescholar",
+      "scope": "public_first_page_only",
+      "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 8,
+      "records_collected": 9,
       "public_access_limited": true,
       "records": [
-        {
-          "id": "dd8db94278e58628b307",
-          "title": "Electrocoagulation for hospital wastewater treatment: comparing neural network models for performance simulation",
-          "url": "https://scholar.google.com/scholar?q=+intitle:'Electrocoagulation for hospital wastewater treatment: comparing neural network models for performance simulation'",
-          "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar&page=1",
-          "classification": null,
-          "publication": "Biomedical Materials & Devices, 1-28, 2025",
-          "publication_url": null,
-          "author_order": null,
-          "creator": null,
-          "citations": 1
-        },
         {
           "id": "1106405dfab1f5cdd501",
           "title": "A semi-analytic prediction of reserve under pandemic risk: covid-19 in Indonesia as a case study",
           "url": "https://scholar.google.com/scholar?q=+intitle:'A semi-analytic prediction of reserve under pandemic risk: covid-19 in Indonesia as a case study'",
           "year": 2026,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar",
           "classification": null,
           "publication": "Scandinavian Actuarial Journal, 1-25, 2026",
           "publication_url": null,
@@ -334,7 +327,7 @@
           "title": "Modeling Dengue Transmission in Bandung: Integrating Vehicle Mobility Data for Enhanced Insights",
           "url": "https://scholar.google.com/scholar?q=+intitle:'Modeling Dengue Transmission in Bandung: Integrating Vehicle Mobility Data for Enhanced Insights'",
           "year": 2026,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar",
           "classification": null,
           "publication": "Applied Mathematical Modelling, 116821, 2026",
           "publication_url": null,
@@ -347,7 +340,7 @@
           "title": "Comparative Assessment of Empirical Methods for Bored Pile Capacity Prediction Against Static Load Test Data in Indonesia",
           "url": "https://scholar.google.com/scholar?q=+intitle:'Comparative Assessment of Empirical Methods for Bored Pile Capacity Prediction Against Static Load Test Data in Indonesia'",
           "year": 2026,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar",
           "classification": null,
           "publication": "Rekayasa Sipil 20 (2), 207-215, 2026",
           "publication_url": null,
@@ -356,37 +349,24 @@
           "citations": 0
         },
         {
-          "id": "5c6ef3ac45dfb3642b4b",
-          "title": "On the Interaction between Trichogramma chilonis and Jatiroto Flies with Stem Borer Pests in Sugarcane Plantation",
-          "url": "https://scholar.google.com/scholar?q=+intitle:'On the Interaction between Trichogramma chilonis and Jatiroto Flies with Stem Borer Pests in Sugarcane Plantation'",
-          "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar&page=1",
+          "id": "dd8db94278e58628b307",
+          "title": "Electrocoagulation for hospital wastewater treatment: comparing neural network models for performance simulation",
+          "url": "https://scholar.google.com/scholar?q=+intitle:'Electrocoagulation for hospital wastewater treatment: comparing neural network models for performance simulation'",
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar",
           "classification": null,
-          "publication": "Journal of Mathematical and Fundamental Sciences 56 (3), 198-226, 2025",
+          "publication": "Biomedical Materials & Devices 4 (2), 2250-2277, 2026",
           "publication_url": null,
           "author_order": null,
           "creator": null,
-          "citations": 0
-        },
-        {
-          "id": "616d2e0b51a48131d904",
-          "title": "PEMBAGIAN TUGAS APEL PAGI MINGGUAN PEGAWAI INSTANSI XYZ DENGAN MENGGUNAKAN PEWARNAAN GRAF BESERTA ANALISIS BEBAN PENUGASAN: Distribution Of Weekly Morning Call Assignments Of …",
-          "url": "https://scholar.google.com/scholar?q=+intitle:'PEMBAGIAN TUGAS APEL PAGI MINGGUAN PEGAWAI INSTANSI XYZ DENGAN MENGGUNAKAN PEWARNAAN GRAF BESERTA ANALISIS BEBAN PENUGASAN: Distribution Of Weekly Morning Call Assignments Of …'",
-          "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar&page=1",
-          "classification": null,
-          "publication": "Al-Aqlu: Jurnal Matematika, Teknik dan Sains 3 (1), 31-42, 2025",
-          "publication_url": null,
-          "author_order": null,
-          "creator": null,
-          "citations": 0
+          "citations": 1
         },
         {
           "id": "f14294035522f6fb8207",
           "title": "Parameter Estimation of Logistic Growth Model for Covid-19 Cases in Lampung Using Particle Swarm Optimization",
           "url": "https://scholar.google.com/scholar?q=+intitle:'Parameter Estimation of Logistic Growth Model for Covid-19 Cases in Lampung Using Particle Swarm Optimization'",
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar",
           "classification": null,
           "publication": "Sainmatika: Jurnal Ilmiah Matematika dan Ilmu Pengetahuan Alam 22 (2), 102-107, 2025",
           "publication_url": null,
@@ -395,22 +375,63 @@
           "citations": 0
         },
         {
+          "id": "e9706f2740e6e0c7b854",
+          "title": "Simulasi Numerik Pengaruh Lebar dan Kerapatan Mangrove terhadap Atenuasi Gelombang di Perairan Dangkal",
+          "url": "https://scholar.google.com/scholar?q=+intitle:'Simulasi Numerik Pengaruh Lebar dan Kerapatan Mangrove terhadap Atenuasi Gelombang di Perairan Dangkal'",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar",
+          "classification": null,
+          "publication": "Jurnal EurekaMatika 13 (1), 47-56, 2025",
+          "publication_url": null,
+          "author_order": null,
+          "creator": null,
+          "citations": 1
+        },
+        {
           "id": "cd4c5613ec32c0410588",
           "title": "Raw Material Inventory Control Using The Period Order Quantity (POQ) Method to Reduce Stockout and Overstock Risks",
           "url": "https://scholar.google.com/scholar?q=+intitle:'Raw Material Inventory Control Using The Period Order Quantity (POQ) Method to Reduce Stockout and Overstock Risks'",
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar",
           "classification": null,
           "publication": "Vygotsky: Jurnal Pendidikan Matematika dan Matematika 7 (2), 97-110, 2025",
           "publication_url": null,
           "author_order": null,
           "creator": null,
           "citations": 2
+        },
+        {
+          "id": "60c2b39bb0978c4f925d",
+          "title": "Data-Efficient LSTM Modeling for Climate-based Dengue Early Warning in Lampung, Indonesia",
+          "url": "https://scholar.google.com/scholar?q=+intitle:'Data-Efficient LSTM Modeling for Climate-based Dengue Early Warning in Lampung, Indonesia'",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar",
+          "classification": null,
+          "publication": "ZERO: Jurnal Sains, Matematika dan Terapan 9 (2), 600-611, 2025",
+          "publication_url": null,
+          "author_order": null,
+          "creator": null,
+          "citations": 1
+        },
+        {
+          "id": "616d2e0b51a48131d904",
+          "title": "PEMBAGIAN TUGAS APEL PAGI MINGGUAN PEGAWAI INSTANSI XYZ DENGAN MENGGUNAKAN PEWARNAAN GRAF BESERTA ANALISIS BEBAN PENUGASAN: Distribution Of Weekly Morning Call Assignments Of …",
+          "url": "https://scholar.google.com/scholar?q=+intitle:'PEMBAGIAN TUGAS APEL PAGI MINGGUAN PEGAWAI INSTANSI XYZ DENGAN MENGGUNAKAN PEWARNAAN GRAF BESERTA ANALISIS BEBAN PENUGASAN: Distribution Of Weekly Morning Call Assignments Of …'",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=googlescholar",
+          "classification": null,
+          "publication": "Al-Aqlu: Jurnal Matematika, Teknik dan Sains 3 (1), 31-42, 2025",
+          "publication_url": null,
+          "author_order": null,
+          "creator": null,
+          "citations": 0
         }
       ]
     },
     "rama": {
       "view": "rama",
+      "scope": "public_first_page_only",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 0,
       "public_access_limited": false,
@@ -418,46 +439,18 @@
     },
     "researches": {
       "view": "researches",
+      "scope": "public_first_page_only",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 8,
       "public_access_limited": true,
       "records": [
         {
-          "id": "4bef1b5cef2a7a9ae6dc",
-          "title": "PEMODELAN AEROSOL OPTICAL DEPTH (AOD) DI PROVINSI LAMPUNG BERDASARKAN FAKTOR IKLIM DAN FAKTOR ANTROPOGENIK MENGGUNAKAN GENERALIZED LINEAR MODEL (GLM) DENGAN PENDEKATAN DISTRIBUSI GAMMA",
-          "url": null,
-          "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches&page=1",
-          "leader": "Tiara Shofi Edriani",
-          "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
-          "personnel": [
-            {
-              "name": "Rifky Fauzi",
-              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
-            },
-            {
-              "name": "Aswan Anggun Pribadi",
-              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
-            },
-            {
-              "name": "Dear Michiko Mutiara Noor",
-              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
-            },
-            {
-              "name": "Nela Rizka",
-              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
-            }
-          ],
-          "funding_idr": 20000000,
-          "status": "Approved",
-          "funding_source_type": "INTERNAL"
-        },
-        {
           "id": "3ecbff875348e88157c2",
           "title": "Pemodelan Matematika Dinamis Karbon Ekosistem Mangrove di Kalimantan Selatan untuk Mitigasi Perubahan Iklim",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches",
           "leader": "Muhammad Ahsar K",
           "scheme": "Penelitian Kompetitif Nasional ( PFR )",
           "personnel": [
@@ -479,7 +472,7 @@
           "title": "PEMODELAN DINAMIKA PERTUMBUHAN FITOPLANKTON TERHADAP DURASI PENCAHAYAAN: STRATEGI EFISIENSI ENERGI PADA BUDIDAYA MIKROALGA",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches",
           "leader": "Dear Michiko Mutiara Noor",
           "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
           "personnel": [
@@ -509,7 +502,7 @@
           "title": "PENGEMBANGAN MODEL PREDIKTIF DAYA DUKUNG TEKAN TIANG TUNGGAL MENGGUNAKAN DATA UJI SPT DAN UJI PEMBEBANAN AKSIAL DENGAN PENDEKATAN MACHINE LEARNING",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches",
           "leader": "Rahmat Kurniawan",
           "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
           "personnel": [
@@ -527,28 +520,32 @@
           "funding_source_type": "INTERNAL"
         },
         {
-          "id": "28d03ea6f3371aa21e6d",
-          "title": "PENGEMBANGAN SISTEM PERINGATAN DINI OUTBREAK DEMAM BERDARAH DENGUE MENGGUNAKAN MODEL HYBRID ANALITIK-MACHINE LEARNING",
+          "id": "4bef1b5cef2a7a9ae6dc",
+          "title": "PEMODELAN AEROSOL OPTICAL DEPTH (AOD) DI PROVINSI LAMPUNG BERDASARKAN FAKTOR IKLIM DAN FAKTOR ANTROPOGENIK MENGGUNAKAN GENERALIZED LINEAR MODEL (GLM) DENGAN PENDEKATAN DISTRIBUSI GAMMA",
           "url": null,
-          "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches&page=1",
-          "leader": "Rifky Fauzi",
-          "scheme": "PENDANAAN PENELITIAN ITERA TA 2024 ( PD )",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches",
+          "leader": "Tiara Shofi Edriani",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
           "personnel": [
             {
-              "name": "Tiara Shofi Edriani",
-              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
-            },
-            {
-              "name": "Nela Rizka",
-              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
             },
             {
               "name": "Aswan Anggun Pribadi",
               "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
             }
           ],
-          "funding_idr": 60000000,
+          "funding_idr": 20000000,
           "status": "Approved",
           "funding_source_type": "INTERNAL"
         },
@@ -557,7 +554,7 @@
           "title": "OPTIMALISASI PERSEDIAAN BAHAN BAKU KOPI DALAM UPAYA MENEKAN BIAYA PRODUKSI DAN MENCEGAH TERJADINYA KEKURANGAN STOK ( STOCK OUT ) DENGAN MENGGUNAKAN METODE PERIOD ORDER QUANTITY (POQ)",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches",
           "leader": "Achmad Suryadi Nasution",
           "scheme": "HIBAH PENUGASAN FAKULTAS SAINS ITERA ( HPFS )",
           "personnel": [
@@ -583,11 +580,37 @@
           "funding_source_type": "INTERNAL"
         },
         {
+          "id": "28d03ea6f3371aa21e6d",
+          "title": "PENGEMBANGAN SISTEM PERINGATAN DINI OUTBREAK DEMAM BERDARAH DENGUE MENGGUNAKAN MODEL HYBRID ANALITIK-MACHINE LEARNING",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches",
+          "leader": "Rifky Fauzi",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2024 ( PD )",
+          "personnel": [
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            }
+          ],
+          "funding_idr": 60000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
+        },
+        {
           "id": "8c19d89390eec88d1fa2",
           "title": "KAJIAN DAMPAK VARIABILITAS IKLIM TERHADAP DEMAM BERDARAH DAN RISIKO KESEHATAN TERKAIT KUALITAS UDARA DI PROVINSI LAMPUNG",
           "url": null,
           "year": 2023,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches",
           "leader": "Tiara Shofi Edriani",
           "scheme": "HIBAH JURUSAN SAINS ITERA 2023 ( HIBAH BANTUAN PENELITIAN JURUSAN )",
           "personnel": [
@@ -617,7 +640,7 @@
           "title": "PENGEMBANGAN ALGORITMA MACHINE LEARNING UNTUK PEMETAAN HABITAT BENTIK PERAIRAN MENGGUNAKAN DATA MULTISENSOR SATELIT DAN UNMANNED AERIAL VEHICLES (UAV) DI PERAIRAN TELUK LAMPUNG",
           "url": null,
           "year": 2023,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches",
           "leader": "Budhi Agung Prasetyo",
           "scheme": "HIBAH PENELITIAN ITERA 2023 ( MADYA )",
           "personnel": [
@@ -642,6 +665,8 @@
     },
     "community_services": {
       "view": "services",
+      "scope": "public_first_page_only",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 4,
       "public_access_limited": true,
@@ -651,7 +676,7 @@
           "title": "Transformasi Riset Lingkungan Berbasis IoT sebagai Instrumen Peningkatan Literasi Sains dan Penalaran Matematika Siswa SMA N 1 Jati Agung",
           "url": null,
           "year": 2026,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=services&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=services",
           "leader": "Indra Pardede",
           "scheme": "Pengabdian Kepada Masyarakat Kompetitif Nasional ( PKM )",
           "personnel": [
@@ -673,7 +698,7 @@
           "title": "SMART MONEY FOR SMART STUDENTS: PELATIHAN MENABUNG DAN MENGELOLA UANG JAJAN UNTUK MERDEKA FINANSIAL DI KALANGAN SISWA",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=services&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=services",
           "leader": "Werry Febrianti",
           "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
           "personnel": [
@@ -711,7 +736,7 @@
           "title": "PENGEMBANGAN DASHBOARD STATISTIK DESA SEBAGAI UPAYA OPTIMALISASI PEMANFAATAN DATA STATISTIK DI DESA KEDATON, KECAMATAN KALIANDA, KABUPATEN LAMPUNG SELATAN",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=services&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=services",
           "leader": "Rifky Fauzi",
           "scheme": "HIBAH PENUGASAN FAKULTAS SAINS ITERA ( PKM PENUGASAN FAKULTAS )",
           "personnel": [
@@ -741,7 +766,7 @@
           "title": "LAMAN PEKON INFORMATIF (LAMPIOM) SEBAGAI SARANA PROMOSI POTENSI LOKAL WILAYAH KOTA AGUNG TIMUR",
           "url": null,
           "year": 2021,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=services&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=services",
           "leader": "Tiara Shofi Edriani",
           "scheme": "HIBAH PENGABDIAN ITERA 2021 ( PKM )",
           "personnel": [
@@ -770,16 +795,30 @@
     },
     "iprs": {
       "view": "iprs",
+      "scope": "public_first_page_only",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 4,
       "public_access_limited": true,
       "records": [
         {
+          "id": "0fea840d087258e96263",
+          "title": "Perhitungan Prediksi Premi dan Cadangan pada Kasus COVID-19 di Indonesia",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=iprs",
+          "inventors": "Marcellino Wijaya, Rifky Fauzi, Edy Soewono, Nadia, Dila Puspita",
+          "holder": "Marcellino Wijaya, Rifky Fauzi, Edy Soewono, Nadia, Dila Puspita",
+          "application_number": "EC002025223931",
+          "status": "Terbit",
+          "ipr_type": "Hak Cipta"
+        },
+        {
           "id": "81a5e72f80377017bc46",
           "title": "Mathematics for Machine Learning: Fondasi dalam Kecerdasan Buatan",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=iprs&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=iprs",
           "inventors": "Rifky Fauzi, Nela Rizka, Gusrian Putra, Dear Michiko Mutiara Noor",
           "holder": "Institut Teknologi Sumatera",
           "application_number": "EC002025039968",
@@ -791,22 +830,10 @@
           "title": "Modul Metode Numerik Praktis dengan Pendekatan Berpusat pada Mahasiswa",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=iprs&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=iprs",
           "inventors": "Rifky Fauzi dan Dear Michiko Mutiara Noor",
           "holder": "Institut Teknologi Sumatera",
           "application_number": "EC002025039420",
-          "status": "Terbit",
-          "ipr_type": "Hak Cipta"
-        },
-        {
-          "id": "0fea840d087258e96263",
-          "title": "Perhitungan Prediksi Premi dan Cadangan pada Kasus COVID-19 di Indonesia",
-          "url": null,
-          "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=iprs&page=1",
-          "inventors": "Marcellino Wijaya, Rifky Fauzi, Edy Soewono, Nadia, Dila Puspita",
-          "holder": "Marcellino Wijaya, Rifky Fauzi, Edy Soewono, Nadia, Dila Puspita",
-          "application_number": "EC002025223931",
           "status": "Terbit",
           "ipr_type": "Hak Cipta"
         },
@@ -815,7 +842,7 @@
           "title": "Video Profil Fakultas Sains Institut Teknologi Sumatera",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=iprs&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=iprs",
           "inventors": "I N P Aryantha, Khairurrijal, R Sulistyorini, I N P Permanasari, S E Irwan, Dirga, I Pardede, R Fauzi, I P Mahendra, W Nurhayu, T Setiawan, M A Asagabaldan, D Mahrani, D O Lestari, M Febrina, S Aziz",
           "holder": "Institut Teknologi Sumatera",
           "application_number": "EC002024207660",
@@ -826,6 +853,8 @@
     },
     "books": {
       "view": "books",
+      "scope": "public_first_page_only",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 1,
       "public_access_limited": true,
@@ -835,7 +864,7 @@
           "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=books&page=1",
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=books",
           "category": "BUKU REFERENSI",
           "authors": "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad",
           "publisher": "Itera Press",
@@ -2060,39 +2089,39 @@
   "collection_status": {
     "scopus": {
       "status": "ok",
-      "checked_at": "2026-09-22T10:20:51.027490Z"
+      "checked_at": "2026-09-24T10:38:44.256791Z"
     },
     "garuda": {
       "status": "ok",
-      "checked_at": "2026-09-22T10:20:51.027490Z"
+      "checked_at": "2026-09-24T10:38:44.256791Z"
     },
     "google_scholar": {
       "status": "ok",
-      "checked_at": "2026-09-22T10:20:51.027490Z"
+      "checked_at": "2026-09-24T10:38:44.256791Z"
     },
     "rama": {
       "status": "ok",
-      "checked_at": "2026-09-22T10:20:51.027490Z"
+      "checked_at": "2026-09-24T10:38:44.256791Z"
     },
     "researches": {
       "status": "ok",
-      "checked_at": "2026-09-22T10:20:51.027490Z"
+      "checked_at": "2026-09-24T10:38:44.256791Z"
     },
     "community_services": {
       "status": "ok",
-      "checked_at": "2026-09-22T10:20:51.027490Z"
+      "checked_at": "2026-09-24T10:38:44.256791Z"
     },
     "iprs": {
       "status": "ok",
-      "checked_at": "2026-09-22T10:20:51.027490Z"
+      "checked_at": "2026-09-24T10:38:44.256791Z"
     },
     "books": {
       "status": "ok",
-      "checked_at": "2026-09-22T10:20:51.027490Z"
+      "checked_at": "2026-09-24T10:38:44.256791Z"
     },
     "metrics": {
       "status": "ok",
-      "checked_at": "2026-09-22T10:20:51.027490Z"
+      "checked_at": "2026-09-24T10:38:44.256791Z"
     }
   }
 }

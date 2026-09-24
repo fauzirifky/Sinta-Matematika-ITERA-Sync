@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "generated_at": "2026-09-22T10:21:14.313676Z",
+  "schema_version": 2,
+  "generated_at": "2026-09-24T10:39:14.815945Z",
   "authors_count": 1,
   "authors": [
     {
@@ -11,7 +11,7 @@
       "counts": {
         "scopus": 10,
         "garuda": 9,
-        "google_scholar": 8,
+        "google_scholar": 9,
         "rama": 0,
         "researches": 8,
         "community_services": 4,
