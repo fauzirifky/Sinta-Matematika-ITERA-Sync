@@ -17,7 +17,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     env:
       ZENROWS_API_KEY: ${{ secrets.ZENROWS_API_KEY }}
 
@@ -39,7 +39,7 @@ jobs:
           python scripts/scrape_sinta.py --check-config
           python -m unittest discover -s tests -v
 
-      - name: Scrape public SINTA pages
+      - name: Scrape all public SINTA pages through Premium Proxy
         run: python scripts/scrape_sinta.py --all-views
 
       - name: Commit updated JSON

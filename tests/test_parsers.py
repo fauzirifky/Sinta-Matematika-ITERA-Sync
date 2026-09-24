@@ -147,9 +147,9 @@ class ParserTests(unittest.TestCase):
         call = fake_http.calls[0]
         self.assertEqual(call["url"], ZENROWS_ENDPOINT)
         self.assertIn("view=researches", call["params"]["url"])
-        self.assertEqual(call["params"]["mode"], "auto")
-        self.assertNotIn("premium_proxy", call["params"])
-        self.assertNotIn("proxy_country", call["params"])
+        self.assertEqual(call["params"]["premium_proxy"], "true")
+        self.assertEqual(call["params"]["proxy_country"], "id")
+        self.assertNotIn("mode", call["params"])
         self.assertTrue(1 <= call["params"]["session_id"] <= 99999)
         self.assertEqual(response.url, call["params"]["url"])
         self.assertEqual(session.known_credits, 1)

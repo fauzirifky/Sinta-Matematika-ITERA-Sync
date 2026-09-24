@@ -90,7 +90,7 @@ class SintaSession:
     """Fetch public SINTA HTML through the lightweight ZenRows API."""
 
     def __init__(self, timeout: float):
-        self.timeout = max(timeout, 30.0)
+        self.timeout = max(timeout, 90.0)
         self.api_key = clean_text(os.environ.get("ZENROWS_API_KEY"))
         if not self.api_key:
             raise RuntimeError(
@@ -130,10 +130,8 @@ class SintaSession:
                 params={
                     "apikey": self.api_key,
                     "url": target_url,
-                    # Adaptive mode starts with the cheapest viable transport
-                    # and escalates only when SINTA rejects it. Do not specify
-                    # proxy_country: doing so can force a Premium Proxy.
-                    "mode": "auto",
+                    "premium_proxy": "true",
+                    "proxy_country": "id",
                     "session_id": self.session_id,
                 },
                 timeout=self.timeout,
@@ -141,8 +139,8 @@ class SintaSession:
         except requests.RequestException as exc:
             # The full request URL contains the API key; never log the exception.
             raise RuntimeError(
-                "ZenRows request failed at network level. Check the service status "
-                "and GitHub Actions connectivity."
+                f"ZenRows network error ({type(exc).__name__}). Check the service "
+                "status and GitHub Actions connectivity."
             ) from None
         if response.status_code >= 400:
             raise RuntimeError(
@@ -151,7 +149,7 @@ class SintaSession:
             )
 
         if not self._announced:
-            print("  Fetch transport: ZenRows Adaptive Stealth Mode", flush=True)
+            print("  Fetch transport: ZenRows Premium Proxy (Indonesia, no JavaScript)", flush=True)
             self._announced = True
 
         request_cost = clean_text(response.headers.get("X-Request-Cost"))
@@ -170,6 +168,10 @@ class SintaSession:
 
     def close(self) -> None:
         self.http.close()
+
+    def start_author(self) -> None:
+        """Use one stable exit IP per author, then rotate for the next author."""
+        self.session_id = int.from_bytes(os.urandom(4), "big") % 99999 + 1
 
 
 class FetchedResponse:
@@ -619,7 +621,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output", type=Path, default=Path("data"))
     parser.add_argument("--author-id", help="Only scrape one configured SINTA ID")
     parser.add_argument("--delay", type=float, default=0.5, help="Delay between API requests")
-    parser.add_argument("--timeout", type=float, default=45.0, help="HTTP timeout in seconds")
+    parser.add_argument("--timeout", type=float, default=90.0, help="HTTP timeout in seconds")
     parser.add_argument("--check-config", action="store_true", help="Validate config and exit")
     parser.add_argument("--view", choices=[*COLLECTIONS, "metrics"], help="Request this one tab per author")
     parser.add_argument("--all-views", action="store_true", help="Request every tab (9 paid requests per author)")
@@ -660,6 +662,7 @@ def main() -> int:
     session = make_session(args.timeout)
     try:
         for author in authors:
+            session.start_author()
             print(f"Scraping {author['name']} (SINTA ID {author['sinta_id']})...", flush=True)
             try:
                 for index, chosen in enumerate(views):

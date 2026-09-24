@@ -50,9 +50,9 @@ SINTA menolak alamat IP runner GitHub meskipun halaman yang sama dapat dibuka da
 4. Pilih **New repository secret**.
 5. Isi nama `ZENROWS_API_KEY`, tempel API key sebagai nilainya, lalu simpan.
 
-API key tidak ditulis ke source code dan tidak masuk ke JSON. Scraper memakai halaman HTML server-rendered tanpa meminta JavaScript. ZenRows dijalankan dengan `mode=auto`, tanpa `premium_proxy` dan tanpa `proxy_country`. ZenRows mencoba konfigurasi termurah dan dapat meningkatkan permintaan ke Premium Proxy jika IP biasa ditolak SINTA.
+API key tidak ditulis ke source code dan tidak masuk ke JSON. Scraper memakai halaman HTML server-rendered tanpa meminta JavaScript. Semua permintaan memakai **ZenRows Premium Proxy Indonesia** (`premium_proxy=true`, `proxy_country=id`). Satu `session_id` dipakai untuk sembilan halaman seorang dosen supaya alamat IP keluar tetap stabil, lalu sesi diganti untuk dosen berikutnya.
 
-Satu sinkronisasi lengkap memakai **9 × 16 = 144 request**. Berdasarkan tarif ZenRows, biayanya sekitar 144 kredit bila semuanya Basic atau maksimal sekitar 1.440 kredit bila semuanya memakai Premium Proxy. Dua sinkronisasi lengkap per bulan diperkirakan memakai 288–2.880 kredit dari kuota 5.000. Biaya aktual setiap request dan jumlah total yang diketahui dicetak pada log GitHub Actions melalui header `X-Request-Cost`. Jika satu permintaan gagal, proses berhenti agar tidak menghabiskan kredit untuk profil berikutnya.
+Satu sinkronisasi lengkap memakai **9 × 16 = 144 request**, atau sekitar **1.440 kredit** bila tarif Premium Proxy adalah 10 kredit per request. Dua sinkronisasi lengkap per bulan memakai sekitar **2.880 dari 5.000 kredit**, menyisakan sekitar 2.120 kredit. Setiap eksekusi manual lengkap membutuhkan sekitar 1.440 kredit tambahan. Biaya aktual yang dilaporkan ZenRows dicetak pada log GitHub Actions melalui header `X-Request-Cost`. Jika satu permintaan gagal, proses berhenti agar tidak menghabiskan kredit untuk profil berikutnya.
 
 Untuk repository hasil fork, pastikan **Settings → Actions → General → Workflow permissions** mengizinkan **Read and write permissions** jika kebijakan akun tidak mengizinkannya secara otomatis.
 
@@ -100,7 +100,7 @@ Scraper ini hanya membaca halaman pertama yang dapat diakses tanpa login. Progra
 
 GitHub Actions tidak memasang Chromium atau browser lainnya. Skrip meminta seluruh tab publik setiap profil dan memeriksa struktur HTML alih-alih mengandalkan label `Content-Type`. Program tidak melakukan login, tidak memakai cookie akun SINTA, tidak menekan **View more**, dan tidak mencoba mengakses data privat. Jika API gagal, JSON lama di repository tidak ditimpa.
 
-Struktur HTML SINTA dapat berubah. ZenRows pun belum terbukti berhasil mengakses SINTA sampai workflow diuji dengan key Anda; jika provider tetap mendapat 403, workflow akan gagal jelas dan JSON lama dipertahankan. Periksa status workflow dan sesuaikan parser jika selector halaman berubah. Gunakan frekuensi yang wajar, patuhi ketentuan layanan sumber, dan jangan mengumpulkan data pribadi yang tidak diperlukan.
+Struktur HTML SINTA dapat berubah. Jika provider mendapat penolakan atau kehabisan kredit, workflow akan gagal jelas dan JSON lama dipertahankan. Periksa status workflow dan sesuaikan parser jika selector halaman berubah. Gunakan frekuensi yang wajar, patuhi ketentuan layanan sumber, dan jangan mengumpulkan data pribadi yang tidak diperlukan.
 
 ## Lisensi
 
