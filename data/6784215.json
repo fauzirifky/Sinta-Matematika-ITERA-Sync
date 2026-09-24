@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": null,
+  "generated_at": "2026-09-24T22:54:10.790606Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
-    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
-    "access": "user-supplied public first pages"
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215?view=rama",
+    "access": "first public page only; no login and no View more"
   },
   "configured_author": {
     "name": "Tiara Shofi Edriani",
@@ -19,9 +19,16 @@
     "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
     "department": "S1 - Matematika",
     "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
-    "avatar_url": null,
-    "subjects": [],
-    "scores": {}
+    "avatar_url": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=QRmi2GcAAAAJ&citpid=1",
+    "subjects": [
+      "Matematika Terapan"
+    ],
+    "scores": {
+      "SINTA Score Overall": 169,
+      "SINTA Score 3Yr": 129,
+      "Affil Score": 0,
+      "Affil Score 3Yr": 0
+    }
   },
   "collections": {
     "scopus": {
@@ -159,11 +166,11 @@
     },
     "rama": {
       "view": "rama",
-      "scope": "user_supplied_public_first_pages",
-      "pages_collected": 0,
+      "scope": "public_first_page_plus_preserved_records",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 0,
-      "public_access_limited": true,
+      "public_access_limited": false,
       "records": []
     },
     "researches": {
@@ -347,7 +354,8 @@
       "status": "not_provided"
     },
     "rama": {
-      "status": "not_provided"
+      "status": "ok",
+      "checked_at": "2026-09-24T22:54:10.790606Z"
     },
     "researches": {
       "status": "manual_baseline"
