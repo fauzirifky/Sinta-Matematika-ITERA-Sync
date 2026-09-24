@@ -1,0 +1,467 @@
+{
+  "schema_version": 2,
+  "generated_at": null,
+  "source": {
+    "service": "SINTA - Science and Technology Index",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+    "access": "user-supplied public first pages"
+  },
+  "configured_author": {
+    "name": "Tri Utomo",
+    "sinta_id": "6653329",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+    "enabled": true
+  },
+  "profile": {
+    "name": "TRI UTOMO",
+    "sinta_id": "6653329",
+    "affiliation": "Institut Teknologi Sumatera",
+    "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
+    "department": "S1 - Matematika",
+    "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
+    "avatar_url": null,
+    "subjects": [],
+    "scores": {}
+  },
+  "collections": {
+    "scopus": {
+      "view": "scopus",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 1,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "a3c129b350834623c24e",
+          "title": "Fluid Dynamics of Free Convection Flow in Unsteady State over Single Inclined Flat Plate",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85163789529&origin=resultslist",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Q3 as Journal Iaeng International Journal of Computer Science",
+            "Author Order : 2 of 4 Creator : Ghani M.",
+            "2023 1 cited"
+          ]
+        }
+      ]
+    },
+    "garuda": {
+      "view": "garuda",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 4,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "b12b85b10a3e3a105cfd",
+          "title": "Analisis Korelasi Sistem Kuliah Lintas Prodi dengan Keefektifan Pembelajaran Mahasiswa Program Studi Matematika Institut Teknologi Sumatera (ITERA)",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742063",
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 1 No 1 (2020): Indonesian Journal of Applied Mathematics Vol. 1 No. 1 October Chapter31-36",
+            "Author Order : 6 of 6",
+            "Yenci Brika Enkekes; Khairina Alzulfa Yanti; Roni Setiawan; Novia Restiana; Yuen Rona Fadia; Tri Utomo",
+            "2020 DOI: - Accred : Unknown"
+          ],
+          "doi": "-"
+        },
+        {
+          "id": "b4c61f53f95e295d399b",
+          "title": "The Delay Simulation on Hierarchical Structure for Semi-Double Track of Railway Line Using Max-Plus Algebra",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/992915",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 2 No 1 (2019): ICoSITeR Special Edition96 - 99",
+            "Author Order : 1 of 2",
+            "Tri Utomo; Eristia Arfi",
+            "2019 DOI: 10.35472/281421 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/281421"
+        },
+        {
+          "id": "cbe5cd8745b3e73c6f7a",
+          "title": "Penerapan Metode Multiple Scales untuk Masalah Galloping pada Mooring Cable FPSO",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1001353",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Universitas Dr. Soetomo Jurnal Ilmiah Soulmath : Jurnal Edukasi Pendidikan Matematika Vol 7 No 1 (2019)75 - 83",
+            "Author Order : 2 of 2",
+            "Arfi, Eristia; Utomo, Tri",
+            "2019 DOI: 10.25139/smj.v7i1.1421 Accred : Sinta 4"
+          ],
+          "doi": "10.25139/smj.v7i1.1421"
+        },
+        {
+          "id": "b0ff763056dd00650d13",
+          "title": "Dimensi Metrik Graf Amal(nKm)",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/759868",
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Institut Teknologi Sepuluh Nopember Limits: Journal of Mathematics and Its Applications Vol 15, No 1 (2018)71-77",
+            "Author Order : 1 of 2",
+            "Tri Utomo; Novian Riskiana Dewi",
+            "2018 DOI: 10.12962/limits.v15i1.3376 Accred : Unknown"
+          ],
+          "doi": "10.12962/limits.v15i1.3376"
+        }
+      ]
+    },
+    "google_scholar": {
+      "view": "googlescholar",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "rama": {
+      "view": "rama",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "researches": {
+      "view": "researches",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 4,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        },
+        {
+          "id": "cbb71646bccfd0b74164",
+          "title": "Analisa Perbandingan Metode Perturbasi untuk Masalah Galloping pada Kabel Transmisi",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Eristia Arfi Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Tri Utomo;",
+            "2019 Rp. 12.290.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "08156f5b06b7f8cc82ae",
+          "title": "PENERAPAN METODE MULTIPLE SCALES UNTUK MASALAH GALLOPING PADA MOORING CABLES FLOATING PRODUCTION AND STORAGE OFFLOADING",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Eristia Arfi Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Tri Utomo;",
+            "2018 Rp. 18.500.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "adea102e40d1916b24ea",
+          "title": "STRUKTUR HIRARKIS JALUR KERETA API SEMI-DOUBLE TRACK MENGGUNAKAN ALJABAR MAX-PLUS INTERVAL",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Tri Utomo HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Eristia Arfi;",
+            "2018 Rp. 16.820.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tri Utomo"
+        }
+      ]
+    },
+    "community_services": {
+      "view": "services",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 3,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "0246c62964ca1c1e11fb",
+          "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "71ae4b59416e25c83f25",
+          "title": "MENUMBUHKAN KESADARAN GENERASI MILENIAL HADAPI TANTANGAN REVOLUSI INDUSTRI 4.0: MELATIH GROWTH MINDSET POSITIF SMA GAJAH MADA BANDAR LAMPUNG",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Dear Michiko Mutiara Noor HIBAH PENGABDIAN ITERA 2019 ( PKM )",
+            "Personils : Mira Mustika; Triyana Muliawati; Eristia Arfi; Tri Utomo;",
+            "2019 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dear Michiko Mutiara Noor"
+        },
+        {
+          "id": "67a7c60fe320f9758fbd",
+          "title": "PEMBINAAN OLIMPIADE SAINS NASIONAL (OSN) MATEMATIKA UNTUK MENINGKATKAN KOMPETENSI SISWA DI SMA NEGERI 5 BANDAR LAMPUNG",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Triyana Muliawati HIBAH PENGABDIAN ITERA 2018 ( PKM )",
+            "Personils : Sri Efrinita Irwan; Eristia Arfi; Tri Utomo; Dewi Suhika; Werry Febrianti;",
+            "2018 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        }
+      ]
+    },
+    "iprs": {
+      "view": "iprs",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "books": {
+      "view": "books",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    }
+  },
+  "metrics": {},
+  "collection_status": {
+    "scopus": {
+      "status": "manual_baseline"
+    },
+    "garuda": {
+      "status": "manual_baseline"
+    },
+    "google_scholar": {
+      "status": "not_provided"
+    },
+    "rama": {
+      "status": "not_provided"
+    },
+    "researches": {
+      "status": "manual_baseline"
+    },
+    "community_services": {
+      "status": "manual_baseline"
+    },
+    "iprs": {
+      "status": "not_provided"
+    },
+    "books": {
+      "status": "not_provided"
+    }
+  },
+  "manual_baseline": {
+    "source": "input/initial_profiles.md",
+    "collections": {
+      "scopus": [
+        {
+          "id": "a3c129b350834623c24e",
+          "title": "Fluid Dynamics of Free Convection Flow in Unsteady State over Single Inclined Flat Plate",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85163789529&origin=resultslist",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Q3 as Journal Iaeng International Journal of Computer Science",
+            "Author Order : 2 of 4 Creator : Ghani M.",
+            "2023 1 cited"
+          ]
+        }
+      ],
+      "garuda": [
+        {
+          "id": "b12b85b10a3e3a105cfd",
+          "title": "Analisis Korelasi Sistem Kuliah Lintas Prodi dengan Keefektifan Pembelajaran Mahasiswa Program Studi Matematika Institut Teknologi Sumatera (ITERA)",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742063",
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 1 No 1 (2020): Indonesian Journal of Applied Mathematics Vol. 1 No. 1 October Chapter31-36",
+            "Author Order : 6 of 6",
+            "Yenci Brika Enkekes; Khairina Alzulfa Yanti; Roni Setiawan; Novia Restiana; Yuen Rona Fadia; Tri Utomo",
+            "2020 DOI: - Accred : Unknown"
+          ],
+          "doi": "-"
+        },
+        {
+          "id": "b4c61f53f95e295d399b",
+          "title": "The Delay Simulation on Hierarchical Structure for Semi-Double Track of Railway Line Using Max-Plus Algebra",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/992915",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 2 No 1 (2019): ICoSITeR Special Edition96 - 99",
+            "Author Order : 1 of 2",
+            "Tri Utomo; Eristia Arfi",
+            "2019 DOI: 10.35472/281421 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/281421"
+        },
+        {
+          "id": "cbe5cd8745b3e73c6f7a",
+          "title": "Penerapan Metode Multiple Scales untuk Masalah Galloping pada Mooring Cable FPSO",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1001353",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Universitas Dr. Soetomo Jurnal Ilmiah Soulmath : Jurnal Edukasi Pendidikan Matematika Vol 7 No 1 (2019)75 - 83",
+            "Author Order : 2 of 2",
+            "Arfi, Eristia; Utomo, Tri",
+            "2019 DOI: 10.25139/smj.v7i1.1421 Accred : Sinta 4"
+          ],
+          "doi": "10.25139/smj.v7i1.1421"
+        },
+        {
+          "id": "b0ff763056dd00650d13",
+          "title": "Dimensi Metrik Graf Amal(nKm)",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/759868",
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Institut Teknologi Sepuluh Nopember Limits: Journal of Mathematics and Its Applications Vol 15, No 1 (2018)71-77",
+            "Author Order : 1 of 2",
+            "Tri Utomo; Novian Riskiana Dewi",
+            "2018 DOI: 10.12962/limits.v15i1.3376 Accred : Unknown"
+          ],
+          "doi": "10.12962/limits.v15i1.3376"
+        }
+      ],
+      "google_scholar": [],
+      "rama": [],
+      "researches": [
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        },
+        {
+          "id": "cbb71646bccfd0b74164",
+          "title": "Analisa Perbandingan Metode Perturbasi untuk Masalah Galloping pada Kabel Transmisi",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Eristia Arfi Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Tri Utomo;",
+            "2019 Rp. 12.290.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "08156f5b06b7f8cc82ae",
+          "title": "PENERAPAN METODE MULTIPLE SCALES UNTUK MASALAH GALLOPING PADA MOORING CABLES FLOATING PRODUCTION AND STORAGE OFFLOADING",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Eristia Arfi Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Tri Utomo;",
+            "2018 Rp. 18.500.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "adea102e40d1916b24ea",
+          "title": "STRUKTUR HIRARKIS JALUR KERETA API SEMI-DOUBLE TRACK MENGGUNAKAN ALJABAR MAX-PLUS INTERVAL",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Tri Utomo HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Eristia Arfi;",
+            "2018 Rp. 16.820.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tri Utomo"
+        }
+      ],
+      "community_services": [
+        {
+          "id": "0246c62964ca1c1e11fb",
+          "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "71ae4b59416e25c83f25",
+          "title": "MENUMBUHKAN KESADARAN GENERASI MILENIAL HADAPI TANTANGAN REVOLUSI INDUSTRI 4.0: MELATIH GROWTH MINDSET POSITIF SMA GAJAH MADA BANDAR LAMPUNG",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Dear Michiko Mutiara Noor HIBAH PENGABDIAN ITERA 2019 ( PKM )",
+            "Personils : Mira Mustika; Triyana Muliawati; Eristia Arfi; Tri Utomo;",
+            "2019 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dear Michiko Mutiara Noor"
+        },
+        {
+          "id": "67a7c60fe320f9758fbd",
+          "title": "PEMBINAAN OLIMPIADE SAINS NASIONAL (OSN) MATEMATIKA UNTUK MENINGKATKAN KOMPETENSI SISWA DI SMA NEGERI 5 BANDAR LAMPUNG",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329",
+          "details": [
+            "Leader : Triyana Muliawati HIBAH PENGABDIAN ITERA 2018 ( PKM )",
+            "Personils : Sri Efrinita Irwan; Eristia Arfi; Tri Utomo; Dewi Suhika; Werry Febrianti;",
+            "2018 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        }
+      ],
+      "iprs": [],
+      "books": []
+    },
+    "unclassified": []
+  }
+}

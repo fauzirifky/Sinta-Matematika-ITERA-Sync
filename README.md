@@ -1,6 +1,6 @@
 # Sinta Matematika ITERA Sync
 
-Scraper ringan untuk merekam data **halaman publik pertama** profil dosen dari SINTA ke JSON secara otomatis setiap minggu. Repository ini mula-mula dikonfigurasi untuk Rifky Fauzi, Program Studi Matematika, Institut Teknologi Sumatera.
+Rekaman JSON profil publik **16 dosen Matematika ITERA** dari lampiran data awal. Workflow memeriksa satu tab publik per dosen setiap minggu, bergiliran di antara sembilan tab.
 
 Data yang diambil:
 
@@ -37,7 +37,7 @@ Workflow akan:
 1. memvalidasi konfigurasi dan parser;
 2. meminta HTML publik SINTA melalui ZenRows Fetch API;
 3. membaca HTML tersebut menggunakan selector yang sama dengan Inspect Element;
-4. memperbarui JSON di folder `data/`;
+4. memperbarui satu kategori per dosen di folder `data/`, mempertahankan rekaman lama dan data awal;
 5. melakukan commit dan push menggunakan `GITHUB_TOKEN` bawaan.
 
 ### API key wajib
@@ -50,7 +50,7 @@ SINTA menolak alamat IP runner GitHub meskipun halaman yang sama dapat dibuka da
 4. Pilih **New repository secret**.
 5. Isi nama `ZENROWS_API_KEY`, tempel API key sebagai nilainya, lalu simpan.
 
-API key tidak ditulis ke source code dan tidak masuk ke JSON. Scraper memakai halaman HTML server-rendered tanpa JavaScript. Satu dosen memerlukan sekitar sembilan request per sinkronisasi. Seluruh tab memakai `session_id` ZenRows yang sama agar IP keluar tetap sama selama rangkaian request; ID ini hanya mengikat IP dan tidak membuat cookie login SINTA.
+API key tidak ditulis ke source code dan tidak masuk ke JSON. Scraper memakai halaman HTML server-rendered tanpa JavaScript. **Normalnya satu request per dosen per minggu**: untuk 16 dosen, 16 request (sekitar 160 kredit bila tarif per request 10 kredit). Sembilan kategori diperiksa bergiliran, sehingga masing-masing diperbarui sekitar sekali tiap sembilan minggu. Tidak mungkin mengetahui perubahan di tab yang belum diminta. Jika satu permintaan gagal, proses berhenti agar tidak menghabiskan kredit untuk profil selanjutnya. `session_id` yang sama dipakai selama satu run untuk menahan IP keluar; ini bukan cookie login.
 
 Untuk repository hasil fork, pastikan **Settings → Actions → General → Workflow permissions** mengizinkan **Read and write permissions** jika kebijakan akun tidak mengizinkannya secara otomatis.
 
@@ -70,6 +70,13 @@ Menjalankan hanya satu dosen:
 python scripts/scrape_sinta.py --author-id 6750161
 ```
 
+Memeriksa satu kategori tertentu atau semua tab (lebih mahal):
+
+```bash
+python scripts/scrape_sinta.py --author-id 6750161 --view scopus
+python scripts/scrape_sinta.py --author-id 6750161 --all-views
+```
+
 Validasi konfigurasi dan pengujian parser:
 
 ```bash
@@ -80,15 +87,16 @@ python -m unittest discover -s tests -v
 ## Keluaran
 
 - `data/index.json`: indeks seluruh dosen dan jumlah rekaman per kategori.
-- `data/<sinta_id>.json`: profil, koleksi data, metrik, serta status setiap bagian.
+- `data/<sinta_id>.json`: profil, koleksi data, metrik, serta `manual_baseline` yang menyimpan data dari lampiran awal.
+- `input/initial_profiles.md`: lampiran sumber data awal, agar data yang diimpor dapat diperiksa kembali.
 
-Riwayat Git berfungsi sebagai catatan perubahan mingguan. Jika satu kategori gagal diakses sementara, scraper mempertahankan bagian terakhir yang berhasil dan menandainya sebagai `stale`; data lama tidak diganti dengan daftar kosong.
+Riwayat Git berfungsi sebagai catatan perubahan mingguan. Setiap rekaman awal dipertahankan, termasuk yang tidak tampil lagi pada halaman pertama. Data dari lampiran belum diverifikasi dengan API. Jika permintaan gagal, data penulis yang gagal tidak ditimpa.
 
 ## Batasan penting
 
 Scraper ini hanya membaca halaman pertama yang dapat diakses tanpa login. Program tidak mengikuti pagination dan tidak pernah membuka tombol **View more**. Jika tombol tersebut tersedia, JSON akan menandai `public_access_limited: true`.
 
-GitHub Actions tidak memasang Chromium atau browser lainnya. Skrip meminta URL profil utama, lalu tab publik saja. Balasan ZenRows diperiksa berdasarkan struktur profil SINTA, karena label `Content-Type` dapat berbeda dari isi HTML. Program tidak melakukan login, tidak memakai cookie akun SINTA, tidak menekan **View more**, dan tidak mencoba mengakses data privat. Jika API gagal, JSON lama di repository tidak ditimpa.
+GitHub Actions tidak memasang Chromium atau browser lainnya. Skrip meminta satu tab publik per profil dan memeriksa struktur HTML alih-alih mengandalkan label `Content-Type`. Program tidak melakukan login, tidak memakai cookie akun SINTA, tidak menekan **View more**, dan tidak mencoba mengakses data privat. Jika API gagal, JSON lama di repository tidak ditimpa.
 
 Struktur HTML SINTA dapat berubah. ZenRows pun belum terbukti berhasil mengakses SINTA sampai workflow diuji dengan key Anda; jika provider tetap mendapat 403, workflow akan gagal jelas dan JSON lama dipertahankan. Periksa status workflow dan sesuaikan parser jika selector halaman berubah. Gunakan frekuensi yang wajar, patuhi ketentuan layanan sumber, dan jangan mengumpulkan data pribadi yang tidak diperlukan.
 

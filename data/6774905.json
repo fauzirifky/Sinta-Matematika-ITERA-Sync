@@ -1,0 +1,501 @@
+{
+  "schema_version": 2,
+  "generated_at": null,
+  "source": {
+    "service": "SINTA - Science and Technology Index",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+    "access": "user-supplied public first pages"
+  },
+  "configured_author": {
+    "name": "Gusrian Putra",
+    "sinta_id": "6774905",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+    "enabled": true
+  },
+  "profile": {
+    "name": "GUSRIAN PUTRA",
+    "sinta_id": "6774905",
+    "affiliation": "Institut Teknologi Sumatera",
+    "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
+    "department": "S1 - Matematika",
+    "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
+    "avatar_url": null,
+    "subjects": [],
+    "scores": {}
+  },
+  "collections": {
+    "scopus": {
+      "view": "scopus",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 5,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "8245659700d6930d72e1",
+          "title": "LAPLACE TRANSFORMATION AND MITTAG-LEFFLER FUNCTION FOR THE SOLUTION OF DAMPED OSCILLATOR EQUATION WITH FRACTIONAL ORDER",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105035881946&origin=resultslist",
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Q4 as Journal Barekeng",
+            "Author Order : 1 of 3 Creator : Putra G.",
+            "2026 0 cited"
+          ]
+        },
+        {
+          "id": "e3e95130bbb4f10404d8",
+          "title": "Optimization of Star Pomfret Feed Production as A Linear Programming Problem using A Hybrid Wolfe-Differential Evolution Algorithm",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105007098476&origin=resultslist",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Q2 as Journal Journal of Multidisciplinary Applied Natural Science",
+            "Author Order : 2 of 4 Creator : Febrianti W.",
+            "2025 0 cited"
+          ]
+        },
+        {
+          "id": "60356c539d5491bcc863",
+          "title": "AN IMPLICIT FINITE DIFFERENCE METHOD FOR THIN FILM FLOW",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85164320834&origin=resultslist",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Q4 as Journal Journal of the Indonesian Mathematical Society",
+            "Author Order : 1 of 3 Creator : Putra G.",
+            "2023 2 cited"
+          ]
+        },
+        {
+          "id": "02ee5ed2526fd23232a6",
+          "title": "Analysis of landslide potential due to changes of land use/land cover at the Kuranji watershed, Padang using normalized difference built-up index (NDBI)",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85146473504&origin=resultslist",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Q3 as Conference Proceedin E3s Web of Conferences",
+            "Author Order : 2 of 5 Creator : Andriani A.",
+            "2021 2 cited"
+          ]
+        },
+        {
+          "id": "720f2cdfa67c286ec7e5",
+          "title": "The existence and stability of onsite solitons in a driven discrete nonlinear nonlocal Schrödinger equation",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85086425860&origin=resultslist",
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Q4 as Conference Proceedin Journal of Physics Conference Series",
+            "Author Order : 1 of 3 Creator : Putra G.",
+            "2020 0 cited"
+          ]
+        }
+      ]
+    },
+    "garuda": {
+      "view": "garuda",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 1,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "edc63e1420906913ce00",
+          "title": "Analisis Kestabilan Solusi Soliton pada Persamaan Schrodinger Nonlinier Diskrit Nonlokal",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742030",
+          "year": 2022,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 2 No 1 (2022): Indonesian Journal of Applied Mathematics Vol. 2 No. 1 April Chapter17-24",
+            "Author Order : 1 of 4",
+            "Gusrian Putra; Hanifah Septaningtiyas; Elsa Nabila; Lisa Arianti Br Tarigan",
+            "2022 DOI: 10.35472/indojam.v2i1.730 Accred : Unknown"
+          ],
+          "doi": "10.35472/indojam.v2i1.730"
+        }
+      ]
+    },
+    "google_scholar": {
+      "view": "googlescholar",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "rama": {
+      "view": "rama",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "researches": {
+      "view": "researches",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 4,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "ff42d13e466ede91f207",
+          "title": "Analisis Bifurkasi pada Model Transmisi Virus Dengue dengan Mempertimbangkan Bilangan Reproduksi Dasar dan Tingkat Penularan Virus Dengue di Lampung Selatan",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Leader : Gusrian Putra Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Nela Rizka;",
+            "2025 Rp. 36.900.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Gusrian Putra"
+        },
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        },
+        {
+          "id": "e950265bb751416c5275",
+          "title": "ANALISIS BIAYA EKSTERNALITAS LIMBAH PAKAN USAHA KERAMBA JARING APUNG DI TELUK LAMPUNG MENGGUNAKAN ALGORITMA EVOLUSI DIFERENSIAL",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Leader : Werry Febrianti HIBAH PENUGASAN FSAINS ( PENELITIAN PENUGASAN FSAINS )",
+            "Personils : Gusrian Putra; Chalida Syari;",
+            "2024 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Werry Febrianti"
+        },
+        {
+          "id": "b3ba12366874dc14f0a9",
+          "title": "Solusi Numerik Skema Keller-box untuk Persamaan Diferensial Black-Scholes",
+          "url": null,
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Leader : Lutfi Mardianto Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Endah Rokhmati Merdika Putri; Gusrian Putra;",
+            "2023 Rp. 18.500.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Lutfi Mardianto"
+        }
+      ]
+    },
+    "community_services": {
+      "view": "services",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 1,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "0246c62964ca1c1e11fb",
+          "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        }
+      ]
+    },
+    "iprs": {
+      "view": "iprs",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 1,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "cb8dd2abe65f8841ac74",
+          "title": "Mathematics for Machine Learning: Fondasi dalam Kecerdasan Buatan",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Inventor : Rifky Fauzi, Nela Rizka dkk Institut Teknologi Sumatera",
+            "2025 Nomor Permohonan : EC002025083269 Status : Hak Cipta"
+          ]
+        }
+      ]
+    },
+    "books": {
+      "view": "books",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 2,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "260a65459717f72a869f",
+          "title": "Integrasi Metode Analitik dalam Pemodelan Matematika dan Statistika",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Triyana Muliawati, Danni Gathot Harbowo, Gusrian Putra, Lutfi Mardianto, Nugraha Catur Septian Patra, Sri Efrinita Irwan, Khalila Adiba Safa, Nela Rizka, Tri Utomo ITERA Press",
+            "2024 Lampung Selatan ISBN : 9786347013170"
+          ]
+        },
+        {
+          "id": "16add2314428fbf1d428",
+          "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad Itera Press",
+            "2024 Itera ISBN : 9786347013231"
+          ]
+        }
+      ]
+    }
+  },
+  "metrics": {},
+  "collection_status": {
+    "scopus": {
+      "status": "manual_baseline"
+    },
+    "garuda": {
+      "status": "manual_baseline"
+    },
+    "google_scholar": {
+      "status": "not_provided"
+    },
+    "rama": {
+      "status": "not_provided"
+    },
+    "researches": {
+      "status": "manual_baseline"
+    },
+    "community_services": {
+      "status": "manual_baseline"
+    },
+    "iprs": {
+      "status": "manual_baseline"
+    },
+    "books": {
+      "status": "manual_baseline"
+    }
+  },
+  "manual_baseline": {
+    "source": "input/initial_profiles.md",
+    "collections": {
+      "scopus": [
+        {
+          "id": "8245659700d6930d72e1",
+          "title": "LAPLACE TRANSFORMATION AND MITTAG-LEFFLER FUNCTION FOR THE SOLUTION OF DAMPED OSCILLATOR EQUATION WITH FRACTIONAL ORDER",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105035881946&origin=resultslist",
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Q4 as Journal Barekeng",
+            "Author Order : 1 of 3 Creator : Putra G.",
+            "2026 0 cited"
+          ]
+        },
+        {
+          "id": "e3e95130bbb4f10404d8",
+          "title": "Optimization of Star Pomfret Feed Production as A Linear Programming Problem using A Hybrid Wolfe-Differential Evolution Algorithm",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105007098476&origin=resultslist",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Q2 as Journal Journal of Multidisciplinary Applied Natural Science",
+            "Author Order : 2 of 4 Creator : Febrianti W.",
+            "2025 0 cited"
+          ]
+        },
+        {
+          "id": "60356c539d5491bcc863",
+          "title": "AN IMPLICIT FINITE DIFFERENCE METHOD FOR THIN FILM FLOW",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85164320834&origin=resultslist",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Q4 as Journal Journal of the Indonesian Mathematical Society",
+            "Author Order : 1 of 3 Creator : Putra G.",
+            "2023 2 cited"
+          ]
+        },
+        {
+          "id": "02ee5ed2526fd23232a6",
+          "title": "Analysis of landslide potential due to changes of land use/land cover at the Kuranji watershed, Padang using normalized difference built-up index (NDBI)",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85146473504&origin=resultslist",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Q3 as Conference Proceedin E3s Web of Conferences",
+            "Author Order : 2 of 5 Creator : Andriani A.",
+            "2021 2 cited"
+          ]
+        },
+        {
+          "id": "720f2cdfa67c286ec7e5",
+          "title": "The existence and stability of onsite solitons in a driven discrete nonlinear nonlocal Schrödinger equation",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85086425860&origin=resultslist",
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Q4 as Conference Proceedin Journal of Physics Conference Series",
+            "Author Order : 1 of 3 Creator : Putra G.",
+            "2020 0 cited"
+          ]
+        }
+      ],
+      "garuda": [
+        {
+          "id": "edc63e1420906913ce00",
+          "title": "Analisis Kestabilan Solusi Soliton pada Persamaan Schrodinger Nonlinier Diskrit Nonlokal",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742030",
+          "year": 2022,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 2 No 1 (2022): Indonesian Journal of Applied Mathematics Vol. 2 No. 1 April Chapter17-24",
+            "Author Order : 1 of 4",
+            "Gusrian Putra; Hanifah Septaningtiyas; Elsa Nabila; Lisa Arianti Br Tarigan",
+            "2022 DOI: 10.35472/indojam.v2i1.730 Accred : Unknown"
+          ],
+          "doi": "10.35472/indojam.v2i1.730"
+        }
+      ],
+      "google_scholar": [],
+      "rama": [],
+      "researches": [
+        {
+          "id": "ff42d13e466ede91f207",
+          "title": "Analisis Bifurkasi pada Model Transmisi Virus Dengue dengan Mempertimbangkan Bilangan Reproduksi Dasar dan Tingkat Penularan Virus Dengue di Lampung Selatan",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Leader : Gusrian Putra Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Nela Rizka;",
+            "2025 Rp. 36.900.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Gusrian Putra"
+        },
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        },
+        {
+          "id": "e950265bb751416c5275",
+          "title": "ANALISIS BIAYA EKSTERNALITAS LIMBAH PAKAN USAHA KERAMBA JARING APUNG DI TELUK LAMPUNG MENGGUNAKAN ALGORITMA EVOLUSI DIFERENSIAL",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Leader : Werry Febrianti HIBAH PENUGASAN FSAINS ( PENELITIAN PENUGASAN FSAINS )",
+            "Personils : Gusrian Putra; Chalida Syari;",
+            "2024 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Werry Febrianti"
+        },
+        {
+          "id": "b3ba12366874dc14f0a9",
+          "title": "Solusi Numerik Skema Keller-box untuk Persamaan Diferensial Black-Scholes",
+          "url": null,
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Leader : Lutfi Mardianto Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Endah Rokhmati Merdika Putri; Gusrian Putra;",
+            "2023 Rp. 18.500.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Lutfi Mardianto"
+        }
+      ],
+      "community_services": [
+        {
+          "id": "0246c62964ca1c1e11fb",
+          "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        }
+      ],
+      "iprs": [
+        {
+          "id": "cb8dd2abe65f8841ac74",
+          "title": "Mathematics for Machine Learning: Fondasi dalam Kecerdasan Buatan",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Inventor : Rifky Fauzi, Nela Rizka dkk Institut Teknologi Sumatera",
+            "2025 Nomor Permohonan : EC002025083269 Status : Hak Cipta"
+          ]
+        }
+      ],
+      "books": [
+        {
+          "id": "260a65459717f72a869f",
+          "title": "Integrasi Metode Analitik dalam Pemodelan Matematika dan Statistika",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Triyana Muliawati, Danni Gathot Harbowo, Gusrian Putra, Lutfi Mardianto, Nugraha Catur Septian Patra, Sri Efrinita Irwan, Khalila Adiba Safa, Nela Rizka, Tri Utomo ITERA Press",
+            "2024 Lampung Selatan ISBN : 9786347013170"
+          ]
+        },
+        {
+          "id": "16add2314428fbf1d428",
+          "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad Itera Press",
+            "2024 Itera ISBN : 9786347013231"
+          ]
+        }
+      ]
+    },
+    "unclassified": []
+  }
+}

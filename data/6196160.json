@@ -1,0 +1,801 @@
+{
+  "schema_version": 2,
+  "generated_at": null,
+  "source": {
+    "service": "SINTA - Science and Technology Index",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+    "access": "user-supplied public first pages"
+  },
+  "configured_author": {
+    "name": "Sri Efrinita Irwan",
+    "sinta_id": "6196160",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+    "enabled": true
+  },
+  "profile": {
+    "name": "SRI EFRINITA IRWAN",
+    "sinta_id": "6196160",
+    "affiliation": "Institut Teknologi Sumatera",
+    "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
+    "department": "S1 - Matematika",
+    "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
+    "avatar_url": null,
+    "subjects": [],
+    "scores": {}
+  },
+  "collections": {
+    "scopus": {
+      "view": "scopus",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 1,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "630599d5e5b8bafaf959",
+          "title": "On valuations of vector spaces",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85006251507&origin=resultslist",
+          "year": 2016,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Q4 as Journal JP Journal of Algebra Number Theory and Applications",
+            "Author Order : 1 of 3 Creator : Irwan S.E.",
+            "2016 1 cited"
+          ]
+        }
+      ]
+    },
+    "garuda": {
+      "view": "garuda",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 5,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "b5a6cefb4caf8b93643d",
+          "title": "Literasi Pemanfaatan Software JASP Untuk Meningkatkan Keterampilan Statistik Guru di MAN 1 Bandar Lampung",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/5008356",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "PT Berkah Tematik Mandiri RENATA: Jurnal Pengabdian Masyarakat Kita Semua Vol. 3 No. 1 (2025): Renata - April 202589-94",
+            "Author Order : 6 of 13",
+            "Andirasdini, Indah Gumala; Sofia, Ayu; Rivai, Muklas; Mahrani, Dwi; Yulita, Tiara; Irwan, Sri Efrinita; Berliana Ratam, Aldila Nur Indah; Gustina K.S., Annisa Hevita; Dewi, Karina Sylfia; Marisa, Marisa; Azzanina, Nanda; Baiti, Putri Isnaini Cahyaning; Rosni, Rosni",
+            "2025 DOI: 10.61124/1.renata.147 Accred : Sinta 5"
+          ],
+          "doi": "10.61124/1.renata.147"
+        },
+        {
+          "id": "e831c220f042fee153c4",
+          "title": "Aplikasi Fuzzy Linier Programming dengan Metode Branch and Bound untuk Mengoptimalkan Jumlah Produksi dan Keuntungan Penjualan Roti di Italia Bakery Bandar Lampung",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742050",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 2 No 2 (2023): Indonesian Journal of Applied Mathematics Vol. 2 No. 2 January Chapter58-73",
+            "Author Order : 3 of 3",
+            "Achmad Suryadi Nasution; Fatin Trihastuti; Sri Efrinita Irwan",
+            "2023 DOI: 10.35472/indojam.v2i2.1030 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/indojam.v2i2.1030"
+        },
+        {
+          "id": "dba966106d1b4c265ed9",
+          "title": "Implementation of Preemptive Goal Programming and Branch and Bound in Production Planning at the Istiqomah Tofu Factory, Bandar Lampung City",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3836238",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Syiah Kuala University Transcendent Journal of Mathematics and Applications Vol 2, No 2 (2023)18-27",
+            "Author Order : 2 of 3",
+            "Anggraini, Retno; Irwan, Sri Efrinita; Nasution, Achmad Suryadi",
+            "2023 DOI: 10.24815/tjoma.v2i2.34050 Accred : Unknown"
+          ],
+          "doi": "10.24815/tjoma.v2i2.34050"
+        },
+        {
+          "id": "df3589a9c71c7268b476",
+          "title": "Aplikasi Pewarnaan Graf pada Penempatan Kamar Mahasiswa (Studi Kasus: Asrama Institut Teknologi Sumatera)",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1731043",
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Universitas PGRI Palembang Sainmatika: Jurnal Ilmiah Matematika dan Ilmu Pengetahuan Alam Vol. 17 No. 1 (2020): Sainmatika : Jurnal Ilmiah Matematika dan Ilmu Pengetahuan Alam17-22",
+            "Author Order : 1 of 1",
+            "Sri Efrinita Irwan",
+            "2020 DOI: 10.31851/sainmatika.v17i1.3137 Accred : Sinta 3"
+          ],
+          "doi": "10.31851/sainmatika.v17i1.3137"
+        },
+        {
+          "id": "7218be274752ed75c209",
+          "title": "A graph theory approach to the dormitory room placement problem",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/992938",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 2 No 1 (2019): ICoSITeR Special Edition111 - 118",
+            "Author Order : 1 of 2",
+            "Sri Efrinita Irwan; Triyana Muliawati",
+            "2019 DOI: 10.35472/281472 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/281472"
+        }
+      ]
+    },
+    "google_scholar": {
+      "view": "googlescholar",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "rama": {
+      "view": "rama",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "researches": {
+      "view": "researches",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 5,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        },
+        {
+          "id": "d69a4ede4b058daea969",
+          "title": "APLIKASI PENENTUAN BILANGAN DOMINASI-LOKASI GRAF HASIL OPERASI COMB PADA GERAK ROBOT SWARM",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Aswan Anggun Pribadi PENDANAAN PENELITIAN ITERA TA 2024 ( PDP )",
+            "Personils : Sri Efrinita Irwan;",
+            "2024 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Aswan Anggun Pribadi"
+        },
+        {
+          "id": "442faaecc3f24e49b03d",
+          "title": "DETERMINAN MATRIKS KETETANGGAAN DARI GRAF YANG TERKAIT DENGAN GRAF CYCLE",
+          "url": null,
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Sri Efrinita Irwan HIBAH PENELITIAN ITERA 2023 ( MADYA )",
+            "Personils : Aswan Anggun Pribadi; Achmad Suryadi Nasution; Triyana Muliawati;",
+            "2023 Rp. 39.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "632ae89cde1cdf9f09e0",
+          "title": "EVALUASI PENGGUNAAN ANTIBIOTIK PADA PASIEN INFEKSI DI RSUD. DR. H. ABDUL MOELOEK PROVINSI LAMPUNG",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Dirga HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Sri Efrinita Irwan; Irfanianta Arif Setyawan; Atika Dalili Akhmad;",
+            "2018 Rp. 18.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dirga"
+        },
+        {
+          "id": "51a605023152f4865cc5",
+          "title": "APLIKASI PEWARNAAN GRAF PADA PENENTUAN KAMAR MAHASISWA DI ASRAMA INSTITUT TEKNOLOGI SUMATERA",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Sri Efrinita Irwan HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Triyana Muliawati;",
+            "2018 Rp. 17.322.500 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        }
+      ]
+    },
+    "community_services": {
+      "view": "services",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 3,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "0246c62964ca1c1e11fb",
+          "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "07490a7b3c26b560d5ff",
+          "title": "PERANCANGAN DAN IMPLEMENTASI WEBSITE “ITERA MENGABDI” SEBAGAI INOVASI MEDIA BELAJAR BERBASIS TEKNOLOGI",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Aditya Ayuwulanda PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PPP )",
+            "Personils : Sri Efrinita Irwan; Abdul Aji; I Putu Mahendra; Ikah Ning Prasetiowati; Dirga; Agustina Widiyani;",
+            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Aditya Ayuwulanda"
+        },
+        {
+          "id": "67a7c60fe320f9758fbd",
+          "title": "PEMBINAAN OLIMPIADE SAINS NASIONAL (OSN) MATEMATIKA UNTUK MENINGKATKAN KOMPETENSI SISWA DI SMA NEGERI 5 BANDAR LAMPUNG",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Triyana Muliawati HIBAH PENGABDIAN ITERA 2018 ( PKM )",
+            "Personils : Sri Efrinita Irwan; Eristia Arfi; Tri Utomo; Dewi Suhika; Werry Febrianti;",
+            "2018 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        }
+      ]
+    },
+    "iprs": {
+      "view": "iprs",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 6,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "f43b4362c81ca97928d9",
+          "title": "Matematika Dasar",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : Dr. Sri Efrinita Irwan, M.Si.; Agista Surya Bawana, S.Si., M.Sc.; dkk Dr. Sri Efrinita Irwan, M.Si.; Agista Surya Bawana, S.Si., M.Sc.; Armayani Arsal, S.Si., M.Si.; Dewi Lestari, M.Si.; Evander Banjarnahor, S.Pd., M.Si.; Retno Putri Dwi Rahmawati, S.Pd., M.Sc.; Handika Lintang Saputra, M.Mat.; Benediktus Pa",
+            "2025 Nomor Permohonan : EC002025074436 Status : diterima Hak Cipta"
+          ]
+        },
+        {
+          "id": "755fba674d20db8360f6",
+          "title": "Pengantar Analisis Fungsional",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : Dr. Sri Efrinita Irwan, M.Si.; Armayani Arsal, S,S., M.Si.; Retno Putri Dwi Rahmawati, S.Pd., M.Sc.; Muh. Fachrul Latief, S.Si., M.Si.; Andi Tenri Ajeng Nur, S.Si., M.Si.; Handika Lintang Saputra, M.Mat.; Agista Surya Bawana, S.Si., M.Sc.; Aisyah Nooravie Dr. Sri Efrinita Irwan, M.Si.; Armayani Arsal, S,S., M.Si.; Retno Putri Dwi Rahmawati, S.Pd., M.Sc.; Muh. Fachrul Latief, S.Si., M.Si.; Andi Tenri Ajeng Nur, S.Si., M.Si.; Handika Lintang Saputra, M.Mat.; Agista Surya Bawana, S.Si., M.Sc.; A",
+            "2025 Nomor Permohonan : EC002025199848 Status : Diterima Hak Cipta"
+          ]
+        },
+        {
+          "id": "d7d5d9fdc399f97ccaef",
+          "title": "Kalkulus",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : Nita Anggriani, M.Si.; Rahmi Yuliana M, S.Pd., M.Pd.; Titik Pitriani Muslimin, S.Pd., M.Pd.; Eristia Arfi, S.Si., M.Si.; Retno Sulistyo Dhamar Lestari, ST., M.Eng.; Khafidhoh Nurul Aini, S.Si., M.Pd.; Feriyanto, M.Pd.; Woro Mustika Resmi, S.T., M.Eng.; Mu Nita Anggriani, M.Si.; Rahmi Yuliana M, S.Pd., M.Pd.; Titik Pitriani Muslimin, S.Pd., M.Pd.; Eristia Arfi, S.Si., M.Si.; Retno Sulistyo Dhamar Lestari, ST., M.Eng.; Khafidhoh Nurul Aini, S.Si., M.Pd.; Feriyanto, M.Pd.; Woro Mustika Resmi, S.",
+            "2025 Nomor Permohonan : EC002025057085 Status : terdaftar Hak Cipta"
+          ]
+        },
+        {
+          "id": "2e890d5ed397db96bfee",
+          "title": "Pembelajaran Matematika SD",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : Anim, S.Si., M.Pd Nanik Ulfa, S.Si., M.Pd Khafidhoh Nurul Aini, S.Si., M.Pd Agung Dian Putra, S.Pd., M.Pd Eristia Arfi, S.Si., M.Si Dr. Sri Efrinita Irwan, M.Si Dr. Ika Ratih Sulistiani, S.Pd., M.Pd Anim, S.Si., M.Pd Nanik Ulfa, S.Si., M.Pd Khafidhoh Nurul Aini, S.Si., M.Pd Agung Dian Putra, S.Pd., M.Pd Eristia Arfi, S.Si., M.Si Dr. Sri Efrinita Irwan, M.Si Dr. Ika Ratih Sulistiani, S.Pd., M.Pd",
+            "2025 Nomor Permohonan : EC00202512545 Status : Hak Cipta"
+          ]
+        },
+        {
+          "id": "cd408b941e4592dd5389",
+          "title": "Video Profil Fakultas Sains Institut Teknologi Sumatera",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : I N P Aryantha, Khairurrijal, R Sulistyorini, I N P Permanasari, S E Irwan, Dirga, I Pardede, R Fauzi, I P Mahendra, W Nurhayu, T Setiawan, M A Asagabaldan, D Mahrani, D O Lestari, M Febrina, S Aziz Institut Teknologi Sumatera",
+            "2024 Nomor Permohonan : EC002024207660 Status : Terbit Hak Cipta"
+          ]
+        },
+        {
+          "id": "a9ae01091ada05dd19bb",
+          "title": "Penguatan Basic Science Di Sumatera (Program Kolaborasi KKN Tematik ITERA)",
+          "url": null,
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : Okky Fajar Tri Maryana, S.Si., M.Si., Drs. Zadrach Ledoufij Dupe, M.Si., Dr. Hakim Luthfi Malasan, M.Sc., Dr. Sri Efrinita Irwan, S.Si., M.Si., Aditya Ayuwulanda, S.Pd., M.Si., Elisa Nurma Riana, S.Si., M.Si., Mugi Praseptiawan, S.T., M.Kom. Institut Teknologi Sumatera",
+            "2021 Nomor Permohonan : EC00202129956 Status : Dalam Peli Hak Cipta"
+          ]
+        }
+      ]
+    },
+    "books": {
+      "view": "books",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 6,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "fc5bf8da83f2a3d7f2db",
+          "title": "Aljabar Linier Elementer",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU AJAR",
+            "Sri Efrinita Irwan, Tri Utomo, Nela Rizka ITERA Press",
+            "2026 Institut Teknologi Sumatera ISBN : 9786347583345"
+          ]
+        },
+        {
+          "id": "6badbfe6481929df3ecc",
+          "title": "Matematika Dasar",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Dr. Sri Efrinita Irwan, M.Si.; Agista Surya Bawana, S.Si., M.Sc.; Armayani Arsal, S.Si., M.Si.; Dewi Lestari, M.Si.; Evander Banjarnahor, S.Pd., M.Si.; Retno Putri Dwi Rahmawati, S.Pd., M.Sc.; Handika Lintang Saputra, M.Mat.; Benediktus Panji Pradip Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786347252401"
+          ]
+        },
+        {
+          "id": "ec6341cd051bd8ab4980",
+          "title": "Pengantar Analisis Fungsional",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Dr. Sri Efrinita Irwan, M.Si.; Armayani Arsal, S,S., M.Si.; Retno Putri Dwi Rahmawati, S.Pd., M.Sc.; Muh. Fachrul Latief, S.Si., M.Si.; Andi Tenri Ajeng Nur, S.Si., M.Si.; Handika Lintang Saputra, M.Mat.; Agista Surya Bawana, S.Si., M.Sc.; Aisyah Noo Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786347506009"
+          ]
+        },
+        {
+          "id": "612fe4cc2c3595de8c3b",
+          "title": "PEMBELAJARAN MATEMATIKA SD",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Anim; Nanik Ulfa; Khafidhoh Nurul Aini; Agung Dian Putra; Eristia Arfi; Sri EFrinita Irwan; Ika Ratih Sulistiani Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786238963676"
+          ]
+        },
+        {
+          "id": "5518ff9d0c561e6ba687",
+          "title": "Kalkulus",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nita Anggriani, M.Si. ; Rahmi Yuliana M, S.Pd., M.Pd. ; Titik Pitriani Muslimin, S.Pd., M.Pd. ; Eristia Arfi, S.Si., M.Si. ; Retno Sulistyo Dhamar Lestari, ST., M.Eng. ; Khafidhoh Nurul Aini, S.Si., M.Pd. Feriyanto, M.Pd. ; Woro Mustika Resmi, S.T Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786347252135"
+          ]
+        },
+        {
+          "id": "260a65459717f72a869f",
+          "title": "Integrasi Metode Analitik dalam Pemodelan Matematika dan Statistika",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Triyana Muliawati, Danni Gathot Harbowo, Gusrian Putra, Lutfi Mardianto, Nugraha Catur Septian Patra, Sri Efrinita Irwan, Khalila Adiba Safa, Nela Rizka, Tri Utomo ITERA Press",
+            "2024 Lampung Selatan ISBN : 9786347013170"
+          ]
+        }
+      ]
+    }
+  },
+  "metrics": {},
+  "collection_status": {
+    "scopus": {
+      "status": "manual_baseline"
+    },
+    "garuda": {
+      "status": "manual_baseline"
+    },
+    "google_scholar": {
+      "status": "not_provided"
+    },
+    "rama": {
+      "status": "not_provided"
+    },
+    "researches": {
+      "status": "manual_baseline"
+    },
+    "community_services": {
+      "status": "manual_baseline"
+    },
+    "iprs": {
+      "status": "manual_baseline"
+    },
+    "books": {
+      "status": "manual_baseline"
+    }
+  },
+  "manual_baseline": {
+    "source": "input/initial_profiles.md",
+    "collections": {
+      "scopus": [
+        {
+          "id": "630599d5e5b8bafaf959",
+          "title": "On valuations of vector spaces",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85006251507&origin=resultslist",
+          "year": 2016,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Q4 as Journal JP Journal of Algebra Number Theory and Applications",
+            "Author Order : 1 of 3 Creator : Irwan S.E.",
+            "2016 1 cited"
+          ]
+        }
+      ],
+      "garuda": [
+        {
+          "id": "b5a6cefb4caf8b93643d",
+          "title": "Literasi Pemanfaatan Software JASP Untuk Meningkatkan Keterampilan Statistik Guru di MAN 1 Bandar Lampung",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/5008356",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "PT Berkah Tematik Mandiri RENATA: Jurnal Pengabdian Masyarakat Kita Semua Vol. 3 No. 1 (2025): Renata - April 202589-94",
+            "Author Order : 6 of 13",
+            "Andirasdini, Indah Gumala; Sofia, Ayu; Rivai, Muklas; Mahrani, Dwi; Yulita, Tiara; Irwan, Sri Efrinita; Berliana Ratam, Aldila Nur Indah; Gustina K.S., Annisa Hevita; Dewi, Karina Sylfia; Marisa, Marisa; Azzanina, Nanda; Baiti, Putri Isnaini Cahyaning; Rosni, Rosni",
+            "2025 DOI: 10.61124/1.renata.147 Accred : Sinta 5"
+          ],
+          "doi": "10.61124/1.renata.147"
+        },
+        {
+          "id": "e831c220f042fee153c4",
+          "title": "Aplikasi Fuzzy Linier Programming dengan Metode Branch and Bound untuk Mengoptimalkan Jumlah Produksi dan Keuntungan Penjualan Roti di Italia Bakery Bandar Lampung",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742050",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 2 No 2 (2023): Indonesian Journal of Applied Mathematics Vol. 2 No. 2 January Chapter58-73",
+            "Author Order : 3 of 3",
+            "Achmad Suryadi Nasution; Fatin Trihastuti; Sri Efrinita Irwan",
+            "2023 DOI: 10.35472/indojam.v2i2.1030 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/indojam.v2i2.1030"
+        },
+        {
+          "id": "dba966106d1b4c265ed9",
+          "title": "Implementation of Preemptive Goal Programming and Branch and Bound in Production Planning at the Istiqomah Tofu Factory, Bandar Lampung City",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3836238",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Syiah Kuala University Transcendent Journal of Mathematics and Applications Vol 2, No 2 (2023)18-27",
+            "Author Order : 2 of 3",
+            "Anggraini, Retno; Irwan, Sri Efrinita; Nasution, Achmad Suryadi",
+            "2023 DOI: 10.24815/tjoma.v2i2.34050 Accred : Unknown"
+          ],
+          "doi": "10.24815/tjoma.v2i2.34050"
+        },
+        {
+          "id": "df3589a9c71c7268b476",
+          "title": "Aplikasi Pewarnaan Graf pada Penempatan Kamar Mahasiswa (Studi Kasus: Asrama Institut Teknologi Sumatera)",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1731043",
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Universitas PGRI Palembang Sainmatika: Jurnal Ilmiah Matematika dan Ilmu Pengetahuan Alam Vol. 17 No. 1 (2020): Sainmatika : Jurnal Ilmiah Matematika dan Ilmu Pengetahuan Alam17-22",
+            "Author Order : 1 of 1",
+            "Sri Efrinita Irwan",
+            "2020 DOI: 10.31851/sainmatika.v17i1.3137 Accred : Sinta 3"
+          ],
+          "doi": "10.31851/sainmatika.v17i1.3137"
+        },
+        {
+          "id": "7218be274752ed75c209",
+          "title": "A graph theory approach to the dormitory room placement problem",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/992938",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 2 No 1 (2019): ICoSITeR Special Edition111 - 118",
+            "Author Order : 1 of 2",
+            "Sri Efrinita Irwan; Triyana Muliawati",
+            "2019 DOI: 10.35472/281472 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/281472"
+        }
+      ],
+      "google_scholar": [],
+      "rama": [],
+      "researches": [
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        },
+        {
+          "id": "d69a4ede4b058daea969",
+          "title": "APLIKASI PENENTUAN BILANGAN DOMINASI-LOKASI GRAF HASIL OPERASI COMB PADA GERAK ROBOT SWARM",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Aswan Anggun Pribadi PENDANAAN PENELITIAN ITERA TA 2024 ( PDP )",
+            "Personils : Sri Efrinita Irwan;",
+            "2024 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Aswan Anggun Pribadi"
+        },
+        {
+          "id": "442faaecc3f24e49b03d",
+          "title": "DETERMINAN MATRIKS KETETANGGAAN DARI GRAF YANG TERKAIT DENGAN GRAF CYCLE",
+          "url": null,
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Sri Efrinita Irwan HIBAH PENELITIAN ITERA 2023 ( MADYA )",
+            "Personils : Aswan Anggun Pribadi; Achmad Suryadi Nasution; Triyana Muliawati;",
+            "2023 Rp. 39.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "632ae89cde1cdf9f09e0",
+          "title": "EVALUASI PENGGUNAAN ANTIBIOTIK PADA PASIEN INFEKSI DI RSUD. DR. H. ABDUL MOELOEK PROVINSI LAMPUNG",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Dirga HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Sri Efrinita Irwan; Irfanianta Arif Setyawan; Atika Dalili Akhmad;",
+            "2018 Rp. 18.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dirga"
+        },
+        {
+          "id": "51a605023152f4865cc5",
+          "title": "APLIKASI PEWARNAAN GRAF PADA PENENTUAN KAMAR MAHASISWA DI ASRAMA INSTITUT TEKNOLOGI SUMATERA",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Sri Efrinita Irwan HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Triyana Muliawati;",
+            "2018 Rp. 17.322.500 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        }
+      ],
+      "community_services": [
+        {
+          "id": "0246c62964ca1c1e11fb",
+          "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "07490a7b3c26b560d5ff",
+          "title": "PERANCANGAN DAN IMPLEMENTASI WEBSITE “ITERA MENGABDI” SEBAGAI INOVASI MEDIA BELAJAR BERBASIS TEKNOLOGI",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Aditya Ayuwulanda PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PPP )",
+            "Personils : Sri Efrinita Irwan; Abdul Aji; I Putu Mahendra; Ikah Ning Prasetiowati; Dirga; Agustina Widiyani;",
+            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Aditya Ayuwulanda"
+        },
+        {
+          "id": "67a7c60fe320f9758fbd",
+          "title": "PEMBINAAN OLIMPIADE SAINS NASIONAL (OSN) MATEMATIKA UNTUK MENINGKATKAN KOMPETENSI SISWA DI SMA NEGERI 5 BANDAR LAMPUNG",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Leader : Triyana Muliawati HIBAH PENGABDIAN ITERA 2018 ( PKM )",
+            "Personils : Sri Efrinita Irwan; Eristia Arfi; Tri Utomo; Dewi Suhika; Werry Febrianti;",
+            "2018 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        }
+      ],
+      "iprs": [
+        {
+          "id": "f43b4362c81ca97928d9",
+          "title": "Matematika Dasar",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : Dr. Sri Efrinita Irwan, M.Si.; Agista Surya Bawana, S.Si., M.Sc.; dkk Dr. Sri Efrinita Irwan, M.Si.; Agista Surya Bawana, S.Si., M.Sc.; Armayani Arsal, S.Si., M.Si.; Dewi Lestari, M.Si.; Evander Banjarnahor, S.Pd., M.Si.; Retno Putri Dwi Rahmawati, S.Pd., M.Sc.; Handika Lintang Saputra, M.Mat.; Benediktus Pa",
+            "2025 Nomor Permohonan : EC002025074436 Status : diterima Hak Cipta"
+          ]
+        },
+        {
+          "id": "755fba674d20db8360f6",
+          "title": "Pengantar Analisis Fungsional",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : Dr. Sri Efrinita Irwan, M.Si.; Armayani Arsal, S,S., M.Si.; Retno Putri Dwi Rahmawati, S.Pd., M.Sc.; Muh. Fachrul Latief, S.Si., M.Si.; Andi Tenri Ajeng Nur, S.Si., M.Si.; Handika Lintang Saputra, M.Mat.; Agista Surya Bawana, S.Si., M.Sc.; Aisyah Nooravie Dr. Sri Efrinita Irwan, M.Si.; Armayani Arsal, S,S., M.Si.; Retno Putri Dwi Rahmawati, S.Pd., M.Sc.; Muh. Fachrul Latief, S.Si., M.Si.; Andi Tenri Ajeng Nur, S.Si., M.Si.; Handika Lintang Saputra, M.Mat.; Agista Surya Bawana, S.Si., M.Sc.; A",
+            "2025 Nomor Permohonan : EC002025199848 Status : Diterima Hak Cipta"
+          ]
+        },
+        {
+          "id": "d7d5d9fdc399f97ccaef",
+          "title": "Kalkulus",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : Nita Anggriani, M.Si.; Rahmi Yuliana M, S.Pd., M.Pd.; Titik Pitriani Muslimin, S.Pd., M.Pd.; Eristia Arfi, S.Si., M.Si.; Retno Sulistyo Dhamar Lestari, ST., M.Eng.; Khafidhoh Nurul Aini, S.Si., M.Pd.; Feriyanto, M.Pd.; Woro Mustika Resmi, S.T., M.Eng.; Mu Nita Anggriani, M.Si.; Rahmi Yuliana M, S.Pd., M.Pd.; Titik Pitriani Muslimin, S.Pd., M.Pd.; Eristia Arfi, S.Si., M.Si.; Retno Sulistyo Dhamar Lestari, ST., M.Eng.; Khafidhoh Nurul Aini, S.Si., M.Pd.; Feriyanto, M.Pd.; Woro Mustika Resmi, S.",
+            "2025 Nomor Permohonan : EC002025057085 Status : terdaftar Hak Cipta"
+          ]
+        },
+        {
+          "id": "2e890d5ed397db96bfee",
+          "title": "Pembelajaran Matematika SD",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : Anim, S.Si., M.Pd Nanik Ulfa, S.Si., M.Pd Khafidhoh Nurul Aini, S.Si., M.Pd Agung Dian Putra, S.Pd., M.Pd Eristia Arfi, S.Si., M.Si Dr. Sri Efrinita Irwan, M.Si Dr. Ika Ratih Sulistiani, S.Pd., M.Pd Anim, S.Si., M.Pd Nanik Ulfa, S.Si., M.Pd Khafidhoh Nurul Aini, S.Si., M.Pd Agung Dian Putra, S.Pd., M.Pd Eristia Arfi, S.Si., M.Si Dr. Sri Efrinita Irwan, M.Si Dr. Ika Ratih Sulistiani, S.Pd., M.Pd",
+            "2025 Nomor Permohonan : EC00202512545 Status : Hak Cipta"
+          ]
+        },
+        {
+          "id": "cd408b941e4592dd5389",
+          "title": "Video Profil Fakultas Sains Institut Teknologi Sumatera",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : I N P Aryantha, Khairurrijal, R Sulistyorini, I N P Permanasari, S E Irwan, Dirga, I Pardede, R Fauzi, I P Mahendra, W Nurhayu, T Setiawan, M A Asagabaldan, D Mahrani, D O Lestari, M Febrina, S Aziz Institut Teknologi Sumatera",
+            "2024 Nomor Permohonan : EC002024207660 Status : Terbit Hak Cipta"
+          ]
+        },
+        {
+          "id": "a9ae01091ada05dd19bb",
+          "title": "Penguatan Basic Science Di Sumatera (Program Kolaborasi KKN Tematik ITERA)",
+          "url": null,
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Inventor : Okky Fajar Tri Maryana, S.Si., M.Si., Drs. Zadrach Ledoufij Dupe, M.Si., Dr. Hakim Luthfi Malasan, M.Sc., Dr. Sri Efrinita Irwan, S.Si., M.Si., Aditya Ayuwulanda, S.Pd., M.Si., Elisa Nurma Riana, S.Si., M.Si., Mugi Praseptiawan, S.T., M.Kom. Institut Teknologi Sumatera",
+            "2021 Nomor Permohonan : EC00202129956 Status : Dalam Peli Hak Cipta"
+          ]
+        }
+      ],
+      "books": [
+        {
+          "id": "fc5bf8da83f2a3d7f2db",
+          "title": "Aljabar Linier Elementer",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU AJAR",
+            "Sri Efrinita Irwan, Tri Utomo, Nela Rizka ITERA Press",
+            "2026 Institut Teknologi Sumatera ISBN : 9786347583345"
+          ]
+        },
+        {
+          "id": "6badbfe6481929df3ecc",
+          "title": "Matematika Dasar",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Dr. Sri Efrinita Irwan, M.Si.; Agista Surya Bawana, S.Si., M.Sc.; Armayani Arsal, S.Si., M.Si.; Dewi Lestari, M.Si.; Evander Banjarnahor, S.Pd., M.Si.; Retno Putri Dwi Rahmawati, S.Pd., M.Sc.; Handika Lintang Saputra, M.Mat.; Benediktus Panji Pradip Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786347252401"
+          ]
+        },
+        {
+          "id": "ec6341cd051bd8ab4980",
+          "title": "Pengantar Analisis Fungsional",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Dr. Sri Efrinita Irwan, M.Si.; Armayani Arsal, S,S., M.Si.; Retno Putri Dwi Rahmawati, S.Pd., M.Sc.; Muh. Fachrul Latief, S.Si., M.Si.; Andi Tenri Ajeng Nur, S.Si., M.Si.; Handika Lintang Saputra, M.Mat.; Agista Surya Bawana, S.Si., M.Sc.; Aisyah Noo Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786347506009"
+          ]
+        },
+        {
+          "id": "612fe4cc2c3595de8c3b",
+          "title": "PEMBELAJARAN MATEMATIKA SD",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Anim; Nanik Ulfa; Khafidhoh Nurul Aini; Agung Dian Putra; Eristia Arfi; Sri EFrinita Irwan; Ika Ratih Sulistiani Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786238963676"
+          ]
+        },
+        {
+          "id": "5518ff9d0c561e6ba687",
+          "title": "Kalkulus",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nita Anggriani, M.Si. ; Rahmi Yuliana M, S.Pd., M.Pd. ; Titik Pitriani Muslimin, S.Pd., M.Pd. ; Eristia Arfi, S.Si., M.Si. ; Retno Sulistyo Dhamar Lestari, ST., M.Eng. ; Khafidhoh Nurul Aini, S.Si., M.Pd. Feriyanto, M.Pd. ; Woro Mustika Resmi, S.T Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786347252135"
+          ]
+        },
+        {
+          "id": "260a65459717f72a869f",
+          "title": "Integrasi Metode Analitik dalam Pemodelan Matematika dan Statistika",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Triyana Muliawati, Danni Gathot Harbowo, Gusrian Putra, Lutfi Mardianto, Nugraha Catur Septian Patra, Sri Efrinita Irwan, Khalila Adiba Safa, Nela Rizka, Tri Utomo ITERA Press",
+            "2024 Lampung Selatan ISBN : 9786347013170"
+          ]
+        }
+      ]
+    },
+    "unclassified": []
+  }
+}

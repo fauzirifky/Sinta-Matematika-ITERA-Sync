@@ -1,0 +1,501 @@
+{
+  "schema_version": 2,
+  "generated_at": null,
+  "source": {
+    "service": "SINTA - Science and Technology Index",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+    "access": "user-supplied public first pages"
+  },
+  "configured_author": {
+    "name": "Mira Mustika",
+    "sinta_id": "6700033",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+    "enabled": true
+  },
+  "profile": {
+    "name": "MIRA MUSTIKA",
+    "sinta_id": "6700033",
+    "affiliation": "Institut Teknologi Sumatera",
+    "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
+    "department": "S1 - Matematika",
+    "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
+    "avatar_url": null,
+    "subjects": [],
+    "scores": {}
+  },
+  "collections": {
+    "scopus": {
+      "view": "scopus",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 3,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "4795408d5c62d25a5b9f",
+          "title": "A New DIRECT-Type Algorithm Based on Bisection of Rectangles and Diagonal Sampling with the Pareto Approach",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85199811152&origin=resultslist",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Q3 as Journal Iaeng International Journal of Applied Mathematics",
+            "Author Order : 1 of 3 Creator : Mustika M.",
+            "2024 0 cited"
+          ]
+        },
+        {
+          "id": "edce8d91781a3499337c",
+          "title": "Application of Pascoletti-Serafini scalarization modification method to solve multi-objective optimization problems for stock portfolio",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85103879985&origin=resultslist",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Q4 as Conference Proceedin Journal of Physics Conference Series",
+            "Author Order : 1 of 5 Creator : Mustika M.",
+            "2021 1 cited"
+          ]
+        },
+        {
+          "id": "475143b977bd960c7752",
+          "title": "Case study : analysis of senior high school students scientific creative, critical thinking and its correlation with their scientific reasoning skills on the sound concept",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85063412320&origin=resultslist",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Q4 as Conference Proceedin Journal of Physics Conference Series",
+            "Author Order : 0 of 3 Creator : Mustika M.",
+            "2019 9 cited"
+          ]
+        }
+      ]
+    },
+    "garuda": {
+      "view": "garuda",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 1,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "5096f37fe6c628e42f7e",
+          "title": "BEBERAPA IDENTITAS BARISAN FIBONACCI DAN LUCAS",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1457894",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Universitas Ahmad Dahlan AdMathEdu : Jurnal Ilmiah Pendidikan Matematika, Ilmu Matematika dan Matematika Terapan Vol 9, No 2: Desember 201989-96",
+            "Author Order : 1 of 2",
+            "Mira Mustika; Wamiliana Wamiliana",
+            "2019 DOI: 10.12928/admathedu.v9i2.15161 Accred : Sinta 4"
+          ],
+          "doi": "10.12928/admathedu.v9i2.15161"
+        }
+      ]
+    },
+    "google_scholar": {
+      "view": "googlescholar",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "rama": {
+      "view": "rama",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "researches": {
+      "view": "researches",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 2,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "55c8fc92b04a4ca2157f",
+          "title": "PENYELESAIAN PORTOFOLIO PADA BERBAGAI JENIS MATRIKS VARIANSI-KOVARIANSI DENGAN PENDEKATAN METODE SEQUENTIAL QUADRATIC PROGRAMMING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Leader : Lutfi Mardianto PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Mira Mustika; Eristia Arfi;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Lutfi Mardianto"
+        },
+        {
+          "id": "d4cda1b867ada82f613b",
+          "title": "Penyelesaian Masalah Optimisasi Multi Objektif pada Portofolio Saham Syariah dengan Metode Modifikasi Skalarisasi Pascoletti-Serafini",
+          "url": null,
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Leader : Mira Mustika Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Triyana Muliawati;",
+            "2020 Rp. 14.600.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Mira Mustika"
+        }
+      ]
+    },
+    "community_services": {
+      "view": "services",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 3,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "1751b02e62fb0919f910",
+          "title": "SMART MONEY FOR SMART STUDENTS: PELATIHAN MENABUNG DAN MENGELOLA UANG JAJAN UNTUK MERDEKA FINANSIAL DI KALANGAN SISWA",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Leader : Werry Febrianti PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Rifky Fauzi; Achmad Suryadi Nasution; Dear Michiko Mutiara Noor; Lutfi Mardianto; Mira Mustika; Nela Rizka;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Werry Febrianti"
+        },
+        {
+          "id": "f1ed9a2b4e82825da42c",
+          "title": "KELAS MOTIVASI MENUJU PERGURUAN TINGGI SERTA PELATIHAN TES POTENSI SKOLASTIK (TPS) DI SMAS AL HUDA, JATI AGUNG.",
+          "url": null,
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Leader : Mira Mustika HIBAH PENGABDIAN ITERA 2021 ( PKM )",
+            "Personils : Dear Michiko Mutiara Noor; Eristia Arfi; Triyana Muliawati; Dewi Suhika;",
+            "2021 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Mira Mustika"
+        },
+        {
+          "id": "71ae4b59416e25c83f25",
+          "title": "MENUMBUHKAN KESADARAN GENERASI MILENIAL HADAPI TANTANGAN REVOLUSI INDUSTRI 4.0: MELATIH GROWTH MINDSET POSITIF SMA GAJAH MADA BANDAR LAMPUNG",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Leader : Dear Michiko Mutiara Noor HIBAH PENGABDIAN ITERA 2019 ( PKM )",
+            "Personils : Mira Mustika; Triyana Muliawati; Eristia Arfi; Tri Utomo;",
+            "2019 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dear Michiko Mutiara Noor"
+        }
+      ]
+    },
+    "iprs": {
+      "view": "iprs",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 1,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "5370c6b519be318a3acb",
+          "title": "Program Komputer Algoritma PLOPBI-GL untuk Menyelesaikan Masalah Optimisasi Global",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Inventor : Mira Mustika Institut Teknologi Sumatera",
+            "2026 Nomor Permohonan : EC002026146500 Status : Tercatat Hak Cipta"
+          ]
+        }
+      ]
+    },
+    "books": {
+      "view": "books",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 4,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "723547b1ea9a7de8d640",
+          "title": "Matematika Diskrit",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Category : BUKU AJAR",
+            "Wamiliana, Mira Mustika, Dina Eka Nurvayly, Notiragayu CV Anugrah Utama Raharja",
+            "2026 Bandar Lampung, Lampung ISBN : 9786232115378"
+          ]
+        },
+        {
+          "id": "4ca0515c903ab9bad777",
+          "title": "Pengantar Optimisasi (digital epub)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Category : BUKU AJAR",
+            "Achmad Suryadi Nasution, Dewi Suhika, Mira Mustika; Editor: Aswan Anggun pribadi Itera Press",
+            "2025 Lampung ISBN : 9786347361714"
+          ]
+        },
+        {
+          "id": "8ea6c2bd872be1a6bf52",
+          "title": "Pengantar Optimisasi (digital pdf)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Category : BUKU AJAR",
+            "Achmad Suryadi Nasution, Dewi Suhika, Mira Mustika; Editor: Aswan Anggun pribadi Itera Press",
+            "2025 Lampung Selatan, Lampung ISBN : 9786347361707"
+          ]
+        },
+        {
+          "id": "16add2314428fbf1d428",
+          "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad Itera Press",
+            "2024 Itera ISBN : 9786347013231"
+          ]
+        }
+      ]
+    }
+  },
+  "metrics": {},
+  "collection_status": {
+    "scopus": {
+      "status": "manual_baseline"
+    },
+    "garuda": {
+      "status": "manual_baseline"
+    },
+    "google_scholar": {
+      "status": "not_provided"
+    },
+    "rama": {
+      "status": "not_provided"
+    },
+    "researches": {
+      "status": "manual_baseline"
+    },
+    "community_services": {
+      "status": "manual_baseline"
+    },
+    "iprs": {
+      "status": "manual_baseline"
+    },
+    "books": {
+      "status": "manual_baseline"
+    }
+  },
+  "manual_baseline": {
+    "source": "input/initial_profiles.md",
+    "collections": {
+      "scopus": [
+        {
+          "id": "4795408d5c62d25a5b9f",
+          "title": "A New DIRECT-Type Algorithm Based on Bisection of Rectangles and Diagonal Sampling with the Pareto Approach",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85199811152&origin=resultslist",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Q3 as Journal Iaeng International Journal of Applied Mathematics",
+            "Author Order : 1 of 3 Creator : Mustika M.",
+            "2024 0 cited"
+          ]
+        },
+        {
+          "id": "edce8d91781a3499337c",
+          "title": "Application of Pascoletti-Serafini scalarization modification method to solve multi-objective optimization problems for stock portfolio",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85103879985&origin=resultslist",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Q4 as Conference Proceedin Journal of Physics Conference Series",
+            "Author Order : 1 of 5 Creator : Mustika M.",
+            "2021 1 cited"
+          ]
+        },
+        {
+          "id": "475143b977bd960c7752",
+          "title": "Case study : analysis of senior high school students scientific creative, critical thinking and its correlation with their scientific reasoning skills on the sound concept",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85063412320&origin=resultslist",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Q4 as Conference Proceedin Journal of Physics Conference Series",
+            "Author Order : 0 of 3 Creator : Mustika M.",
+            "2019 9 cited"
+          ]
+        }
+      ],
+      "garuda": [
+        {
+          "id": "5096f37fe6c628e42f7e",
+          "title": "BEBERAPA IDENTITAS BARISAN FIBONACCI DAN LUCAS",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1457894",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Universitas Ahmad Dahlan AdMathEdu : Jurnal Ilmiah Pendidikan Matematika, Ilmu Matematika dan Matematika Terapan Vol 9, No 2: Desember 201989-96",
+            "Author Order : 1 of 2",
+            "Mira Mustika; Wamiliana Wamiliana",
+            "2019 DOI: 10.12928/admathedu.v9i2.15161 Accred : Sinta 4"
+          ],
+          "doi": "10.12928/admathedu.v9i2.15161"
+        }
+      ],
+      "google_scholar": [],
+      "rama": [],
+      "researches": [
+        {
+          "id": "55c8fc92b04a4ca2157f",
+          "title": "PENYELESAIAN PORTOFOLIO PADA BERBAGAI JENIS MATRIKS VARIANSI-KOVARIANSI DENGAN PENDEKATAN METODE SEQUENTIAL QUADRATIC PROGRAMMING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Leader : Lutfi Mardianto PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Mira Mustika; Eristia Arfi;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Lutfi Mardianto"
+        },
+        {
+          "id": "d4cda1b867ada82f613b",
+          "title": "Penyelesaian Masalah Optimisasi Multi Objektif pada Portofolio Saham Syariah dengan Metode Modifikasi Skalarisasi Pascoletti-Serafini",
+          "url": null,
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Leader : Mira Mustika Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Triyana Muliawati;",
+            "2020 Rp. 14.600.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Mira Mustika"
+        }
+      ],
+      "community_services": [
+        {
+          "id": "1751b02e62fb0919f910",
+          "title": "SMART MONEY FOR SMART STUDENTS: PELATIHAN MENABUNG DAN MENGELOLA UANG JAJAN UNTUK MERDEKA FINANSIAL DI KALANGAN SISWA",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Leader : Werry Febrianti PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Rifky Fauzi; Achmad Suryadi Nasution; Dear Michiko Mutiara Noor; Lutfi Mardianto; Mira Mustika; Nela Rizka;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Werry Febrianti"
+        },
+        {
+          "id": "f1ed9a2b4e82825da42c",
+          "title": "KELAS MOTIVASI MENUJU PERGURUAN TINGGI SERTA PELATIHAN TES POTENSI SKOLASTIK (TPS) DI SMAS AL HUDA, JATI AGUNG.",
+          "url": null,
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Leader : Mira Mustika HIBAH PENGABDIAN ITERA 2021 ( PKM )",
+            "Personils : Dear Michiko Mutiara Noor; Eristia Arfi; Triyana Muliawati; Dewi Suhika;",
+            "2021 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Mira Mustika"
+        },
+        {
+          "id": "71ae4b59416e25c83f25",
+          "title": "MENUMBUHKAN KESADARAN GENERASI MILENIAL HADAPI TANTANGAN REVOLUSI INDUSTRI 4.0: MELATIH GROWTH MINDSET POSITIF SMA GAJAH MADA BANDAR LAMPUNG",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Leader : Dear Michiko Mutiara Noor HIBAH PENGABDIAN ITERA 2019 ( PKM )",
+            "Personils : Mira Mustika; Triyana Muliawati; Eristia Arfi; Tri Utomo;",
+            "2019 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dear Michiko Mutiara Noor"
+        }
+      ],
+      "iprs": [
+        {
+          "id": "5370c6b519be318a3acb",
+          "title": "Program Komputer Algoritma PLOPBI-GL untuk Menyelesaikan Masalah Optimisasi Global",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Inventor : Mira Mustika Institut Teknologi Sumatera",
+            "2026 Nomor Permohonan : EC002026146500 Status : Tercatat Hak Cipta"
+          ]
+        }
+      ],
+      "books": [
+        {
+          "id": "723547b1ea9a7de8d640",
+          "title": "Matematika Diskrit",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Category : BUKU AJAR",
+            "Wamiliana, Mira Mustika, Dina Eka Nurvayly, Notiragayu CV Anugrah Utama Raharja",
+            "2026 Bandar Lampung, Lampung ISBN : 9786232115378"
+          ]
+        },
+        {
+          "id": "4ca0515c903ab9bad777",
+          "title": "Pengantar Optimisasi (digital epub)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Category : BUKU AJAR",
+            "Achmad Suryadi Nasution, Dewi Suhika, Mira Mustika; Editor: Aswan Anggun pribadi Itera Press",
+            "2025 Lampung ISBN : 9786347361714"
+          ]
+        },
+        {
+          "id": "8ea6c2bd872be1a6bf52",
+          "title": "Pengantar Optimisasi (digital pdf)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Category : BUKU AJAR",
+            "Achmad Suryadi Nasution, Dewi Suhika, Mira Mustika; Editor: Aswan Anggun pribadi Itera Press",
+            "2025 Lampung Selatan, Lampung ISBN : 9786347361707"
+          ]
+        },
+        {
+          "id": "16add2314428fbf1d428",
+          "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad Itera Press",
+            "2024 Itera ISBN : 9786347013231"
+          ]
+        }
+      ]
+    },
+    "unclassified": []
+  }
+}

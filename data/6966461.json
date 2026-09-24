@@ -1,0 +1,197 @@
+{
+  "schema_version": 2,
+  "generated_at": null,
+  "source": {
+    "service": "SINTA - Science and Technology Index",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461",
+    "access": "user-supplied public first pages"
+  },
+  "configured_author": {
+    "name": "Nurul Indah Safitri",
+    "sinta_id": "6966461",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461",
+    "enabled": true
+  },
+  "profile": {
+    "name": "NURUL INDAH SAFITRI",
+    "sinta_id": "6966461",
+    "affiliation": "Institut Teknologi Sumatera",
+    "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
+    "department": "S1 - Matematika",
+    "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
+    "avatar_url": null,
+    "subjects": [],
+    "scores": {}
+  },
+  "collections": {
+    "scopus": {
+      "view": "scopus",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "garuda": {
+      "view": "garuda",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "google_scholar": {
+      "view": "googlescholar",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "rama": {
+      "view": "rama",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "researches": {
+      "view": "researches",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 1,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        }
+      ]
+    },
+    "community_services": {
+      "view": "services",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 1,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "0246c62964ca1c1e11fb",
+          "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461",
+          "details": [
+            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        }
+      ]
+    },
+    "iprs": {
+      "view": "iprs",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "books": {
+      "view": "books",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    }
+  },
+  "metrics": {},
+  "collection_status": {
+    "scopus": {
+      "status": "not_provided"
+    },
+    "garuda": {
+      "status": "not_provided"
+    },
+    "google_scholar": {
+      "status": "not_provided"
+    },
+    "rama": {
+      "status": "not_provided"
+    },
+    "researches": {
+      "status": "manual_baseline"
+    },
+    "community_services": {
+      "status": "manual_baseline"
+    },
+    "iprs": {
+      "status": "not_provided"
+    },
+    "books": {
+      "status": "not_provided"
+    }
+  },
+  "manual_baseline": {
+    "source": "input/initial_profiles.md",
+    "collections": {
+      "scopus": [],
+      "garuda": [],
+      "google_scholar": [],
+      "rama": [],
+      "researches": [
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        }
+      ],
+      "community_services": [
+        {
+          "id": "0246c62964ca1c1e11fb",
+          "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461",
+          "details": [
+            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        }
+      ],
+      "iprs": [],
+      "books": []
+    },
+    "unclassified": []
+  }
+}

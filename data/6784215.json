@@ -1,0 +1,617 @@
+{
+  "schema_version": 2,
+  "generated_at": null,
+  "source": {
+    "service": "SINTA - Science and Technology Index",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+    "access": "user-supplied public first pages"
+  },
+  "configured_author": {
+    "name": "Tiara Shofi Edriani",
+    "sinta_id": "6784215",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+    "enabled": true
+  },
+  "profile": {
+    "name": "TIARA SHOFI EDRIANI",
+    "sinta_id": "6784215",
+    "affiliation": "Institut Teknologi Sumatera",
+    "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
+    "department": "S1 - Matematika",
+    "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
+    "avatar_url": null,
+    "subjects": [],
+    "scores": {}
+  },
+  "collections": {
+    "scopus": {
+      "view": "scopus",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 4,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "eb2e100caa7bcf9ad9ef",
+          "title": "Inventory control of raw materials using period order quantity method in preventing the stock-out occurrence",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009596517&origin=resultslist",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Q4 as Conference Proceedin Aip Conference Proceedings",
+            "Author Order : 6 of 6 Creator : Nasution A.S.",
+            "2025 0 cited"
+          ]
+        },
+        {
+          "id": "d6aa018eb3dd68216e98",
+          "title": "On the Interaction between Trichogramma chilonis and Jatiroto Flies with Stem Borer Pests in Sugarcane Plantation",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105006656455&origin=resultslist",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Q2 as Journal Journal of Mathematical and Fundamental Sciences",
+            "Author Order : 4 of 11 Creator : Fauzi R.",
+            "2024 0 cited"
+          ]
+        },
+        {
+          "id": "d45b97ec2f6e5536fe19",
+          "title": "A method for finding numerical solutions to Diophantine equations using Spiral Optimization Algorithm with Clustering (SOAC)",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85165454877&origin=resultslist",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Q1 as Journal Applied Soft Computing",
+            "Author Order : 4 of 5 Creator : Sumarti N.",
+            "2023 3 cited"
+          ]
+        },
+        {
+          "id": "cd55bcd67a3d739121f1",
+          "title": "The geometric Brownian motion of indosat telecommunications daily stock price during the Covid-19 pandemic in Indonesia",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85120774504&origin=resultslist",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Q4 as Conference Proceedin Journal of Physics Conference Series",
+            "Author Order : 1 of 4 Creator : Edriani T.S.",
+            "2021 4 cited"
+          ]
+        }
+      ]
+    },
+    "garuda": {
+      "view": "garuda",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 4,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "d034962d78d988b5d749",
+          "title": "Analisis Faktor Indeks Harga Konsumen (IHK) Menurut Kelompok Pengeluaran yang Mempengaruhi Laju Inflasi Provinsi Lampung Tahun 2020",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742018",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 2 No 2 (2023): Indonesian Journal of Applied Mathematics Vol. 2 No. 2 January Chapter51-57",
+            "Author Order : 2 of 2",
+            "Ayu Aprianti; Tiara Shofi Edriani",
+            "2023 DOI: 10.35472/indojam.v2i2.1028 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/indojam.v2i2.1028"
+        },
+        {
+          "id": "33d1508f22ad91a1c038",
+          "title": "Pelatihan Pembuatan Laman Pekon Informatif Sebagai Sarana Promosi Potensi Lokal Wilayah Kota Agung Timur",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3975006",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Kepada Masyarakat (LP2M), Institut Teknologi Sumatera, Lampung, Indonesia. TeknoKreatif: Jurnal Pengabdian kepada Masyarakat Vol 3 No 1 (2023): TEKNOKREATIF : Jurnal Pengabdian kepada Masyarakat43-47",
+            "Author Order : 3 of 6",
+            "Fauzi, Rifky; Pribadi, Aswan Anggun; Edriani, Tiara Shofi; Mahkya, Dani Al; Listriani, Amalia; Mahrani, Dwi",
+            "2023 DOI: 10.35472/teknokreatif.v3i1.780 Accred : Sinta 6"
+          ],
+          "doi": "10.35472/teknokreatif.v3i1.780"
+        },
+        {
+          "id": "b3af6954f91579759a74",
+          "title": "Analisis Hubungan Kepadatan Penduduk dengan Pola Penyebaran COVID-19 Provinsi DKI Jakarta menggunakan Regresi Robust",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742020",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 1 No 2 (2021): Indonesian Journal of Applied Mathematics Vol. 1 No. 2 April Chapter51-60",
+            "Author Order : 1 of 3",
+            "Tiara Shofi Edriani; Anisa Rahmadani; Dear Michiko Mutiara Noor",
+            "2021 DOI: 10.35472/indojam.v1i2.353 Accred : Unknown"
+          ],
+          "doi": "10.35472/indojam.v1i2.353"
+        },
+        {
+          "id": "6f9501643ce33dcf89a9",
+          "title": "Perankingan Proporsi Pengangguran Terbuka Setiap Kabupaten/Kota di Provinsi Sumatera Barat tahun 2013 dengan Metode Bayes",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1268058",
+          "year": 2015,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Jurusan Matematika FMIPA Universitas Andalas Padang Jurnal Matematika UNAND Vol 4, No 3 (2015)65-74",
+            "Author Order : 1 of 3",
+            "Tiara Shofi Edriani; Dodi Devianto; Hazmira Yozza",
+            "2015 DOI: 10.25077/jmu.4.3.65-74.2015 Accred : Unknown"
+          ],
+          "doi": "10.25077/jmu.4.3.65-74.2015"
+        }
+      ]
+    },
+    "google_scholar": {
+      "view": "googlescholar",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "rama": {
+      "view": "rama",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "researches": {
+      "view": "researches",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 6,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        },
+        {
+          "id": "d626006f402a322f5fda",
+          "title": "PEMODELAN DINAMIKA PERTUMBUHAN FITOPLANKTON TERHADAP DURASI PENCAHAYAAN: STRATEGI EFISIENSI ENERGI PADA BUDIDAYA MIKROALGA",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Dear Michiko Mutiara Noor PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
+            "Personils : Nela Rizka; Tiara Shofi Edriani; Aswan Anggun Pribadi; Rifky Fauzi;",
+            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dear Michiko Mutiara Noor"
+        },
+        {
+          "id": "84ad6a0ba8ce6ddd8c3a",
+          "title": "PEMODELAN AEROSOL OPTICAL DEPTH (AOD) DI PROVINSI LAMPUNG BERDASARKAN FAKTOR IKLIM DAN FAKTOR ANTROPOGENIK MENGGUNAKAN GENERALIZED LINEAR MODEL (GLM) DENGAN PENDEKATAN DISTRIBUSI GAMMA",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Tiara Shofi Edriani PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
+            "Personils : Rifky Fauzi; Aswan Anggun Pribadi; Dear Michiko Mutiara Noor; Nela Rizka;",
+            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tiara Shofi Edriani"
+        },
+        {
+          "id": "ac5f195053ce58be6bc0",
+          "title": "PENGEMBANGAN SISTEM PERINGATAN DINI OUTBREAK DEMAM BERDARAH DENGUE MENGGUNAKAN MODEL HYBRID ANALITIK-MACHINE LEARNING",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Rifky Fauzi PENDANAAN PENELITIAN ITERA TA 2024 ( PD )",
+            "Personils : Tiara Shofi Edriani; Nela Rizka; Aswan Anggun Pribadi;",
+            "2024 Rp. 60.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Rifky Fauzi"
+        },
+        {
+          "id": "8029e3c9ba0bd00bdb45",
+          "title": "OPTIMALISASI PERSEDIAAN BAHAN BAKU KOPI DALAM UPAYA MENEKAN BIAYA PRODUKSI DAN MENCEGAH TERJADINYA KEKURANGAN STOK ( STOCK OUT ) DENGAN MENGGUNAKAN METODE PERIOD ORDER QUANTITY (POQ)",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Achmad Suryadi Nasution HIBAH PENUGASAN FAKULTAS SAINS ITERA ( HPFS )",
+            "Personils : Rifky Fauzi; Triyana Muliawati; Dear Michiko Mutiara Noor; Tiara Shofi Edriani;",
+            "2024 Rp. 7.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Achmad Suryadi Nasution"
+        },
+        {
+          "id": "8bb03afb546e0a76df40",
+          "title": "KAJIAN DAMPAK VARIABILITAS IKLIM TERHADAP DEMAM BERDARAH DAN RISIKO KESEHATAN TERKAIT KUALITAS UDARA DI PROVINSI LAMPUNG",
+          "url": null,
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Tiara Shofi Edriani HIBAH JURUSAN SAINS ITERA 2023 ( HIBAH BANTUAN PENELITIAN JURUSAN )",
+            "Personils : Dear Michiko Mutiara Noor; Nela Rizka; Rifky Fauzi; Eristia Arfi;",
+            "2023 Rp. 15.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tiara Shofi Edriani"
+        }
+      ]
+    },
+    "community_services": {
+      "view": "services",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 3,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "0246c62964ca1c1e11fb",
+          "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "66b2ed2c9d2a783ffe41",
+          "title": "PENGEMBANGAN DASHBOARD STATISTIK DESA SEBAGAI UPAYA OPTIMALISASI PEMANFAATAN DATA STATISTIK DI DESA KEDATON, KECAMATAN KALIANDA, KABUPATEN LAMPUNG SELATAN",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Rifky Fauzi HIBAH PENUGASAN FAKULTAS SAINS ITERA ( PKM PENUGASAN FAKULTAS )",
+            "Personils : Aswan Anggun Pribadi; Dear Michiko Mutiara Noor; Tiara Shofi Edriani; Nela Rizka;",
+            "2024 Rp. 5.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Rifky Fauzi"
+        },
+        {
+          "id": "79d8c6e30bc17de1c7c1",
+          "title": "LAMAN PEKON INFORMATIF (LAMPIOM) SEBAGAI SARANA PROMOSI POTENSI LOKAL WILAYAH KOTA AGUNG TIMUR",
+          "url": null,
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Tiara Shofi Edriani HIBAH PENGABDIAN ITERA 2021 ( PKM )",
+            "Personils : Dani Al Mahkya; Amalia Listiani; Aswan Anggun Pribadi; Rifky Fauzi;",
+            "2021 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tiara Shofi Edriani"
+        }
+      ]
+    },
+    "iprs": {
+      "view": "iprs",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "books": {
+      "view": "books",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 1,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "16add2314428fbf1d428",
+          "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad Itera Press",
+            "2024 Itera ISBN : 9786347013231"
+          ]
+        }
+      ]
+    }
+  },
+  "metrics": {},
+  "collection_status": {
+    "scopus": {
+      "status": "manual_baseline"
+    },
+    "garuda": {
+      "status": "manual_baseline"
+    },
+    "google_scholar": {
+      "status": "not_provided"
+    },
+    "rama": {
+      "status": "not_provided"
+    },
+    "researches": {
+      "status": "manual_baseline"
+    },
+    "community_services": {
+      "status": "manual_baseline"
+    },
+    "iprs": {
+      "status": "not_provided"
+    },
+    "books": {
+      "status": "manual_baseline"
+    }
+  },
+  "manual_baseline": {
+    "source": "input/initial_profiles.md",
+    "collections": {
+      "scopus": [
+        {
+          "id": "eb2e100caa7bcf9ad9ef",
+          "title": "Inventory control of raw materials using period order quantity method in preventing the stock-out occurrence",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009596517&origin=resultslist",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Q4 as Conference Proceedin Aip Conference Proceedings",
+            "Author Order : 6 of 6 Creator : Nasution A.S.",
+            "2025 0 cited"
+          ]
+        },
+        {
+          "id": "d6aa018eb3dd68216e98",
+          "title": "On the Interaction between Trichogramma chilonis and Jatiroto Flies with Stem Borer Pests in Sugarcane Plantation",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105006656455&origin=resultslist",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Q2 as Journal Journal of Mathematical and Fundamental Sciences",
+            "Author Order : 4 of 11 Creator : Fauzi R.",
+            "2024 0 cited"
+          ]
+        },
+        {
+          "id": "d45b97ec2f6e5536fe19",
+          "title": "A method for finding numerical solutions to Diophantine equations using Spiral Optimization Algorithm with Clustering (SOAC)",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85165454877&origin=resultslist",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Q1 as Journal Applied Soft Computing",
+            "Author Order : 4 of 5 Creator : Sumarti N.",
+            "2023 3 cited"
+          ]
+        },
+        {
+          "id": "cd55bcd67a3d739121f1",
+          "title": "The geometric Brownian motion of indosat telecommunications daily stock price during the Covid-19 pandemic in Indonesia",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85120774504&origin=resultslist",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Q4 as Conference Proceedin Journal of Physics Conference Series",
+            "Author Order : 1 of 4 Creator : Edriani T.S.",
+            "2021 4 cited"
+          ]
+        }
+      ],
+      "garuda": [
+        {
+          "id": "d034962d78d988b5d749",
+          "title": "Analisis Faktor Indeks Harga Konsumen (IHK) Menurut Kelompok Pengeluaran yang Mempengaruhi Laju Inflasi Provinsi Lampung Tahun 2020",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742018",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 2 No 2 (2023): Indonesian Journal of Applied Mathematics Vol. 2 No. 2 January Chapter51-57",
+            "Author Order : 2 of 2",
+            "Ayu Aprianti; Tiara Shofi Edriani",
+            "2023 DOI: 10.35472/indojam.v2i2.1028 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/indojam.v2i2.1028"
+        },
+        {
+          "id": "33d1508f22ad91a1c038",
+          "title": "Pelatihan Pembuatan Laman Pekon Informatif Sebagai Sarana Promosi Potensi Lokal Wilayah Kota Agung Timur",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3975006",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Kepada Masyarakat (LP2M), Institut Teknologi Sumatera, Lampung, Indonesia. TeknoKreatif: Jurnal Pengabdian kepada Masyarakat Vol 3 No 1 (2023): TEKNOKREATIF : Jurnal Pengabdian kepada Masyarakat43-47",
+            "Author Order : 3 of 6",
+            "Fauzi, Rifky; Pribadi, Aswan Anggun; Edriani, Tiara Shofi; Mahkya, Dani Al; Listriani, Amalia; Mahrani, Dwi",
+            "2023 DOI: 10.35472/teknokreatif.v3i1.780 Accred : Sinta 6"
+          ],
+          "doi": "10.35472/teknokreatif.v3i1.780"
+        },
+        {
+          "id": "b3af6954f91579759a74",
+          "title": "Analisis Hubungan Kepadatan Penduduk dengan Pola Penyebaran COVID-19 Provinsi DKI Jakarta menggunakan Regresi Robust",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742020",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 1 No 2 (2021): Indonesian Journal of Applied Mathematics Vol. 1 No. 2 April Chapter51-60",
+            "Author Order : 1 of 3",
+            "Tiara Shofi Edriani; Anisa Rahmadani; Dear Michiko Mutiara Noor",
+            "2021 DOI: 10.35472/indojam.v1i2.353 Accred : Unknown"
+          ],
+          "doi": "10.35472/indojam.v1i2.353"
+        },
+        {
+          "id": "6f9501643ce33dcf89a9",
+          "title": "Perankingan Proporsi Pengangguran Terbuka Setiap Kabupaten/Kota di Provinsi Sumatera Barat tahun 2013 dengan Metode Bayes",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1268058",
+          "year": 2015,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Jurusan Matematika FMIPA Universitas Andalas Padang Jurnal Matematika UNAND Vol 4, No 3 (2015)65-74",
+            "Author Order : 1 of 3",
+            "Tiara Shofi Edriani; Dodi Devianto; Hazmira Yozza",
+            "2015 DOI: 10.25077/jmu.4.3.65-74.2015 Accred : Unknown"
+          ],
+          "doi": "10.25077/jmu.4.3.65-74.2015"
+        }
+      ],
+      "google_scholar": [],
+      "rama": [],
+      "researches": [
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        },
+        {
+          "id": "d626006f402a322f5fda",
+          "title": "PEMODELAN DINAMIKA PERTUMBUHAN FITOPLANKTON TERHADAP DURASI PENCAHAYAAN: STRATEGI EFISIENSI ENERGI PADA BUDIDAYA MIKROALGA",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Dear Michiko Mutiara Noor PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
+            "Personils : Nela Rizka; Tiara Shofi Edriani; Aswan Anggun Pribadi; Rifky Fauzi;",
+            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dear Michiko Mutiara Noor"
+        },
+        {
+          "id": "84ad6a0ba8ce6ddd8c3a",
+          "title": "PEMODELAN AEROSOL OPTICAL DEPTH (AOD) DI PROVINSI LAMPUNG BERDASARKAN FAKTOR IKLIM DAN FAKTOR ANTROPOGENIK MENGGUNAKAN GENERALIZED LINEAR MODEL (GLM) DENGAN PENDEKATAN DISTRIBUSI GAMMA",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Tiara Shofi Edriani PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
+            "Personils : Rifky Fauzi; Aswan Anggun Pribadi; Dear Michiko Mutiara Noor; Nela Rizka;",
+            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tiara Shofi Edriani"
+        },
+        {
+          "id": "ac5f195053ce58be6bc0",
+          "title": "PENGEMBANGAN SISTEM PERINGATAN DINI OUTBREAK DEMAM BERDARAH DENGUE MENGGUNAKAN MODEL HYBRID ANALITIK-MACHINE LEARNING",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Rifky Fauzi PENDANAAN PENELITIAN ITERA TA 2024 ( PD )",
+            "Personils : Tiara Shofi Edriani; Nela Rizka; Aswan Anggun Pribadi;",
+            "2024 Rp. 60.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Rifky Fauzi"
+        },
+        {
+          "id": "8029e3c9ba0bd00bdb45",
+          "title": "OPTIMALISASI PERSEDIAAN BAHAN BAKU KOPI DALAM UPAYA MENEKAN BIAYA PRODUKSI DAN MENCEGAH TERJADINYA KEKURANGAN STOK ( STOCK OUT ) DENGAN MENGGUNAKAN METODE PERIOD ORDER QUANTITY (POQ)",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Achmad Suryadi Nasution HIBAH PENUGASAN FAKULTAS SAINS ITERA ( HPFS )",
+            "Personils : Rifky Fauzi; Triyana Muliawati; Dear Michiko Mutiara Noor; Tiara Shofi Edriani;",
+            "2024 Rp. 7.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Achmad Suryadi Nasution"
+        },
+        {
+          "id": "8bb03afb546e0a76df40",
+          "title": "KAJIAN DAMPAK VARIABILITAS IKLIM TERHADAP DEMAM BERDARAH DAN RISIKO KESEHATAN TERKAIT KUALITAS UDARA DI PROVINSI LAMPUNG",
+          "url": null,
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Tiara Shofi Edriani HIBAH JURUSAN SAINS ITERA 2023 ( HIBAH BANTUAN PENELITIAN JURUSAN )",
+            "Personils : Dear Michiko Mutiara Noor; Nela Rizka; Rifky Fauzi; Eristia Arfi;",
+            "2023 Rp. 15.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tiara Shofi Edriani"
+        }
+      ],
+      "community_services": [
+        {
+          "id": "0246c62964ca1c1e11fb",
+          "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
+            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "66b2ed2c9d2a783ffe41",
+          "title": "PENGEMBANGAN DASHBOARD STATISTIK DESA SEBAGAI UPAYA OPTIMALISASI PEMANFAATAN DATA STATISTIK DI DESA KEDATON, KECAMATAN KALIANDA, KABUPATEN LAMPUNG SELATAN",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Rifky Fauzi HIBAH PENUGASAN FAKULTAS SAINS ITERA ( PKM PENUGASAN FAKULTAS )",
+            "Personils : Aswan Anggun Pribadi; Dear Michiko Mutiara Noor; Tiara Shofi Edriani; Nela Rizka;",
+            "2024 Rp. 5.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Rifky Fauzi"
+        },
+        {
+          "id": "79d8c6e30bc17de1c7c1",
+          "title": "LAMAN PEKON INFORMATIF (LAMPIOM) SEBAGAI SARANA PROMOSI POTENSI LOKAL WILAYAH KOTA AGUNG TIMUR",
+          "url": null,
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Leader : Tiara Shofi Edriani HIBAH PENGABDIAN ITERA 2021 ( PKM )",
+            "Personils : Dani Al Mahkya; Amalia Listiani; Aswan Anggun Pribadi; Rifky Fauzi;",
+            "2021 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tiara Shofi Edriani"
+        }
+      ],
+      "iprs": [],
+      "books": [
+        {
+          "id": "16add2314428fbf1d428",
+          "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad Itera Press",
+            "2024 Itera ISBN : 9786347013231"
+          ]
+        }
+      ]
+    },
+    "unclassified": []
+  }
+}

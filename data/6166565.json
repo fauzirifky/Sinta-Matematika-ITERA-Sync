@@ -1,0 +1,1007 @@
+{
+  "schema_version": 2,
+  "generated_at": null,
+  "source": {
+    "service": "SINTA - Science and Technology Index",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+    "access": "user-supplied public first pages"
+  },
+  "configured_author": {
+    "name": "Eristia Arfi",
+    "sinta_id": "6166565",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+    "enabled": true
+  },
+  "profile": {
+    "name": "ERISTIA ARFI",
+    "sinta_id": "6166565",
+    "affiliation": "Institut Teknologi Sumatera",
+    "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
+    "department": "S1 - Matematika",
+    "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
+    "avatar_url": null,
+    "subjects": [],
+    "scores": {}
+  },
+  "collections": {
+    "scopus": {
+      "view": "scopus",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 3,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "73f0562c23e35d02ad02",
+          "title": "Analysis of mathematical model minimum dose of Celyvir for continous and periodic neuroblastoma treatment",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009593041&origin=resultslist",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Q4 as Conference Proceedin Aip Conference Proceedings",
+            "Author Order : 2 of 3 Creator : Sagala M.P.N.",
+            "2025 0 cited"
+          ]
+        },
+        {
+          "id": "a8f26f13e1dc19263521",
+          "title": "MATHEMATICS MODEL OF COMPACT TUMOR TO ANALYZE THE EFFECT ANTIANGIOGENIC THERAPY",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85216951811&origin=resultslist",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Q4 as Journal Barekeng",
+            "Author Order : 1 of 4 Creator : Arfi E.",
+            "2024 0 cited"
+          ]
+        },
+        {
+          "id": "f4d4048073fa6990e561",
+          "title": "Abuse notation of improper integrals",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85044402920&origin=resultslist",
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Q3 as Conference Proceedin Iop Conference Series Materials Science and Engineering",
+            "Author Order : 1 of 2 Creator : Arfi E.",
+            "2018 1 cited"
+          ]
+        }
+      ]
+    },
+    "garuda": {
+      "view": "garuda",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 11,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "66551e8539cb303254f2",
+          "title": "Teknologi Smart Conservation Untuk Identifikasi Spesies Mangrove Di Kawasan Ekowisata Cuku Nyinyi, Lampung",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4898155",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "CV. Multi Kreasi Media AMMA : Jurnal Pengabdian Masyarakat Vol. 4 No. 1 : Februari (2025): AMMA : Jurnal Pengabdian Masyarakat32-39",
+            "Author Order : 4 of 5",
+            "Triyana Muliawati; Fuji Lestari; Mika Alvionita Sitinjak; Eristia Arfi; Devia Gahana Cindi Alfian",
+            "2025 DOI: - Accred : Unknown"
+          ],
+          "doi": "-"
+        },
+        {
+          "id": "7d9ed6365c73802128ff",
+          "title": "Penerapan Manpower Planning (MPP) dan Full Time Equivalent (FTE) pada Bagian Produksi PT. Lampung Sukses Bersama (Lampung Banana Foster)",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4043800",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Department of Mathematics, Faculty of Science and Technology Universitas Jambi Mathematical Sciences and Applications Journal Vol. 4 No. 2 (2024): Mathematical Sciences and Applications Journal78-82",
+            "Author Order : 2 of 2",
+            "Tia Riski Rahmadhani; Eristia Arfi",
+            "2024 DOI: 10.22437/msa.v4i2.32291 Accred : Unknown"
+          ],
+          "doi": "10.22437/msa.v4i2.32291"
+        },
+        {
+          "id": "f44ada9ebc74e1451d0c",
+          "title": "MATHEMATICS MODEL OF COMPACT TUMOR TO ANALYZE THE EFFECT ANTIANGIOGENIC THERAPY",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4149369",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "PATTIMURA UNIVERSITY BAREKENG: Jurnal Ilmu Matematika dan Terapan Vol 18 No 3 (2024): BAREKENG: Journal of Mathematics and Its Application1585-1594",
+            "Author Order : 1 of 4",
+            "Arfi, Eristia; Putri, Dwi Mutiara; Wibarani, Yeni Gede; Rizka, Nela",
+            "2024 DOI: 10.30598/barekengvol18iss3pp1585-1594 Accred : Sinta 3"
+          ],
+          "doi": "10.30598/barekengvol18iss3pp1585-1594"
+        },
+        {
+          "id": "105405d720ca457b9a3f",
+          "title": "Penerapan Algoritma K-Means Clustering dalam Memetakan Produktivitas Lokasi Perkebunan Nanas PT Great Giant Pineapple",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4578594",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Jurusan Matematika FMIPA UNM Journal of Mathematics, Computations and Statistics Vol. 7 No. 2 (2024): Volume 07 Nomor 02 (Oktober 2024)215-231",
+            "Author Order : 2 of 3",
+            "Fitriani, Anisa; Arfi, Eristia; Huda, Anwar",
+            "2024 DOI: 10.35580/jmathcos.v7i2.4200 Accred : Sinta 3"
+          ],
+          "doi": "10.35580/jmathcos.v7i2.4200"
+        },
+        {
+          "id": "79e204b50220c17c6fc0",
+          "title": "Analisis Efisiensi Proses Penentuan Harga Perkiraan Sendiri menggunakan Teori Antrian pada PTPN I Regional 7",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4772833",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Syiah Kuala University Transcendent Journal of Mathematics and Applications Vol 3, No 2 (2024)64-73",
+            "Author Order : 2 of 2",
+            "Azzahra, Iqlima Dita; Arfi, Eristia",
+            "2024 DOI: 10.24815/tjoma.v3i2.41205 Accred : Unknown"
+          ],
+          "doi": "10.24815/tjoma.v3i2.41205"
+        },
+        {
+          "id": "2c92a71f28dbc35b4ede",
+          "title": "Pelatihan Tes Potensi Skolastik (TPS) di SMA Al Huda Jati Agung, Lampung Selatan",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3974999",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Kepada Masyarakat (LP2M), Institut Teknologi Sumatera, Lampung, Indonesia. TeknoKreatif: Jurnal Pengabdian kepada Masyarakat Vol 3 No 1 (2023): TEKNOKREATIF : Jurnal Pengabdian kepada Masyarakat36-42",
+            "Author Order : 3 of 5",
+            "Mustika, Mira; Noor, Dear Michiko Mutiara; Arfi, Eristia; Muliawati, Triyana; Anggraini, Retno",
+            "2023 DOI: 10.35472/teknokreatif.v3i1.776 Accred : Sinta 6"
+          ],
+          "doi": "10.35472/teknokreatif.v3i1.776"
+        },
+        {
+          "id": "0caa757970cba09fbc52",
+          "title": "Analisis Dinamik Model SIR Pada Kasus Penyebaran Penyakit Corona Virus Disease-19 (COVID-19)",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742055",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol. 1 No. 2 (2021): Indonesian Journal of Applied Mathematics Vol. 1 No. 2 April Chapter61-68",
+            "Author Order : 2 of 2",
+            "Sari, Shinta Puspita; Arfi, Eristia",
+            "2021 DOI: 10.35472/indojam.v1i2.354 Accred : Unknown"
+          ],
+          "doi": "10.35472/indojam.v1i2.354"
+        },
+        {
+          "id": "b4c61f53f95e295d399b",
+          "title": "The Delay Simulation on Hierarchical Structure for Semi-Double Track of Railway Line Using Max-Plus Algebra",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/992915",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 2 No 1 (2019): ICoSITeR Special Edition96 - 99",
+            "Author Order : 2 of 2",
+            "Tri Utomo; Eristia Arfi",
+            "2019 DOI: 10.35472/281421 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/281421"
+        },
+        {
+          "id": "cbe5cd8745b3e73c6f7a",
+          "title": "Penerapan Metode Multiple Scales untuk Masalah Galloping pada Mooring Cable FPSO",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1001353",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Universitas Dr. Soetomo Jurnal Ilmiah Soulmath : Jurnal Edukasi Pendidikan Matematika Vol 7 No 1 (2019)75 - 83",
+            "Author Order : 1 of 2",
+            "Arfi, Eristia; Utomo, Tri",
+            "2019 DOI: 10.25139/smj.v7i1.1421 Accred : Sinta 4"
+          ],
+          "doi": "10.25139/smj.v7i1.1421"
+        },
+        {
+          "id": "ae6f04aefc63a2e807d5",
+          "title": "Penerapan Metode Multiple Scales untuk Masalah Galloping pada DuaSpans Kabel Transmisi",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/729564",
+          "year": 2015,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "UIN Sultan Syarif Kasim Riau Seminar Nasional Teknologi Informasi Komunikasi dan Industri 2015: SNTIKI 7",
+            "Author Order : 1 of 1",
+            "Eristia Arfi",
+            "2015 DOI: - Accred : Unknown"
+          ],
+          "doi": "-"
+        },
+        {
+          "id": "526a731728649147fbed",
+          "title": "Hubungan antara Ketercapaian dan Keterkontrolan Sistem Diskrit Linier",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1058738",
+          "year": 2012,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Jurusan Matematika FMIPA Universitas Andalas Padang Jurnal Matematika UNAND Vol 1, No 1 (2012)67-70",
+            "Author Order : 1 of 1",
+            "Eristia Arfi",
+            "2012 DOI: 10.25077/jmu.1.1.67-70.2012 Accred : Unknown"
+          ],
+          "doi": "10.25077/jmu.1.1.67-70.2012"
+        }
+      ]
+    },
+    "google_scholar": {
+      "view": "googlescholar",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "rama": {
+      "view": "rama",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "researches": {
+      "view": "researches",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 6,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "55c8fc92b04a4ca2157f",
+          "title": "PENYELESAIAN PORTOFOLIO PADA BERBAGAI JENIS MATRIKS VARIANSI-KOVARIANSI DENGAN PENDEKATAN METODE SEQUENTIAL QUADRATIC PROGRAMMING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Lutfi Mardianto PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Mira Mustika; Eristia Arfi;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Lutfi Mardianto"
+        },
+        {
+          "id": "829c61d2219fa22dd5d1",
+          "title": "IDENTIFIKASI SPESIES MANGROVE BERDASARKAN MORFOLOGI DAUN MENGGUNAKAN CONVOLUTIONAL NEURAL NETWORK PADA KAWASAN EKOWISATA CUKU NYINYI",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Mika Alvionita S PENDANAAN PENELITIAN ITERA TA 2024 ( PDP )",
+            "Personils : Eristia Arfi;",
+            "2024 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Mika Alvionita S"
+        },
+        {
+          "id": "8bb03afb546e0a76df40",
+          "title": "KAJIAN DAMPAK VARIABILITAS IKLIM TERHADAP DEMAM BERDARAH DAN RISIKO KESEHATAN TERKAIT KUALITAS UDARA DI PROVINSI LAMPUNG",
+          "url": null,
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Tiara Shofi Edriani HIBAH JURUSAN SAINS ITERA 2023 ( HIBAH BANTUAN PENELITIAN JURUSAN )",
+            "Personils : Dear Michiko Mutiara Noor; Nela Rizka; Rifky Fauzi; Eristia Arfi;",
+            "2023 Rp. 15.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tiara Shofi Edriani"
+        },
+        {
+          "id": "cbb71646bccfd0b74164",
+          "title": "Analisa Perbandingan Metode Perturbasi untuk Masalah Galloping pada Kabel Transmisi",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Eristia Arfi Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Tri Utomo;",
+            "2019 Rp. 12.290.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "08156f5b06b7f8cc82ae",
+          "title": "PENERAPAN METODE MULTIPLE SCALES UNTUK MASALAH GALLOPING PADA MOORING CABLES FLOATING PRODUCTION AND STORAGE OFFLOADING",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Eristia Arfi Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Tri Utomo;",
+            "2018 Rp. 18.500.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "adea102e40d1916b24ea",
+          "title": "STRUKTUR HIRARKIS JALUR KERETA API SEMI-DOUBLE TRACK MENGGUNAKAN ALJABAR MAX-PLUS INTERVAL",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Tri Utomo HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Eristia Arfi;",
+            "2018 Rp. 16.820.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tri Utomo"
+        }
+      ]
+    },
+    "community_services": {
+      "view": "services",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 6,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "dbee4cdd5eaaa30a6686",
+          "title": "PELATIHAN DASHBOARD STATISTIK BERBASIS CITRA UAV UNTUK ESTIMASI EKONOMI BIOBRIKET DI DESA KAWASAN TAMAN HUTAN RAYA WAN ABDUL RACHMAN",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Triyana Muliawati PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( LKPM )",
+            "Personils : Devia Gahana Cindi Alfian; Danni Gathot Harbowo; Eristia Arfi; Lea Kristi Agustina;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "228436072491b97f7671",
+          "title": "IMPLEMENTASI APLIKASI KAMERA IDENTIFKASI SPESIES MANGROVE OTOMATIS BERDASARKAN MORFOLOGI DAUN DI KAWASAN EKOWISATA CUKU NYINYI DESA SIDODADI KABUPATEN PESAWARAN PROVINSI LAMPUNG",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Triyana Muliawati PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2024 ( PDB )",
+            "Personils : Eristia Arfi; Fuji Lestari;",
+            "2024 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "25c4008ee0aa3a64ffa0",
+          "title": "WORKSHOP IMPLEMENTASI TEKNOLOGI INFORMASI BERBASIS LAYANAN “DISCOVER CUKU NYINYI” DISKUNYI PADA MANAJEMEN OBJEK EKOWISATA CUKU NYINYI LAMPUNG",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Eristia Arfi PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2024 ( LKP )",
+            "Personils : Fuji Lestari; Triyana Muliawati;",
+            "2024 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "f1ed9a2b4e82825da42c",
+          "title": "KELAS MOTIVASI MENUJU PERGURUAN TINGGI SERTA PELATIHAN TES POTENSI SKOLASTIK (TPS) DI SMAS AL HUDA, JATI AGUNG.",
+          "url": null,
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Mira Mustika HIBAH PENGABDIAN ITERA 2021 ( PKM )",
+            "Personils : Dear Michiko Mutiara Noor; Eristia Arfi; Triyana Muliawati; Dewi Suhika;",
+            "2021 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Mira Mustika"
+        },
+        {
+          "id": "71ae4b59416e25c83f25",
+          "title": "MENUMBUHKAN KESADARAN GENERASI MILENIAL HADAPI TANTANGAN REVOLUSI INDUSTRI 4.0: MELATIH GROWTH MINDSET POSITIF SMA GAJAH MADA BANDAR LAMPUNG",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Dear Michiko Mutiara Noor HIBAH PENGABDIAN ITERA 2019 ( PKM )",
+            "Personils : Mira Mustika; Triyana Muliawati; Eristia Arfi; Tri Utomo;",
+            "2019 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dear Michiko Mutiara Noor"
+        },
+        {
+          "id": "67a7c60fe320f9758fbd",
+          "title": "PEMBINAAN OLIMPIADE SAINS NASIONAL (OSN) MATEMATIKA UNTUK MENINGKATKAN KOMPETENSI SISWA DI SMA NEGERI 5 BANDAR LAMPUNG",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Triyana Muliawati HIBAH PENGABDIAN ITERA 2018 ( PKM )",
+            "Personils : Sri Efrinita Irwan; Eristia Arfi; Tri Utomo; Dewi Suhika; Werry Febrianti;",
+            "2018 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        }
+      ]
+    },
+    "iprs": {
+      "view": "iprs",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 3,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "f796ddf71c6665492682",
+          "title": "Matematika Dasar : Konsep, Teori, dan Aplikasi",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Inventor : Ernawati, S.Pd., M.Pd., Dr. Andi Patimbangi, S.Pd., M.Pd. dkk Ernawati, S.Pd., M.Pd., Dr. Andi Patimbangi, S.Pd., M.Pd. dkk",
+            "2026 Nomor Permohonan : EC002026032201 Status : Diterima Hak Cipta"
+          ]
+        },
+        {
+          "id": "d7d5d9fdc399f97ccaef",
+          "title": "Kalkulus",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Inventor : Nita Anggriani, M.Si.; Rahmi Yuliana M, S.Pd., M.Pd.; Titik Pitriani Muslimin, S.Pd., M.Pd.; Eristia Arfi, S.Si., M.Si.; Retno Sulistyo Dhamar Lestari, ST., M.Eng.; Khafidhoh Nurul Aini, S.Si., M.Pd.; Feriyanto, M.Pd.; Woro Mustika Resmi, S.T., M.Eng.; Mu Nita Anggriani, M.Si.; Rahmi Yuliana M, S.Pd., M.Pd.; Titik Pitriani Muslimin, S.Pd., M.Pd.; Eristia Arfi, S.Si., M.Si.; Retno Sulistyo Dhamar Lestari, ST., M.Eng.; Khafidhoh Nurul Aini, S.Si., M.Pd.; Feriyanto, M.Pd.; Woro Mustika Resmi, S.",
+            "2025 Nomor Permohonan : EC002025057085 Status : terdaftar Hak Cipta"
+          ]
+        },
+        {
+          "id": "2e890d5ed397db96bfee",
+          "title": "Pembelajaran Matematika SD",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Inventor : Anim, S.Si., M.Pd Nanik Ulfa, S.Si., M.Pd Khafidhoh Nurul Aini, S.Si., M.Pd Agung Dian Putra, S.Pd., M.Pd Eristia Arfi, S.Si., M.Si Dr. Sri Efrinita Irwan, M.Si Dr. Ika Ratih Sulistiani, S.Pd., M.Pd Anim, S.Si., M.Pd Nanik Ulfa, S.Si., M.Pd Khafidhoh Nurul Aini, S.Si., M.Pd Agung Dian Putra, S.Pd., M.Pd Eristia Arfi, S.Si., M.Si Dr. Sri Efrinita Irwan, M.Si Dr. Ika Ratih Sulistiani, S.Pd., M.Pd",
+            "2025 Nomor Permohonan : EC00202512545 Status : Hak Cipta"
+          ]
+        }
+      ]
+    },
+    "books": {
+      "view": "books",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 4,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "e673a1552c4aa053cbf2",
+          "title": "MATEMATIKA DASAR Konsep, Teori, dan Aplikasi",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Category : BUKU AJAR",
+            "Ernawati, S.Pd., M.Pd. | Dr. Andi Patimbangi, S.Pd., M.Pd. Rezki Ramdani, S.Pd., M.Pd. | Vivi Rosida, S.Pd., M.Pd. Ikhbariaty Kautsar Qadry, S.Pd., M.Pd. Radiatul Adawiah, S.Pd., M.Pd. Dr. Abd. Kadir Jaelani, S.Pd., M.Pd. Nuramaliyah Ramadhany, M.Pd. Lingkar Edukasi Indonesia",
+            "2026 Padang Pariaman ISBN : 9786342880470"
+          ]
+        },
+        {
+          "id": "612fe4cc2c3595de8c3b",
+          "title": "PEMBELAJARAN MATEMATIKA SD",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Anim; Nanik Ulfa; Khafidhoh Nurul Aini; Agung Dian Putra; Eristia Arfi; Sri EFrinita Irwan; Ika Ratih Sulistiani Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786238963676"
+          ]
+        },
+        {
+          "id": "5518ff9d0c561e6ba687",
+          "title": "Kalkulus",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nita Anggriani, M.Si. ; Rahmi Yuliana M, S.Pd., M.Pd. ; Titik Pitriani Muslimin, S.Pd., M.Pd. ; Eristia Arfi, S.Si., M.Si. ; Retno Sulistyo Dhamar Lestari, ST., M.Eng. ; Khafidhoh Nurul Aini, S.Si., M.Pd. Feriyanto, M.Pd. ; Woro Mustika Resmi, S.T Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786347252135"
+          ]
+        },
+        {
+          "id": "16add2314428fbf1d428",
+          "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad Itera Press",
+            "2024 Itera ISBN : 9786347013231"
+          ]
+        }
+      ]
+    }
+  },
+  "metrics": {},
+  "collection_status": {
+    "scopus": {
+      "status": "manual_baseline"
+    },
+    "garuda": {
+      "status": "manual_baseline"
+    },
+    "google_scholar": {
+      "status": "not_provided"
+    },
+    "rama": {
+      "status": "not_provided"
+    },
+    "researches": {
+      "status": "manual_baseline"
+    },
+    "community_services": {
+      "status": "manual_baseline"
+    },
+    "iprs": {
+      "status": "manual_baseline"
+    },
+    "books": {
+      "status": "manual_baseline"
+    }
+  },
+  "manual_baseline": {
+    "source": "input/initial_profiles.md",
+    "collections": {
+      "scopus": [
+        {
+          "id": "73f0562c23e35d02ad02",
+          "title": "Analysis of mathematical model minimum dose of Celyvir for continous and periodic neuroblastoma treatment",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009593041&origin=resultslist",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Q4 as Conference Proceedin Aip Conference Proceedings",
+            "Author Order : 2 of 3 Creator : Sagala M.P.N.",
+            "2025 0 cited"
+          ]
+        },
+        {
+          "id": "a8f26f13e1dc19263521",
+          "title": "MATHEMATICS MODEL OF COMPACT TUMOR TO ANALYZE THE EFFECT ANTIANGIOGENIC THERAPY",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85216951811&origin=resultslist",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Q4 as Journal Barekeng",
+            "Author Order : 1 of 4 Creator : Arfi E.",
+            "2024 0 cited"
+          ]
+        },
+        {
+          "id": "f4d4048073fa6990e561",
+          "title": "Abuse notation of improper integrals",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85044402920&origin=resultslist",
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Q3 as Conference Proceedin Iop Conference Series Materials Science and Engineering",
+            "Author Order : 1 of 2 Creator : Arfi E.",
+            "2018 1 cited"
+          ]
+        }
+      ],
+      "garuda": [
+        {
+          "id": "66551e8539cb303254f2",
+          "title": "Teknologi Smart Conservation Untuk Identifikasi Spesies Mangrove Di Kawasan Ekowisata Cuku Nyinyi, Lampung",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4898155",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "CV. Multi Kreasi Media AMMA : Jurnal Pengabdian Masyarakat Vol. 4 No. 1 : Februari (2025): AMMA : Jurnal Pengabdian Masyarakat32-39",
+            "Author Order : 4 of 5",
+            "Triyana Muliawati; Fuji Lestari; Mika Alvionita Sitinjak; Eristia Arfi; Devia Gahana Cindi Alfian",
+            "2025 DOI: - Accred : Unknown"
+          ],
+          "doi": "-"
+        },
+        {
+          "id": "7d9ed6365c73802128ff",
+          "title": "Penerapan Manpower Planning (MPP) dan Full Time Equivalent (FTE) pada Bagian Produksi PT. Lampung Sukses Bersama (Lampung Banana Foster)",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4043800",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Department of Mathematics, Faculty of Science and Technology Universitas Jambi Mathematical Sciences and Applications Journal Vol. 4 No. 2 (2024): Mathematical Sciences and Applications Journal78-82",
+            "Author Order : 2 of 2",
+            "Tia Riski Rahmadhani; Eristia Arfi",
+            "2024 DOI: 10.22437/msa.v4i2.32291 Accred : Unknown"
+          ],
+          "doi": "10.22437/msa.v4i2.32291"
+        },
+        {
+          "id": "f44ada9ebc74e1451d0c",
+          "title": "MATHEMATICS MODEL OF COMPACT TUMOR TO ANALYZE THE EFFECT ANTIANGIOGENIC THERAPY",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4149369",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "PATTIMURA UNIVERSITY BAREKENG: Jurnal Ilmu Matematika dan Terapan Vol 18 No 3 (2024): BAREKENG: Journal of Mathematics and Its Application1585-1594",
+            "Author Order : 1 of 4",
+            "Arfi, Eristia; Putri, Dwi Mutiara; Wibarani, Yeni Gede; Rizka, Nela",
+            "2024 DOI: 10.30598/barekengvol18iss3pp1585-1594 Accred : Sinta 3"
+          ],
+          "doi": "10.30598/barekengvol18iss3pp1585-1594"
+        },
+        {
+          "id": "105405d720ca457b9a3f",
+          "title": "Penerapan Algoritma K-Means Clustering dalam Memetakan Produktivitas Lokasi Perkebunan Nanas PT Great Giant Pineapple",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4578594",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Jurusan Matematika FMIPA UNM Journal of Mathematics, Computations and Statistics Vol. 7 No. 2 (2024): Volume 07 Nomor 02 (Oktober 2024)215-231",
+            "Author Order : 2 of 3",
+            "Fitriani, Anisa; Arfi, Eristia; Huda, Anwar",
+            "2024 DOI: 10.35580/jmathcos.v7i2.4200 Accred : Sinta 3"
+          ],
+          "doi": "10.35580/jmathcos.v7i2.4200"
+        },
+        {
+          "id": "79e204b50220c17c6fc0",
+          "title": "Analisis Efisiensi Proses Penentuan Harga Perkiraan Sendiri menggunakan Teori Antrian pada PTPN I Regional 7",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4772833",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Syiah Kuala University Transcendent Journal of Mathematics and Applications Vol 3, No 2 (2024)64-73",
+            "Author Order : 2 of 2",
+            "Azzahra, Iqlima Dita; Arfi, Eristia",
+            "2024 DOI: 10.24815/tjoma.v3i2.41205 Accred : Unknown"
+          ],
+          "doi": "10.24815/tjoma.v3i2.41205"
+        },
+        {
+          "id": "2c92a71f28dbc35b4ede",
+          "title": "Pelatihan Tes Potensi Skolastik (TPS) di SMA Al Huda Jati Agung, Lampung Selatan",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3974999",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Kepada Masyarakat (LP2M), Institut Teknologi Sumatera, Lampung, Indonesia. TeknoKreatif: Jurnal Pengabdian kepada Masyarakat Vol 3 No 1 (2023): TEKNOKREATIF : Jurnal Pengabdian kepada Masyarakat36-42",
+            "Author Order : 3 of 5",
+            "Mustika, Mira; Noor, Dear Michiko Mutiara; Arfi, Eristia; Muliawati, Triyana; Anggraini, Retno",
+            "2023 DOI: 10.35472/teknokreatif.v3i1.776 Accred : Sinta 6"
+          ],
+          "doi": "10.35472/teknokreatif.v3i1.776"
+        },
+        {
+          "id": "0caa757970cba09fbc52",
+          "title": "Analisis Dinamik Model SIR Pada Kasus Penyebaran Penyakit Corona Virus Disease-19 (COVID-19)",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742055",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol. 1 No. 2 (2021): Indonesian Journal of Applied Mathematics Vol. 1 No. 2 April Chapter61-68",
+            "Author Order : 2 of 2",
+            "Sari, Shinta Puspita; Arfi, Eristia",
+            "2021 DOI: 10.35472/indojam.v1i2.354 Accred : Unknown"
+          ],
+          "doi": "10.35472/indojam.v1i2.354"
+        },
+        {
+          "id": "b4c61f53f95e295d399b",
+          "title": "The Delay Simulation on Hierarchical Structure for Semi-Double Track of Railway Line Using Max-Plus Algebra",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/992915",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 2 No 1 (2019): ICoSITeR Special Edition96 - 99",
+            "Author Order : 2 of 2",
+            "Tri Utomo; Eristia Arfi",
+            "2019 DOI: 10.35472/281421 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/281421"
+        },
+        {
+          "id": "cbe5cd8745b3e73c6f7a",
+          "title": "Penerapan Metode Multiple Scales untuk Masalah Galloping pada Mooring Cable FPSO",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1001353",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Universitas Dr. Soetomo Jurnal Ilmiah Soulmath : Jurnal Edukasi Pendidikan Matematika Vol 7 No 1 (2019)75 - 83",
+            "Author Order : 1 of 2",
+            "Arfi, Eristia; Utomo, Tri",
+            "2019 DOI: 10.25139/smj.v7i1.1421 Accred : Sinta 4"
+          ],
+          "doi": "10.25139/smj.v7i1.1421"
+        },
+        {
+          "id": "ae6f04aefc63a2e807d5",
+          "title": "Penerapan Metode Multiple Scales untuk Masalah Galloping pada DuaSpans Kabel Transmisi",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/729564",
+          "year": 2015,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "UIN Sultan Syarif Kasim Riau Seminar Nasional Teknologi Informasi Komunikasi dan Industri 2015: SNTIKI 7",
+            "Author Order : 1 of 1",
+            "Eristia Arfi",
+            "2015 DOI: - Accred : Unknown"
+          ],
+          "doi": "-"
+        },
+        {
+          "id": "526a731728649147fbed",
+          "title": "Hubungan antara Ketercapaian dan Keterkontrolan Sistem Diskrit Linier",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1058738",
+          "year": 2012,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Jurusan Matematika FMIPA Universitas Andalas Padang Jurnal Matematika UNAND Vol 1, No 1 (2012)67-70",
+            "Author Order : 1 of 1",
+            "Eristia Arfi",
+            "2012 DOI: 10.25077/jmu.1.1.67-70.2012 Accred : Unknown"
+          ],
+          "doi": "10.25077/jmu.1.1.67-70.2012"
+        }
+      ],
+      "google_scholar": [],
+      "rama": [],
+      "researches": [
+        {
+          "id": "55c8fc92b04a4ca2157f",
+          "title": "PENYELESAIAN PORTOFOLIO PADA BERBAGAI JENIS MATRIKS VARIANSI-KOVARIANSI DENGAN PENDEKATAN METODE SEQUENTIAL QUADRATIC PROGRAMMING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Lutfi Mardianto PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Mira Mustika; Eristia Arfi;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Lutfi Mardianto"
+        },
+        {
+          "id": "829c61d2219fa22dd5d1",
+          "title": "IDENTIFIKASI SPESIES MANGROVE BERDASARKAN MORFOLOGI DAUN MENGGUNAKAN CONVOLUTIONAL NEURAL NETWORK PADA KAWASAN EKOWISATA CUKU NYINYI",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Mika Alvionita S PENDANAAN PENELITIAN ITERA TA 2024 ( PDP )",
+            "Personils : Eristia Arfi;",
+            "2024 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Mika Alvionita S"
+        },
+        {
+          "id": "8bb03afb546e0a76df40",
+          "title": "KAJIAN DAMPAK VARIABILITAS IKLIM TERHADAP DEMAM BERDARAH DAN RISIKO KESEHATAN TERKAIT KUALITAS UDARA DI PROVINSI LAMPUNG",
+          "url": null,
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Tiara Shofi Edriani HIBAH JURUSAN SAINS ITERA 2023 ( HIBAH BANTUAN PENELITIAN JURUSAN )",
+            "Personils : Dear Michiko Mutiara Noor; Nela Rizka; Rifky Fauzi; Eristia Arfi;",
+            "2023 Rp. 15.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tiara Shofi Edriani"
+        },
+        {
+          "id": "cbb71646bccfd0b74164",
+          "title": "Analisa Perbandingan Metode Perturbasi untuk Masalah Galloping pada Kabel Transmisi",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Eristia Arfi Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Tri Utomo;",
+            "2019 Rp. 12.290.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "08156f5b06b7f8cc82ae",
+          "title": "PENERAPAN METODE MULTIPLE SCALES UNTUK MASALAH GALLOPING PADA MOORING CABLES FLOATING PRODUCTION AND STORAGE OFFLOADING",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Eristia Arfi Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Tri Utomo;",
+            "2018 Rp. 18.500.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "adea102e40d1916b24ea",
+          "title": "STRUKTUR HIRARKIS JALUR KERETA API SEMI-DOUBLE TRACK MENGGUNAKAN ALJABAR MAX-PLUS INTERVAL",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Tri Utomo HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Eristia Arfi;",
+            "2018 Rp. 16.820.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Tri Utomo"
+        }
+      ],
+      "community_services": [
+        {
+          "id": "dbee4cdd5eaaa30a6686",
+          "title": "PELATIHAN DASHBOARD STATISTIK BERBASIS CITRA UAV UNTUK ESTIMASI EKONOMI BIOBRIKET DI DESA KAWASAN TAMAN HUTAN RAYA WAN ABDUL RACHMAN",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Triyana Muliawati PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( LKPM )",
+            "Personils : Devia Gahana Cindi Alfian; Danni Gathot Harbowo; Eristia Arfi; Lea Kristi Agustina;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "228436072491b97f7671",
+          "title": "IMPLEMENTASI APLIKASI KAMERA IDENTIFKASI SPESIES MANGROVE OTOMATIS BERDASARKAN MORFOLOGI DAUN DI KAWASAN EKOWISATA CUKU NYINYI DESA SIDODADI KABUPATEN PESAWARAN PROVINSI LAMPUNG",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Triyana Muliawati PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2024 ( PDB )",
+            "Personils : Eristia Arfi; Fuji Lestari;",
+            "2024 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "25c4008ee0aa3a64ffa0",
+          "title": "WORKSHOP IMPLEMENTASI TEKNOLOGI INFORMASI BERBASIS LAYANAN “DISCOVER CUKU NYINYI” DISKUNYI PADA MANAJEMEN OBJEK EKOWISATA CUKU NYINYI LAMPUNG",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Eristia Arfi PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2024 ( LKP )",
+            "Personils : Fuji Lestari; Triyana Muliawati;",
+            "2024 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "f1ed9a2b4e82825da42c",
+          "title": "KELAS MOTIVASI MENUJU PERGURUAN TINGGI SERTA PELATIHAN TES POTENSI SKOLASTIK (TPS) DI SMAS AL HUDA, JATI AGUNG.",
+          "url": null,
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Mira Mustika HIBAH PENGABDIAN ITERA 2021 ( PKM )",
+            "Personils : Dear Michiko Mutiara Noor; Eristia Arfi; Triyana Muliawati; Dewi Suhika;",
+            "2021 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Mira Mustika"
+        },
+        {
+          "id": "71ae4b59416e25c83f25",
+          "title": "MENUMBUHKAN KESADARAN GENERASI MILENIAL HADAPI TANTANGAN REVOLUSI INDUSTRI 4.0: MELATIH GROWTH MINDSET POSITIF SMA GAJAH MADA BANDAR LAMPUNG",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Dear Michiko Mutiara Noor HIBAH PENGABDIAN ITERA 2019 ( PKM )",
+            "Personils : Mira Mustika; Triyana Muliawati; Eristia Arfi; Tri Utomo;",
+            "2019 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dear Michiko Mutiara Noor"
+        },
+        {
+          "id": "67a7c60fe320f9758fbd",
+          "title": "PEMBINAAN OLIMPIADE SAINS NASIONAL (OSN) MATEMATIKA UNTUK MENINGKATKAN KOMPETENSI SISWA DI SMA NEGERI 5 BANDAR LAMPUNG",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Leader : Triyana Muliawati HIBAH PENGABDIAN ITERA 2018 ( PKM )",
+            "Personils : Sri Efrinita Irwan; Eristia Arfi; Tri Utomo; Dewi Suhika; Werry Febrianti;",
+            "2018 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        }
+      ],
+      "iprs": [
+        {
+          "id": "f796ddf71c6665492682",
+          "title": "Matematika Dasar : Konsep, Teori, dan Aplikasi",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Inventor : Ernawati, S.Pd., M.Pd., Dr. Andi Patimbangi, S.Pd., M.Pd. dkk Ernawati, S.Pd., M.Pd., Dr. Andi Patimbangi, S.Pd., M.Pd. dkk",
+            "2026 Nomor Permohonan : EC002026032201 Status : Diterima Hak Cipta"
+          ]
+        },
+        {
+          "id": "d7d5d9fdc399f97ccaef",
+          "title": "Kalkulus",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Inventor : Nita Anggriani, M.Si.; Rahmi Yuliana M, S.Pd., M.Pd.; Titik Pitriani Muslimin, S.Pd., M.Pd.; Eristia Arfi, S.Si., M.Si.; Retno Sulistyo Dhamar Lestari, ST., M.Eng.; Khafidhoh Nurul Aini, S.Si., M.Pd.; Feriyanto, M.Pd.; Woro Mustika Resmi, S.T., M.Eng.; Mu Nita Anggriani, M.Si.; Rahmi Yuliana M, S.Pd., M.Pd.; Titik Pitriani Muslimin, S.Pd., M.Pd.; Eristia Arfi, S.Si., M.Si.; Retno Sulistyo Dhamar Lestari, ST., M.Eng.; Khafidhoh Nurul Aini, S.Si., M.Pd.; Feriyanto, M.Pd.; Woro Mustika Resmi, S.",
+            "2025 Nomor Permohonan : EC002025057085 Status : terdaftar Hak Cipta"
+          ]
+        },
+        {
+          "id": "2e890d5ed397db96bfee",
+          "title": "Pembelajaran Matematika SD",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Inventor : Anim, S.Si., M.Pd Nanik Ulfa, S.Si., M.Pd Khafidhoh Nurul Aini, S.Si., M.Pd Agung Dian Putra, S.Pd., M.Pd Eristia Arfi, S.Si., M.Si Dr. Sri Efrinita Irwan, M.Si Dr. Ika Ratih Sulistiani, S.Pd., M.Pd Anim, S.Si., M.Pd Nanik Ulfa, S.Si., M.Pd Khafidhoh Nurul Aini, S.Si., M.Pd Agung Dian Putra, S.Pd., M.Pd Eristia Arfi, S.Si., M.Si Dr. Sri Efrinita Irwan, M.Si Dr. Ika Ratih Sulistiani, S.Pd., M.Pd",
+            "2025 Nomor Permohonan : EC00202512545 Status : Hak Cipta"
+          ]
+        }
+      ],
+      "books": [
+        {
+          "id": "e673a1552c4aa053cbf2",
+          "title": "MATEMATIKA DASAR Konsep, Teori, dan Aplikasi",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Category : BUKU AJAR",
+            "Ernawati, S.Pd., M.Pd. | Dr. Andi Patimbangi, S.Pd., M.Pd. Rezki Ramdani, S.Pd., M.Pd. | Vivi Rosida, S.Pd., M.Pd. Ikhbariaty Kautsar Qadry, S.Pd., M.Pd. Radiatul Adawiah, S.Pd., M.Pd. Dr. Abd. Kadir Jaelani, S.Pd., M.Pd. Nuramaliyah Ramadhany, M.Pd. Lingkar Edukasi Indonesia",
+            "2026 Padang Pariaman ISBN : 9786342880470"
+          ]
+        },
+        {
+          "id": "612fe4cc2c3595de8c3b",
+          "title": "PEMBELAJARAN MATEMATIKA SD",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Anim; Nanik Ulfa; Khafidhoh Nurul Aini; Agung Dian Putra; Eristia Arfi; Sri EFrinita Irwan; Ika Ratih Sulistiani Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786238963676"
+          ]
+        },
+        {
+          "id": "5518ff9d0c561e6ba687",
+          "title": "Kalkulus",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nita Anggriani, M.Si. ; Rahmi Yuliana M, S.Pd., M.Pd. ; Titik Pitriani Muslimin, S.Pd., M.Pd. ; Eristia Arfi, S.Si., M.Si. ; Retno Sulistyo Dhamar Lestari, ST., M.Eng. ; Khafidhoh Nurul Aini, S.Si., M.Pd. Feriyanto, M.Pd. ; Woro Mustika Resmi, S.T Lingkar Edukasi Indonesia",
+            "2025 Padang Pariaman ISBN : 9786347252135"
+          ]
+        },
+        {
+          "id": "16add2314428fbf1d428",
+          "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad Itera Press",
+            "2024 Itera ISBN : 9786347013231"
+          ]
+        }
+      ]
+    },
+    "unclassified": []
+  }
+}

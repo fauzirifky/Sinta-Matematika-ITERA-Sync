@@ -1,0 +1,1461 @@
+{
+  "schema_version": 2,
+  "generated_at": null,
+  "source": {
+    "service": "SINTA - Science and Technology Index",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+    "access": "user-supplied public first pages"
+  },
+  "configured_author": {
+    "name": "Triyana Muliawati",
+    "sinta_id": "6151283",
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+    "enabled": true
+  },
+  "profile": {
+    "name": "TRIYANA MULIAWATI",
+    "sinta_id": "6151283",
+    "affiliation": "Institut Teknologi Sumatera",
+    "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
+    "department": "S1 - Matematika",
+    "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
+    "avatar_url": null,
+    "subjects": [],
+    "scores": {}
+  },
+  "collections": {
+    "scopus": {
+      "view": "scopus",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 7,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "f08cbe5c78b654d4fed7",
+          "title": "Probability of Earthquake Events and Building Damage Ratios: A Framework for Estimating Earthquake Insurance Premiums in Lampung, Indonesia",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105038247099&origin=resultslist",
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q2 as Journal Journal of Multidisciplinary Applied Natural Science",
+            "Author Order : 0 of 3 Creator : Muliawati T.",
+            "2026 0 cited"
+          ]
+        },
+        {
+          "id": "eb2e100caa7bcf9ad9ef",
+          "title": "Inventory control of raw materials using period order quantity method in preventing the stock-out occurrence",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009596517&origin=resultslist",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q4 as Conference Proceedin Aip Conference Proceedings",
+            "Author Order : 4 of 6 Creator : Nasution A.S.",
+            "2025 0 cited"
+          ]
+        },
+        {
+          "id": "955b9e66b30ae7db75ea",
+          "title": "State transition matrix and Markov-chain diagram for frequent volcanic eruptions: Krakatoa, Indonesia",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85184579505&origin=resultslist",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q3 as Conference Proceedin E3s Web of Conferences",
+            "Author Order : 2 of 2 Creator : Harbowo D.G.",
+            "2024 4 cited"
+          ]
+        },
+        {
+          "id": "2dcf5cd021632b970735",
+          "title": "Advancing the automated foraminifera fossil identification through scanning electron microscopy image classification: A convolutional neural network approach",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85204400591&origin=resultslist",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q3 as Conference Proceedin Iop Conference Series Earth and Environmental Science",
+            "Author Order : 2 of 2 Creator : Harbowo D.G.",
+            "2024 2 cited"
+          ]
+        },
+        {
+          "id": "f172fe879f2103c9dba7",
+          "title": "A decade drought monitoring through enhanced and standardized vegetation index in isolated karst environment: Nusa Penida Island, Bali, Indonesia",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85181123062&origin=resultslist",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q3 as Conference Proceedin Iop Conference Series Earth and Environmental Science",
+            "Author Order : 2 of 2 Creator : Harbowo D.G.",
+            "2023 6 cited"
+          ]
+        },
+        {
+          "id": "5c14f927bbe054e72532",
+          "title": "A Statistical review of the dates and patterns of volcanic activity of Lewotolo Volcano, East Nusa Tenggara, Indonesia",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85175852385&origin=resultslist",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q3 as Conference Proceedin Iop Conference Series Earth and Environmental Science",
+            "Author Order : 1 of 2 Creator : Muliawati T.",
+            "2023 4 cited"
+          ]
+        },
+        {
+          "id": "edbc10ed6ad0449ef170",
+          "title": "Eigenspace-based fuzzy c-means for sensing trending topics in Twitter",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85026268712&origin=resultslist",
+          "year": 2017,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q4 as Conference Proceedin Aip Conference Proceedings",
+            "Author Order : 1 of 2 Creator : Muliawati T.",
+            "2017 18 cited"
+          ]
+        }
+      ]
+    },
+    "garuda": {
+      "view": "garuda",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 19,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "a556993948be8e0e2120",
+          "title": "OPTIMASI PORTOFOLIO MEAN ABSOLUTE DEVIATION MENGGUNAKAN METODE SIMPLEKS DUA FASE PADA JAKARTA ISLAMIC INDEX",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/6219939",
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Universitas Negeri Surabaya MATHunesa: Jurnal Ilmiah Matematika Vol. 14 No. 1 (2026)27-37",
+            "Author Order : 3 of 3",
+            "Mutiara Rahma, Visna; Febrianti, Werry; Muliawati, Triyana",
+            "2026 DOI: 10.26740/mathunesa.v14n1.p27-37 Accred : Unknown"
+          ],
+          "doi": "10.26740/mathunesa.v14n1.p27-37"
+        },
+        {
+          "id": "316cd667558b52ea230c",
+          "title": "Statistical Pattern Recognition of Lithosphere Anomalous Activity Along the Indonesian Ring of Fire",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/5214039",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol. 9 No. 1 (2025): Journal of Science and Applicative Technology June Chapter13-18",
+            "Author Order : 3 of 5",
+            "S, Mika Alvionita; Satria, Ardika; Muliawati, Triyana; Lestari, Fuji; Harbowo, Danni Gathot",
+            "2025 DOI: 10.35472/jsat.v9i1.1850 Accred : Sinta 3"
+          ],
+          "doi": "10.35472/jsat.v9i1.1850"
+        },
+        {
+          "id": "7992da90c4e7a5aa20e1",
+          "title": "Raw Material Inventory Control Using The Period Order Quantity (POQ) Method to Reduce Stockout and Overstock Risks",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/5574617",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Universitas Islam Lamongan Vygotsky: Jurnal Pendidikan Matematika dan Matematika Vol. 7 No. 2 (2025): Vygotsky: Jurnal Pendidikan Matematika dan Matematika97-110",
+            "Author Order : 3 of 6",
+            "Nasution, Achmad Suryadi; Simbolon, Okto Bryan; Muliawati, Triyana; Edriani, Tiara Shofi; Noor, Dear Michiko Mutiara; Fauzi, Rifky",
+            "2025 DOI: 10.30736/voj.v7i2.1163 Accred : Sinta 3"
+          ],
+          "doi": "10.30736/voj.v7i2.1163"
+        },
+        {
+          "id": "ea56d04160439bcf3662",
+          "title": "Raw Material Inventory Control Using The Period Order Quantity (POQ) Method to Reduce Stockout and Overstock Risks",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/6053265",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Universitas Islam Lamongan Vygotsky: Jurnal Pendidikan Matematika dan Matematika Vol. 7 No. 2 (2025): Vygotsky: Jurnal Pendidikan Matematika dan Matematika97-110",
+            "Author Order : 3 of 6",
+            "Nasution, Achmad Suryadi; Simbolon, Okto Bryan; Muliawati, Triyana; Edriani, Tiara Shofi; Noor, Dear Michiko Mutiara; Fauzi, Rifky",
+            "2025 DOI: 10.30736/voj.v7i2.1163 Accred : Sinta 3"
+          ],
+          "doi": "10.30736/voj.v7i2.1163"
+        },
+        {
+          "id": "66551e8539cb303254f2",
+          "title": "Teknologi Smart Conservation Untuk Identifikasi Spesies Mangrove Di Kawasan Ekowisata Cuku Nyinyi, Lampung",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4898155",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "CV. Multi Kreasi Media AMMA : Jurnal Pengabdian Masyarakat Vol. 4 No. 1 : Februari (2025): AMMA : Jurnal Pengabdian Masyarakat32-39",
+            "Author Order : 1 of 5",
+            "Triyana Muliawati; Fuji Lestari; Mika Alvionita Sitinjak; Eristia Arfi; Devia Gahana Cindi Alfian",
+            "2025 DOI: - Accred : Unknown"
+          ],
+          "doi": "-"
+        },
+        {
+          "id": "ec65316386750662b733",
+          "title": "Recognition of Voronoi Cell Distribution in Earthquake Epicenter Data in the Sunda Strait Region, Indonesia",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4387675",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "UIN Imam Bonjol Padang JOSTECH Journal of Science and Technology Vol 4, No 2: September 2024189-198",
+            "Author Order : 1 of 4",
+            "Muliawati, Triyana; Lestari, Fuji; Harbowo, Danni Gathot; S, Mika Alvionita",
+            "2024 DOI: 10.15548/jostech.v4i2.9830 Accred : Sinta 4"
+          ],
+          "doi": "10.15548/jostech.v4i2.9830"
+        },
+        {
+          "id": "9dbf9262462c83417657",
+          "title": "Estimasi Jumlah Mismanaged Plactic Waste (MPW) Berdasarkan Kenaikan Populasi: Studi Kasus 30 Negara Tahun 2019-2022: Studi Kasus 30 Negara Tahun 2019-2022",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4516498",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol. 4 No. 1 (2024): Indonesian Journal of Applied Mathematics Vol. 4 No. 1 April Chapter26-34",
+            "Author Order : 1 of 4",
+            "Muliawati, Triyana; Supmawati, Meysi; Rahmawati, Eli; Aula, Naila Tsamrotul",
+            "2024 DOI: 10.35472/indojam.v4i1.1175 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/indojam.v4i1.1175"
+        },
+        {
+          "id": "714be0d6757d625e6be3",
+          "title": "Recognizing the Spatial Distribution and Voronoi Patterns of the Recorded Earthquake Epicenters in Sunda Strait, Indonesia",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4781563",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Diponegoro University Journal of Fundamental Mathematics and Applications (JFMA) Vol 7, No 2 (2024)119-127",
+            "Author Order : 1 of 5",
+            "Muliawati, Triyana; Lestari, Fuji; Alvionita, Mika; Satria, Ardika; Harbowo, DG",
+            "2024 DOI: 10.14710/jfma.v7i2.21931 Accred : Sinta 3"
+          ],
+          "doi": "10.14710/jfma.v7i2.21931"
+        },
+        {
+          "id": "4e4eab07925970986ef5",
+          "title": "k-Means Clustering to Enhance the Petrified Wood Composition Data Analyses and Its Interpretation",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742006",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 3 No 1 (2023): Indonesian Journal of Applied Mathematics Vol. 3 No. 1 July Chapter26-33",
+            "Author Order : 1 of 7",
+            "Triyana Muliawati; Danni Gathot Harbowo; Andre Markus Fernando Lubis; Juan Daniel Turnip; Erina Rosalia Irda; Adelia Azahra; Yanti Marito",
+            "2023 DOI: 10.35472/indojam.v3i1.1288 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/indojam.v3i1.1288"
+        },
+        {
+          "id": "88ff613231ab77f03d5d",
+          "title": "CLASSIFICATION OF THE GEOCHEMICAL COMPOSITION OF METEORITE OF PUNGGUR (ASTOMULYO) BY k-NEAREST NEIGHBOR ALGORITHM",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3761042",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Statistics Study Programme, Department of Mathematics, Faculty of Mathematics and Natural Sciences, University of Pattimura VARIANCE: Journal of Statistics and Its Applications Vol 5 No 2 (2023): VARIANCE: Journal of Statistics and Its Applications185-192",
+            "Author Order : 1 of 1",
+            "Triyana Muliawati",
+            "2023 DOI: 10.30598/variancevol5iss2page185-192 Accred : Sinta 4"
+          ],
+          "doi": "10.30598/variancevol5iss2page185-192"
+        },
+        {
+          "id": "2c92a71f28dbc35b4ede",
+          "title": "Pelatihan Tes Potensi Skolastik (TPS) di SMA Al Huda Jati Agung, Lampung Selatan",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3974999",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Kepada Masyarakat (LP2M), Institut Teknologi Sumatera, Lampung, Indonesia. TeknoKreatif: Jurnal Pengabdian kepada Masyarakat Vol 3 No 1 (2023): TEKNOKREATIF : Jurnal Pengabdian kepada Masyarakat36-42",
+            "Author Order : 4 of 5",
+            "Mustika, Mira; Noor, Dear Michiko Mutiara; Arfi, Eristia; Muliawati, Triyana; Anggraini, Retno",
+            "2023 DOI: 10.35472/teknokreatif.v3i1.776 Accred : Sinta 6"
+          ],
+          "doi": "10.35472/teknokreatif.v3i1.776"
+        },
+        {
+          "id": "2860c02e2daec974541f",
+          "title": "Analisis Kunjungan Wisatawan Mancanegara melalui Pintu Udara, Laut dan Darat",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742075",
+          "year": 2022,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 2 No 1 (2022): Indonesian Journal of Applied Mathematics Vol. 2 No. 1 April Chapter33-39",
+            "Author Order : 6 of 6",
+            "Muhammad Ammar Alkautsar; Sekar Anisa Sely; Della Najunda K.S; Rofi Ilmi Fadhillah; Alfredo Edward Lazuardi; Triyana Muliawati",
+            "2022 DOI: 10.35472/indojam.v2i1.765 Accred : Unknown"
+          ],
+          "doi": "10.35472/indojam.v2i1.765"
+        },
+        {
+          "id": "46bc13e4311f2fa4be24",
+          "title": "DEVELOPMENT OF THE PUGUNG RAHARJO ARCHAEOLOGICAL PARK IN LAMPUNG PROVINCE WITH GEOPARK AND ASTROTOURISM CONCEPT",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3302806",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Badan Pelaksana Rinjani-geopark Rinjani Lombok International Journal of Geotourism Science and Development Vol. 1 No. 2 (2021): December 202149-55",
+            "Author Order : 9 of 13",
+            "R Ikhram; Harbowo; Lestari; Agustina; Hutama; Prastyo; Yusuf; Natalia; Muliawati; Muztaba; Puradimadja; Raharto; Malasan",
+            "2021 DOI: 10.58856/ijgsd.v1i2.9 Accred : Sinta 5"
+          ],
+          "doi": "10.58856/ijgsd.v1i2.9"
+        },
+        {
+          "id": "e10ba2d1b4aabc55a19f",
+          "title": "Analisis Rantai Markov dalam Memprediksi Status Pasien COVID-19 di Indonesia",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742012",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol. 1 No. 2 (2021): Indonesian Journal of Applied Mathematics Vol. 1 No. 2 April Chapter44-50",
+            "Author Order : 2 of 2",
+            "Putri, Nabila Nurita; Muliawati, Triyana",
+            "2021 DOI: 10.35472/indojam.v1i2.352 Accred : Unknown"
+          ],
+          "doi": "10.35472/indojam.v1i2.352"
+        },
+        {
+          "id": "4ce90c3463a44f6b2617",
+          "title": "OPTIMALISASI RENCANA PEMASANGAN KABEL FIBER OPTIC DI ITERA DENGAN ALGORITMA PRIM",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1602857",
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "UNIVERSITAS MUHAMMADIYAH METRO AKSIOMA: Jurnal Program Studi Pendidikan Matematika Vol 9, No 1 (2020)86-92",
+            "Author Order : 2 of 3",
+            "Dewi Suhika; Triyana Muliawati; Heru Ruwandar",
+            "2020 DOI: 10.24127/ajpm.v9i1.2597 Accred : Sinta 2"
+          ],
+          "doi": "10.24127/ajpm.v9i1.2597"
+        },
+        {
+          "id": "62388caf0b1d73d9f886",
+          "title": "Pengaruh Hubungan E-learning Dalam Mata Kuliah MAFIKI di Institut Teknologi Sumatera Menggunakan Metode Wilcoxon",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742017",
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 1 No 1 (2020): Indonesian Journal of Applied Mathematics Vol. 1 No. 1 October Chapter1-5",
+            "Author Order : 6 of 6",
+            "Dedy Rudianto; Nabila Nurita Putri; Muhammad Said; Jenika Maulina Anjani; Febi Erliyani; Triyana Muliawati",
+            "2020 DOI: - Accred : Unknown"
+          ],
+          "doi": "-"
+        },
+        {
+          "id": "7218be274752ed75c209",
+          "title": "A graph theory approach to the dormitory room placement problem",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/992938",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 2 No 1 (2019): ICoSITeR Special Edition111 - 118",
+            "Author Order : 2 of 2",
+            "Sri Efrinita Irwan; Triyana Muliawati",
+            "2019 DOI: 10.35472/281472 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/281472"
+        },
+        {
+          "id": "9f227ec5ef36ebbb86e4",
+          "title": "The Effects of Development Program in ITERA Dormitory for Student Learning Achievements in First Year Stage Course",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/992923",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 2 No 1 (2019): ICoSITeR Special Edition40 - 46",
+            "Author Order : 1 of 2",
+            "Triyana Muliawati; Dewi Suhika",
+            "2019 DOI: 10.35472/281440 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/281440"
+        },
+        {
+          "id": "2eff02c980660b815ea0",
+          "title": "Fungsi Densitas Peluang Temporal (T-PDF) dari Dinamika Euro terhadap Dolar Amerika Serikat",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1206825",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 3 No 1 (2019): Journal of Science and Applicative Technology August Chapter17-25",
+            "Author Order : 1 of 3",
+            "Triyana Muliawati; . Kartono; Edi Cahyono",
+            "2019 DOI: 10.35472/jsat.v3i1.193 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/jsat.v3i1.193"
+        }
+      ]
+    },
+    "google_scholar": {
+      "view": "googlescholar",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "rama": {
+      "view": "rama",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
+      "reported_total": null,
+      "records_collected": 0,
+      "public_access_limited": true,
+      "records": []
+    },
+    "researches": {
+      "view": "researches",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 13,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "25c318a2dac34b63e76c",
+          "title": "KARAKTERISASI GEOLOGI SUBLITTORAL BIOGENIC DEPOSIT: PEMBAHARUAN ADAPTASI DAN EVALUASI PERFORMA MODEL CONVOLUTIONAL NEURAL NETWORK-YOLOV.5 UNTUK GEOKONSERVASI PESISIR",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Danni Gathot Harbowo PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN PRIORITAS )",
+            "Personils : Triyana Muliawati; Mika Alvionita S;",
+            "2025 Rp. 60.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Danni Gathot Harbowo"
+        },
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        },
+        {
+          "id": "2c9123bdfcca7bc2bf28",
+          "title": "Penerapan Digital Twin Adaptif pada Sistem Distribusi Listrik untuk Prediksi dan Pemeliharaan Jaringan di Bandar Lampung",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Syamsyarief Baqaruzi Penelitian Kompetitif Nasional ( PFR )",
+            "Personils : Tria Kasnalestari; Afit Miranto; Triyana Muliawati;",
+            "2025 Rp. 103.430.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Syamsyarief Baqaruzi"
+        },
+        {
+          "id": "9d25e6150809dde1f306",
+          "title": "Deteksi Cerdas Pola Kanopi dan Estimasi Potensi Biobriket dari Folium Sawit berbasis Teknologi Remote Sensing dan Machine Learning",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati Penelitian Kompetitif Nasional ( PFR )",
+            "Personils : Devia Gahana Cindi Alfian; Dewi Suhika;",
+            "2025 Rp. 103.420.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "f9f73c22a09b183d753a",
+          "title": "OPTIMALISASI ILUMINASI PENERANGAN JALAN UMUM BERBASIS SISTEM INFORMASI DAN LOGIKA FUZZY TERHADAP KOMPLEKSITAS KESELAMATAN PENGENDARA BERDASARKAN KELAS JALAN KOTA DI KOTA BANDAR LAMPUNG",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Syamsyarief Baqaruzi PENDANAAN PENELITIAN ITERA TA 2024 ( PD )",
+            "Personils : Triyana Muliawati; Afit Miranto;",
+            "2024 Rp. 60.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Syamsyarief Baqaruzi"
+        },
+        {
+          "id": "1dafb5d409833a031e69",
+          "title": "REPRESENTASI VISUAL DASHBOARD PREMI ASURANSI GEMPA BUMI DENGAN KONTEMPLASI STATISTICAL PATTERN RECOGNITION DARI AKTIVITAS GEMPA BUMI DI INDONESIA",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati PENDANAAN PENELITIAN ITERA TA 2024 ( PDP )",
+            "Personils : Fuji Lestari;",
+            "2024 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "8029e3c9ba0bd00bdb45",
+          "title": "OPTIMALISASI PERSEDIAAN BAHAN BAKU KOPI DALAM UPAYA MENEKAN BIAYA PRODUKSI DAN MENCEGAH TERJADINYA KEKURANGAN STOK ( STOCK OUT ) DENGAN MENGGUNAKAN METODE PERIOD ORDER QUANTITY (POQ)",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Achmad Suryadi Nasution HIBAH PENUGASAN FAKULTAS SAINS ITERA ( HPFS )",
+            "Personils : Rifky Fauzi; Triyana Muliawati; Dear Michiko Mutiara Noor; Tiara Shofi Edriani;",
+            "2024 Rp. 7.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Achmad Suryadi Nasution"
+        },
+        {
+          "id": "442faaecc3f24e49b03d",
+          "title": "DETERMINAN MATRIKS KETETANGGAAN DARI GRAF YANG TERKAIT DENGAN GRAF CYCLE",
+          "url": null,
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Sri Efrinita Irwan HIBAH PENELITIAN ITERA 2023 ( MADYA )",
+            "Personils : Aswan Anggun Pribadi; Achmad Suryadi Nasution; Triyana Muliawati;",
+            "2023 Rp. 39.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "d4cda1b867ada82f613b",
+          "title": "Penyelesaian Masalah Optimisasi Multi Objektif pada Portofolio Saham Syariah dengan Metode Modifikasi Skalarisasi Pascoletti-Serafini",
+          "url": null,
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Mira Mustika Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Triyana Muliawati;",
+            "2020 Rp. 14.600.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Mira Mustika"
+        },
+        {
+          "id": "a31c3c66059e4ad4d196",
+          "title": "Optimalisasi Rencana Pemasangan Kabel Fiber Optic di Institut Teknologi Sumatera dengan Algoritma Prim",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Dewi Suhika Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Triyana Muliawati;",
+            "2019 Rp. 18.260.000 Approved SIMLITABMAS SOURCE"
+          ],
+          "leader": "Dewi Suhika"
+        },
+        {
+          "id": "b72ff6098a73ab35d4ea",
+          "title": "Propaganda Bot pada Twitter: Studi Kasus untuk Kampanye Web Kepresidenan Indonesia",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Dewi Suhika;",
+            "2019 Rp. 18.967.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "51a605023152f4865cc5",
+          "title": "APLIKASI PEWARNAAN GRAF PADA PENENTUAN KAMAR MAHASISWA DI ASRAMA INSTITUT TEKNOLOGI SUMATERA",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Sri Efrinita Irwan HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Triyana Muliawati;",
+            "2018 Rp. 17.322.500 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "862ef11c2ecaaf382ad8",
+          "title": "PENGARUH PROGRAM PEMBINAAN DI ASRAMA ITERA TERHADAP PRESTASI BELAJAR MAHASISWA PADA TAHAP PERSIAPAN BERSAMA (TPB)",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Dewi Suhika;",
+            "2018 Rp. 15.570.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        }
+      ]
+    },
+    "community_services": {
+      "view": "services",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 6,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "dbee4cdd5eaaa30a6686",
+          "title": "PELATIHAN DASHBOARD STATISTIK BERBASIS CITRA UAV UNTUK ESTIMASI EKONOMI BIOBRIKET DI DESA KAWASAN TAMAN HUTAN RAYA WAN ABDUL RACHMAN",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( LKPM )",
+            "Personils : Devia Gahana Cindi Alfian; Danni Gathot Harbowo; Eristia Arfi; Lea Kristi Agustina;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "25c4008ee0aa3a64ffa0",
+          "title": "WORKSHOP IMPLEMENTASI TEKNOLOGI INFORMASI BERBASIS LAYANAN “DISCOVER CUKU NYINYI” DISKUNYI PADA MANAJEMEN OBJEK EKOWISATA CUKU NYINYI LAMPUNG",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Eristia Arfi PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2024 ( LKP )",
+            "Personils : Fuji Lestari; Triyana Muliawati;",
+            "2024 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "228436072491b97f7671",
+          "title": "IMPLEMENTASI APLIKASI KAMERA IDENTIFKASI SPESIES MANGROVE OTOMATIS BERDASARKAN MORFOLOGI DAUN DI KAWASAN EKOWISATA CUKU NYINYI DESA SIDODADI KABUPATEN PESAWARAN PROVINSI LAMPUNG",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2024 ( PDB )",
+            "Personils : Eristia Arfi; Fuji Lestari;",
+            "2024 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "f1ed9a2b4e82825da42c",
+          "title": "KELAS MOTIVASI MENUJU PERGURUAN TINGGI SERTA PELATIHAN TES POTENSI SKOLASTIK (TPS) DI SMAS AL HUDA, JATI AGUNG.",
+          "url": null,
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Mira Mustika HIBAH PENGABDIAN ITERA 2021 ( PKM )",
+            "Personils : Dear Michiko Mutiara Noor; Eristia Arfi; Triyana Muliawati; Dewi Suhika;",
+            "2021 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Mira Mustika"
+        },
+        {
+          "id": "71ae4b59416e25c83f25",
+          "title": "MENUMBUHKAN KESADARAN GENERASI MILENIAL HADAPI TANTANGAN REVOLUSI INDUSTRI 4.0: MELATIH GROWTH MINDSET POSITIF SMA GAJAH MADA BANDAR LAMPUNG",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Dear Michiko Mutiara Noor HIBAH PENGABDIAN ITERA 2019 ( PKM )",
+            "Personils : Mira Mustika; Triyana Muliawati; Eristia Arfi; Tri Utomo;",
+            "2019 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dear Michiko Mutiara Noor"
+        },
+        {
+          "id": "67a7c60fe320f9758fbd",
+          "title": "PEMBINAAN OLIMPIADE SAINS NASIONAL (OSN) MATEMATIKA UNTUK MENINGKATKAN KOMPETENSI SISWA DI SMA NEGERI 5 BANDAR LAMPUNG",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati HIBAH PENGABDIAN ITERA 2018 ( PKM )",
+            "Personils : Sri Efrinita Irwan; Eristia Arfi; Tri Utomo; Dewi Suhika; Werry Febrianti;",
+            "2018 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        }
+      ]
+    },
+    "iprs": {
+      "view": "iprs",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 3,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "da63eecd0afccece7454",
+          "title": "Video Profil Sistem Bejana Vertikal Cyanobacteria",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Inventor : Danni Gathot Harbowo, Triyana Muliawati, Lea Kristi Agustina Institut Teknologi Sumatera",
+            "2024 Nomor Permohonan : 000797497 Status : Diterima Hak Cipta"
+          ]
+        },
+        {
+          "id": "6fc0efa6093cccf5ce8a",
+          "title": "Paten Sederhana: Peralatan Penangkap Karbondioksida berupa Bejana Cyanobacteria Vertikal",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Inventor : Danni Gathot Harbowo, Triyana Muliawati, Lea Kristi Agustina, Vania Gian Kusuma Institut Teknologi Sumatera",
+            "2024 Nomor Permohonan : S00202410103 Status : PA Paten Sederhana"
+          ]
+        },
+        {
+          "id": "1773beeb7dc7c375a753",
+          "title": "Poster: Sistem Bejana Cyanobacteria Vertikal sebagai Penangkap Karbon",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Inventor : Triyana Muliawati, Danni Gathot Harbowo, Lea Kristi Agustina Institut Teknologi Sumatera",
+            "2024 Nomor Permohonan : EC002024236346 Status : Diterima Hak Cipta"
+          ]
+        }
+      ]
+    },
+    "books": {
+      "view": "books",
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 1,
+      "reported_total": null,
+      "records_collected": 2,
+      "public_access_limited": true,
+      "records": [
+        {
+          "id": "77557063ddcb1a032235",
+          "title": "Pemanfaatan Teknologi Penginderaan Jauh untuk Pembangunan Indonesia Berkelanjutan",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Ongky Anggara, Nirmawana Simarmata, Bilal Al Farishi, Rezki Naufan Hendrawan, Goldie Melinda Wijayanti, Zulfikar Adlan Nadzir, Ketut Wikantika, Satrio Muhammad Alif, Tri Kies Welly, Redho Surya Perdana, Adam Irwansyah Fauzi, Muhammad Ario Eko Rahadia ITERA Press",
+            "2024 Lampung Selatan, Lampung ISBN : 9786238472697"
+          ]
+        },
+        {
+          "id": "260a65459717f72a869f",
+          "title": "Integrasi Metode Analitik dalam Pemodelan Matematika dan Statistika",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Triyana Muliawati, Danni Gathot Harbowo, Gusrian Putra, Lutfi Mardianto, Nugraha Catur Septian Patra, Sri Efrinita Irwan, Khalila Adiba Safa, Nela Rizka, Tri Utomo ITERA Press",
+            "2024 Lampung Selatan ISBN : 9786347013170"
+          ]
+        }
+      ]
+    }
+  },
+  "metrics": {},
+  "collection_status": {
+    "scopus": {
+      "status": "manual_baseline"
+    },
+    "garuda": {
+      "status": "manual_baseline"
+    },
+    "google_scholar": {
+      "status": "not_provided"
+    },
+    "rama": {
+      "status": "not_provided"
+    },
+    "researches": {
+      "status": "manual_baseline"
+    },
+    "community_services": {
+      "status": "manual_baseline"
+    },
+    "iprs": {
+      "status": "manual_baseline"
+    },
+    "books": {
+      "status": "manual_baseline"
+    }
+  },
+  "manual_baseline": {
+    "source": "input/initial_profiles.md",
+    "collections": {
+      "scopus": [
+        {
+          "id": "f08cbe5c78b654d4fed7",
+          "title": "Probability of Earthquake Events and Building Damage Ratios: A Framework for Estimating Earthquake Insurance Premiums in Lampung, Indonesia",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105038247099&origin=resultslist",
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q2 as Journal Journal of Multidisciplinary Applied Natural Science",
+            "Author Order : 0 of 3 Creator : Muliawati T.",
+            "2026 0 cited"
+          ]
+        },
+        {
+          "id": "eb2e100caa7bcf9ad9ef",
+          "title": "Inventory control of raw materials using period order quantity method in preventing the stock-out occurrence",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009596517&origin=resultslist",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q4 as Conference Proceedin Aip Conference Proceedings",
+            "Author Order : 4 of 6 Creator : Nasution A.S.",
+            "2025 0 cited"
+          ]
+        },
+        {
+          "id": "955b9e66b30ae7db75ea",
+          "title": "State transition matrix and Markov-chain diagram for frequent volcanic eruptions: Krakatoa, Indonesia",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85184579505&origin=resultslist",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q3 as Conference Proceedin E3s Web of Conferences",
+            "Author Order : 2 of 2 Creator : Harbowo D.G.",
+            "2024 4 cited"
+          ]
+        },
+        {
+          "id": "2dcf5cd021632b970735",
+          "title": "Advancing the automated foraminifera fossil identification through scanning electron microscopy image classification: A convolutional neural network approach",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85204400591&origin=resultslist",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q3 as Conference Proceedin Iop Conference Series Earth and Environmental Science",
+            "Author Order : 2 of 2 Creator : Harbowo D.G.",
+            "2024 2 cited"
+          ]
+        },
+        {
+          "id": "f172fe879f2103c9dba7",
+          "title": "A decade drought monitoring through enhanced and standardized vegetation index in isolated karst environment: Nusa Penida Island, Bali, Indonesia",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85181123062&origin=resultslist",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q3 as Conference Proceedin Iop Conference Series Earth and Environmental Science",
+            "Author Order : 2 of 2 Creator : Harbowo D.G.",
+            "2023 6 cited"
+          ]
+        },
+        {
+          "id": "5c14f927bbe054e72532",
+          "title": "A Statistical review of the dates and patterns of volcanic activity of Lewotolo Volcano, East Nusa Tenggara, Indonesia",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85175852385&origin=resultslist",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q3 as Conference Proceedin Iop Conference Series Earth and Environmental Science",
+            "Author Order : 1 of 2 Creator : Muliawati T.",
+            "2023 4 cited"
+          ]
+        },
+        {
+          "id": "edbc10ed6ad0449ef170",
+          "title": "Eigenspace-based fuzzy c-means for sensing trending topics in Twitter",
+          "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85026268712&origin=resultslist",
+          "year": 2017,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Q4 as Conference Proceedin Aip Conference Proceedings",
+            "Author Order : 1 of 2 Creator : Muliawati T.",
+            "2017 18 cited"
+          ]
+        }
+      ],
+      "garuda": [
+        {
+          "id": "a556993948be8e0e2120",
+          "title": "OPTIMASI PORTOFOLIO MEAN ABSOLUTE DEVIATION MENGGUNAKAN METODE SIMPLEKS DUA FASE PADA JAKARTA ISLAMIC INDEX",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/6219939",
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Universitas Negeri Surabaya MATHunesa: Jurnal Ilmiah Matematika Vol. 14 No. 1 (2026)27-37",
+            "Author Order : 3 of 3",
+            "Mutiara Rahma, Visna; Febrianti, Werry; Muliawati, Triyana",
+            "2026 DOI: 10.26740/mathunesa.v14n1.p27-37 Accred : Unknown"
+          ],
+          "doi": "10.26740/mathunesa.v14n1.p27-37"
+        },
+        {
+          "id": "316cd667558b52ea230c",
+          "title": "Statistical Pattern Recognition of Lithosphere Anomalous Activity Along the Indonesian Ring of Fire",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/5214039",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol. 9 No. 1 (2025): Journal of Science and Applicative Technology June Chapter13-18",
+            "Author Order : 3 of 5",
+            "S, Mika Alvionita; Satria, Ardika; Muliawati, Triyana; Lestari, Fuji; Harbowo, Danni Gathot",
+            "2025 DOI: 10.35472/jsat.v9i1.1850 Accred : Sinta 3"
+          ],
+          "doi": "10.35472/jsat.v9i1.1850"
+        },
+        {
+          "id": "7992da90c4e7a5aa20e1",
+          "title": "Raw Material Inventory Control Using The Period Order Quantity (POQ) Method to Reduce Stockout and Overstock Risks",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/5574617",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Universitas Islam Lamongan Vygotsky: Jurnal Pendidikan Matematika dan Matematika Vol. 7 No. 2 (2025): Vygotsky: Jurnal Pendidikan Matematika dan Matematika97-110",
+            "Author Order : 3 of 6",
+            "Nasution, Achmad Suryadi; Simbolon, Okto Bryan; Muliawati, Triyana; Edriani, Tiara Shofi; Noor, Dear Michiko Mutiara; Fauzi, Rifky",
+            "2025 DOI: 10.30736/voj.v7i2.1163 Accred : Sinta 3"
+          ],
+          "doi": "10.30736/voj.v7i2.1163"
+        },
+        {
+          "id": "ea56d04160439bcf3662",
+          "title": "Raw Material Inventory Control Using The Period Order Quantity (POQ) Method to Reduce Stockout and Overstock Risks",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/6053265",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Universitas Islam Lamongan Vygotsky: Jurnal Pendidikan Matematika dan Matematika Vol. 7 No. 2 (2025): Vygotsky: Jurnal Pendidikan Matematika dan Matematika97-110",
+            "Author Order : 3 of 6",
+            "Nasution, Achmad Suryadi; Simbolon, Okto Bryan; Muliawati, Triyana; Edriani, Tiara Shofi; Noor, Dear Michiko Mutiara; Fauzi, Rifky",
+            "2025 DOI: 10.30736/voj.v7i2.1163 Accred : Sinta 3"
+          ],
+          "doi": "10.30736/voj.v7i2.1163"
+        },
+        {
+          "id": "66551e8539cb303254f2",
+          "title": "Teknologi Smart Conservation Untuk Identifikasi Spesies Mangrove Di Kawasan Ekowisata Cuku Nyinyi, Lampung",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4898155",
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "CV. Multi Kreasi Media AMMA : Jurnal Pengabdian Masyarakat Vol. 4 No. 1 : Februari (2025): AMMA : Jurnal Pengabdian Masyarakat32-39",
+            "Author Order : 1 of 5",
+            "Triyana Muliawati; Fuji Lestari; Mika Alvionita Sitinjak; Eristia Arfi; Devia Gahana Cindi Alfian",
+            "2025 DOI: - Accred : Unknown"
+          ],
+          "doi": "-"
+        },
+        {
+          "id": "ec65316386750662b733",
+          "title": "Recognition of Voronoi Cell Distribution in Earthquake Epicenter Data in the Sunda Strait Region, Indonesia",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4387675",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "UIN Imam Bonjol Padang JOSTECH Journal of Science and Technology Vol 4, No 2: September 2024189-198",
+            "Author Order : 1 of 4",
+            "Muliawati, Triyana; Lestari, Fuji; Harbowo, Danni Gathot; S, Mika Alvionita",
+            "2024 DOI: 10.15548/jostech.v4i2.9830 Accred : Sinta 4"
+          ],
+          "doi": "10.15548/jostech.v4i2.9830"
+        },
+        {
+          "id": "9dbf9262462c83417657",
+          "title": "Estimasi Jumlah Mismanaged Plactic Waste (MPW) Berdasarkan Kenaikan Populasi: Studi Kasus 30 Negara Tahun 2019-2022: Studi Kasus 30 Negara Tahun 2019-2022",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4516498",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol. 4 No. 1 (2024): Indonesian Journal of Applied Mathematics Vol. 4 No. 1 April Chapter26-34",
+            "Author Order : 1 of 4",
+            "Muliawati, Triyana; Supmawati, Meysi; Rahmawati, Eli; Aula, Naila Tsamrotul",
+            "2024 DOI: 10.35472/indojam.v4i1.1175 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/indojam.v4i1.1175"
+        },
+        {
+          "id": "714be0d6757d625e6be3",
+          "title": "Recognizing the Spatial Distribution and Voronoi Patterns of the Recorded Earthquake Epicenters in Sunda Strait, Indonesia",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4781563",
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Diponegoro University Journal of Fundamental Mathematics and Applications (JFMA) Vol 7, No 2 (2024)119-127",
+            "Author Order : 1 of 5",
+            "Muliawati, Triyana; Lestari, Fuji; Alvionita, Mika; Satria, Ardika; Harbowo, DG",
+            "2024 DOI: 10.14710/jfma.v7i2.21931 Accred : Sinta 3"
+          ],
+          "doi": "10.14710/jfma.v7i2.21931"
+        },
+        {
+          "id": "4e4eab07925970986ef5",
+          "title": "k-Means Clustering to Enhance the Petrified Wood Composition Data Analyses and Its Interpretation",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742006",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 3 No 1 (2023): Indonesian Journal of Applied Mathematics Vol. 3 No. 1 July Chapter26-33",
+            "Author Order : 1 of 7",
+            "Triyana Muliawati; Danni Gathot Harbowo; Andre Markus Fernando Lubis; Juan Daniel Turnip; Erina Rosalia Irda; Adelia Azahra; Yanti Marito",
+            "2023 DOI: 10.35472/indojam.v3i1.1288 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/indojam.v3i1.1288"
+        },
+        {
+          "id": "88ff613231ab77f03d5d",
+          "title": "CLASSIFICATION OF THE GEOCHEMICAL COMPOSITION OF METEORITE OF PUNGGUR (ASTOMULYO) BY k-NEAREST NEIGHBOR ALGORITHM",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3761042",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Statistics Study Programme, Department of Mathematics, Faculty of Mathematics and Natural Sciences, University of Pattimura VARIANCE: Journal of Statistics and Its Applications Vol 5 No 2 (2023): VARIANCE: Journal of Statistics and Its Applications185-192",
+            "Author Order : 1 of 1",
+            "Triyana Muliawati",
+            "2023 DOI: 10.30598/variancevol5iss2page185-192 Accred : Sinta 4"
+          ],
+          "doi": "10.30598/variancevol5iss2page185-192"
+        },
+        {
+          "id": "2c92a71f28dbc35b4ede",
+          "title": "Pelatihan Tes Potensi Skolastik (TPS) di SMA Al Huda Jati Agung, Lampung Selatan",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3974999",
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Kepada Masyarakat (LP2M), Institut Teknologi Sumatera, Lampung, Indonesia. TeknoKreatif: Jurnal Pengabdian kepada Masyarakat Vol 3 No 1 (2023): TEKNOKREATIF : Jurnal Pengabdian kepada Masyarakat36-42",
+            "Author Order : 4 of 5",
+            "Mustika, Mira; Noor, Dear Michiko Mutiara; Arfi, Eristia; Muliawati, Triyana; Anggraini, Retno",
+            "2023 DOI: 10.35472/teknokreatif.v3i1.776 Accred : Sinta 6"
+          ],
+          "doi": "10.35472/teknokreatif.v3i1.776"
+        },
+        {
+          "id": "2860c02e2daec974541f",
+          "title": "Analisis Kunjungan Wisatawan Mancanegara melalui Pintu Udara, Laut dan Darat",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742075",
+          "year": 2022,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 2 No 1 (2022): Indonesian Journal of Applied Mathematics Vol. 2 No. 1 April Chapter33-39",
+            "Author Order : 6 of 6",
+            "Muhammad Ammar Alkautsar; Sekar Anisa Sely; Della Najunda K.S; Rofi Ilmi Fadhillah; Alfredo Edward Lazuardi; Triyana Muliawati",
+            "2022 DOI: 10.35472/indojam.v2i1.765 Accred : Unknown"
+          ],
+          "doi": "10.35472/indojam.v2i1.765"
+        },
+        {
+          "id": "46bc13e4311f2fa4be24",
+          "title": "DEVELOPMENT OF THE PUGUNG RAHARJO ARCHAEOLOGICAL PARK IN LAMPUNG PROVINCE WITH GEOPARK AND ASTROTOURISM CONCEPT",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3302806",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Badan Pelaksana Rinjani-geopark Rinjani Lombok International Journal of Geotourism Science and Development Vol. 1 No. 2 (2021): December 202149-55",
+            "Author Order : 9 of 13",
+            "R Ikhram; Harbowo; Lestari; Agustina; Hutama; Prastyo; Yusuf; Natalia; Muliawati; Muztaba; Puradimadja; Raharto; Malasan",
+            "2021 DOI: 10.58856/ijgsd.v1i2.9 Accred : Sinta 5"
+          ],
+          "doi": "10.58856/ijgsd.v1i2.9"
+        },
+        {
+          "id": "e10ba2d1b4aabc55a19f",
+          "title": "Analisis Rantai Markov dalam Memprediksi Status Pasien COVID-19 di Indonesia",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742012",
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol. 1 No. 2 (2021): Indonesian Journal of Applied Mathematics Vol. 1 No. 2 April Chapter44-50",
+            "Author Order : 2 of 2",
+            "Putri, Nabila Nurita; Muliawati, Triyana",
+            "2021 DOI: 10.35472/indojam.v1i2.352 Accred : Unknown"
+          ],
+          "doi": "10.35472/indojam.v1i2.352"
+        },
+        {
+          "id": "4ce90c3463a44f6b2617",
+          "title": "OPTIMALISASI RENCANA PEMASANGAN KABEL FIBER OPTIC DI ITERA DENGAN ALGORITMA PRIM",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1602857",
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "UNIVERSITAS MUHAMMADIYAH METRO AKSIOMA: Jurnal Program Studi Pendidikan Matematika Vol 9, No 1 (2020)86-92",
+            "Author Order : 2 of 3",
+            "Dewi Suhika; Triyana Muliawati; Heru Ruwandar",
+            "2020 DOI: 10.24127/ajpm.v9i1.2597 Accred : Sinta 2"
+          ],
+          "doi": "10.24127/ajpm.v9i1.2597"
+        },
+        {
+          "id": "62388caf0b1d73d9f886",
+          "title": "Pengaruh Hubungan E-learning Dalam Mata Kuliah MAFIKI di Institut Teknologi Sumatera Menggunakan Metode Wilcoxon",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742017",
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 1 No 1 (2020): Indonesian Journal of Applied Mathematics Vol. 1 No. 1 October Chapter1-5",
+            "Author Order : 6 of 6",
+            "Dedy Rudianto; Nabila Nurita Putri; Muhammad Said; Jenika Maulina Anjani; Febi Erliyani; Triyana Muliawati",
+            "2020 DOI: - Accred : Unknown"
+          ],
+          "doi": "-"
+        },
+        {
+          "id": "7218be274752ed75c209",
+          "title": "A graph theory approach to the dormitory room placement problem",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/992938",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 2 No 1 (2019): ICoSITeR Special Edition111 - 118",
+            "Author Order : 2 of 2",
+            "Sri Efrinita Irwan; Triyana Muliawati",
+            "2019 DOI: 10.35472/281472 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/281472"
+        },
+        {
+          "id": "9f227ec5ef36ebbb86e4",
+          "title": "The Effects of Development Program in ITERA Dormitory for Student Learning Achievements in First Year Stage Course",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/992923",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 2 No 1 (2019): ICoSITeR Special Edition40 - 46",
+            "Author Order : 1 of 2",
+            "Triyana Muliawati; Dewi Suhika",
+            "2019 DOI: 10.35472/281440 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/281440"
+        },
+        {
+          "id": "2eff02c980660b815ea0",
+          "title": "Fungsi Densitas Peluang Temporal (T-PDF) dari Dinamika Euro terhadap Dolar Amerika Serikat",
+          "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1206825",
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Journal of Science and Applicative Technology Vol 3 No 1 (2019): Journal of Science and Applicative Technology August Chapter17-25",
+            "Author Order : 1 of 3",
+            "Triyana Muliawati; . Kartono; Edi Cahyono",
+            "2019 DOI: 10.35472/jsat.v3i1.193 Accred : Sinta 4"
+          ],
+          "doi": "10.35472/jsat.v3i1.193"
+        }
+      ],
+      "google_scholar": [],
+      "rama": [],
+      "researches": [
+        {
+          "id": "25c318a2dac34b63e76c",
+          "title": "KARAKTERISASI GEOLOGI SUBLITTORAL BIOGENIC DEPOSIT: PEMBAHARUAN ADAPTASI DAN EVALUASI PERFORMA MODEL CONVOLUTIONAL NEURAL NETWORK-YOLOV.5 UNTUK GEOKONSERVASI PESISIR",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Danni Gathot Harbowo PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN PRIORITAS )",
+            "Personils : Triyana Muliawati; Mika Alvionita S;",
+            "2025 Rp. 60.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Danni Gathot Harbowo"
+        },
+        {
+          "id": "ad8a05ba4da3d62593fe",
+          "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Nurul Indah Safitri"
+        },
+        {
+          "id": "2c9123bdfcca7bc2bf28",
+          "title": "Penerapan Digital Twin Adaptif pada Sistem Distribusi Listrik untuk Prediksi dan Pemeliharaan Jaringan di Bandar Lampung",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Syamsyarief Baqaruzi Penelitian Kompetitif Nasional ( PFR )",
+            "Personils : Tria Kasnalestari; Afit Miranto; Triyana Muliawati;",
+            "2025 Rp. 103.430.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Syamsyarief Baqaruzi"
+        },
+        {
+          "id": "9d25e6150809dde1f306",
+          "title": "Deteksi Cerdas Pola Kanopi dan Estimasi Potensi Biobriket dari Folium Sawit berbasis Teknologi Remote Sensing dan Machine Learning",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati Penelitian Kompetitif Nasional ( PFR )",
+            "Personils : Devia Gahana Cindi Alfian; Dewi Suhika;",
+            "2025 Rp. 103.420.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "f9f73c22a09b183d753a",
+          "title": "OPTIMALISASI ILUMINASI PENERANGAN JALAN UMUM BERBASIS SISTEM INFORMASI DAN LOGIKA FUZZY TERHADAP KOMPLEKSITAS KESELAMATAN PENGENDARA BERDASARKAN KELAS JALAN KOTA DI KOTA BANDAR LAMPUNG",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Syamsyarief Baqaruzi PENDANAAN PENELITIAN ITERA TA 2024 ( PD )",
+            "Personils : Triyana Muliawati; Afit Miranto;",
+            "2024 Rp. 60.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Syamsyarief Baqaruzi"
+        },
+        {
+          "id": "1dafb5d409833a031e69",
+          "title": "REPRESENTASI VISUAL DASHBOARD PREMI ASURANSI GEMPA BUMI DENGAN KONTEMPLASI STATISTICAL PATTERN RECOGNITION DARI AKTIVITAS GEMPA BUMI DI INDONESIA",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati PENDANAAN PENELITIAN ITERA TA 2024 ( PDP )",
+            "Personils : Fuji Lestari;",
+            "2024 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "8029e3c9ba0bd00bdb45",
+          "title": "OPTIMALISASI PERSEDIAAN BAHAN BAKU KOPI DALAM UPAYA MENEKAN BIAYA PRODUKSI DAN MENCEGAH TERJADINYA KEKURANGAN STOK ( STOCK OUT ) DENGAN MENGGUNAKAN METODE PERIOD ORDER QUANTITY (POQ)",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Achmad Suryadi Nasution HIBAH PENUGASAN FAKULTAS SAINS ITERA ( HPFS )",
+            "Personils : Rifky Fauzi; Triyana Muliawati; Dear Michiko Mutiara Noor; Tiara Shofi Edriani;",
+            "2024 Rp. 7.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Achmad Suryadi Nasution"
+        },
+        {
+          "id": "442faaecc3f24e49b03d",
+          "title": "DETERMINAN MATRIKS KETETANGGAAN DARI GRAF YANG TERKAIT DENGAN GRAF CYCLE",
+          "url": null,
+          "year": 2023,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Sri Efrinita Irwan HIBAH PENELITIAN ITERA 2023 ( MADYA )",
+            "Personils : Aswan Anggun Pribadi; Achmad Suryadi Nasution; Triyana Muliawati;",
+            "2023 Rp. 39.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "d4cda1b867ada82f613b",
+          "title": "Penyelesaian Masalah Optimisasi Multi Objektif pada Portofolio Saham Syariah dengan Metode Modifikasi Skalarisasi Pascoletti-Serafini",
+          "url": null,
+          "year": 2020,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Mira Mustika Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Triyana Muliawati;",
+            "2020 Rp. 14.600.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Mira Mustika"
+        },
+        {
+          "id": "a31c3c66059e4ad4d196",
+          "title": "Optimalisasi Rencana Pemasangan Kabel Fiber Optic di Institut Teknologi Sumatera dengan Algoritma Prim",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Dewi Suhika Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Triyana Muliawati;",
+            "2019 Rp. 18.260.000 Approved SIMLITABMAS SOURCE"
+          ],
+          "leader": "Dewi Suhika"
+        },
+        {
+          "id": "b72ff6098a73ab35d4ea",
+          "title": "Propaganda Bot pada Twitter: Studi Kasus untuk Kampanye Web Kepresidenan Indonesia",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+            "Personils : Dewi Suhika;",
+            "2019 Rp. 18.967.000 Approved BIMA SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "51a605023152f4865cc5",
+          "title": "APLIKASI PEWARNAAN GRAF PADA PENENTUAN KAMAR MAHASISWA DI ASRAMA INSTITUT TEKNOLOGI SUMATERA",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Sri Efrinita Irwan HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Triyana Muliawati;",
+            "2018 Rp. 17.322.500 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Sri Efrinita Irwan"
+        },
+        {
+          "id": "862ef11c2ecaaf382ad8",
+          "title": "PENGARUH PROGRAM PEMBINAAN DI ASRAMA ITERA TERHADAP PRESTASI BELAJAR MAHASISWA PADA TAHAP PERSIAPAN BERSAMA (TPB)",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+            "Personils : Dewi Suhika;",
+            "2018 Rp. 15.570.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        }
+      ],
+      "community_services": [
+        {
+          "id": "dbee4cdd5eaaa30a6686",
+          "title": "PELATIHAN DASHBOARD STATISTIK BERBASIS CITRA UAV UNTUK ESTIMASI EKONOMI BIOBRIKET DI DESA KAWASAN TAMAN HUTAN RAYA WAN ABDUL RACHMAN",
+          "url": null,
+          "year": 2025,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( LKPM )",
+            "Personils : Devia Gahana Cindi Alfian; Danni Gathot Harbowo; Eristia Arfi; Lea Kristi Agustina;",
+            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "25c4008ee0aa3a64ffa0",
+          "title": "WORKSHOP IMPLEMENTASI TEKNOLOGI INFORMASI BERBASIS LAYANAN “DISCOVER CUKU NYINYI” DISKUNYI PADA MANAJEMEN OBJEK EKOWISATA CUKU NYINYI LAMPUNG",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Eristia Arfi PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2024 ( LKP )",
+            "Personils : Fuji Lestari; Triyana Muliawati;",
+            "2024 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Eristia Arfi"
+        },
+        {
+          "id": "228436072491b97f7671",
+          "title": "IMPLEMENTASI APLIKASI KAMERA IDENTIFKASI SPESIES MANGROVE OTOMATIS BERDASARKAN MORFOLOGI DAUN DI KAWASAN EKOWISATA CUKU NYINYI DESA SIDODADI KABUPATEN PESAWARAN PROVINSI LAMPUNG",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2024 ( PDB )",
+            "Personils : Eristia Arfi; Fuji Lestari;",
+            "2024 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        },
+        {
+          "id": "f1ed9a2b4e82825da42c",
+          "title": "KELAS MOTIVASI MENUJU PERGURUAN TINGGI SERTA PELATIHAN TES POTENSI SKOLASTIK (TPS) DI SMAS AL HUDA, JATI AGUNG.",
+          "url": null,
+          "year": 2021,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Mira Mustika HIBAH PENGABDIAN ITERA 2021 ( PKM )",
+            "Personils : Dear Michiko Mutiara Noor; Eristia Arfi; Triyana Muliawati; Dewi Suhika;",
+            "2021 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Mira Mustika"
+        },
+        {
+          "id": "71ae4b59416e25c83f25",
+          "title": "MENUMBUHKAN KESADARAN GENERASI MILENIAL HADAPI TANTANGAN REVOLUSI INDUSTRI 4.0: MELATIH GROWTH MINDSET POSITIF SMA GAJAH MADA BANDAR LAMPUNG",
+          "url": null,
+          "year": 2019,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Dear Michiko Mutiara Noor HIBAH PENGABDIAN ITERA 2019 ( PKM )",
+            "Personils : Mira Mustika; Triyana Muliawati; Eristia Arfi; Tri Utomo;",
+            "2019 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Dear Michiko Mutiara Noor"
+        },
+        {
+          "id": "67a7c60fe320f9758fbd",
+          "title": "PEMBINAAN OLIMPIADE SAINS NASIONAL (OSN) MATEMATIKA UNTUK MENINGKATKAN KOMPETENSI SISWA DI SMA NEGERI 5 BANDAR LAMPUNG",
+          "url": null,
+          "year": 2018,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Leader : Triyana Muliawati HIBAH PENGABDIAN ITERA 2018 ( PKM )",
+            "Personils : Sri Efrinita Irwan; Eristia Arfi; Tri Utomo; Dewi Suhika; Werry Febrianti;",
+            "2018 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          ],
+          "leader": "Triyana Muliawati"
+        }
+      ],
+      "iprs": [
+        {
+          "id": "da63eecd0afccece7454",
+          "title": "Video Profil Sistem Bejana Vertikal Cyanobacteria",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Inventor : Danni Gathot Harbowo, Triyana Muliawati, Lea Kristi Agustina Institut Teknologi Sumatera",
+            "2024 Nomor Permohonan : 000797497 Status : Diterima Hak Cipta"
+          ]
+        },
+        {
+          "id": "6fc0efa6093cccf5ce8a",
+          "title": "Paten Sederhana: Peralatan Penangkap Karbondioksida berupa Bejana Cyanobacteria Vertikal",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Inventor : Danni Gathot Harbowo, Triyana Muliawati, Lea Kristi Agustina, Vania Gian Kusuma Institut Teknologi Sumatera",
+            "2024 Nomor Permohonan : S00202410103 Status : PA Paten Sederhana"
+          ]
+        },
+        {
+          "id": "1773beeb7dc7c375a753",
+          "title": "Poster: Sistem Bejana Cyanobacteria Vertikal sebagai Penangkap Karbon",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Inventor : Triyana Muliawati, Danni Gathot Harbowo, Lea Kristi Agustina Institut Teknologi Sumatera",
+            "2024 Nomor Permohonan : EC002024236346 Status : Diterima Hak Cipta"
+          ]
+        }
+      ],
+      "books": [
+        {
+          "id": "77557063ddcb1a032235",
+          "title": "Pemanfaatan Teknologi Penginderaan Jauh untuk Pembangunan Indonesia Berkelanjutan",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Ongky Anggara, Nirmawana Simarmata, Bilal Al Farishi, Rezki Naufan Hendrawan, Goldie Melinda Wijayanti, Zulfikar Adlan Nadzir, Ketut Wikantika, Satrio Muhammad Alif, Tri Kies Welly, Redho Surya Perdana, Adam Irwansyah Fauzi, Muhammad Ario Eko Rahadia ITERA Press",
+            "2024 Lampung Selatan, Lampung ISBN : 9786238472697"
+          ]
+        },
+        {
+          "id": "260a65459717f72a869f",
+          "title": "Integrasi Metode Analitik dalam Pemodelan Matematika dan Statistika",
+          "url": null,
+          "year": 2024,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283",
+          "details": [
+            "Category : BUKU REFERENSI",
+            "Triyana Muliawati, Danni Gathot Harbowo, Gusrian Putra, Lutfi Mardianto, Nugraha Catur Septian Patra, Sri Efrinita Irwan, Khalila Adiba Safa, Nela Rizka, Tri Utomo ITERA Press",
+            "2024 Lampung Selatan ISBN : 9786347013170"
+          ]
+        }
+      ]
+    },
+    "unclassified": []
+  }
+}

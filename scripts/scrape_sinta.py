@@ -508,88 +508,47 @@ def scrape_author(
     author: dict[str, Any],
     output_dir: Path,
     delay: float,
+    view: str,
 ) -> tuple[dict[str, Any], bool]:
     author_path = output_dir / f"{author['sinta_id']}.json"
     previous = load_json(author_path, {})
     now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
-    profile_soup, profile_page_url = fetch_soup(session, author["profile_url"])
+    if view == "scopus":
+        profile_soup, profile_page_url = fetch_soup(session, author["profile_url"])
+    else:
+        profile_soup, profile_page_url = fetch_soup(
+            session, author["profile_url"], params={"view": "matrics" if view == "metrics" else COLLECTIONS[view]}
+        )
     profile = parse_profile(profile_soup, author["sinta_id"])
-    if profile.get("sinta_id") != author["sinta_id"]:
+    if profile.get("sinta_id") != author["sinta_id"] or not profile.get("name"):
         raise RuntimeError(
             f"Configured SINTA ID {author['sinta_id']} does not match page ID {profile.get('sinta_id')}"
         )
-
-    # The first profile response is already the Scopus view. Reuse it to avoid
-    # spending a second API request for the same HTML.
-    collections: dict[str, Any] = {
-        "scopus": collection_result_from_soup(
-            profile_soup,
-            "scopus",
-            "scopus",
-            profile_page_url,
-        )
-    }
-    statuses: dict[str, Any] = {
-        "scopus": {"status": "ok", "checked_at": now}
-    }
-    had_errors = False
-    previous_collections = previous.get("collections", {}) if isinstance(previous, dict) else {}
-
-    for collection, view in COLLECTIONS.items():
-        if collection == "scopus":
-            continue
-        time.sleep(delay)
-        try:
-            collections[collection] = scrape_collection(
-                session,
-                author["profile_url"],
-                collection,
-                view,
-            )
-            statuses[collection] = {"status": "ok", "checked_at": now}
-        except Exception as exc:  # Preserve the last known-good section.
-            had_errors = True
-            if collection in previous_collections:
-                collections[collection] = previous_collections[collection]
-                statuses[collection] = {
-                    "status": "stale",
-                    "checked_at": now,
-                    "error": str(exc),
-                }
-            else:
-                collections[collection] = {
-                    "view": view,
-                    "scope": "public_first_page_only",
-                    "pages_collected": 0,
-                    "reported_total": None,
-                    "records_collected": 0,
-                    "public_access_limited": False,
-                    "records": [],
-                }
-                statuses[collection] = {
-                    "status": "failed",
-                    "checked_at": now,
-                    "error": str(exc),
-                }
-
-    time.sleep(delay)
-    try:
-        metrics_soup, metrics_url = fetch_soup(
-            session,
-            author["profile_url"],
-            params={"view": "matrics"},
-        )
-        metrics = parse_metrics(metrics_soup, metrics_url)
-        statuses["metrics"] = {"status": "ok", "checked_at": now}
-    except Exception as exc:
-        had_errors = True
-        metrics = previous.get("metrics", {}) if isinstance(previous, dict) else {}
-        statuses["metrics"] = {
-            "status": "stale" if metrics else "failed",
-            "checked_at": now,
-            "error": str(exc),
-        }
+    collections: dict[str, Any] = previous.get("collections", {}).copy()
+    statuses: dict[str, Any] = previous.get("collection_status", {}).copy()
+    metrics = previous.get("metrics", {})
+    if view == "metrics":
+        metrics = parse_metrics(profile_soup, profile_page_url)
+    else:
+        fresh = collection_result_from_soup(profile_soup, view, COLLECTIONS[view], profile_page_url)
+        old = collections.get(view, {}).get("records", [])
+        # The public first page is only a window. Keep older known records,
+        # including the user's initial snapshot, while refreshing visible items.
+        merged = {}
+        for item in old + fresh["records"]:
+            key = (item.get("url") or item.get("title") or item.get("id"))
+            merged[key] = item
+        fresh["records"] = list(merged.values())
+        fresh["records_collected"] = len(merged)
+        fresh["scope"] = "public_first_page_plus_preserved_records"
+        collections[view] = fresh
+    statuses[view] = {"status": "ok", "checked_at": now}
+    # Scores are displayed on every public profile tab.
+    if not profile.get("subjects") and previous.get("profile", {}).get("subjects"):
+        profile["subjects"] = previous["profile"]["subjects"]
+    if not profile.get("scores") and previous.get("profile", {}).get("scores"):
+        profile["scores"] = previous["profile"]["scores"]
 
     payload = {
         "schema_version": SCHEMA_VERSION,
@@ -605,14 +564,19 @@ def scrape_author(
         "metrics": metrics,
         "collection_status": statuses,
     }
+    if "manual_baseline" in previous:
+        payload["manual_baseline"] = previous["manual_baseline"]
     write_json(author_path, payload)
-    return payload, had_errors
+    return payload, False
 
 
-def build_manifest(output_dir: Path, results: list[tuple[dict[str, Any], bool]]) -> dict[str, Any]:
+def build_manifest(output_dir: Path, authors_config: list[dict[str, Any]]) -> dict[str, Any]:
     generated_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     authors = []
-    for payload, had_errors in results:
+    for configured in authors_config:
+        payload = load_json(output_dir / f"{configured['sinta_id']}.json", None)
+        if not isinstance(payload, dict):
+            continue
         profile = payload["profile"]
         counts = {
             key: value.get("records_collected", 0)
@@ -623,7 +587,7 @@ def build_manifest(output_dir: Path, results: list[tuple[dict[str, Any], bool]])
                 "name": profile.get("name") or payload["configured_author"]["name"],
                 "sinta_id": profile.get("sinta_id"),
                 "file": f"{profile.get('sinta_id')}.json",
-                "status": "partial" if had_errors else "ok",
+                "status": "ok" if payload.get("generated_at") else "manual_baseline",
                 "counts": counts,
             }
         )
@@ -645,6 +609,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--delay", type=float, default=0.5, help="Delay between API requests")
     parser.add_argument("--timeout", type=float, default=45.0, help="HTTP timeout in seconds")
     parser.add_argument("--check-config", action="store_true", help="Validate config and exit")
+    parser.add_argument("--view", choices=[*COLLECTIONS, "metrics"], help="Request this one tab per author")
+    parser.add_argument("--all-views", action="store_true", help="Request every tab (9 paid requests per author)")
     return parser.parse_args()
 
 
@@ -654,7 +620,8 @@ def main() -> int:
     if not isinstance(raw_authors, list):
         raise ValueError(f"{args.config} must contain a JSON array.")
 
-    authors = [validate_author(author) for author in raw_authors]
+    configured_authors = [validate_author(author) for author in raw_authors]
+    authors = configured_authors
     authors = [author for author in authors if author["enabled"]]
     if args.author_id:
         authors = [author for author in authors if author["sinta_id"] == args.author_id]
@@ -667,6 +634,13 @@ def main() -> int:
 
     if args.delay < 0:
         raise ValueError("--delay cannot be negative.")
+    if args.view and args.all_views:
+        raise ValueError("Choose either --view or --all-views.")
+
+    # Nine public tabs, one per week. A full cycle takes nine weeks.
+    tabs = [*COLLECTIONS, "metrics"]
+    views = tabs if args.all_views else [args.view or tabs[datetime.now(timezone.utc).isocalendar().week % len(tabs)]]
+    print(f"Public tab(s) for this run: {', '.join(views)}. Requests per author: {len(views)}.", flush=True)
 
     results: list[tuple[dict[str, Any], bool]] = []
     fatal_errors: list[str] = []
@@ -675,7 +649,10 @@ def main() -> int:
         for author in authors:
             print(f"Scraping {author['name']} (SINTA ID {author['sinta_id']})...", flush=True)
             try:
-                payload, had_errors = scrape_author(session, author, args.output, args.delay)
+                for index, chosen in enumerate(views):
+                    if index:
+                        time.sleep(args.delay)
+                    payload, had_errors = scrape_author(session, author, args.output, args.delay, chosen)
                 results.append((payload, had_errors))
                 print(
                     f"  saved {args.output / (author['sinta_id'] + '.json')}"
@@ -685,11 +662,15 @@ def main() -> int:
             except Exception as exc:
                 fatal_errors.append(f"{author['name']} ({author['sinta_id']}): {exc}")
                 print(f"  ERROR: {exc}", file=sys.stderr, flush=True)
+                # Do not spend another author's API credits after a provider failure.
+                break
+            if author != authors[-1]:
+                time.sleep(args.delay)
     finally:
         session.close()
 
     if results:
-        manifest = build_manifest(args.output, results)
+        manifest = build_manifest(args.output, configured_authors)
         print(f"Saved manifest for {manifest['authors_count']} author(s).", flush=True)
 
     if fatal_errors:

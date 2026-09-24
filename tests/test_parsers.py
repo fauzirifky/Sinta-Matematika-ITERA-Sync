@@ -1,5 +1,7 @@
 import os
 import sys
+import json
+import tempfile
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -14,6 +16,7 @@ from scrape_sinta import (  # noqa: E402
     parse_collection_page,
     parse_profile,
     scrape_collection,
+    scrape_author,
     fetch_soup,
     SintaSession,
     ZENROWS_ENDPOINT,
@@ -91,6 +94,27 @@ class ParserTests(unittest.TestCase):
         session.get.return_value = FakeResponse('{"error":"blocked"}', "https://sinta.example/profile/6750161", "application/json")
         with self.assertRaisesRegex(RuntimeError, "Content-Type: application/json; body type: JSON"):
             fetch_soup(session, "https://sinta.example/profile/6750161")
+
+    def test_weekly_update_fetches_one_tab_and_retains_baseline(self):
+        html = (ROOT / "tests" / "fixtures" / "sinta_sample.html").read_text(encoding="utf-8")
+        session = mock.Mock()
+        url = "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+        session.get.return_value = FakeResponse(html, url)
+        author = {"name": "Rifky Fauzi", "sinta_id": "6750161", "profile_url": url, "enabled": True}
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "6750161.json"
+            path.write_text(json.dumps({
+                "manual_baseline": {"source": "input/initial_profiles.md"},
+                "collections": {"scopus": {"records": [
+                    {"title": "Previously known article", "url": "https://example.test/old"}
+                ]}},
+            }), encoding="utf-8")
+            payload, failed = scrape_author(session, author, Path(folder), 0, "scopus")
+        self.assertFalse(failed)
+        self.assertEqual(session.get.call_count, 1)
+        self.assertEqual(session.get.call_args.args, (url,))
+        self.assertEqual(payload["collections"]["scopus"]["records_collected"], 2)
+        self.assertIn("manual_baseline", payload)
 
     def test_collection_fetches_only_initial_public_page(self):
         html = (ROOT / "tests" / "fixtures" / "sinta_sample.html").read_text(encoding="utf-8")
