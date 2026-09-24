@@ -153,7 +153,7 @@ class SintaSession:
         return FetchedResponse(
             text=response.text,
             url=target_url,
-            headers={"Content-Type": response.headers.get("Content-Type", "text/html")},
+            headers={"Content-Type": response.headers.get("Content-Type", "unknown")},
         )
 
     def close(self) -> None:
@@ -178,11 +178,24 @@ def fetch_soup(
     params: dict[str, Any] | None = None,
 ) -> tuple[BeautifulSoup, str]:
     response = session.get(url, params=params)
-    if "text/html" not in response.headers.get("Content-Type", "text/html"):
-        raise RuntimeError(f"Unexpected content type from {response.url}")
     soup = BeautifulSoup(response.text, "html.parser")
-    if not soup.select_one(".content-box"):
-        raise RuntimeError(f"SINTA content was not found at {response.url}")
+    # ZenRows may forward HTML with a generic Content-Type. Validate the actual
+    # SINTA profile structure instead of trusting that header alone.
+    profile_id = soup.select_one(".meta-profile")
+    if not (soup.select_one(".content-box h3 a") and profile_id and
+            re.search(r"SINTA\s*ID\s*:\s*\d+", profile_id.get_text(" ", strip=True), re.I)):
+        content_type = response.headers.get("Content-Type", "unknown")
+        # Print only a safe media type, never the response body or request URL
+        # containing the ZenRows key.
+        media_type = content_type.split(";", 1)[0].strip().lower()
+        if not re.fullmatch(r"[a-z0-9.+-]+/[a-z0-9.+-]+", media_type):
+            media_type = "unknown"
+        body_type = "JSON" if response.text.lstrip().startswith(("{", "[")) else "HTML or text" if soup.find("html") else "other"
+        raise RuntimeError(
+            f"ZenRows returned a response without a valid SINTA profile "
+            f"(Content-Type: {media_type}; body type: {body_type}) at {response.url}. "
+            "Check the ZenRows request log for the upstream response."
+        )
     return soup, str(response.url)
 
 
@@ -500,11 +513,7 @@ def scrape_author(
     previous = load_json(author_path, {})
     now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
-    profile_soup, profile_page_url = fetch_soup(
-        session,
-        author["profile_url"],
-        params={"view": "scopus"},
-    )
+    profile_soup, profile_page_url = fetch_soup(session, author["profile_url"])
     profile = parse_profile(profile_soup, author["sinta_id"])
     if profile.get("sinta_id") != author["sinta_id"]:
         raise RuntimeError(

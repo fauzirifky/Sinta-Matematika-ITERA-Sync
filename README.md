@@ -88,7 +88,7 @@ Riwayat Git berfungsi sebagai catatan perubahan mingguan. Jika satu kategori gag
 
 Scraper ini hanya membaca halaman pertama yang dapat diakses tanpa login. Program tidak mengikuti pagination dan tidak pernah membuka tombol **View more**. Jika tombol tersebut tersedia, JSON akan menandai `public_access_limited: true`.
 
-GitHub Actions tidak memasang Chromium atau browser lainnya. ZenRows hanya mengembalikan HTML publik yang sama dengan respons browser. Program tidak melakukan login, tidak memakai cookie akun SINTA, tidak menekan **View more**, dan tidak mencoba mengakses data privat. Jika API gagal, JSON lama di repository tidak ditimpa.
+GitHub Actions tidak memasang Chromium atau browser lainnya. Skrip meminta URL profil utama, lalu tab publik saja. Balasan ZenRows diperiksa berdasarkan struktur profil SINTA, karena label `Content-Type` dapat berbeda dari isi HTML. Program tidak melakukan login, tidak memakai cookie akun SINTA, tidak menekan **View more**, dan tidak mencoba mengakses data privat. Jika API gagal, JSON lama di repository tidak ditimpa.
 
 Struktur HTML SINTA dapat berubah. ZenRows pun belum terbukti berhasil mengakses SINTA sampai workflow diuji dengan key Anda; jika provider tetap mendapat 403, workflow akan gagal jelas dan JSON lama dipertahankan. Periksa status workflow dan sesuaikan parser jika selector halaman berubah. Gunakan frekuensi yang wajar, patuhi ketentuan layanan sumber, dan jangan mengumpulkan data pribadi yang tidak diperlukan.
 

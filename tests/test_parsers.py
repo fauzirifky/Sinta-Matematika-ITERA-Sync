@@ -14,16 +14,17 @@ from scrape_sinta import (  # noqa: E402
     parse_collection_page,
     parse_profile,
     scrape_collection,
+    fetch_soup,
     SintaSession,
     ZENROWS_ENDPOINT,
 )
 
 
 class FakeResponse:
-    def __init__(self, html: str, url: str):
+    def __init__(self, html: str, url: str, content_type="text/html; charset=UTF-8"):
         self.text = html
         self.url = url
-        self.headers = {"Content-Type": "text/html; charset=UTF-8"}
+        self.headers = {"Content-Type": content_type}
 
 
 class FakeSession:
@@ -77,6 +78,19 @@ class ParserTests(unittest.TestCase):
 
     def test_public_limit(self):
         self.assertTrue(is_publicly_limited(self.soup))
+
+    def test_accepts_real_profile_with_generic_content_type(self):
+        html = (ROOT / "tests" / "fixtures" / "sinta_sample.html").read_text(encoding="utf-8")
+        session = mock.Mock()
+        session.get.return_value = FakeResponse(html, "https://sinta.example/profile/6750161", "application/octet-stream")
+        soup, _ = fetch_soup(session, "https://sinta.example/profile/6750161")
+        self.assertEqual(parse_profile(soup, "6750161")["name"], "RIFKY FAUZI")
+
+    def test_rejects_provider_json_even_with_http_200(self):
+        session = mock.Mock()
+        session.get.return_value = FakeResponse('{"error":"blocked"}', "https://sinta.example/profile/6750161", "application/json")
+        with self.assertRaisesRegex(RuntimeError, "Content-Type: application/json; body type: JSON"):
+            fetch_soup(session, "https://sinta.example/profile/6750161")
 
     def test_collection_fetches_only_initial_public_page(self):
         html = (ROOT / "tests" / "fixtures" / "sinta_sample.html").read_text(encoding="utf-8")
