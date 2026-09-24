@@ -17,6 +17,8 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      ZENROWS_API_KEY: ${{ secrets.ZENROWS_API_KEY }}
 
     steps:
       - name: Checkout repository
@@ -37,17 +39,9 @@ jobs:
           python -m unittest discover -s tests -v
 
       - name: Scrape public SINTA pages
-        id: scrape
-        continue-on-error: true
         run: python scripts/scrape_sinta.py
 
-      - name: Report access warning
-        if: steps.scrape.outcome == 'failure'
-        run: |
-          echo "::warning::SINTA menolak request dari IP GitHub runner. JSON lama dipertahankan."
-
       - name: Commit updated JSON
-        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

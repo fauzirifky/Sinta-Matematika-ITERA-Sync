@@ -1,6 +1,8 @@
+import os
 import sys
 import unittest
 from pathlib import Path
+from unittest import mock
 
 from bs4 import BeautifulSoup
 
@@ -12,9 +14,8 @@ from scrape_sinta import (  # noqa: E402
     parse_collection_page,
     parse_profile,
     scrape_collection,
-    BROWSER_HEADERS,
-    SINTA_ORIGIN,
     SintaSession,
+    ZENROWS_ENDPOINT,
 )
 
 
@@ -35,35 +36,19 @@ class FakeSession:
         return FakeResponse(self.html, f"{url}?view={params['view']}")
 
 
-class FakeHttpResponse:
-    def __init__(self, url):
-        self.status_code = 200
-        self.text = "<html><div class='content-box'></div></html>"
-        self.headers = {"Content-Type": "text/html; charset=UTF-8"}
-        self.url = url
-
-    def raise_for_status(self):
-        pass
+class FakeApiResponse:
+    status_code = 200
+    text = "<html><div class='content-box'></div></html>"
+    headers = {"Content-Type": "text/html; charset=UTF-8"}
 
 
 class FakeHttp:
     def __init__(self):
         self.calls = []
-        self.cookies = []
-        self.headers = {}
 
-    def get(self, url, params=None, headers=None, timeout=None, allow_redirects=None):
-        self.calls.append(
-            {
-                "url": url,
-                "params": params,
-                "headers": headers,
-                "timeout": timeout,
-                "allow_redirects": allow_redirects,
-            }
-        )
-        suffix = "?view=" + params["view"] if params else ""
-        return FakeHttpResponse(url + suffix)
+    def get(self, url, params=None, timeout=None):
+        self.calls.append({"url": url, "params": params, "timeout": timeout})
+        return FakeApiResponse()
 
     def close(self):
         pass
@@ -108,8 +93,9 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(result["scope"], "public_first_page_only")
         self.assertEqual(result["pages_collected"], 1)
 
-    def test_public_session_bootstrap_and_referer(self):
-        session = SintaSession(45)
+    def test_zenrows_builds_target_url_without_browser(self):
+        with mock.patch.dict(os.environ, {"ZENROWS_API_KEY": "test-secret"}):
+            session = SintaSession(45)
         fake_http = FakeHttp()
         session.http.close()
         session.http = fake_http
@@ -119,18 +105,14 @@ class ParserTests(unittest.TestCase):
             params={"view": "researches"},
         )
 
-        self.assertEqual(len(fake_http.calls), 2)
-        bootstrap, profile = fake_http.calls
-        self.assertEqual(bootstrap["url"], f"{SINTA_ORIGIN}/")
-        self.assertEqual(bootstrap["headers"]["Sec-Fetch-Site"], "none")
-        self.assertEqual(profile["params"], {"view": "researches"})
-        self.assertEqual(profile["headers"]["Referer"], f"{SINTA_ORIGIN}/")
-        self.assertEqual(profile["headers"]["Sec-Fetch-Site"], "same-origin")
-        self.assertIn("view=researches", response.url)
-
-    def test_browser_headers_are_present(self):
-        self.assertIn("Mozilla/5.0", BROWSER_HEADERS["User-Agent"])
-        self.assertIn("text/html", BROWSER_HEADERS["Accept"])
+        self.assertEqual(len(fake_http.calls), 1)
+        call = fake_http.calls[0]
+        self.assertEqual(call["url"], ZENROWS_ENDPOINT)
+        self.assertIn("view=researches", call["params"]["url"])
+        self.assertEqual(call["params"]["premium_proxy"], "true")
+        self.assertEqual(call["params"]["proxy_country"], "id")
+        self.assertTrue(1 <= call["params"]["session_id"] <= 99999)
+        self.assertEqual(response.url, call["params"]["url"])
 
 
 if __name__ == "__main__":

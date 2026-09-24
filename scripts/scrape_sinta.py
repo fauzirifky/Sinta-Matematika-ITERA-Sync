@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import sys
 import time
@@ -21,26 +22,8 @@ from urllib3.util.retry import Retry
 
 
 DEFAULT_BASE_URL = "https://sinta.kemdiktisaintek.go.id/authors/profile"
-SINTA_ORIGIN = "https://sinta.kemdiktisaintek.go.id"
+ZENROWS_ENDPOINT = "https://api.zenrows.com/v1/"
 SCHEMA_VERSION = 2
-
-BROWSER_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/151.0.0.0 Safari/537.36"
-    ),
-    "Accept": (
-        "text/html,application/xhtml+xml,application/xml;q=0.9,"
-        "image/avif,image/webp,image/apng,*/*;q=0.8"
-    ),
-    "Accept-Language": "en-US,en;q=0.9,id;q=0.8",
-    "Cache-Control": "max-age=0",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-User": "?1",
-}
 
 COLLECTIONS = {
     "scopus": "scopus",
@@ -104,10 +87,17 @@ def absolute_url(base_url: str, href: str | None) -> str | None:
 
 
 class SintaSession:
-    """Keep one browser-like public session for all SINTA page requests."""
+    """Fetch public SINTA HTML through the lightweight ZenRows API."""
 
     def __init__(self, timeout: float):
         self.timeout = max(timeout, 30.0)
+        self.api_key = clean_text(os.environ.get("ZENROWS_API_KEY"))
+        if not self.api_key:
+            raise RuntimeError(
+                "ZENROWS_API_KEY is missing. Add it at GitHub repository Settings > "
+                "Secrets and variables > Actions."
+            )
+
         retry = Retry(
             total=3,
             connect=3,
@@ -118,62 +108,63 @@ class SintaSession:
             respect_retry_after_header=True,
         )
         self.http = requests.Session()
-        self.http.headers.update(BROWSER_HEADERS)
         self.http.mount("https://", HTTPAdapter(max_retries=retry))
-        self._bootstrapped = False
-        self._referer = f"{SINTA_ORIGIN}/"
-
-    def bootstrap(self) -> None:
-        """Visit SINTA first so its public ``ci_session`` cookie is retained."""
-        if self._bootstrapped:
-            return
-
-        response = self.http.get(
-            f"{SINTA_ORIGIN}/",
-            headers={
-                "Sec-Fetch-Site": "none",
-                "Sec-Fetch-Mode": "navigate",
-                "Sec-Fetch-User": "?1",
-            },
-            timeout=self.timeout,
-            allow_redirects=True,
-        )
-        if response.status_code == 403:
-            raise RuntimeError(
-                "SINTA returned HTTP 403 while opening its public homepage. "
-                "The GitHub-hosted runner IP is being rejected by SINTA."
-            )
-        response.raise_for_status()
-        self._referer = response.url
-        self._bootstrapped = True
-        print(
-            f"  Public SINTA session ready ({len(self.http.cookies)} cookie(s))",
-            flush=True,
-        )
+        self._announced = False
+        self.session_id = None
 
     def get(self, url: str, params: dict[str, Any] | None = None):
-        self.bootstrap()
-        response = self.http.get(
-            url,
-            params=params,
-            headers={
-                "Referer": self._referer,
-                "Sec-Fetch-Site": "same-origin",
-            },
-            timeout=self.timeout,
-            allow_redirects=True,
-        )
-        if response.status_code == 403:
-            raise RuntimeError(
-                f"SINTA returned HTTP 403 for {response.url}. The public session "
-                "was initialized, but SINTA still rejected the GitHub-hosted runner IP."
+        prepared = requests.Request("GET", url, params=params).prepare()
+        target_url = prepared.url
+        if not target_url:
+            raise RuntimeError("Could not build the SINTA target URL.")
+
+        # Session IDs must be in ZenRows' documented range 1..99999. Using the
+        # same ID for this run keeps the exit IP stable across author tabs.
+        if self.session_id is None:
+            self.session_id = int.from_bytes(os.urandom(4), "big") % 99999 + 1
+        try:
+            response = self.http.get(
+                ZENROWS_ENDPOINT,
+                params={
+                    "apikey": self.api_key,
+                    "url": target_url,
+                    "premium_proxy": "true",
+                    "proxy_country": "id",
+                    "session_id": self.session_id,
+                },
+                timeout=self.timeout,
             )
-        response.raise_for_status()
-        self._referer = response.url
-        return response
+        except requests.RequestException as exc:
+            # The full request URL contains the API key; never log the exception.
+            raise RuntimeError(
+                "ZenRows request failed at network level. Check the service status "
+                "and GitHub Actions connectivity."
+            ) from None
+        if response.status_code >= 400:
+            raise RuntimeError(
+                f"ZenRows API returned HTTP {response.status_code}. "
+                "Check the API key, remaining credits, and provider dashboard."
+            )
+
+        if not self._announced:
+            print("  Fetch transport: ZenRows API (Indonesia, no JavaScript)", flush=True)
+            self._announced = True
+
+        return FetchedResponse(
+            text=response.text,
+            url=target_url,
+            headers={"Content-Type": response.headers.get("Content-Type", "text/html")},
+        )
 
     def close(self) -> None:
         self.http.close()
+
+
+class FetchedResponse:
+    def __init__(self, text: str, url: str, headers: dict[str, str]):
+        self.text = text
+        self.url = url
+        self.headers = headers
 
 
 def make_session(timeout: float) -> SintaSession:
@@ -509,16 +500,19 @@ def scrape_author(
     previous = load_json(author_path, {})
     now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
-    # The plain profile URL is SINTA's default public Scopus view. Request it
-    # exactly like the first browser navigation shown in DevTools.
-    profile_soup, profile_page_url = fetch_soup(session, author["profile_url"])
+    profile_soup, profile_page_url = fetch_soup(
+        session,
+        author["profile_url"],
+        params={"view": "scopus"},
+    )
     profile = parse_profile(profile_soup, author["sinta_id"])
     if profile.get("sinta_id") != author["sinta_id"]:
         raise RuntimeError(
             f"Configured SINTA ID {author['sinta_id']} does not match page ID {profile.get('sinta_id')}"
         )
 
-    # Reuse the first response for Scopus to avoid a duplicate network request.
+    # The first profile response is already the Scopus view. Reuse it to avoid
+    # spending a second API request for the same HTML.
     collections: dict[str, Any] = {
         "scopus": collection_result_from_soup(
             profile_soup,
@@ -639,7 +633,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--config", type=Path, default=Path("config/authors.json"))
     parser.add_argument("--output", type=Path, default=Path("data"))
     parser.add_argument("--author-id", help="Only scrape one configured SINTA ID")
-    parser.add_argument("--delay", type=float, default=1.0, help="Delay between page requests")
+    parser.add_argument("--delay", type=float, default=0.5, help="Delay between API requests")
     parser.add_argument("--timeout", type=float, default=45.0, help="HTTP timeout in seconds")
     parser.add_argument("--check-config", action="store_true", help="Validate config and exit")
     return parser.parse_args()
