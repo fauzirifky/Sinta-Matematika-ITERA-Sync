@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-24T22:55:31.977676Z",
+  "generated_at": null,
   "authors_count": 16,
   "authors": [
     {
       "name": "RIFKY FAUZI",
       "sinta_id": "6750161",
       "file": "6750161.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 10,
-        "garuda": 9,
-        "google_scholar": 8,
+        "garuda": 19,
+        "google_scholar": 0,
         "rama": 0,
         "researches": 8,
         "community_services": 4,
@@ -23,7 +23,7 @@
       "name": "TIARA SHOFI EDRIANI",
       "sinta_id": "6784215",
       "file": "6784215.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 4,
         "garuda": 4,
@@ -39,7 +39,7 @@
       "name": "WERRY FEBRIANTI",
       "sinta_id": "5979011",
       "file": "5979011.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 12,
         "garuda": 4,
@@ -55,7 +55,7 @@
       "name": "NURUL INDAH SAFITRI",
       "sinta_id": "6966461",
       "file": "6966461.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 0,
         "garuda": 0,
@@ -71,7 +71,7 @@
       "name": "ACHMAD SURYADI NASUTION",
       "sinta_id": "6784227",
       "file": "6784227.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 4,
         "garuda": 10,
@@ -87,7 +87,7 @@
       "name": "GUSRIAN PUTRA",
       "sinta_id": "6774905",
       "file": "6774905.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 5,
         "garuda": 1,
@@ -103,7 +103,7 @@
       "name": "SRI EFRINITA IRWAN",
       "sinta_id": "6196160",
       "file": "6196160.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 1,
         "garuda": 5,
@@ -119,7 +119,7 @@
       "name": "DEAR MICHIKO MUTIARA NOOR",
       "sinta_id": "6693907",
       "file": "6693907.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 4,
         "garuda": 5,
@@ -135,7 +135,7 @@
       "name": "ASWAN ANGGUN PRIBADI",
       "sinta_id": "6773216",
       "file": "6773216.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 0,
         "garuda": 3,
@@ -151,7 +151,7 @@
       "name": "DEWI SUHIKA",
       "sinta_id": "6172406",
       "file": "6172406.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 6,
         "garuda": 9,
@@ -167,7 +167,7 @@
       "name": "TRIYANA MULIAWATI",
       "sinta_id": "6151283",
       "file": "6151283.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 7,
         "garuda": 19,
@@ -183,7 +183,7 @@
       "name": "NELA RIZKA",
       "sinta_id": "6795719",
       "file": "6795719.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 4,
         "garuda": 3,
@@ -199,7 +199,7 @@
       "name": "TRI UTOMO",
       "sinta_id": "6653329",
       "file": "6653329.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 1,
         "garuda": 4,
@@ -215,7 +215,7 @@
       "name": "ERISTIA ARFI",
       "sinta_id": "6166565",
       "file": "6166565.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 3,
         "garuda": 11,
@@ -231,7 +231,7 @@
       "name": "MIRA MUSTIKA",
       "sinta_id": "6700033",
       "file": "6700033.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 3,
         "garuda": 1,
@@ -247,7 +247,7 @@
       "name": "LUTFI MARDIANTO",
       "sinta_id": "6710014",
       "file": "6710014.json",
-      "status": "ok",
+      "status": "manual_baseline",
       "counts": {
         "scopus": 6,
         "garuda": 6,

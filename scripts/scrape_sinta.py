@@ -111,6 +111,8 @@ class SintaSession:
         self.http.mount("https://", HTTPAdapter(max_retries=retry))
         self._announced = False
         self.session_id = None
+        self.known_credits = 0
+        self.unknown_cost_requests = 0
 
     def get(self, url: str, params: dict[str, Any] | None = None):
         prepared = requests.Request("GET", url, params=params).prepare()
@@ -128,8 +130,10 @@ class SintaSession:
                 params={
                     "apikey": self.api_key,
                     "url": target_url,
-                    "premium_proxy": "true",
-                    "proxy_country": "id",
+                    # Adaptive mode starts with the cheapest viable transport
+                    # and escalates only when SINTA rejects it. Do not specify
+                    # proxy_country: doing so can force a Premium Proxy.
+                    "mode": "auto",
                     "session_id": self.session_id,
                 },
                 timeout=self.timeout,
@@ -147,8 +151,16 @@ class SintaSession:
             )
 
         if not self._announced:
-            print("  Fetch transport: ZenRows API (Indonesia, no JavaScript)", flush=True)
+            print("  Fetch transport: ZenRows Adaptive Stealth Mode", flush=True)
             self._announced = True
+
+        request_cost = clean_text(response.headers.get("X-Request-Cost"))
+        if request_cost and request_cost.isdigit():
+            self.known_credits += int(request_cost)
+            print(f"    ZenRows cost: {request_cost} credit(s) — {target_url}", flush=True)
+        else:
+            self.unknown_cost_requests += 1
+            print(f"    ZenRows cost: unknown — {target_url}", flush=True)
 
         return FetchedResponse(
             text=response.text,
@@ -637,9 +649,10 @@ def main() -> int:
     if args.view and args.all_views:
         raise ValueError("Choose either --view or --all-views.")
 
-    # Nine public tabs, one per week. A full cycle takes nine weeks.
+    # Complete mode is the default. --view exists only for a targeted test or
+    # manual repair of one category.
     tabs = [*COLLECTIONS, "metrics"]
-    views = tabs if args.all_views else [args.view or tabs[datetime.now(timezone.utc).isocalendar().week % len(tabs)]]
+    views = [args.view] if args.view else tabs
     print(f"Public tab(s) for this run: {', '.join(views)}. Requests per author: {len(views)}.", flush=True)
 
     results: list[tuple[dict[str, Any], bool]] = []
@@ -667,6 +680,11 @@ def main() -> int:
             if author != authors[-1]:
                 time.sleep(args.delay)
     finally:
+        print(
+            f"ZenRows credits reported by responses: {session.known_credits}; "
+            f"unknown-cost requests: {session.unknown_cost_requests}.",
+            flush=True,
+        )
         session.close()
 
     if results:

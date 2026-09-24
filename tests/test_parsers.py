@@ -43,7 +43,7 @@ class FakeSession:
 class FakeApiResponse:
     status_code = 200
     text = "<html><div class='content-box'></div></html>"
-    headers = {"Content-Type": "text/html; charset=UTF-8"}
+    headers = {"Content-Type": "text/html; charset=UTF-8", "X-Request-Cost": "1"}
 
 
 class FakeHttp:
@@ -147,10 +147,12 @@ class ParserTests(unittest.TestCase):
         call = fake_http.calls[0]
         self.assertEqual(call["url"], ZENROWS_ENDPOINT)
         self.assertIn("view=researches", call["params"]["url"])
-        self.assertEqual(call["params"]["premium_proxy"], "true")
-        self.assertEqual(call["params"]["proxy_country"], "id")
+        self.assertEqual(call["params"]["mode"], "auto")
+        self.assertNotIn("premium_proxy", call["params"])
+        self.assertNotIn("proxy_country", call["params"])
         self.assertTrue(1 <= call["params"]["session_id"] <= 99999)
         self.assertEqual(response.url, call["params"]["url"])
+        self.assertEqual(session.known_credits, 1)
 
 
 if __name__ == "__main__":

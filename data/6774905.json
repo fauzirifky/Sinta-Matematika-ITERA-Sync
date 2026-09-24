@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-24T22:54:32.937011Z",
+  "generated_at": null,
   "source": {
     "service": "SINTA - Science and Technology Index",
-    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905?view=rama",
-    "access": "first public page only; no login and no View more"
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
+    "access": "user-supplied public first pages"
   },
   "configured_author": {
     "name": "Gusrian Putra",
@@ -19,16 +19,9 @@
     "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
     "department": "S1 - Matematika",
     "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
-    "avatar_url": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=Z2iMtnMAAAAJ&citpid=1",
-    "subjects": [
-      "Analysis and Applied Mathematics"
-    ],
-    "scores": {
-      "SINTA Score Overall": 222,
-      "SINTA Score 3Yr": 154,
-      "Affil Score": 0,
-      "Affil Score 3Yr": 0
-    }
+    "avatar_url": null,
+    "subjects": [],
+    "scores": {}
   },
   "collections": {
     "scopus": {
@@ -136,11 +129,11 @@
     },
     "rama": {
       "view": "rama",
-      "scope": "public_first_page_plus_preserved_records",
-      "pages_collected": 1,
+      "scope": "user_supplied_public_first_pages",
+      "pages_collected": 0,
       "reported_total": null,
       "records_collected": 0,
-      "public_access_limited": false,
+      "public_access_limited": true,
       "records": []
     },
     "researches": {
@@ -296,8 +289,7 @@
       "status": "not_provided"
     },
     "rama": {
-      "status": "ok",
-      "checked_at": "2026-09-24T22:54:32.937011Z"
+      "status": "not_provided"
     },
     "researches": {
       "status": "manual_baseline"

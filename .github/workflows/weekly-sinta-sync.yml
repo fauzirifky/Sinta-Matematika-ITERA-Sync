@@ -1,16 +1,17 @@
-name: Weekly SINTA Sync
+name: Full SINTA Sync
 
 on:
   schedule:
-    # Setiap Minggu 02.17 WIB (Sabtu 19.17 UTC).
-    - cron: "17 19 * * 6"
+    # Dua kali sebulan: tanggal 2 dan 16 pukul 02.17 WIB
+    # (tanggal 1 dan 15 pukul 19.17 UTC).
+    - cron: "17 19 1,15 * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: weekly-sinta-sync
+  group: full-sinta-sync
   cancel-in-progress: false
 
 jobs:
@@ -39,7 +40,7 @@ jobs:
           python -m unittest discover -s tests -v
 
       - name: Scrape public SINTA pages
-        run: python scripts/scrape_sinta.py
+        run: python scripts/scrape_sinta.py --all-views
 
       - name: Commit updated JSON
         run: |
@@ -49,6 +50,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Tidak ada perubahan data."
           else
-            git commit -m "data: weekly SINTA sync $(date -u +'%Y-%m-%d')"
+            git commit -m "data: full SINTA sync $(date -u +'%Y-%m-%d')"
             git push
           fi
