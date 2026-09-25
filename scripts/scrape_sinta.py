@@ -451,6 +451,16 @@ def is_publicly_limited(soup: BeautifulSoup) -> bool:
     )
 
 
+def scrape_collection(
+    session: SintaSession,
+    profile_url: str,
+    collection: str,
+    view: str,
+) -> dict[str, Any]:
+    soup, page_url = fetch_soup(session, profile_url, params={"view": view})
+    return collection_result_from_soup(soup, collection, view, page_url)
+
+
 def collection_result_from_soup(
     soup: BeautifulSoup,
     collection: str,
