@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": null,
+  "generated_at": "2026-09-25T01:57:50.247312Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
-    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-    "access": "user-supplied public first pages"
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=books",
+    "access": "first public page only; no login and no View more"
   },
   "configured_author": {
     "name": "Werry Febrianti",
@@ -19,7 +19,7 @@
     "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
     "department": "S1 - Matematika",
     "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
-    "avatar_url": null,
+    "avatar_url": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=rox07doAAAAJ&citpid=1",
     "subjects": [
       "Matematika Keuangan",
       "Optimasi",
@@ -65,134 +65,149 @@
     "affil_score": 0,
     "affil_score_3yr": 0
   },
+  "profile_status": {
+    "checked_at": "2026-09-25T01:57:50.247312Z",
+    "sinta_score_overall_present": true,
+    "subjects_present": true
+  },
   "collections": {
     "scopus": {
       "view": "scopus",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 12,
       "public_access_limited": true,
       "records": [
         {
-          "id": "61fa5e988760b6b0235d",
+          "id": "d621d489ae76221c599c",
           "title": "Optimizing ESG-Constrained Mean-Variance Portfolio using Spiral Optimization Algorithm",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105045129983&origin=resultslist",
           "year": 2026,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Q2 as Journal Journal of Multidisciplinary Applied Natural Science",
-            "Author Order : 1 of 6 Creator : Febrianti W.",
-            "2026 0 cited"
-          ]
+          "classification": "Q2 as Journal",
+          "publication": "Journal of Multidisciplinary Applied Natural Science",
+          "publication_url": "https://www.scopus.com/sourceid/21101147602",
+          "author_order": "1 of 6",
+          "creator": "Febrianti W.",
+          "citations": 0
         },
         {
-          "id": "f8dfa43677beab4c1e13",
+          "id": "5c7290996944c36afb29",
           "title": "Applications of an Effective Spiral Optimization Algorithm for Solving Ordinary Differential Equations",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105032474099&origin=resultslist",
           "year": 2026,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Q4 as Conference Proceedin Aip Conference Proceedings",
-            "Author Order : 3 of 3 Creator : Rosha M.",
-            "2026 0 cited"
-          ]
+          "classification": "Q4 as Conference Proceedin",
+          "publication": "Aip Conference Proceedings",
+          "publication_url": "https://www.scopus.com/sourceid/26916",
+          "author_order": "3 of 3",
+          "creator": "Rosha M.",
+          "citations": 0
         },
         {
-          "id": "e3e95130bbb4f10404d8",
+          "id": "b88fd52da97886c97e5a",
           "title": "Optimization of Star Pomfret Feed Production as A Linear Programming Problem using A Hybrid Wolfe-Differential Evolution Algorithm",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105007098476&origin=resultslist",
           "year": 2025,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Q2 as Journal Journal of Multidisciplinary Applied Natural Science",
-            "Author Order : 1 of 4 Creator : Febrianti W.",
-            "2025 0 cited"
-          ]
+          "classification": "Q2 as Journal",
+          "publication": "Journal of Multidisciplinary Applied Natural Science",
+          "publication_url": "https://www.scopus.com/sourceid/21101147602",
+          "author_order": "1 of 4",
+          "creator": "Febrianti W.",
+          "citations": 0
         },
         {
-          "id": "25d3f6adfa6d6aed66cb",
+          "id": "d1c006dab173771ef63d",
           "title": "Solving Constrained Mean-Variance Portfolio Optimization Problems Using Spiral Optimization Algorithm",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85151084669&origin=resultslist",
           "year": 2023,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Q2 as Journal International Journal of Financial Studies",
-            "Author Order : 1 of 3 Creator : Febrianti W.",
-            "2023 6 cited"
-          ]
+          "classification": "Q2 as Journal",
+          "publication": "International Journal of Financial Studies",
+          "publication_url": "https://www.scopus.com/sourceid/21100913135",
+          "author_order": "1 of 3",
+          "creator": "Febrianti W.",
+          "citations": 6
         },
         {
-          "id": "26496b8a8daaf53972f9",
+          "id": "24e7508aab5a7609daea",
           "title": "An Approximate Optimization Method for Solving Stiff Ordinary Differential Equations With Combinational Mutation Strategy of Differential Evolution Algorithm",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85143698726&origin=resultslist",
           "year": 2022,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Q3 as Journal Mendel",
-            "Author Order : 1 of 3 Creator : Febrianti W.",
-            "2022 2 cited"
-          ]
+          "classification": "Q3 as Journal",
+          "publication": "Mendel",
+          "publication_url": "https://www.scopus.com/sourceid/21100255064",
+          "author_order": "1 of 3",
+          "creator": "Febrianti W.",
+          "citations": 2
         },
         {
-          "id": "6914e26f4c79cc5b0004",
+          "id": "72457b9ce3794a96bf54",
           "title": "Approximate Solution for Barrier Option Pricing Using Adaptive Differential Evolution With Learning Parameter",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85144071417&origin=resultslist",
           "year": 2022,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Q3 as Journal Mendel",
-            "Author Order : 1 of 3 Creator : Febrianti W.",
-            "2022 5 cited"
-          ]
+          "classification": "Q3 as Journal",
+          "publication": "Mendel",
+          "publication_url": "https://www.scopus.com/sourceid/21100255064",
+          "author_order": "1 of 3",
+          "creator": "Febrianti W.",
+          "citations": 5
         },
         {
-          "id": "263d959a10c160dc8305",
+          "id": "8138fab22f4e09200d49",
           "title": "Solving some ordinary differential equations numerically using differential evolution algorithm with a simple adaptive mutation scheme",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85102508106&origin=resultslist",
           "year": 2021,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Q4 as Conference Proceedin Aip Conference Proceedings",
-            "Author Order : 1 of 3 Creator : Febrianti W.",
-            "2021 4 cited"
-          ]
+          "classification": "Q4 as Conference Proceedin",
+          "publication": "Aip Conference Proceedings",
+          "publication_url": "https://www.scopus.com/sourceid/26916",
+          "author_order": "1 of 3",
+          "creator": "Febrianti W.",
+          "citations": 4
         },
         {
-          "id": "dde5338040d40166c02f",
+          "id": "b2efea6b608d5316f32e",
           "title": "Solving systems of ordinary differential equations using differential evolution algorithm with the best base vector of mutation scheme",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85120582905&origin=resultslist",
           "year": 2021,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Q4 as Conference Proceedin Aip Conference Proceedings",
-            "Author Order : 1 of 3 Creator : Febrianti W.",
-            "2021 5 cited"
-          ]
+          "classification": "Q4 as Conference Proceedin",
+          "publication": "Aip Conference Proceedings",
+          "publication_url": "https://www.scopus.com/sourceid/26916",
+          "author_order": "1 of 3",
+          "creator": "Febrianti W.",
+          "citations": 5
         },
         {
-          "id": "eecc116b1ad6f2b1f807",
+          "id": "2ee4483cf9907c0f9d60",
           "title": "A Techno-economic Analysis of Simulation-based 5G Femtocell Implementation at ITERA",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85066332645&origin=resultslist",
           "year": 2019,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Q4 as Conference Proceedin IOP Conference Series: Earth and Environmental Science",
-            "Author Order : 0 of 0 Creator : Ramadhani U.",
-            "2019 1 cited"
-          ]
+          "classification": "Q4 as Conference Proceedin",
+          "publication": "IOP Conference Series: Earth and Environmental Science",
+          "publication_url": "https://www.scopus.com/sourceid/19900195068",
+          "author_order": "0 of 0",
+          "creator": "Ramadhani U.",
+          "citations": 1
         },
         {
-          "id": "7649462d3f0ca9945ac5",
+          "id": "bd659c38edb99d131450",
           "title": "Training of Trainers (ToT) Program in Team Teaching",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85044416346&origin=resultslist",
           "year": 2018,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Q3 as Conference Proceedin Iop Conference Series Materials Science and Engineering",
-            "Author Order : 1 of 2 Creator : Febrianti W.",
-            "2018 0 cited"
-          ]
+          "classification": "Q3 as Conference Proceedin",
+          "publication": "Iop Conference Series Materials Science and Engineering",
+          "publication_url": "https://www.scopus.com/sourceid/19700200831",
+          "author_order": "1 of 2",
+          "creator": "Febrianti W.",
+          "citations": 0
         },
         {
           "id": "a6f0038490403c0a8ac5",
@@ -222,67 +237,63 @@
     },
     "garuda": {
       "view": "garuda",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 4,
       "public_access_limited": true,
       "records": [
         {
-          "id": "96c051c881824ffcdd54",
+          "id": "08b5043c999eb8715fa9",
           "title": "Penentuan Semua Akar Real Polinomial Secara Serentak Menggunakan Integrasi Metode Evolusi Diferensial-Cauchy-Niching Dan Newton Polishing",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/6617962",
           "year": 2026,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "CV. Multi Kreasi Media BULLET : Jurnal Multidisiplin Ilmu Vol. 5 No. 3 (2026): BULLET : Jurnal Multidisiplin Ilmu (INPRESS)226-233",
-            "Author Order : 2 of 2",
-            "Ainol Yaqin; Werry Febrianti",
-            "2026 DOI: - Accred : Unknown"
-          ],
-          "doi": "-"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=garuda",
+          "classification": "Accred : Unknown",
+          "publication": "BULLET : Jurnal Multidisiplin Ilmu Vol. 5 No. 3 (2026): BULLET : Jurnal Multidisiplin Ilmu (INPRESS)226-233",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/31818",
+          "author_order": "2 of 2",
+          "creator": null,
+          "citations": null
         },
         {
-          "id": "94efb55ea0aa24064552",
+          "id": "581836f7de2ad8d27bb9",
           "title": "Analysis factors that affect participant interest in cattle farm business insurance in Indonesia",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/2610521",
           "year": 2022,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Faculty of Animal Science, Universitas Brawijaya Jurnal Ilmu-Ilmu Peternakan (Indonesian Journal of Animal Science) Vol 32, No 1 (2022): April 202252-60",
-            "Author Order : 3 of 4",
-            "Ikhsan Maulidi; Juanda Kelana Putra; Werry Febrianti; Vina Apriliani",
-            "2022 DOI: 10.21776/ub.jiip.2022.032.01.06 Accred : Sinta 2"
-          ],
-          "doi": "10.21776/ub.jiip.2022.032.01.06"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=garuda",
+          "classification": "Accred : Sinta 2",
+          "publication": "Jurnal Ilmu-Ilmu Peternakan (Indonesian Journal of Animal Science) Vol 32, No 1 (2022): April 202252-60",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/7017",
+          "author_order": "3 of 4",
+          "creator": null,
+          "citations": 1021776
         },
         {
-          "id": "16d6b53f8f22c025244b",
+          "id": "101f0dbbdcc5f8d7eaa2",
           "title": "Teknik Mengkonstruksi Distribusi Bivariat Copula Clayton pada Data Marginal Diskrit dengan Implikasi Kebergantungan",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/2111594",
           "year": 2020,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Universitas Pekalongan Delta: Jurnal Ilmiah Pendidikan Matematika Vol 8, No 2 (2020): Delta Jurnal Ilmiah Pendidikan Matematika227 - 238",
-            "Author Order : 2 of 4",
-            "Andi Fitriawati; Werry Febrianti; Ariestha Widyastuty Bustan; Amris -",
-            "2020 DOI: 10.31941/delta.v8i2.1075 Accred : Sinta 4"
-          ],
-          "doi": "10.31941/delta.v8i2.1075"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=garuda",
+          "classification": "Accred : Sinta 4",
+          "publication": "Delta: Jurnal Ilmiah Pendidikan Matematika Vol 8, No 2 (2020): Delta Jurnal Ilmiah Pendidikan Matematika227 - 238",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/15528",
+          "author_order": "2 of 4",
+          "creator": null,
+          "citations": 1031941
         },
         {
-          "id": "6e9f3f556998ad674da8",
+          "id": "24ff99a4abeb43a057dd",
           "title": "PENENTUAN HARGA OPSI DENGAN MODEL BLACK-SCHOLES MENGGUNALKAN METODE BEDA HINGGA FORWARD TIME CENTRAL SPACE",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/2902838",
           "year": 2018,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Diponegoro University Journal of Fundamental Mathematics and Applications (JFMA) Vol 1, No 1 (2018)45-51",
-            "Author Order : 1 of 1",
-            "Werry Febrianti",
-            "2018 DOI: 10.14710/jfma.v1i1.6 Accred : Sinta 4"
-          ],
-          "doi": "10.14710/jfma.v1i1.6"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=garuda",
+          "classification": "Accred : Sinta 4",
+          "publication": "Journal of Fundamental Mathematics and Applications (JFMA) Vol 1, No 1 (2018)45-51",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/25465",
+          "author_order": "1 of 1",
+          "creator": null,
+          "citations": 1014710
         }
       ]
     },
@@ -306,241 +317,295 @@
     },
     "researches": {
       "view": "researches",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 8,
+      "records_collected": 5,
       "public_access_limited": true,
       "records": [
         {
-          "id": "32479257a8a97d8e6454",
-          "title": "Pengembangan Optimisasi Portofolio Multi-Objektif untuk Green Economy Berbasis Spiral Optimization Algorithm dan Differential Evolution Algorithm",
-          "url": null,
-          "year": 2026,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Leader : Werry Febrianti Penelitian Kompetitif Nasional ( PFR )",
-            "Personils : Andi Fitriawati; Achmad Suryadi Nasution; Novriana Sumarti;",
-            "2026 Rp. 104.940.000 Approved BIMA SOURCE"
-          ],
-          "leader": "Werry Febrianti"
-        },
-        {
-          "id": "32479257a8a97d8e6454",
+          "id": "3cd0b33b4306e80f0544",
           "title": "Pengembangan Optimisasi Portofolio Multi-Objektif untuk Green Economy Berbasis Spiral Optimization Algorithm dan Differential Evolution Algorithm",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Leader : Werry Febrianti Penelitian Kompetitif Nasional ( PFR )",
-            "Personils : Andi Fitriawati; Achmad Suryadi Nasution; Novriana Sumarti;",
-            "2025 Rp. 91.250.000 Approved BIMA SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=researches",
+          "leader": "Werry Febrianti",
+          "scheme": "Penelitian Kompetitif Nasional ( PFR )",
+          "personnel": [
+            {
+              "name": "Andi Fitriawati",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6736068"
+            },
+            {
+              "name": "Achmad Suryadi Nasution",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784227"
+            },
+            {
+              "name": "Novriana Sumarti",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6032398"
+            }
           ],
-          "leader": "Werry Febrianti"
+          "funding_idr": 91250000,
+          "status": "Approved",
+          "funding_source_type": "BIMA"
         },
         {
-          "id": "e950265bb751416c5275",
+          "id": "05b1e3495d37973604a1",
           "title": "ANALISIS BIAYA EKSTERNALITAS LIMBAH PAKAN USAHA KERAMBA JARING APUNG DI TELUK LAMPUNG MENGGUNAKAN ALGORITMA EVOLUSI DIFERENSIAL",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Leader : Werry Febrianti HIBAH PENUGASAN FSAINS ( PENELITIAN PENUGASAN FSAINS )",
-            "Personils : Gusrian Putra; Chalida Syari;",
-            "2024 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=researches",
+          "leader": "Werry Febrianti",
+          "scheme": "HIBAH PENUGASAN FSAINS ( PENELITIAN PENUGASAN FSAINS )",
+          "personnel": [
+            {
+              "name": "Gusrian Putra",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905"
+            },
+            {
+              "name": "Chalida Syari",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6838556"
+            }
           ],
-          "leader": "Werry Febrianti"
+          "funding_idr": 10000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "1c3e155bdac16ae25d04",
-          "title": "Penentuan Harga Opsi dan Pemilihan Portofolio Saham Optimal Sebagai Masalah Multi-Obyektif Menggunakan Metode Differential Evolution",
-          "url": null,
-          "year": 2023,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Leader : Novriana Sumarti Penelitian Kompetitif Nasional ( PD )",
-            "Personils : Werry Febrianti;",
-            "2023 Rp. 70.000.000 Approved BIMA SOURCE"
-          ],
-          "leader": "Novriana Sumarti"
-        },
-        {
-          "id": "1c3e155bdac16ae25d04",
-          "title": "Penentuan Harga Opsi dan Pemilihan Portofolio Saham Optimal Sebagai Masalah Multi-Obyektif Menggunakan Metode Differential Evolution",
-          "url": null,
-          "year": 2022,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Leader : Novriana Sumarti Penelitian Kompetitif Nasional ( PD )",
-            "Personils : Werry Febrianti;",
-            "2022 Rp. 63.000.000 Approved BIMA SOURCE"
-          ],
-          "leader": "Novriana Sumarti"
-        },
-        {
-          "id": "1c3e155bdac16ae25d04",
+          "id": "be55f2df16dc241612b7",
           "title": "Penentuan Harga Opsi dan Pemilihan Portofolio Saham Optimal Sebagai Masalah Multi-Obyektif Menggunakan Metode Differential Evolution",
           "url": null,
           "year": 2021,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Leader : Novriana Sumarti Penelitian Kompetitif Nasional ( PD )",
-            "Personils : Werry Febrianti;",
-            "2021 Rp. 70.000.000 Approved BIMA SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=researches",
+          "leader": "Novriana Sumarti",
+          "scheme": "Penelitian Kompetitif Nasional ( PD )",
+          "personnel": [
+            {
+              "name": "Werry Febrianti",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011"
+            }
           ],
-          "leader": "Novriana Sumarti"
+          "funding_idr": 70000000,
+          "status": "Approved",
+          "funding_source_type": "BIMA"
         },
         {
-          "id": "59d4ec994f768325e9ab",
+          "id": "23a4c48cb3c0696aa470",
           "title": "STUDI ANALISIS IMPLEMENTASI FEMTOCELL 5G DI LINGKUNGAN ITERA",
           "url": null,
           "year": 2018,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Leader : Uri Arta Ramadhani HIBAH PENELITIAN ITERA 2018 ( DASAR )",
-            "Personils : Werry Febrianti; Heriansyah;",
-            "2018 Rp. 9.600.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=researches",
+          "leader": "Uri Arta Ramadhani",
+          "scheme": "HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+          "personnel": [
+            {
+              "name": "Werry Febrianti",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011"
+            },
+            {
+              "name": "Heriansyah",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6031611"
+            }
           ],
-          "leader": "Uri Arta Ramadhani"
+          "funding_idr": 9600000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "4cc59cecfdf87cedd250",
+          "id": "3c86b7bd516e9a274f05",
           "title": "PENGEMBANGAN DESAIN SUBMERGED BIOFILTER UNTUK KONSERVASI LIMBAH CAIR",
           "url": null,
           "year": 2018,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Leader : Arysca Wisnu Satria HIBAH PENELITIAN ITERA 2018 ( DASAR )",
-            "Personils : Hendry Wijayanti; Werry Febrianti; Muhammad Hajid An Nur;",
-            "2018 Rp. 50.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=researches",
+          "leader": "Arysca Wisnu Satria",
+          "scheme": "HIBAH PENELITIAN ITERA 2018 ( DASAR )",
+          "personnel": [
+            {
+              "name": "Hendry Wijayanti",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5978152"
+            },
+            {
+              "name": "Werry Febrianti",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011"
+            },
+            {
+              "name": "Muhammad Hajid An Nur",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6660034"
+            }
           ],
-          "leader": "Arysca Wisnu Satria"
+          "funding_idr": 50000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
     "community_services": {
       "view": "services",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 2,
       "public_access_limited": true,
       "records": [
         {
-          "id": "1751b02e62fb0919f910",
+          "id": "41957b369f8831ccac2b",
           "title": "SMART MONEY FOR SMART STUDENTS: PELATIHAN MENABUNG DAN MENGELOLA UANG JAJAN UNTUK MERDEKA FINANSIAL DI KALANGAN SISWA",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Leader : Werry Febrianti PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
-            "Personils : Rifky Fauzi; Achmad Suryadi Nasution; Dear Michiko Mutiara Noor; Lutfi Mardianto; Mira Mustika; Nela Rizka;",
-            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=services",
+          "leader": "Werry Febrianti",
+          "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+          "personnel": [
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Achmad Suryadi Nasution",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784227"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Lutfi Mardianto",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6710014"
+            },
+            {
+              "name": "Mira Mustika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            }
           ],
-          "leader": "Werry Febrianti"
+          "funding_idr": 3000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "67a7c60fe320f9758fbd",
+          "id": "c9614f521e4a510ead4d",
           "title": "PEMBINAAN OLIMPIADE SAINS NASIONAL (OSN) MATEMATIKA UNTUK MENINGKATKAN KOMPETENSI SISWA DI SMA NEGERI 5 BANDAR LAMPUNG",
           "url": null,
           "year": 2018,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Leader : Triyana Muliawati HIBAH PENGABDIAN ITERA 2018 ( PKM )",
-            "Personils : Sri Efrinita Irwan; Eristia Arfi; Tri Utomo; Dewi Suhika; Werry Febrianti;",
-            "2018 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=services",
+          "leader": "Triyana Muliawati",
+          "scheme": "HIBAH PENGABDIAN ITERA 2018 ( PKM )",
+          "personnel": [
+            {
+              "name": "Sri Efrinita Irwan",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160"
+            },
+            {
+              "name": "Eristia Arfi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565"
+            },
+            {
+              "name": "Tri Utomo",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329"
+            },
+            {
+              "name": "Dewi Suhika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6172406"
+            },
+            {
+              "name": "Werry Febrianti",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011"
+            }
           ],
-          "leader": "Triyana Muliawati"
+          "funding_idr": 3000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
     "iprs": {
       "view": "iprs",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 1,
       "public_access_limited": true,
       "records": [
         {
-          "id": "2488abd653f57e55ff5f",
+          "id": "481a04ecb79a0fc79f83",
           "title": "METODE PENGOLAHAN DATA UNTUK ESTIMASI PARAMETER PADA PERSAMAAN DIFERENSIAL LOGISTIK MENGGUNAKAN OPTIMASI",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Inventor : Werry Febrianti, Achmad Suryadi Nasution, Gevisol Wahyuni S. Sinaga Institut Teknologi Sumatera",
-            "2024 Nomor Permohonan : S00202410119 Status : Terdaftar Paten Sederhana"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=iprs",
+          "inventors": "Werry Febrianti, Achmad Suryadi Nasution, Gevisol Wahyuni S. Sinaga",
+          "holder": "Institut Teknologi Sumatera",
+          "application_number": "S00202410119",
+          "status": "Terdaftar",
+          "ipr_type": "Paten Sederhana"
         }
       ]
     },
     "books": {
       "view": "books",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 4,
       "public_access_limited": true,
       "records": [
         {
-          "id": "dc6fd86068ecea9c998b",
+          "id": "bcd330421f0ed4cbf913",
           "title": "ALGORITMA EVOLUSI: ALGORITMA GENETIKA DAN EVOLUSI DIFERENSIAL Disertai Implementasi dengan MATLAB",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Category : BUKU REFERENSI",
-            "Werry Febrianti ITERAPress",
-            "2024 Lampung Selatan ISBN : 9786238472383"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=books",
+          "category": "BUKU REFERENSI",
+          "authors": "Werry Febrianti",
+          "publisher": "ITERAPress",
+          "isbn": "9786238472383"
         },
         {
-          "id": "c99c36c54a1bbd7cce0a",
+          "id": "af3e00e1737706a71c53",
           "title": "MATEMATIKA KEUANGAN: MODEL PERGERAKAN HARGA SAHAM DAN PENENTUAN HARGA OPSI DISERTAI IMPLEMENTASI DENGAN MATLAB",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Category : BUKU AJAR",
-            "Werry Febrianti, Kuntjoro Adji Sidarto ; penyunting, Harits Setyawan ITERAPress",
-            "2024 Lampung Selatan ISBN : 9786238472888"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=books",
+          "category": "BUKU AJAR",
+          "authors": "Werry Febrianti, Kuntjoro Adji Sidarto ; penyunting, Harits Setyawan",
+          "publisher": "ITERAPress",
+          "isbn": "9786238472888"
         },
         {
-          "id": "58b5657b923cd3e7c368",
+          "id": "6dc231c7d42a588b4cb6",
           "title": "Matematika Ekonomi dan Bisnis",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Category : BUKU AJAR",
-            "Werry Febrianti ; editor, Harits Setyawan ITERAPress",
-            "2024 Lampung Selatan ISBN : 9786347013194"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=books",
+          "category": "BUKU AJAR",
+          "authors": "Werry Febrianti ; editor, Harits Setyawan",
+          "publisher": "ITERAPress",
+          "isbn": "9786347013194"
         },
         {
-          "id": "16add2314428fbf1d428",
+          "id": "cbb728e5dc3ab099f176",
           "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011",
-          "details": [
-            "Category : BUKU REFERENSI",
-            "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad Itera Press",
-            "2024 Itera ISBN : 9786347013231"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=books",
+          "category": "BUKU REFERENSI",
+          "authors": "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad",
+          "publisher": "Itera Press",
+          "isbn": "9786347013231"
         }
       ]
     }
   },
-  "metrics": {},
   "collection_status": {
     "scopus": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:57:05.715672Z"
     },
     "garuda": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:57:14.891968Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -549,16 +614,20 @@
       "status": "not_provided"
     },
     "researches": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:57:23.492819Z"
     },
     "community_services": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:57:30.959443Z"
     },
     "iprs": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:57:39.715294Z"
     },
     "books": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:57:50.247312Z"
     }
   },
   "manual_baseline": {

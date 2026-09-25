@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": null,
+  "generated_at": "2026-09-25T02:02:27.953575Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
-    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-    "access": "user-supplied public first pages"
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=books",
+    "access": "first public page only; no login and no View more"
   },
   "configured_author": {
     "name": "Aswan Anggun Pribadi",
@@ -19,69 +19,89 @@
     "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
     "department": "S1 - Matematika",
     "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
-    "avatar_url": null,
-    "subjects": [],
-    "scores": {}
+    "avatar_url": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=jTgzgsQAAAAJ&citpid=1",
+    "subjects": [
+      "Matematika"
+    ],
+    "subject_details": [
+      {
+        "name": "Matematika",
+        "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/45532",
+        "sinta_subject_id": "45532"
+      }
+    ],
+    "scores": {
+      "SINTA Score Overall": 100,
+      "SINTA Score 3Yr": 83,
+      "Affil Score": 0,
+      "Affil Score 3Yr": 0
+    },
+    "sinta_score_overall": 100,
+    "sinta_score_3yr": 83,
+    "affil_score": 0,
+    "affil_score_3yr": 0
+  },
+  "profile_status": {
+    "checked_at": "2026-09-25T02:02:27.953575Z",
+    "sinta_score_overall_present": true,
+    "subjects_present": true
   },
   "collections": {
     "scopus": {
       "view": "scopus",
-      "scope": "user_supplied_public_first_pages",
-      "pages_collected": 0,
+      "scope": "public_first_page_plus_preserved_records",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 0,
-      "public_access_limited": true,
+      "public_access_limited": false,
       "records": []
     },
     "garuda": {
       "view": "garuda",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 3,
       "public_access_limited": true,
       "records": [
         {
-          "id": "9d37660df3bd81a7c2dc",
+          "id": "13d2341f2d686d9a9a48",
           "title": "Data-Efficient LSTM Modeling for Climate-based Dengue Early Warning in Lampung, Indonesia",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/5793294",
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "UIN Sumatera Utara ZERO: Jurnal Sains, Matematika dan Terapan Vol 9, No 2 (2025): Zero: Jurnal Sains Matematika dan Terapan600-611",
-            "Author Order : 5 of 6",
-            "Rifky Fauzi; Mia Syntia Br Sinaga; Nela Rizka; Dear Michiko Mutiara Noor; Aswan Anggun Pribadi; Tiara Shofi Edriani",
-            "2025 DOI: 10.30829/zero.v9i2.26192 Accred : Sinta 2"
-          ],
-          "doi": "10.30829/zero.v9i2.26192"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=garuda",
+          "classification": "Accred : Sinta 2",
+          "publication": "ZERO: Jurnal Sains, Matematika dan Terapan Vol 9, No 2 (2025): Zero: Jurnal Sains Matematika dan Terapan600-611",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/13266",
+          "author_order": "5 of 6",
+          "creator": null,
+          "citations": 1030829
         },
         {
-          "id": "ff6f0bbaf91a9dcb9c8c",
+          "id": "7a3ca6c6cd3a5cc474d8",
           "title": "Bilangan Dominasi-Lokasi pada Graf Hasil Kali Operasi Comb Graf Lintasan dan Graf Siklus",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3741976",
           "year": 2023,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 2 No 2 (2023): Indonesian Journal of Applied Mathematics Vol. 2 No. 2 January Chapter74-76",
-            "Author Order : 1 of 3",
-            "Aswan Anggun Pribadi; Muhammad Dhani; Anastasia Lia Dwi Prestanti",
-            "2023 DOI: 10.35472/indojam.v2i2.1039 Accred : Sinta 4"
-          ],
-          "doi": "10.35472/indojam.v2i2.1039"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=garuda",
+          "classification": "Accred : Sinta 4",
+          "publication": "Indonesian Journal of Applied Mathematics Vol 2 No 2 (2023): Indonesian Journal of Applied Mathematics Vol. 2 No. 2 January Chapter74-76",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/32741",
+          "author_order": "1 of 3",
+          "creator": null,
+          "citations": 1035472
         },
         {
-          "id": "6001db669d39685b3c71",
+          "id": "8b2eccbb6daf69ab2f8a",
           "title": "On locating-dominating number of comb product graphs",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1733448",
           "year": 2020,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Indonesian Combinatorial Society (InaCombS) Indonesian Journal of Combinatorics Vol 4, No 1 (2020)27 - 33",
-            "Author Order : 1 of 2",
-            "Aswan Anggun Pribadi; Suhadi Wido Saputro",
-            "2020 DOI: 10.19184/ijc.2020.4.1.4 Accred : Sinta 2"
-          ],
-          "doi": "10.19184/ijc.2020.4.1.4"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=garuda",
+          "classification": "Accred : Sinta 2",
+          "publication": "Indonesian Journal of Combinatorics Vol 4, No 1 (2020)27 - 33",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/14694",
+          "author_order": "1 of 2",
+          "creator": null,
+          "citations": 1019184
         }
       ]
     },
@@ -105,192 +125,344 @@
     },
     "researches": {
       "view": "researches",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 6,
       "public_access_limited": true,
       "records": [
         {
-          "id": "d626006f402a322f5fda",
+          "id": "becd4f7b2a51c8d41033",
           "title": "PEMODELAN DINAMIKA PERTUMBUHAN FITOPLANKTON TERHADAP DURASI PENCAHAYAAN: STRATEGI EFISIENSI ENERGI PADA BUDIDAYA MIKROALGA",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Leader : Dear Michiko Mutiara Noor PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
-            "Personils : Nela Rizka; Tiara Shofi Edriani; Aswan Anggun Pribadi; Rifky Fauzi;",
-            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=researches",
+          "leader": "Dear Michiko Mutiara Noor",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
+          "personnel": [
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            }
           ],
-          "leader": "Dear Michiko Mutiara Noor"
+          "funding_idr": 20000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "84ad6a0ba8ce6ddd8c3a",
+          "id": "4bef1b5cef2a7a9ae6dc",
           "title": "PEMODELAN AEROSOL OPTICAL DEPTH (AOD) DI PROVINSI LAMPUNG BERDASARKAN FAKTOR IKLIM DAN FAKTOR ANTROPOGENIK MENGGUNAKAN GENERALIZED LINEAR MODEL (GLM) DENGAN PENDEKATAN DISTRIBUSI GAMMA",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Leader : Tiara Shofi Edriani PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
-            "Personils : Rifky Fauzi; Aswan Anggun Pribadi; Dear Michiko Mutiara Noor; Nela Rizka;",
-            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=researches",
+          "leader": "Tiara Shofi Edriani",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
+          "personnel": [
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            }
           ],
-          "leader": "Tiara Shofi Edriani"
+          "funding_idr": 20000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "ad8a05ba4da3d62593fe",
+          "id": "88b84b18e4d11dea2ecc",
           "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
-            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
-            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=researches",
+          "leader": "Nurul Indah Safitri",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+          "personnel": [
+            {
+              "name": "Sri Efrinita Irwan",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160"
+            },
+            {
+              "name": "Triyana Muliawati",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283"
+            },
+            {
+              "name": "Gusrian Putra",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Tri Utomo",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329"
+            },
+            {
+              "name": "Dewi Suhika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6172406"
+            }
           ],
-          "leader": "Nurul Indah Safitri"
+          "funding_idr": 8000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "ac5f195053ce58be6bc0",
+          "id": "28d03ea6f3371aa21e6d",
           "title": "PENGEMBANGAN SISTEM PERINGATAN DINI OUTBREAK DEMAM BERDARAH DENGUE MENGGUNAKAN MODEL HYBRID ANALITIK-MACHINE LEARNING",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Leader : Rifky Fauzi PENDANAAN PENELITIAN ITERA TA 2024 ( PD )",
-            "Personils : Tiara Shofi Edriani; Nela Rizka; Aswan Anggun Pribadi;",
-            "2024 Rp. 60.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=researches",
+          "leader": "Rifky Fauzi",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2024 ( PD )",
+          "personnel": [
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            }
           ],
-          "leader": "Rifky Fauzi"
+          "funding_idr": 60000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "d69a4ede4b058daea969",
+          "id": "3bb397cb8092122847b0",
           "title": "APLIKASI PENENTUAN BILANGAN DOMINASI-LOKASI GRAF HASIL OPERASI COMB PADA GERAK ROBOT SWARM",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Leader : Aswan Anggun Pribadi PENDANAAN PENELITIAN ITERA TA 2024 ( PDP )",
-            "Personils : Sri Efrinita Irwan;",
-            "2024 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=researches",
+          "leader": "Aswan Anggun Pribadi",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2024 ( PDP )",
+          "personnel": [
+            {
+              "name": "Sri Efrinita Irwan",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160"
+            }
           ],
-          "leader": "Aswan Anggun Pribadi"
+          "funding_idr": 20000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "442faaecc3f24e49b03d",
+          "id": "98b7072186e57580d288",
           "title": "DETERMINAN MATRIKS KETETANGGAAN DARI GRAF YANG TERKAIT DENGAN GRAF CYCLE",
           "url": null,
           "year": 2023,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Leader : Sri Efrinita Irwan HIBAH PENELITIAN ITERA 2023 ( MADYA )",
-            "Personils : Aswan Anggun Pribadi; Achmad Suryadi Nasution; Triyana Muliawati;",
-            "2023 Rp. 39.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=researches",
+          "leader": "Sri Efrinita Irwan",
+          "scheme": "HIBAH PENELITIAN ITERA 2023 ( MADYA )",
+          "personnel": [
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Achmad Suryadi Nasution",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784227"
+            },
+            {
+              "name": "Triyana Muliawati",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283"
+            }
           ],
-          "leader": "Sri Efrinita Irwan"
+          "funding_idr": 39000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
     "community_services": {
       "view": "services",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 3,
       "public_access_limited": true,
       "records": [
         {
-          "id": "0246c62964ca1c1e11fb",
+          "id": "ad59ab93ac9121045da2",
           "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
-            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
-            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=services",
+          "leader": "Sri Efrinita Irwan",
+          "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+          "personnel": [
+            {
+              "name": "Tri Utomo",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329"
+            },
+            {
+              "name": "Gusrian Putra",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Nurul Indah Safitri",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461"
+            },
+            {
+              "name": "Dewi Suhika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6172406"
+            }
           ],
-          "leader": "Sri Efrinita Irwan"
+          "funding_idr": 3000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "66b2ed2c9d2a783ffe41",
+          "id": "a84ad06bde2b424743a9",
           "title": "PENGEMBANGAN DASHBOARD STATISTIK DESA SEBAGAI UPAYA OPTIMALISASI PEMANFAATAN DATA STATISTIK DI DESA KEDATON, KECAMATAN KALIANDA, KABUPATEN LAMPUNG SELATAN",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Leader : Rifky Fauzi HIBAH PENUGASAN FAKULTAS SAINS ITERA ( PKM PENUGASAN FAKULTAS )",
-            "Personils : Aswan Anggun Pribadi; Dear Michiko Mutiara Noor; Tiara Shofi Edriani; Nela Rizka;",
-            "2024 Rp. 5.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=services",
+          "leader": "Rifky Fauzi",
+          "scheme": "HIBAH PENUGASAN FAKULTAS SAINS ITERA ( PKM PENUGASAN FAKULTAS )",
+          "personnel": [
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            }
           ],
-          "leader": "Rifky Fauzi"
+          "funding_idr": 5000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "79d8c6e30bc17de1c7c1",
+          "id": "2ec527ff35a1be3b8d96",
           "title": "LAMAN PEKON INFORMATIF (LAMPIOM) SEBAGAI SARANA PROMOSI POTENSI LOKAL WILAYAH KOTA AGUNG TIMUR",
           "url": null,
           "year": 2021,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Leader : Tiara Shofi Edriani HIBAH PENGABDIAN ITERA 2021 ( PKM )",
-            "Personils : Dani Al Mahkya; Amalia Listiani; Aswan Anggun Pribadi; Rifky Fauzi;",
-            "2021 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=services",
+          "leader": "Tiara Shofi Edriani",
+          "scheme": "HIBAH PENGABDIAN ITERA 2021 ( PKM )",
+          "personnel": [
+            {
+              "name": "Dani Al Mahkya",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6690722"
+            },
+            {
+              "name": "Amalia Listiani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6782787"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            }
           ],
-          "leader": "Tiara Shofi Edriani"
+          "funding_idr": 10000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
     "iprs": {
       "view": "iprs",
-      "scope": "user_supplied_public_first_pages",
-      "pages_collected": 0,
+      "scope": "public_first_page_plus_preserved_records",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 0,
-      "public_access_limited": true,
+      "public_access_limited": false,
       "records": []
     },
     "books": {
       "view": "books",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 2,
       "public_access_limited": true,
       "records": [
         {
-          "id": "4ca0515c903ab9bad777",
+          "id": "7cd5716de8521377623a",
           "title": "Pengantar Optimisasi (digital epub)",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Category : BUKU AJAR",
-            "Achmad Suryadi Nasution, Dewi Suhika, Mira Mustika; Editor: Aswan Anggun pribadi Itera Press",
-            "2025 Lampung ISBN : 9786347361714"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=books",
+          "category": "BUKU AJAR",
+          "authors": "Achmad Suryadi Nasution, Dewi Suhika, Mira Mustika; Editor: Aswan Anggun pribadi",
+          "publisher": "Itera Press",
+          "isbn": "9786347361714"
         },
         {
-          "id": "8ea6c2bd872be1a6bf52",
+          "id": "3183d81617ae03db600a",
           "title": "Pengantar Optimisasi (digital pdf)",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216",
-          "details": [
-            "Category : BUKU AJAR",
-            "Achmad Suryadi Nasution, Dewi Suhika, Mira Mustika; Editor: Aswan Anggun pribadi Itera Press",
-            "2025 Lampung Selatan, Lampung ISBN : 9786347361707"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216?view=books",
+          "category": "BUKU AJAR",
+          "authors": "Achmad Suryadi Nasution, Dewi Suhika, Mira Mustika; Editor: Aswan Anggun pribadi",
+          "publisher": "Itera Press",
+          "isbn": "9786347361707"
         }
       ]
     }
   },
-  "metrics": {},
   "collection_status": {
     "scopus": {
-      "status": "not_provided"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:01:55.168848Z"
     },
     "garuda": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:02:01.994105Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -299,16 +471,20 @@
       "status": "not_provided"
     },
     "researches": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:02:08.849463Z"
     },
     "community_services": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:02:15.361078Z"
     },
     "iprs": {
-      "status": "not_provided"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:02:21.719753Z"
     },
     "books": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:02:27.953575Z"
     }
   },
   "manual_baseline": {

@@ -1,17 +1,25 @@
 {
   "schema_version": 2,
-  "generated_at": null,
+  "generated_at": "2026-09-25T02:08:23.508131Z",
   "authors_count": 16,
   "authors": [
     {
       "name": "RIFKY FAUZI",
       "sinta_id": "6750161",
       "file": "6750161.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 404,
+      "sinta_score_3yr": 242,
+      "subjects": [
+        "Computational Fluid Dynamics",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Computational Mathematics"
+      ],
       "counts": {
         "scopus": 10,
-        "garuda": 19,
-        "google_scholar": 0,
+        "garuda": 9,
+        "google_scholar": 8,
         "rama": 0,
         "researches": 8,
         "community_services": 4,
@@ -23,7 +31,12 @@
       "name": "TIARA SHOFI EDRIANI",
       "sinta_id": "6784215",
       "file": "6784215.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 169,
+      "sinta_score_3yr": 129,
+      "subjects": [
+        "Matematika Terapan"
+      ],
       "counts": {
         "scopus": 4,
         "garuda": 4,
@@ -39,7 +52,7 @@
       "name": "WERRY FEBRIANTI",
       "sinta_id": "5979011",
       "file": "5979011.json",
-      "status": "manual_baseline",
+      "status": "ok",
       "sinta_score_overall": 530,
       "sinta_score_3yr": 238,
       "subjects": [
@@ -54,7 +67,7 @@
         "garuda": 4,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 8,
+        "researches": 5,
         "community_services": 2,
         "iprs": 1,
         "books": 4
@@ -64,7 +77,10 @@
       "name": "NURUL INDAH SAFITRI",
       "sinta_id": "6966461",
       "file": "6966461.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 46,
+      "sinta_score_3yr": 4,
+      "subjects": [],
       "counts": {
         "scopus": 0,
         "garuda": 0,
@@ -73,20 +89,28 @@
         "researches": 1,
         "community_services": 1,
         "iprs": 0,
-        "books": 0
+        "books": 2
       }
     },
     {
       "name": "ACHMAD SURYADI NASUTION",
       "sinta_id": "6784227",
       "file": "6784227.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 341,
+      "sinta_score_3yr": 283,
+      "subjects": [
+        "Operation Research",
+        "Game Theory",
+        "Optimization",
+        "Multi-Objective Optimization"
+      ],
       "counts": {
         "scopus": 4,
         "garuda": 10,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 5,
+        "researches": 4,
         "community_services": 1,
         "iprs": 6,
         "books": 3
@@ -96,7 +120,12 @@
       "name": "GUSRIAN PUTRA",
       "sinta_id": "6774905",
       "file": "6774905.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 222,
+      "sinta_score_3yr": 154,
+      "subjects": [
+        "Analysis and Applied Mathematics"
+      ],
       "counts": {
         "scopus": 5,
         "garuda": 1,
@@ -112,7 +141,12 @@
       "name": "SRI EFRINITA IRWAN",
       "sinta_id": "6196160",
       "file": "6196160.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 347,
+      "sinta_score_3yr": 177,
+      "subjects": [
+        "Aljabar"
+      ],
       "counts": {
         "scopus": 1,
         "garuda": 5,
@@ -128,7 +162,14 @@
       "name": "DEAR MICHIKO MUTIARA NOOR",
       "sinta_id": "6693907",
       "file": "6693907.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 166,
+      "sinta_score_3yr": 107,
+      "subjects": [
+        "traffic flow analysis",
+        "numerical solution",
+        "differential equation"
+      ],
       "counts": {
         "scopus": 4,
         "garuda": 5,
@@ -144,7 +185,12 @@
       "name": "ASWAN ANGGUN PRIBADI",
       "sinta_id": "6773216",
       "file": "6773216.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 100,
+      "sinta_score_3yr": 83,
+      "subjects": [
+        "Matematika"
+      ],
       "counts": {
         "scopus": 0,
         "garuda": 3,
@@ -160,10 +206,17 @@
       "name": "DEWI SUHIKA",
       "sinta_id": "6172406",
       "file": "6172406.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 332,
+      "sinta_score_3yr": 250,
+      "subjects": [
+        "Mathematical Modelling",
+        "System control",
+        "Applied Mathematics"
+      ],
       "counts": {
-        "scopus": 6,
-        "garuda": 9,
+        "scopus": 7,
+        "garuda": 7,
         "google_scholar": 0,
         "rama": 0,
         "researches": 5,
@@ -176,7 +229,12 @@
       "name": "TRIYANA MULIAWATI",
       "sinta_id": "6151283",
       "file": "6151283.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 518,
+      "sinta_score_3yr": 353,
+      "subjects": [
+        "statistika dan machine learning"
+      ],
       "counts": {
         "scopus": 7,
         "garuda": 19,
@@ -192,7 +250,12 @@
       "name": "NELA RIZKA",
       "sinta_id": "6795719",
       "file": "6795719.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 173,
+      "sinta_score_3yr": 161,
+      "subjects": [
+        "Matematika Biologi"
+      ],
       "counts": {
         "scopus": 4,
         "garuda": 3,
@@ -208,7 +271,14 @@
       "name": "TRI UTOMO",
       "sinta_id": "6653329",
       "file": "6653329.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 90,
+      "sinta_score_3yr": 25,
+      "subjects": [
+        "algebra",
+        "applied algebra",
+        "computational science"
+      ],
       "counts": {
         "scopus": 1,
         "garuda": 4,
@@ -224,7 +294,14 @@
       "name": "ERISTIA ARFI",
       "sinta_id": "6166565",
       "file": "6166565.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 288,
+      "sinta_score_3yr": 197,
+      "subjects": [
+        "mathematical oncology",
+        "perturbation techniques",
+        "applied mathematics"
+      ],
       "counts": {
         "scopus": 3,
         "garuda": 11,
@@ -240,7 +317,13 @@
       "name": "MIRA MUSTIKA",
       "sinta_id": "6700033",
       "file": "6700033.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 198,
+      "sinta_score_3yr": 107,
+      "subjects": [
+        "Teori Optimisasi",
+        "Derivative-Free Optimization"
+      ],
       "counts": {
         "scopus": 3,
         "garuda": 1,
@@ -256,7 +339,12 @@
       "name": "LUTFI MARDIANTO",
       "sinta_id": "6710014",
       "file": "6710014.json",
-      "status": "manual_baseline",
+      "status": "ok",
+      "sinta_score_overall": 311,
+      "sinta_score_3yr": 149,
+      "subjects": [
+        "Mathematics"
+      ],
       "counts": {
         "scopus": 6,
         "garuda": 6,

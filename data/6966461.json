@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": null,
+  "generated_at": "2026-09-25T01:58:36.080334Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
-    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461",
-    "access": "user-supplied public first pages"
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461?view=books",
+    "access": "first public page only; no login and no View more"
   },
   "configured_author": {
     "name": "Nurul Indah Safitri",
@@ -19,27 +19,42 @@
     "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
     "department": "S1 - Matematika",
     "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
-    "avatar_url": null,
+    "avatar_url": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=SVcvzNIAAAAJ&citpid=1",
     "subjects": [],
-    "scores": {}
+    "subject_details": [],
+    "scores": {
+      "SINTA Score Overall": 46,
+      "SINTA Score 3Yr": 4,
+      "Affil Score": 0,
+      "Affil Score 3Yr": 0
+    },
+    "sinta_score_overall": 46,
+    "sinta_score_3yr": 4,
+    "affil_score": 0,
+    "affil_score_3yr": 0
+  },
+  "profile_status": {
+    "checked_at": "2026-09-25T01:58:36.080334Z",
+    "sinta_score_overall_present": true,
+    "subjects_present": false
   },
   "collections": {
     "scopus": {
       "view": "scopus",
-      "scope": "user_supplied_public_first_pages",
-      "pages_collected": 0,
+      "scope": "public_first_page_plus_preserved_records",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 0,
-      "public_access_limited": true,
+      "public_access_limited": false,
       "records": []
     },
     "garuda": {
       "view": "garuda",
-      "scope": "user_supplied_public_first_pages",
-      "pages_collected": 0,
+      "scope": "public_first_page_plus_preserved_records",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 0,
-      "public_access_limited": true,
+      "public_access_limited": false,
       "records": []
     },
     "google_scholar": {
@@ -62,76 +77,154 @@
     },
     "researches": {
       "view": "researches",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 1,
       "public_access_limited": true,
       "records": [
         {
-          "id": "ad8a05ba4da3d62593fe",
+          "id": "88b84b18e4d11dea2ecc",
           "title": "ANALISIS DIMENSI METRIK GRAF AMALGAMASI NCM SEBAGAI REPRESENTASI TOPOLOGI JARINGAN RING",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461",
-          "details": [
-            "Leader : Nurul Indah Safitri PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
-            "Personils : Sri Efrinita Irwan; Triyana Muliawati; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Tri Utomo; Dewi Suhika;",
-            "2025 Rp. 8.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461?view=researches",
+          "leader": "Nurul Indah Safitri",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELTIAN PENGUATAN KELOMPOK KEILMUAN )",
+          "personnel": [
+            {
+              "name": "Sri Efrinita Irwan",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160"
+            },
+            {
+              "name": "Triyana Muliawati",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283"
+            },
+            {
+              "name": "Gusrian Putra",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Tri Utomo",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329"
+            },
+            {
+              "name": "Dewi Suhika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6172406"
+            }
           ],
-          "leader": "Nurul Indah Safitri"
+          "funding_idr": 8000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
     "community_services": {
       "view": "services",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 1,
       "public_access_limited": true,
       "records": [
         {
-          "id": "0246c62964ca1c1e11fb",
+          "id": "ad59ab93ac9121045da2",
           "title": "PENGUATAN KOMPETENSI OLIMPIADE MATEMATIKA DI SMA BAITUL JANNAH MELALUI PEMANFAATAN LEARNING MANAGEMENT SYSTEM (LMS)",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461",
-          "details": [
-            "Leader : Sri Efrinita Irwan PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
-            "Personils : Tri Utomo; Gusrian Putra; Tiara Shofi Edriani; Aswan Anggun Pribadi; Nurul Indah Safitri; Dewi Suhika;",
-            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461?view=services",
+          "leader": "Sri Efrinita Irwan",
+          "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+          "personnel": [
+            {
+              "name": "Tri Utomo",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329"
+            },
+            {
+              "name": "Gusrian Putra",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Nurul Indah Safitri",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461"
+            },
+            {
+              "name": "Dewi Suhika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6172406"
+            }
           ],
-          "leader": "Sri Efrinita Irwan"
+          "funding_idr": 3000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
     "iprs": {
       "view": "iprs",
-      "scope": "user_supplied_public_first_pages",
-      "pages_collected": 0,
+      "scope": "public_first_page_plus_preserved_records",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 0,
-      "public_access_limited": true,
+      "public_access_limited": false,
       "records": []
     },
     "books": {
       "view": "books",
-      "scope": "user_supplied_public_first_pages",
-      "pages_collected": 0,
+      "scope": "public_first_page_plus_preserved_records",
+      "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 0,
+      "records_collected": 2,
       "public_access_limited": true,
-      "records": []
+      "records": [
+        {
+          "id": "cecb500ebc661eaabee5",
+          "title": "Teori Peluang dengan Aplikasinya PDF",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461?view=books",
+          "category": "BUKU AJAR",
+          "authors": "Lutfi Mardianto, Nurul Indah Safitri",
+          "publisher": "Itera Press",
+          "isbn": "9786347361943"
+        },
+        {
+          "id": "3373156eb8d27fb3d5e6",
+          "title": "Teori Peluang dengan Aplikasinya EPUB",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461?view=books",
+          "category": "BUKU AJAR",
+          "authors": "Lutfi Mardianto, Nurul Indah Safitri",
+          "publisher": "Itera Press",
+          "isbn": "9786347361950"
+        }
+      ]
     }
   },
-  "metrics": {},
   "collection_status": {
     "scopus": {
-      "status": "not_provided"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:57:59.289081Z"
     },
     "garuda": {
-      "status": "not_provided"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:58:06.286216Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -140,16 +233,20 @@
       "status": "not_provided"
     },
     "researches": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:58:14.866122Z"
     },
     "community_services": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:58:21.855844Z"
     },
     "iprs": {
-      "status": "not_provided"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:58:29.340100Z"
     },
     "books": {
-      "status": "not_provided"
+      "status": "ok",
+      "checked_at": "2026-09-25T01:58:36.080334Z"
     }
   },
   "manual_baseline": {

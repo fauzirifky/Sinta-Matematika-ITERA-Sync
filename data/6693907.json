@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": null,
+  "generated_at": "2026-09-25T02:01:44.571417Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
-    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-    "access": "user-supplied public first pages"
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=books",
+    "access": "first public page only; no login and no View more"
   },
   "configured_author": {
     "name": "Dear Michiko Mutiara Noor",
@@ -19,146 +19,180 @@
     "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
     "department": "S1 - Matematika",
     "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
-    "avatar_url": null,
-    "subjects": [],
-    "scores": {}
+    "avatar_url": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=MjX97X4AAAAJ&citpid=1",
+    "subjects": [
+      "traffic flow analysis",
+      "numerical solution",
+      "differential equation"
+    ],
+    "subject_details": [
+      {
+        "name": "traffic flow analysis",
+        "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/51367",
+        "sinta_subject_id": "51367"
+      },
+      {
+        "name": "numerical solution",
+        "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/51309",
+        "sinta_subject_id": "51309"
+      },
+      {
+        "name": "differential equation",
+        "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/18565",
+        "sinta_subject_id": "18565"
+      }
+    ],
+    "scores": {
+      "SINTA Score Overall": 166,
+      "SINTA Score 3Yr": 107,
+      "Affil Score": 0,
+      "Affil Score 3Yr": 0
+    },
+    "sinta_score_overall": 166,
+    "sinta_score_3yr": 107,
+    "affil_score": 0,
+    "affil_score_3yr": 0
+  },
+  "profile_status": {
+    "checked_at": "2026-09-25T02:01:44.571417Z",
+    "sinta_score_overall_present": true,
+    "subjects_present": true
   },
   "collections": {
     "scopus": {
       "view": "scopus",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 4,
       "public_access_limited": true,
       "records": [
         {
-          "id": "d2e11309965685eaf70a",
+          "id": "673b77127b1ebc2710e6",
           "title": "Enhancing astronomy literacy in Indonesia: Evaluating the impact of NASE training programs",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105021094871&origin=resultslist",
           "year": 2025,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Q3 as Journal Open Astronomy",
-            "Author Order : 8 of 15 Creator : Pratiwi N.",
-            "2025 0 cited"
-          ]
+          "classification": "Q3 as Journal",
+          "publication": "Open Astronomy",
+          "publication_url": "https://www.scopus.com/sourceid/21100847472",
+          "author_order": "8 of 15",
+          "creator": "Pratiwi N.",
+          "citations": 0
         },
         {
-          "id": "eb2e100caa7bcf9ad9ef",
+          "id": "daaa518d8ce469cb26f7",
           "title": "Inventory control of raw materials using period order quantity method in preventing the stock-out occurrence",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009596517&origin=resultslist",
           "year": 2025,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Q4 as Conference Proceedin Aip Conference Proceedings",
-            "Author Order : 5 of 6 Creator : Nasution A.S.",
-            "2025 0 cited"
-          ]
+          "classification": "Q4 as Conference Proceedin",
+          "publication": "Aip Conference Proceedings",
+          "publication_url": "https://www.scopus.com/sourceid/26916",
+          "author_order": "5 of 6",
+          "creator": "Nasution A.S.",
+          "citations": 0
         },
         {
-          "id": "5c90cc71d92da851fc6e",
+          "id": "e3d7ee03da7b5537db00",
           "title": "Mathematical model for a liquid heat loss",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85135704768&origin=resultslist",
           "year": 2022,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Q4 as Conference Proceedin Aip Conference Proceedings",
-            "Author Order : 1 of 3 Creator : Noor D.M.M.",
-            "2022 1 cited"
-          ]
+          "classification": "Q4 as Conference Proceedin",
+          "publication": "Aip Conference Proceedings",
+          "publication_url": "https://www.scopus.com/sourceid/26916",
+          "author_order": "1 of 3",
+          "creator": "Noor D.M.M.",
+          "citations": 1
         },
         {
-          "id": "3c303ffbade95209392b",
+          "id": "275171626cf52209812a",
           "title": "AN ANALYSIS OF A THREE-PHASE VERSUS A FOUR-PHASE TRAFFIC LIGHTS REGULATION FOR A FOUR-LEG INTERSECTION",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85147472810&origin=resultslist",
           "year": 2020,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "no-Q as Journal Journal of the Indonesian Mathematical Society",
-            "Author Order : 2 of 2 Creator : Pudjaprasetya S.R.",
-            "2020 1 cited"
-          ]
+          "classification": "no-Q as Journal",
+          "publication": "Journal of the Indonesian Mathematical Society",
+          "publication_url": "https://www.scopus.com/sourceid/21101064980",
+          "author_order": "2 of 2",
+          "creator": "Pudjaprasetya S.R.",
+          "citations": 1
         }
       ]
     },
     "garuda": {
       "view": "garuda",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 5,
       "public_access_limited": true,
       "records": [
         {
-          "id": "72be6968501887652b93",
+          "id": "4db5bd3f0b54b0357562",
           "title": "Numerical Simulation of Run-Up Wave Using Nonlinear Shallow Water Equations with Staggered Grid at Canti Beach, South Lampung",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4722275",
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Universitas PGRI Palembang Sainmatika: Jurnal Ilmiah Matematika dan Ilmu Pengetahuan Alam Vol. 21 No. 2 (2024): Sainmatika : Jurnal Ilmiah Matematika dan Ilmu Pengetahuan Alam161-169",
-            "Author Order : 1 of 3",
-            "Noor, Dear Michiko Mutiara; Faiqoh, Maya Himmah; Fauzi, Rifky",
-            "2024 DOI: 10.31851/sainmatika.v21i2.16068 Accred : Sinta 4"
-          ],
-          "doi": "10.31851/sainmatika.v21i2.16068"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=garuda",
+          "classification": "Accred : Sinta 4",
+          "publication": "Sainmatika: Jurnal Ilmiah Matematika dan Ilmu Pengetahuan Alam Vol. 21 No. 2 (2024): Sainmatika : Jurnal Ilmiah Matematika dan Ilmu Pengetahuan Alam161-169",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/13770",
+          "author_order": "1 of 3",
+          "creator": null,
+          "citations": 1031851
         },
         {
-          "id": "b3af6954f91579759a74",
+          "id": "8e36c7535b9138f2def7",
           "title": "Analisis Hubungan Kepadatan Penduduk dengan Pola Penyebaran COVID-19 Provinsi DKI Jakarta menggunakan Regresi Robust",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742020",
           "year": 2021,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 1 No 2 (2021): Indonesian Journal of Applied Mathematics Vol. 1 No. 2 April Chapter51-60",
-            "Author Order : 3 of 3",
-            "Tiara Shofi Edriani; Anisa Rahmadani; Dear Michiko Mutiara Noor",
-            "2021 DOI: 10.35472/indojam.v1i2.353 Accred : Unknown"
-          ],
-          "doi": "10.35472/indojam.v1i2.353"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=garuda",
+          "classification": "Accred : Unknown",
+          "publication": "Indonesian Journal of Applied Mathematics Vol 1 No 2 (2021): Indonesian Journal of Applied Mathematics Vol. 1 No. 2 April Chapter51-60",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/32741",
+          "author_order": "3 of 3",
+          "creator": null,
+          "citations": 1035472
         },
         {
-          "id": "df6c2ecbf2196aeb3e86",
+          "id": "1a46d49407184204b5ad",
           "title": "An Analysis of A Three-Phase Versus A Four-Phase Traffic Lights Regulation for A Four-Leg Intersection",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/1750532",
           "year": 2020,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "IndoMS Journal of the Indonesian Mathematical Society Volume 26 Number 2 (July 2020)192-201",
-            "Author Order : 2 of 2",
-            "Pudjaprasetya, Sri Redjeki; Noor, Dear Michiko",
-            "2020 DOI: 10.22342/jims.26.2.823.192-201 Accred : Sinta 2"
-          ],
-          "doi": "10.22342/jims.26.2.823.192-201"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=garuda",
+          "classification": "Accred : Sinta 2",
+          "publication": "Journal of the Indonesian Mathematical Society Volume 26 Number 2 (July 2020)192-201",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/6869",
+          "author_order": "2 of 2",
+          "creator": null,
+          "citations": 1022342
         },
         {
-          "id": "59ce1002d9a457d2e3a6",
+          "id": "141478b6bbc9bd3485f5",
           "title": "An Analysis of A Three-Phase Versus A Four-Phase Traffic Lights Regulation for A Four-Leg Intersection",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/2699439",
           "year": 2020,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "IndoMS Journal of the Indonesian Mathematical Society Volume 26 Number 2 (July 2020)192-201",
-            "Author Order : 2 of 2",
-            "Sri Redjeki Pudjaprasetya; Dear Michiko Noor",
-            "2020 DOI: 10.22342/jims.26.2.823.192-201 Accred : Sinta 2"
-          ],
-          "doi": "10.22342/jims.26.2.823.192-201"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=garuda",
+          "classification": "Accred : Sinta 2",
+          "publication": "Journal of the Indonesian Mathematical Society Volume 26 Number 2 (July 2020)192-201",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/6869",
+          "author_order": "2 of 2",
+          "creator": null,
+          "citations": 1022342
         },
         {
-          "id": "4cea65e6d198a346355a",
+          "id": "f692836d7e8615211ef2",
           "title": "Analisis Korelasi Luas Lahan Serta Ekspor Kopi Lampung Terhadap Ekspor Kopi Indonesia",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/3742040",
           "year": 2020,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Lembaga Penelitian dan Pengabdian Masyarakat (LPPM), Institut Teknologi Sumatera, Lampung Selatan, Lampung, Indonesia Indonesian Journal of Applied Mathematics Vol 1 No 1 (2020): Indonesian Journal of Applied Mathematics Vol. 1 No. 1 October Chapter25-30",
-            "Author Order : 6 of 6",
-            "Rika Agustin; Dini Novita; Hendri Pratama; Safira Sela; Syahna Cyntia; Dear Michiko M. Noor",
-            "2020 DOI: - Accred : Unknown"
-          ],
-          "doi": "-"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=garuda",
+          "classification": "Accred : Unknown",
+          "publication": "Indonesian Journal of Applied Mathematics Vol 1 No 1 (2020): Indonesian Journal of Applied Mathematics Vol. 1 No. 1 October Chapter25-30",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/32741",
+          "author_order": "6 of 6",
+          "creator": null,
+          "citations": null
         }
       ]
     },
@@ -182,202 +216,347 @@
     },
     "researches": {
       "view": "researches",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 4,
       "public_access_limited": true,
       "records": [
         {
-          "id": "84ad6a0ba8ce6ddd8c3a",
+          "id": "4bef1b5cef2a7a9ae6dc",
           "title": "PEMODELAN AEROSOL OPTICAL DEPTH (AOD) DI PROVINSI LAMPUNG BERDASARKAN FAKTOR IKLIM DAN FAKTOR ANTROPOGENIK MENGGUNAKAN GENERALIZED LINEAR MODEL (GLM) DENGAN PENDEKATAN DISTRIBUSI GAMMA",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Leader : Tiara Shofi Edriani PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
-            "Personils : Rifky Fauzi; Aswan Anggun Pribadi; Dear Michiko Mutiara Noor; Nela Rizka;",
-            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=researches",
+          "leader": "Tiara Shofi Edriani",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
+          "personnel": [
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            }
           ],
-          "leader": "Tiara Shofi Edriani"
+          "funding_idr": 20000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "d626006f402a322f5fda",
+          "id": "becd4f7b2a51c8d41033",
           "title": "PEMODELAN DINAMIKA PERTUMBUHAN FITOPLANKTON TERHADAP DURASI PENCAHAYAAN: STRATEGI EFISIENSI ENERGI PADA BUDIDAYA MIKROALGA",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Leader : Dear Michiko Mutiara Noor PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
-            "Personils : Nela Rizka; Tiara Shofi Edriani; Aswan Anggun Pribadi; Rifky Fauzi;",
-            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=researches",
+          "leader": "Dear Michiko Mutiara Noor",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
+          "personnel": [
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            }
           ],
-          "leader": "Dear Michiko Mutiara Noor"
+          "funding_idr": 20000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "8029e3c9ba0bd00bdb45",
+          "id": "2729520bcbd3c4c88722",
           "title": "OPTIMALISASI PERSEDIAAN BAHAN BAKU KOPI DALAM UPAYA MENEKAN BIAYA PRODUKSI DAN MENCEGAH TERJADINYA KEKURANGAN STOK ( STOCK OUT ) DENGAN MENGGUNAKAN METODE PERIOD ORDER QUANTITY (POQ)",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Leader : Achmad Suryadi Nasution HIBAH PENUGASAN FAKULTAS SAINS ITERA ( HPFS )",
-            "Personils : Rifky Fauzi; Triyana Muliawati; Dear Michiko Mutiara Noor; Tiara Shofi Edriani;",
-            "2024 Rp. 7.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=researches",
+          "leader": "Achmad Suryadi Nasution",
+          "scheme": "HIBAH PENUGASAN FAKULTAS SAINS ITERA ( HPFS )",
+          "personnel": [
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Triyana Muliawati",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            }
           ],
-          "leader": "Achmad Suryadi Nasution"
+          "funding_idr": 7000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "8bb03afb546e0a76df40",
+          "id": "8c19d89390eec88d1fa2",
           "title": "KAJIAN DAMPAK VARIABILITAS IKLIM TERHADAP DEMAM BERDARAH DAN RISIKO KESEHATAN TERKAIT KUALITAS UDARA DI PROVINSI LAMPUNG",
           "url": null,
           "year": 2023,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Leader : Tiara Shofi Edriani HIBAH JURUSAN SAINS ITERA 2023 ( HIBAH BANTUAN PENELITIAN JURUSAN )",
-            "Personils : Dear Michiko Mutiara Noor; Nela Rizka; Rifky Fauzi; Eristia Arfi;",
-            "2023 Rp. 15.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=researches",
+          "leader": "Tiara Shofi Edriani",
+          "scheme": "HIBAH JURUSAN SAINS ITERA 2023 ( HIBAH BANTUAN PENELITIAN JURUSAN )",
+          "personnel": [
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            },
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Eristia Arfi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565"
+            }
           ],
-          "leader": "Tiara Shofi Edriani"
+          "funding_idr": 15000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
     "community_services": {
       "view": "services",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 4,
       "public_access_limited": true,
       "records": [
         {
-          "id": "1751b02e62fb0919f910",
+          "id": "41957b369f8831ccac2b",
           "title": "SMART MONEY FOR SMART STUDENTS: PELATIHAN MENABUNG DAN MENGELOLA UANG JAJAN UNTUK MERDEKA FINANSIAL DI KALANGAN SISWA",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Leader : Werry Febrianti PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
-            "Personils : Rifky Fauzi; Achmad Suryadi Nasution; Dear Michiko Mutiara Noor; Lutfi Mardianto; Mira Mustika; Nela Rizka;",
-            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=services",
+          "leader": "Werry Febrianti",
+          "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+          "personnel": [
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Achmad Suryadi Nasution",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784227"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Lutfi Mardianto",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6710014"
+            },
+            {
+              "name": "Mira Mustika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            }
           ],
-          "leader": "Werry Febrianti"
+          "funding_idr": 3000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "66b2ed2c9d2a783ffe41",
+          "id": "a84ad06bde2b424743a9",
           "title": "PENGEMBANGAN DASHBOARD STATISTIK DESA SEBAGAI UPAYA OPTIMALISASI PEMANFAATAN DATA STATISTIK DI DESA KEDATON, KECAMATAN KALIANDA, KABUPATEN LAMPUNG SELATAN",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Leader : Rifky Fauzi HIBAH PENUGASAN FAKULTAS SAINS ITERA ( PKM PENUGASAN FAKULTAS )",
-            "Personils : Aswan Anggun Pribadi; Dear Michiko Mutiara Noor; Tiara Shofi Edriani; Nela Rizka;",
-            "2024 Rp. 5.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=services",
+          "leader": "Rifky Fauzi",
+          "scheme": "HIBAH PENUGASAN FAKULTAS SAINS ITERA ( PKM PENUGASAN FAKULTAS )",
+          "personnel": [
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            }
           ],
-          "leader": "Rifky Fauzi"
+          "funding_idr": 5000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "f1ed9a2b4e82825da42c",
+          "id": "234884938d7597f6b36d",
           "title": "KELAS MOTIVASI MENUJU PERGURUAN TINGGI SERTA PELATIHAN TES POTENSI SKOLASTIK (TPS) DI SMAS AL HUDA, JATI AGUNG.",
           "url": null,
           "year": 2021,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Leader : Mira Mustika HIBAH PENGABDIAN ITERA 2021 ( PKM )",
-            "Personils : Dear Michiko Mutiara Noor; Eristia Arfi; Triyana Muliawati; Dewi Suhika;",
-            "2021 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=services",
+          "leader": "Mira Mustika",
+          "scheme": "HIBAH PENGABDIAN ITERA 2021 ( PKM )",
+          "personnel": [
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Eristia Arfi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565"
+            },
+            {
+              "name": "Triyana Muliawati",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283"
+            },
+            {
+              "name": "Dewi Suhika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6172406"
+            }
           ],
-          "leader": "Mira Mustika"
+          "funding_idr": 10000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "71ae4b59416e25c83f25",
+          "id": "a8ae4108229284f10a7b",
           "title": "MENUMBUHKAN KESADARAN GENERASI MILENIAL HADAPI TANTANGAN REVOLUSI INDUSTRI 4.0: MELATIH GROWTH MINDSET POSITIF SMA GAJAH MADA BANDAR LAMPUNG",
           "url": null,
           "year": 2019,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Leader : Dear Michiko Mutiara Noor HIBAH PENGABDIAN ITERA 2019 ( PKM )",
-            "Personils : Mira Mustika; Triyana Muliawati; Eristia Arfi; Tri Utomo;",
-            "2019 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=services",
+          "leader": "Dear Michiko Mutiara Noor",
+          "scheme": "HIBAH PENGABDIAN ITERA 2019 ( PKM )",
+          "personnel": [
+            {
+              "name": "Mira Mustika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033"
+            },
+            {
+              "name": "Triyana Muliawati",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283"
+            },
+            {
+              "name": "Eristia Arfi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565"
+            },
+            {
+              "name": "Tri Utomo",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329"
+            }
           ],
-          "leader": "Dear Michiko Mutiara Noor"
+          "funding_idr": 3000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
     "iprs": {
       "view": "iprs",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 2,
       "public_access_limited": true,
       "records": [
         {
-          "id": "cb8dd2abe65f8841ac74",
+          "id": "81a5e72f80377017bc46",
           "title": "Mathematics for Machine Learning: Fondasi dalam Kecerdasan Buatan",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Inventor : Rifky Fauzi, Nela Rizka, Gusrian Putra, Dear Michiko Mutiara Noor Institut Teknologi Sumatera",
-            "2025 Nomor Permohonan : EC002025039968 Status : Terbit Hak Cipta"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=iprs",
+          "inventors": "Rifky Fauzi, Nela Rizka, Gusrian Putra, Dear Michiko Mutiara Noor",
+          "holder": "Institut Teknologi Sumatera",
+          "application_number": "EC002025039968",
+          "status": "Terbit",
+          "ipr_type": "Hak Cipta"
         },
         {
-          "id": "343b7b401803aa7d672a",
+          "id": "b79c3a33723e043d35e6",
           "title": "Modul Metode Numerik Praktis dengan Pendekatan Berpusat pada Mahasiswa",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Inventor : Rifky Fauzi dan Dear Michiko Mutiara Noor Institut Teknologi Sumatera",
-            "2025 Nomor Permohonan : EC002025039420 Status : Terbit Hak Cipta"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=iprs",
+          "inventors": "Rifky Fauzi dan Dear Michiko Mutiara Noor",
+          "holder": "Institut Teknologi Sumatera",
+          "application_number": "EC002025039420",
+          "status": "Terbit",
+          "ipr_type": "Hak Cipta"
         }
       ]
     },
     "books": {
       "view": "books",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 2,
       "public_access_limited": true,
       "records": [
         {
-          "id": "16add2314428fbf1d428",
+          "id": "cbb728e5dc3ab099f176",
           "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Category : BUKU REFERENSI",
-            "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad Itera Press",
-            "2024 Itera ISBN : 9786347013231"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=books",
+          "category": "BUKU REFERENSI",
+          "authors": "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad",
+          "publisher": "Itera Press",
+          "isbn": "9786347013231"
         },
         {
-          "id": "5313d73fd580e5bb54be",
+          "id": "440bdbdce0ecc5ceac07",
           "title": "14 Langkah Menuju Alam Semesta: Pelajaran Astronomi untuk Guru dan Mahasiswa Sains",
           "url": null,
           "year": 2022,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907",
-          "details": [
-            "Category : BUKU AJAR",
-            "Hakim Luthfi Malasan, Nindhita Pratiwi, Dear Michiko Mutiara Noor, dkk. ITERA Press",
-            "2022 Lampung Selatan ISBN : 9786239963910"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907?view=books",
+          "category": "BUKU AJAR",
+          "authors": "Hakim Luthfi Malasan, Nindhita Pratiwi, Dear Michiko Mutiara Noor, dkk.",
+          "publisher": "ITERA Press",
+          "isbn": "9786239963910"
         }
       ]
     }
   },
-  "metrics": {},
   "collection_status": {
     "scopus": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:00:55.063990Z"
     },
     "garuda": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:01:04.776718Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -386,16 +565,20 @@
       "status": "not_provided"
     },
     "researches": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:01:13.542799Z"
     },
     "community_services": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:01:23.516758Z"
     },
     "iprs": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:01:33.013619Z"
     },
     "books": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:01:44.571417Z"
     }
   },
   "manual_baseline": {

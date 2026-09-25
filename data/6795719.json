@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "generated_at": null,
+  "generated_at": "2026-09-25T02:04:38.588070Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
-    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-    "access": "user-supplied public first pages"
+    "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=books",
+    "access": "first public page only; no login and no View more"
   },
   "configured_author": {
     "name": "Nela Rizka",
@@ -19,118 +19,142 @@
     "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
     "department": "S1 - Matematika",
     "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
-    "avatar_url": null,
-    "subjects": [],
-    "scores": {}
+    "avatar_url": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=vQGemmgAAAAJ&citpid=1",
+    "subjects": [
+      "Matematika Biologi"
+    ],
+    "subject_details": [
+      {
+        "name": "Matematika Biologi",
+        "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/31464",
+        "sinta_subject_id": "31464"
+      }
+    ],
+    "scores": {
+      "SINTA Score Overall": 173,
+      "SINTA Score 3Yr": 161,
+      "Affil Score": 0,
+      "Affil Score 3Yr": 0
+    },
+    "sinta_score_overall": 173,
+    "sinta_score_3yr": 161,
+    "affil_score": 0,
+    "affil_score_3yr": 0
+  },
+  "profile_status": {
+    "checked_at": "2026-09-25T02:04:38.588070Z",
+    "sinta_score_overall_present": true,
+    "subjects_present": true
   },
   "collections": {
     "scopus": {
       "view": "scopus",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 4,
       "public_access_limited": true,
       "records": [
         {
-          "id": "73f0562c23e35d02ad02",
+          "id": "30e4d6ff54cba17603d6",
           "title": "Analysis of mathematical model minimum dose of Celyvir for continous and periodic neuroblastoma treatment",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009593041&origin=resultslist",
           "year": 2025,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Q4 as Conference Proceedin Aip Conference Proceedings",
-            "Author Order : 3 of 3 Creator : Sagala M.P.N.",
-            "2025 0 cited"
-          ]
+          "classification": "Q4 as Conference Proceedin",
+          "publication": "Aip Conference Proceedings",
+          "publication_url": "https://www.scopus.com/sourceid/26916",
+          "author_order": "3 of 3",
+          "creator": "Sagala M.P.N.",
+          "citations": 0
         },
         {
-          "id": "d6aa018eb3dd68216e98",
+          "id": "eb1ced1e86408d34a3fc",
           "title": "On the Interaction between Trichogramma chilonis and Jatiroto Flies with Stem Borer Pests in Sugarcane Plantation",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105006656455&origin=resultslist",
           "year": 2024,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Q2 as Journal Journal of Mathematical and Fundamental Sciences",
-            "Author Order : 5 of 11 Creator : Fauzi R.",
-            "2024 0 cited"
-          ]
+          "classification": "Q2 as Journal",
+          "publication": "Journal of Mathematical and Fundamental Sciences",
+          "publication_url": "https://www.scopus.com/sourceid/21100268424",
+          "author_order": "5 of 11",
+          "creator": "Fauzi R.",
+          "citations": 0
         },
         {
-          "id": "a8f26f13e1dc19263521",
+          "id": "a7ce27b543f02b93c584",
           "title": "MATHEMATICS MODEL OF COMPACT TUMOR TO ANALYZE THE EFFECT ANTIANGIOGENIC THERAPY",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85216951811&origin=resultslist",
           "year": 2024,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Q4 as Journal Barekeng",
-            "Author Order : 4 of 4 Creator : Arfi E.",
-            "2024 0 cited"
-          ]
+          "classification": "Q4 as Journal",
+          "publication": "Barekeng",
+          "publication_url": "https://www.scopus.com/sourceid/21101272725",
+          "author_order": "4 of 4",
+          "creator": "Arfi E.",
+          "citations": 0
         },
         {
-          "id": "749ce14a43cc4f0c4fb2",
+          "id": "ab3cb22263ebc9370dab",
           "title": "Mathematical Model of SAR-CoV-2 and Influenza A Virus Coinfection within Host with CTL-Mediated Immunity",
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85219688823&origin=resultslist",
           "year": 2024,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Q2 as Journal Jambura Journal of Biomathematics",
-            "Author Order : 4 of 4 Creator : Khumaeroh M.S.",
-            "2024 1 cited"
-          ]
+          "classification": "Q2 as Journal",
+          "publication": "Jambura Journal of Biomathematics",
+          "publication_url": "https://www.scopus.com/sourceid/21101277888",
+          "author_order": "4 of 4",
+          "creator": "Khumaeroh M.S.",
+          "citations": 1
         }
       ]
     },
     "garuda": {
       "view": "garuda",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 3,
       "public_access_limited": true,
       "records": [
         {
-          "id": "e7f3efde2d204abc6a9b",
+          "id": "168a3bd4e84e51d4e56d",
           "title": "Analisis Model Predator-Prey Tanaman Lada, Hama Penggerek Batang, dan Penghisap Buah",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4043791",
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Department of Mathematics, Faculty of Science and Technology Universitas Jambi Mathematical Sciences and Applications Journal Vol. 4 No. 2 (2024): Mathematical Sciences and Applications Journal60-69",
-            "Author Order : 3 of 3",
-            "M. Diwa Sandika Aditama; Dear Michiko Mutiara Noor; Nela Rizka",
-            "2024 DOI: 10.22437/msa.v4i2.28629 Accred : Unknown"
-          ],
-          "doi": "10.22437/msa.v4i2.28629"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=garuda",
+          "classification": "Accred : Unknown",
+          "publication": "Mathematical Sciences and Applications Journal Vol. 4 No. 2 (2024): Mathematical Sciences and Applications Journal60-69",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/36596",
+          "author_order": "3 of 3",
+          "creator": null,
+          "citations": 1022437
         },
         {
-          "id": "f44ada9ebc74e1451d0c",
+          "id": "9d658bb208590c8c3b2c",
           "title": "MATHEMATICS MODEL OF COMPACT TUMOR TO ANALYZE THE EFFECT ANTIANGIOGENIC THERAPY",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4149369",
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "PATTIMURA UNIVERSITY BAREKENG: Jurnal Ilmu Matematika dan Terapan Vol 18 No 3 (2024): BAREKENG: Journal of Mathematics and Its Application1585-1594",
-            "Author Order : 4 of 4",
-            "Arfi, Eristia; Putri, Dwi Mutiara; Wibarani, Yeni Gede; Rizka, Nela",
-            "2024 DOI: 10.30598/barekengvol18iss3pp1585-1594 Accred : Sinta 3"
-          ],
-          "doi": "10.30598/barekengvol18iss3pp1585-1594"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=garuda",
+          "classification": "Accred : Sinta 3",
+          "publication": "BAREKENG: Jurnal Ilmu Matematika dan Terapan Vol 18 No 3 (2024): BAREKENG: Journal of Mathematics and Its Application1585-1594",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/11646",
+          "author_order": "4 of 4",
+          "creator": null,
+          "citations": 1030598
         },
         {
-          "id": "21951df85504a9545274",
+          "id": "baa1e489179b4c329341",
           "title": "Mathematical Model of SAR-CoV-2 and Influenza A Virus Coinfection within Host with CTL-Mediated Immunity",
           "url": "https://garuda.kemdiktisaintek.go.id/documents/detail/4781361",
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Department of Mathematics, Universitas Negeri Gorontalo Jambura Journal of Biomathematics (JJBM) Volume 5, Issue 2: December 202495-108",
-            "Author Order : 4 of 4",
-            "Khumaeroh, Mia Siti; Nuwari, Najmudin; Erianto, Elvi Syukrina; Rizka, Nela",
-            "2024 DOI: 10.37905/jjbm.v5i2.27782 Accred : Sinta 1"
-          ],
-          "doi": "10.37905/jjbm.v5i2.27782"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=garuda",
+          "classification": "Accred : Sinta 1",
+          "publication": "Jambura Journal of Biomathematics (JJBM) Volume 5, Issue 2: December 202495-108",
+          "publication_url": "https://garuda.kemdiktisaintek.go.id/journal/view/19833",
+          "author_order": "4 of 4",
+          "creator": null,
+          "citations": 1037905
         }
       ]
     },
@@ -154,179 +178,310 @@
     },
     "researches": {
       "view": "researches",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 5,
       "public_access_limited": true,
       "records": [
         {
-          "id": "ff42d13e466ede91f207",
+          "id": "76bde806db35afb40e54",
           "title": "Analisis Bifurkasi pada Model Transmisi Virus Dengue dengan Mempertimbangkan Bilangan Reproduksi Dasar dan Tingkat Penularan Virus Dengue di Lampung Selatan",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Leader : Gusrian Putra Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
-            "Personils : Nela Rizka;",
-            "2025 Rp. 36.900.000 Approved BIMA SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=researches",
+          "leader": "Gusrian Putra",
+          "scheme": "Penelitian Kompetitif Nasional ( PDP/Dosen Pemula )",
+          "personnel": [
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            }
           ],
-          "leader": "Gusrian Putra"
+          "funding_idr": 36900000,
+          "status": "Approved",
+          "funding_source_type": "BIMA"
         },
         {
-          "id": "d626006f402a322f5fda",
+          "id": "becd4f7b2a51c8d41033",
           "title": "PEMODELAN DINAMIKA PERTUMBUHAN FITOPLANKTON TERHADAP DURASI PENCAHAYAAN: STRATEGI EFISIENSI ENERGI PADA BUDIDAYA MIKROALGA",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Leader : Dear Michiko Mutiara Noor PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
-            "Personils : Nela Rizka; Tiara Shofi Edriani; Aswan Anggun Pribadi; Rifky Fauzi;",
-            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=researches",
+          "leader": "Dear Michiko Mutiara Noor",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
+          "personnel": [
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            }
           ],
-          "leader": "Dear Michiko Mutiara Noor"
+          "funding_idr": 20000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "84ad6a0ba8ce6ddd8c3a",
+          "id": "4bef1b5cef2a7a9ae6dc",
           "title": "PEMODELAN AEROSOL OPTICAL DEPTH (AOD) DI PROVINSI LAMPUNG BERDASARKAN FAKTOR IKLIM DAN FAKTOR ANTROPOGENIK MENGGUNAKAN GENERALIZED LINEAR MODEL (GLM) DENGAN PENDEKATAN DISTRIBUSI GAMMA",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Leader : Tiara Shofi Edriani PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
-            "Personils : Rifky Fauzi; Aswan Anggun Pribadi; Dear Michiko Mutiara Noor; Nela Rizka;",
-            "2025 Rp. 20.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=researches",
+          "leader": "Tiara Shofi Edriani",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2025 ( PENELITIAN BERBASIS KEPAKARAN )",
+          "personnel": [
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            }
           ],
-          "leader": "Tiara Shofi Edriani"
+          "funding_idr": 20000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "ac5f195053ce58be6bc0",
+          "id": "28d03ea6f3371aa21e6d",
           "title": "PENGEMBANGAN SISTEM PERINGATAN DINI OUTBREAK DEMAM BERDARAH DENGUE MENGGUNAKAN MODEL HYBRID ANALITIK-MACHINE LEARNING",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Leader : Rifky Fauzi PENDANAAN PENELITIAN ITERA TA 2024 ( PD )",
-            "Personils : Tiara Shofi Edriani; Nela Rizka; Aswan Anggun Pribadi;",
-            "2024 Rp. 60.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=researches",
+          "leader": "Rifky Fauzi",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2024 ( PD )",
+          "personnel": [
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            }
           ],
-          "leader": "Rifky Fauzi"
+          "funding_idr": 60000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "8bb03afb546e0a76df40",
+          "id": "8c19d89390eec88d1fa2",
           "title": "KAJIAN DAMPAK VARIABILITAS IKLIM TERHADAP DEMAM BERDARAH DAN RISIKO KESEHATAN TERKAIT KUALITAS UDARA DI PROVINSI LAMPUNG",
           "url": null,
           "year": 2023,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Leader : Tiara Shofi Edriani HIBAH JURUSAN SAINS ITERA 2023 ( HIBAH BANTUAN PENELITIAN JURUSAN )",
-            "Personils : Dear Michiko Mutiara Noor; Nela Rizka; Rifky Fauzi; Eristia Arfi;",
-            "2023 Rp. 15.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=researches",
+          "leader": "Tiara Shofi Edriani",
+          "scheme": "HIBAH JURUSAN SAINS ITERA 2023 ( HIBAH BANTUAN PENELITIAN JURUSAN )",
+          "personnel": [
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            },
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Eristia Arfi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6166565"
+            }
           ],
-          "leader": "Tiara Shofi Edriani"
+          "funding_idr": 15000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
     "community_services": {
       "view": "services",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 3,
       "public_access_limited": true,
       "records": [
         {
-          "id": "1751b02e62fb0919f910",
+          "id": "41957b369f8831ccac2b",
           "title": "SMART MONEY FOR SMART STUDENTS: PELATIHAN MENABUNG DAN MENGELOLA UANG JAJAN UNTUK MERDEKA FINANSIAL DI KALANGAN SISWA",
           "url": null,
           "year": 2025,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Leader : Werry Febrianti PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
-            "Personils : Rifky Fauzi; Achmad Suryadi Nasution; Dear Michiko Mutiara Noor; Lutfi Mardianto; Mira Mustika; Nela Rizka;",
-            "2025 Rp. 3.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=services",
+          "leader": "Werry Febrianti",
+          "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA 2025 ( PKK )",
+          "personnel": [
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Achmad Suryadi Nasution",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784227"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Lutfi Mardianto",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6710014"
+            },
+            {
+              "name": "Mira Mustika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            }
           ],
-          "leader": "Werry Febrianti"
+          "funding_idr": 3000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "66b2ed2c9d2a783ffe41",
+          "id": "a84ad06bde2b424743a9",
           "title": "PENGEMBANGAN DASHBOARD STATISTIK DESA SEBAGAI UPAYA OPTIMALISASI PEMANFAATAN DATA STATISTIK DI DESA KEDATON, KECAMATAN KALIANDA, KABUPATEN LAMPUNG SELATAN",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Leader : Rifky Fauzi HIBAH PENUGASAN FAKULTAS SAINS ITERA ( PKM PENUGASAN FAKULTAS )",
-            "Personils : Aswan Anggun Pribadi; Dear Michiko Mutiara Noor; Tiara Shofi Edriani; Nela Rizka;",
-            "2024 Rp. 5.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=services",
+          "leader": "Rifky Fauzi",
+          "scheme": "HIBAH PENUGASAN FAKULTAS SAINS ITERA ( PKM PENUGASAN FAKULTAS )",
+          "personnel": [
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            }
           ],
-          "leader": "Rifky Fauzi"
+          "funding_idr": 5000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         },
         {
-          "id": "aa53925520125740ff17",
+          "id": "09ca9a4a4615d836ba3a",
           "title": "STRATEGI PEMANFAATAN LIMBAH KULIT MANGGIS MELALUI PELATIHAN PEMBUATAN INOVASI KERIPIK KULIT MANGGIS DENGAN DIGITAL MARKETING DI KECAMATAN KOTA AGUNG TIMUR, KABUPATEN TANGGAMUS, LAMPUNG",
           "url": null,
           "year": 2021,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Leader : Andi Fitriawati HIBAH PENGABDIAN ITERA 2021 ( PKM )",
-            "Personils : Radot Mh Siahaan; Intan Mardiono; Amalia Listiani; Erdina Tyagita Utami; Nela Rizka;",
-            "2021 Rp. 10.000.000 Approved INTERNAL SOURCE"
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=services",
+          "leader": "Andi Fitriawati",
+          "scheme": "HIBAH PENGABDIAN ITERA 2021 ( PKM )",
+          "personnel": [
+            {
+              "name": "Radot Mh Siahaan",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784083"
+            },
+            {
+              "name": "Intan Mardiono",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653866"
+            },
+            {
+              "name": "Amalia Listiani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6782787"
+            },
+            {
+              "name": "Erdina Tyagita Utami",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6698335"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            }
           ],
-          "leader": "Andi Fitriawati"
+          "funding_idr": 10000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
     "iprs": {
       "view": "iprs",
-      "scope": "user_supplied_public_first_pages",
-      "pages_collected": 0,
+      "scope": "public_first_page_plus_preserved_records",
+      "pages_collected": 1,
       "reported_total": null,
       "records_collected": 0,
-      "public_access_limited": true,
+      "public_access_limited": false,
       "records": []
     },
     "books": {
       "view": "books",
-      "scope": "user_supplied_public_first_pages",
+      "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
       "records_collected": 2,
       "public_access_limited": true,
       "records": [
         {
-          "id": "260a65459717f72a869f",
+          "id": "e4019d13ef29df4cc48a",
           "title": "Integrasi Metode Analitik dalam Pemodelan Matematika dan Statistika",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Category : BUKU REFERENSI",
-            "Triyana Muliawati, Danni Gathot Harbowo, Gusrian Putra, Lutfi Mardianto, Nugraha Catur Septian Patra, Sri Efrinita Irwan, Khalila Adiba Safa, Nela Rizka, Tri Utomo ITERA Press",
-            "2024 Lampung Selatan ISBN : 9786347013170"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=books",
+          "category": "BUKU REFERENSI",
+          "authors": "Triyana Muliawati, Danni Gathot Harbowo, Gusrian Putra, Lutfi Mardianto, Nugraha Catur Septian Patra, Sri Efrinita Irwan, Khalila Adiba Safa, Nela Rizka, Tri Utomo",
+          "publisher": "ITERA Press",
+          "isbn": "9786347013170"
         },
         {
-          "id": "16add2314428fbf1d428",
+          "id": "cbb728e5dc3ab099f176",
           "title": "Pemodelan Matematika, Optimisasi, dan Matematika Keuangan: Perspektif dan Aplikasi",
           "url": null,
           "year": 2024,
-          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
-          "details": [
-            "Category : BUKU REFERENSI",
-            "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad Itera Press",
-            "2024 Itera ISBN : 9786347013231"
-          ]
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719?view=books",
+          "category": "BUKU REFERENSI",
+          "authors": "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad",
+          "publisher": "Itera Press",
+          "isbn": "9786347013231"
         }
       ]
     }
   },
-  "metrics": {},
   "collection_status": {
     "scopus": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:04:02.075606Z"
     },
     "garuda": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:04:10.701485Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -335,16 +490,20 @@
       "status": "not_provided"
     },
     "researches": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:04:17.443856Z"
     },
     "community_services": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:04:23.977736Z"
     },
     "iprs": {
-      "status": "not_provided"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:04:31.764508Z"
     },
     "books": {
-      "status": "manual_baseline"
+      "status": "ok",
+      "checked_at": "2026-09-25T02:04:38.588070Z"
     }
   },
   "manual_baseline": {
