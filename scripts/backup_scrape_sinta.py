@@ -28,6 +28,8 @@ SCHEMA_VERSION = 2
 COLLECTIONS = {
     "scopus": "scopus",
     "garuda": "garuda",
+    "google_scholar": "googlescholar",
+    "rama": "rama",
     "researches": "researches",
     "community_services": "services",
     "iprs": "iprs",
@@ -63,6 +65,8 @@ def value_after_label(text: str, label: str) -> str | None:
 def labeled_value_from_nodes(item: Tag, label: str) -> str | None:
     """Read a labelled value from one SINTA element without swallowing neighbours."""
     prefix = re.compile(rf"^{re.escape(label)}\s*:\s*", re.I)
+    # Labels on SINTA records are individual anchors/spans. Avoid container divs,
+    # whose text also contains the neighbouring scheme or holder.
     for node in item.select("a, span"):
         text = clean_text(node.get_text(" ", strip=True))
         if text and prefix.match(text):
@@ -120,9 +124,14 @@ class SintaSession:
         if not target_url:
             raise RuntimeError("Could not build the SINTA target URL.")
 
+        # Session IDs must be in ZenRows' documented range 1..99999. Using the
+        # same ID for this run keeps the exit IP stable across author tabs.
         if self.session_id is None:
             self.session_id = self._new_session_id()
 
+        # A 422 from ZenRows can be caused by one unhealthy residential exit
+        # IP. Recover progressively without making every request expensive:
+        # new Indonesian IP -> unrestricted-country Premium IP -> JS fallback.
         attempts = (
             ("Premium Indonesia", True, False),
             ("Premium Indonesia with a new IP", True, False),
@@ -150,6 +159,7 @@ class SintaSession:
                     timeout=self.timeout,
                 )
             except requests.RequestException as exc:
+                # The full request URL contains the API key; never log the exception.
                 if attempt_index == 0:
                     print(
                         f"    ZenRows network error ({type(exc).__name__}); retrying with a new IP...",
@@ -230,10 +240,14 @@ def fetch_soup(
 ) -> tuple[BeautifulSoup, str]:
     response = session.get(url, params=params)
     soup = BeautifulSoup(response.text, "html.parser")
+    # ZenRows may forward HTML with a generic Content-Type. Validate the actual
+    # SINTA profile structure instead of trusting that header alone.
     profile_id = soup.select_one(".meta-profile")
     if not (soup.select_one(".content-box h3 a") and profile_id and
             re.search(r"SINTA\s*ID\s*:\s*\d+", profile_id.get_text(" ", strip=True), re.I)):
         content_type = response.headers.get("Content-Type", "unknown")
+        # Print only a safe media type, never the response body or request URL
+        # containing the ZenRows key.
         media_type = content_type.split(";", 1)[0].strip().lower()
         if not re.fullmatch(r"[a-z0-9.+-]+/[a-z0-9.+-]+", media_type):
             media_type = "unknown"
@@ -272,6 +286,9 @@ def parse_profile(soup: BeautifulSoup, configured_id: str) -> dict[str, Any]:
                 if match:
                     discovered_id = match.group(1)
 
+    # Pair every score label with the number in the same Bootstrap column.
+    # Selecting by .pr-txt instead of a fixed .col-4 class keeps this working
+    # if SINTA changes its responsive grid classes.
     scores: dict[str, int | str | None] = {}
     for label_node in soup.select(".stat-profile .pr-txt"):
         block = label_node.find_parent(class_=lambda value: value and "col-" in " ".join(value) if isinstance(value, list) else value and "col-" in value)
@@ -345,7 +362,7 @@ def parse_common_item(item: Tag, collection: str, page_url: str) -> dict[str, An
         "source_page": page_url,
     }
 
-    if collection in {"scopus", "garuda"}:
+    if collection in {"scopus", "garuda", "google_scholar", "rama"}:
         publication = item.select_one(".ar-pub")
         quartile = item.select_one(".ar-quartile")
         cited = item.select_one(".ar-cited")
@@ -451,6 +468,18 @@ def is_publicly_limited(soup: BeautifulSoup) -> bool:
     )
 
 
+def scrape_collection(
+    session: SintaSession,
+    profile_url: str,
+    collection: str,
+    view: str,
+) -> dict[str, Any]:
+    # Intentionally request only the initial public page. We never follow SINTA's
+    # pagination or its login-only "View more" link.
+    soup, page_url = fetch_soup(session, profile_url, params={"view": view})
+    return collection_result_from_soup(soup, collection, view, page_url)
+
+
 def collection_result_from_soup(
     soup: BeautifulSoup,
     collection: str,
@@ -471,6 +500,56 @@ def collection_result_from_soup(
         "records_collected": len(ordered),
         "public_access_limited": limited,
         "records": ordered,
+    }
+
+
+def parse_metrics(soup: BeautifulSoup, page_url: str) -> dict[str, Any]:
+    summary: dict[str, dict[str, int | str | None]] = {}
+    stat_table = soup.select_one("table.stat-table")
+    if stat_table:
+        headers = [clean_text(th.get_text(" ", strip=True)) for th in stat_table.select("thead th")]
+        sources = [header for header in headers[1:] if header]
+        for row in stat_table.select("tbody tr"):
+            cells = [clean_text(cell.get_text(" ", strip=True)) for cell in row.select("th, td")]
+            if not cells or not cells[0]:
+                continue
+            values: dict[str, int | str | None] = {}
+            for source, value in zip(sources, cells[1:]):
+                parsed = integer_from_text(value)
+                values[source] = parsed if parsed is not None else value
+            summary[cells[0]] = values
+
+    score_rows: list[dict[str, Any]] = []
+    metrics_table = next(
+        (table for table in soup.select("table.table") if not "stat-table" in (table.get("class") or [])),
+        None,
+    )
+    if metrics_table:
+        for row in metrics_table.select("tr"):
+            cells = [clean_text(cell.get_text(" ", strip=True)) for cell in row.select(":scope > th, :scope > td")]
+            if len(cells) < 13 or not cells[1] or not re.fullmatch(r"[A-Z]+\d+", cells[1]):
+                continue
+            score_rows.append(
+                {
+                    "code": cells[1],
+                    "name": cells[2],
+                    "sinta_weight": integer_from_text(cells[3]),
+                    "sinta_overall_value": integer_from_text(cells[4]),
+                    "sinta_overall_total": integer_from_text(cells[5]),
+                    "sinta_3yr_value": integer_from_text(cells[6]),
+                    "sinta_3yr_total": integer_from_text(cells[7]),
+                    "affiliation_weight": integer_from_text(cells[8]),
+                    "affiliation_overall_value": integer_from_text(cells[9]),
+                    "affiliation_overall_total": integer_from_text(cells[10]),
+                    "affiliation_3yr_value": integer_from_text(cells[11]),
+                    "affiliation_3yr_total": integer_from_text(cells[12]),
+                }
+            )
+
+    return {
+        "source_page": page_url,
+        "summary": summary,
+        "score_rows": score_rows,
     }
 
 
@@ -496,6 +575,7 @@ def record_view_failure(
     view: str,
     error: Exception,
 ) -> None:
+    """Record a safe failure without deleting any previously collected data."""
     author_path = output_dir / f"{author['sinta_id']}.json"
     payload = load_json(author_path, None)
     if not isinstance(payload, dict):
@@ -544,7 +624,7 @@ def scrape_author(
         profile_soup, profile_page_url = fetch_soup(session, author["profile_url"])
     else:
         profile_soup, profile_page_url = fetch_soup(
-            session, author["profile_url"], params={"view": COLLECTIONS[view]}
+            session, author["profile_url"], params={"view": "matrics" if view == "metrics" else COLLECTIONS[view]}
         )
     profile = parse_profile(profile_soup, author["sinta_id"])
     if profile.get("sinta_id") != author["sinta_id"] or not profile.get("name"):
@@ -556,23 +636,26 @@ def scrape_author(
             f"SINTA Score Overall was not found on the public profile for {author['sinta_id']}. "
             "The SINTA HTML structure may have changed; existing JSON was preserved."
         )
-
     collections: dict[str, Any] = previous.get("collections", {}).copy()
     statuses: dict[str, Any] = previous.get("collection_status", {}).copy()
-
-    fresh = collection_result_from_soup(profile_soup, view, COLLECTIONS[view], profile_page_url)
-    old = collections.get(view, {}).get("records", [])
-    merged = {}
-    for item in old + fresh["records"]:
-        key = (item.get("url") or item.get("title") or item.get("id"))
-        merged[key] = item
-    fresh["records"] = list(merged.values())
-    fresh["records_collected"] = len(merged)
-    fresh["scope"] = "public_first_page_plus_preserved_records"
-    collections[view] = fresh
-
+    metrics = previous.get("metrics", {})
+    if view == "metrics":
+        metrics = parse_metrics(profile_soup, profile_page_url)
+    else:
+        fresh = collection_result_from_soup(profile_soup, view, COLLECTIONS[view], profile_page_url)
+        old = collections.get(view, {}).get("records", [])
+        # The public first page is only a window. Keep older known records,
+        # including the user's initial snapshot, while refreshing visible items.
+        merged = {}
+        for item in old + fresh["records"]:
+            key = (item.get("url") or item.get("title") or item.get("id"))
+            merged[key] = item
+        fresh["records"] = list(merged.values())
+        fresh["records_collected"] = len(merged)
+        fresh["scope"] = "public_first_page_plus_preserved_records"
+        collections[view] = fresh
     statuses[view] = {"status": "ok", "checked_at": now}
-
+    # Scores are displayed on every public profile tab.
     if not profile.get("subjects") and previous.get("profile", {}).get("subjects"):
         profile["subjects"] = previous["profile"]["subjects"]
     if not profile.get("scores") and previous.get("profile", {}).get("scores"):
@@ -596,6 +679,7 @@ def scrape_author(
             "subjects_present": bool(profile.get("subjects")),
         },
         "collections": collections,
+        "metrics": metrics,
         "collection_status": statuses,
     }
     if "manual_baseline" in previous:
@@ -614,7 +698,7 @@ def build_manifest(output_dir: Path, authors_config: list[dict[str, Any]]) -> di
         profile = payload["profile"]
         counts = {
             key: value.get("records_collected", 0)
-            for key, value in payload.get("collections", {}).items()
+            for key, value in payload["collections"].items()
         }
         authors.append(
             {
@@ -646,8 +730,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--delay", type=float, default=0.5, help="Delay between API requests")
     parser.add_argument("--timeout", type=float, default=90.0, help="HTTP timeout in seconds")
     parser.add_argument("--check-config", action="store_true", help="Validate config and exit")
-    parser.add_argument("--view", choices=list(COLLECTIONS.keys()), help="Request this one tab per author")
-    parser.add_argument("--all-views", action="store_true", help="Request every tab")
+    parser.add_argument("--view", choices=[*COLLECTIONS, "metrics"], help="Request this one tab per author")
+    parser.add_argument("--all-views", action="store_true", help="Request every tab (9 paid requests per author)")
     return parser.parse_args()
 
 
@@ -658,7 +742,8 @@ def main() -> int:
         raise ValueError(f"{args.config} must contain a JSON array.")
 
     configured_authors = [validate_author(author) for author in raw_authors]
-    authors = [author for author in configured_authors if author["enabled"]]
+    authors = configured_authors
+    authors = [author for author in authors if author["enabled"]]
     if args.author_id:
         authors = [author for author in authors if author["sinta_id"] == args.author_id]
     if not authors:
@@ -673,27 +758,67 @@ def main() -> int:
     if args.view and args.all_views:
         raise ValueError("Choose either --view or --all-views.")
 
-    views = [args.view] if args.view else list(COLLECTIONS.keys())
+    # Complete mode is the default. --view exists only for a targeted test or
+    # manual repair of one category.
+    tabs = [*COLLECTIONS, "metrics"]
+    views = [args.view] if args.view else tabs
     print(f"Public tab(s) for this run: {', '.join(views)}. Requests per author: {len(views)}.", flush=True)
 
+    results: list[tuple[dict[str, Any], bool]] = []
+    fatal_errors: list[str] = []
     session = make_session(args.timeout)
     try:
         for author in authors:
             session.start_author()
-            print(f"Scraping author: {author['name']} ({author['sinta_id']})...", flush=True)
-            for view in views:
-                try:
-                    scrape_author(session, author, args.output, args.delay, view)
+            print(f"Scraping {author['name']} (SINTA ID {author['sinta_id']})...", flush=True)
+            author_had_errors = False
+            payload = None
+            for index, chosen in enumerate(views):
+                if index:
                     time.sleep(args.delay)
+                try:
+                    payload, had_errors = scrape_author(session, author, args.output, args.delay, chosen)
                 except Exception as exc:
-                    print(f"    Error scraping {view} for {author['sinta_id']}: {exc}", flush=True)
-                    record_view_failure(args.output, author, view, exc)
-        build_manifest(args.output, configured_authors)
-        print("Scraping completed successfully.", flush=True)
-        return 0
+                    author_had_errors = True
+                    fatal_errors.append(
+                        f"{author['name']} ({author['sinta_id']}) [{chosen}]: {exc}"
+                    )
+                    print(f"  ERROR [{chosen}]: {exc}", file=sys.stderr, flush=True)
+                    record_view_failure(args.output, author, chosen, exc)
+                    # Continue with other views and authors. A new ZenRows
+                    # session will be used for the next author.
+                    continue
+                author_had_errors = author_had_errors or had_errors
+
+            if payload is not None:
+                results.append((payload, author_had_errors))
+                print(
+                    f"  saved {args.output / (author['sinta_id'] + '.json')}"
+                    + (" with partial/stale sections" if author_had_errors else ""),
+                    flush=True,
+                )
+            else:
+                print("  no fresh views saved; previous JSON preserved", flush=True)
+            if author != authors[-1]:
+                time.sleep(args.delay)
     finally:
+        print(
+            f"ZenRows credits reported by responses: {session.known_credits}; "
+            f"unknown-cost requests: {session.unknown_cost_requests}.",
+            flush=True,
+        )
         session.close()
+
+    manifest = build_manifest(args.output, configured_authors)
+    print(f"Saved manifest for {manifest['authors_count']} author(s).", flush=True)
+
+    if fatal_errors:
+        print("Fatal author failures:", file=sys.stderr)
+        for error in fatal_errors:
+            print(f"- {error}", file=sys.stderr)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    raise SystemExit(main())
