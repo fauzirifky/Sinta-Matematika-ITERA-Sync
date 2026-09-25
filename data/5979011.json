@@ -20,8 +20,50 @@
     "department": "S1 - Matematika",
     "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
     "avatar_url": null,
-    "subjects": [],
-    "scores": {}
+    "subjects": [
+      "Matematika Keuangan",
+      "Optimasi",
+      "Analisis Diferensial",
+      "Analisis Numerik",
+      "Matematika Fisika"
+    ],
+    "subject_details": [
+      {
+        "name": "Matematika Keuangan",
+        "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/31518",
+        "sinta_subject_id": "31518"
+      },
+      {
+        "name": "Optimasi",
+        "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/39250",
+        "sinta_subject_id": "39250"
+      },
+      {
+        "name": "Analisis Diferensial",
+        "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/49398",
+        "sinta_subject_id": "49398"
+      },
+      {
+        "name": "Analisis Numerik",
+        "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/2902",
+        "sinta_subject_id": "2902"
+      },
+      {
+        "name": "Matematika Fisika",
+        "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/31508",
+        "sinta_subject_id": "31508"
+      }
+    ],
+    "scores": {
+      "SINTA Score Overall": 530,
+      "SINTA Score 3Yr": 238,
+      "Affil Score": 0,
+      "Affil Score 3Yr": 0
+    },
+    "sinta_score_overall": 530,
+    "sinta_score_3yr": 238,
+    "affil_score": 0,
+    "affil_score_3yr": 0
   },
   "collections": {
     "scopus": {

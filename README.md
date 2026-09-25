@@ -9,7 +9,7 @@ Data yang diambil:
 - pengabdian kepada masyarakat (`Community Services`);
 - kekayaan intelektual/hak cipta (`IPRs`);
 - buku;
-- profil, skor SINTA, dan metrik.
+- profil, bidang keilmuan, SINTA Score Overall, SINTA Score 3Yr, Affil Score, dan metrik.
 
 ## Cara memakai untuk dosen lain
 
@@ -40,6 +40,8 @@ Workflow akan:
 4. memperbarui seluruh kategori di folder `data/`, mempertahankan rekaman lama dan data awal;
 5. melakukan commit dan push menggunakan `GITHUB_TOKEN` bawaan.
 
+Setiap profil juga wajib lolos pemeriksaan `SINTA Score Overall`. Jika elemen skor tidak ditemukan, proses dosen tersebut dianggap gagal dan JSON lama dipertahankan agar kehilangan data tidak terjadi. Bidang disimpan sebagai `profile.subjects` dan `profile.subject_details`; skor utama juga tersedia langsung sebagai `profile.sinta_score_overall` dan `profile.sinta_score_3yr`. Ringkasannya ikut ditulis ke `data/index.json` untuk seluruh dosen.
+
 ### API key wajib
 
 SINTA menolak alamat IP runner GitHub meskipun halaman yang sama dapat dibuka dari browser biasa. Karena API resmi SINTA memerlukan akun dan whitelist IP, repository ini menggunakan ZenRows sebagai transport HTML.
@@ -52,7 +54,9 @@ SINTA menolak alamat IP runner GitHub meskipun halaman yang sama dapat dibuka da
 
 API key tidak ditulis ke source code dan tidak masuk ke JSON. Scraper memakai halaman HTML server-rendered tanpa meminta JavaScript. Semua permintaan memakai **ZenRows Premium Proxy Indonesia** (`premium_proxy=true`, `proxy_country=id`). Satu `session_id` dipakai untuk sembilan halaman seorang dosen supaya alamat IP keluar tetap stabil, lalu sesi diganti untuk dosen berikutnya.
 
-Satu sinkronisasi lengkap memakai **9 × 16 = 144 request**, atau sekitar **1.440 kredit** bila tarif Premium Proxy adalah 10 kredit per request. Dua sinkronisasi lengkap per bulan memakai sekitar **2.880 dari 5.000 kredit**, menyisakan sekitar 2.120 kredit. Setiap eksekusi manual lengkap membutuhkan sekitar 1.440 kredit tambahan. Biaya aktual yang dilaporkan ZenRows dicetak pada log GitHub Actions melalui header `X-Request-Cost`. Jika satu permintaan gagal, proses berhenti agar tidak menghabiskan kredit untuk profil berikutnya.
+Jika ZenRows mengembalikan HTTP `422`, scraper mencoba berurutan: IP Indonesia baru, Premium Proxy tanpa penguncian negara, kemudian `js_render=true` hanya untuk request yang tetap gagal. Kegagalan satu halaman dicatat pada `collection_status` sebagai `error_preserved_previous_data`; data lama tidak dihapus dan proses berlanjut ke halaman serta dosen berikutnya. Workflow tetap menjalankan commit dengan `if: always()`, sehingga hasil parsial yang valid tidak hilang ketika salah satu request gagal.
+
+Satu sinkronisasi lengkap memakai **9 × 16 = 144 request**, atau sekitar **1.440 kredit** bila tarif Premium Proxy adalah 10 kredit per request. Dua sinkronisasi lengkap per bulan memakai sekitar **2.880 dari 5.000 kredit**, menyisakan sekitar 2.120 kredit. Setiap eksekusi manual lengkap membutuhkan sekitar 1.440 kredit tambahan. Fallback yang berhasil dengan JavaScript dapat memakai kredit lebih besar, tetapi hanya digunakan pada URL yang tetap menerima `422` setelah dua fallback lebih ringan. Biaya aktual yang dilaporkan ZenRows dicetak pada log GitHub Actions melalui header `X-Request-Cost` jika header tersebut tersedia.
 
 Untuk repository hasil fork, pastikan **Settings → Actions → General → Workflow permissions** mengizinkan **Read and write permissions** jika kebijakan akun tidak mengizinkannya secara otomatis.
 
@@ -100,7 +104,7 @@ Scraper ini hanya membaca halaman pertama yang dapat diakses tanpa login. Progra
 
 GitHub Actions tidak memasang Chromium atau browser lainnya. Skrip meminta seluruh tab publik setiap profil dan memeriksa struktur HTML alih-alih mengandalkan label `Content-Type`. Program tidak melakukan login, tidak memakai cookie akun SINTA, tidak menekan **View more**, dan tidak mencoba mengakses data privat. Jika API gagal, JSON lama di repository tidak ditimpa.
 
-Struktur HTML SINTA dapat berubah. Jika provider mendapat penolakan atau kehabisan kredit, workflow akan gagal jelas dan JSON lama dipertahankan. Periksa status workflow dan sesuaikan parser jika selector halaman berubah. Gunakan frekuensi yang wajar, patuhi ketentuan layanan sumber, dan jangan mengumpulkan data pribadi yang tidak diperlukan.
+Struktur HTML SINTA dapat berubah. Jika provider mendapat penolakan atau kehabisan kredit, workflow akan berstatus gagal/peringatan setelah tetap meng-commit hasil yang berhasil; JSON lama untuk bagian yang gagal dipertahankan. Periksa `collection_status` pada JSON dan log workflow. Gunakan frekuensi yang wajar, patuhi ketentuan layanan sumber, dan jangan mengumpulkan data pribadi yang tidak diperlukan.
 
 ## Lisensi
 

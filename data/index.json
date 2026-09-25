@@ -40,6 +40,15 @@
       "sinta_id": "5979011",
       "file": "5979011.json",
       "status": "manual_baseline",
+      "sinta_score_overall": 530,
+      "sinta_score_3yr": 238,
+      "subjects": [
+        "Matematika Keuangan",
+        "Optimasi",
+        "Analisis Diferensial",
+        "Analisis Numerik",
+        "Matematika Fisika"
+      ],
       "counts": {
         "scopus": 12,
         "garuda": 4,

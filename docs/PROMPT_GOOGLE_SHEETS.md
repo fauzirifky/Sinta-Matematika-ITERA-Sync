@@ -38,6 +38,7 @@ Kebutuhan wajib:
    - `iprs` → `HKI`
    - `books` → `Buku`
 7. Setiap baris data wajib menyertakan `Nama Dosen`, `SINTA ID`, `Kategori`, `Judul`, `Tahun`, `URL`, dan `Sumber JSON`. Tambahkan kolom khusus yang relevan, misalnya publikasi, klasifikasi, sitasi, DOI, ketua, personel, dana, inventor, nomor permohonan, status, jenis HKI, penulis, penerbit, dan ISBN jika tersedia.
+   Sheet `Dosen` wajib memuat sekurang-kurangnya: `Nama`, `SINTA ID`, `Afiliasi`, `Program Studi`, `Bidang`, `SINTA Score Overall`, `SINTA Score 3Yr`, `Affil Score`, `Affil Score 3Yr`, `URL Profil`, dan `Terakhir Diperiksa`. Ambil bidang dari `profile.subjects`; ambil skor dari properti eksplisit `profile.sinta_score_overall`, `profile.sinta_score_3yr`, `profile.affil_score`, dan `profile.affil_score_3yr`, dengan fallback ke `profile.scores`.
 8. Jangan menulis objek JavaScript sebagai `[object Object]`. Array orang harus diratakan menjadi teks yang terbaca. Properti tambahan yang belum dipetakan disimpan sebagai JSON ringkas dalam kolom `Detail Tambahan`.
 9. Penulisan data harus efisien: susun array dua dimensi dan gunakan satu `setValues()` per sheet, bukan `setValue()` per sel.
 10. Hapus hanya isi sheet yang dikelola script. Jangan menghapus sheet lain milik pengguna.

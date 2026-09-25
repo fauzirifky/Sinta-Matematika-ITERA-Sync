@@ -23,6 +23,7 @@ jobs:
 
     steps:
       - name: Checkout repository
+        id: checkout
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -43,6 +44,7 @@ jobs:
         run: python scripts/scrape_sinta.py --all-views
 
       - name: Commit updated JSON
+        if: always() && steps.checkout.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -50,6 +52,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Tidak ada perubahan data."
           else
-            git commit -m "data: full SINTA sync $(date -u +'%Y-%m-%d')"
+            git commit -m "data: SINTA sync $(date -u +'%Y-%m-%d') (partial-safe)"
             git push
           fi

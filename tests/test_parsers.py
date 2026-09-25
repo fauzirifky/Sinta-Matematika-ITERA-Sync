@@ -15,6 +15,7 @@ from scrape_sinta import (  # noqa: E402
     is_publicly_limited,
     parse_collection_page,
     parse_profile,
+    record_view_failure,
     scrape_collection,
     scrape_author,
     fetch_soup,
@@ -41,18 +42,24 @@ class FakeSession:
 
 
 class FakeApiResponse:
-    status_code = 200
-    text = "<html><div class='content-box'></div></html>"
-    headers = {"Content-Type": "text/html; charset=UTF-8", "X-Request-Cost": "1"}
+    def __init__(self, status_code=200, request_cost="1"):
+        self.status_code = status_code
+        self.text = "<html><div class='content-box'></div></html>"
+        self.headers = {"Content-Type": "text/html; charset=UTF-8"}
+        if request_cost is not None:
+            self.headers["X-Request-Cost"] = request_cost
 
 
 class FakeHttp:
-    def __init__(self):
+    def __init__(self, responses=None):
         self.calls = []
+        self.responses = list(responses or [FakeApiResponse()])
 
     def get(self, url, params=None, timeout=None):
         self.calls.append({"url": url, "params": params, "timeout": timeout})
-        return FakeApiResponse()
+        if len(self.responses) > 1:
+            return self.responses.pop(0)
+        return self.responses[0]
 
     def close(self):
         pass
@@ -70,6 +77,22 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(profile["sinta_id"], "6750161")
         self.assertEqual(profile["affiliation"], "Institut Teknologi Sumatera")
         self.assertEqual(profile["scores"]["SINTA Score Overall"], 404)
+        self.assertEqual(profile["sinta_score_overall"], 404)
+        self.assertEqual(profile["subjects"], ["Numerical Methods"])
+
+    def test_werry_profile_scores_and_subjects(self):
+        html = (ROOT / "tests" / "fixtures" / "werry_profile.html").read_text(encoding="utf-8")
+        profile = parse_profile(BeautifulSoup(html, "html.parser"), "5979011")
+        self.assertEqual(profile["name"], "WERRY FEBRIANTI")
+        self.assertEqual(profile["sinta_score_overall"], 530)
+        self.assertEqual(profile["sinta_score_3yr"], 238)
+        self.assertEqual(profile["affil_score"], 0)
+        self.assertEqual(profile["affil_score_3yr"], 0)
+        self.assertEqual(profile["subjects"], [
+            "Matematika Keuangan", "Optimasi", "Analisis Diferensial",
+            "Analisis Numerik", "Matematika Fisika",
+        ])
+        self.assertEqual(profile["subject_details"][0]["sinta_subject_id"], "31518")
 
     def test_article(self):
         records = parse_collection_page(self.soup, "scopus", "https://example.test")
@@ -131,6 +154,31 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(result["scope"], "public_first_page_only")
         self.assertEqual(result["pages_collected"], 1)
 
+    def test_failed_view_preserves_previous_json(self):
+        author = {
+            "name": "Nela Rizka",
+            "sinta_id": "6795719",
+            "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719",
+            "enabled": True,
+        }
+        previous_record = {"title": "Previously collected article", "year": 2025}
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "6795719.json"
+            path.write_text(json.dumps({
+                "profile": {"name": "NELA RIZKA", "sinta_id": "6795719"},
+                "collections": {"scopus": {"records": [previous_record]}},
+                "collection_status": {},
+            }), encoding="utf-8")
+            record_view_failure(Path(folder), author, "scopus", RuntimeError("ZenRows HTTP 422"))
+            saved = json.loads(path.read_text(encoding="utf-8"))
+
+        self.assertEqual(saved["collections"]["scopus"]["records"], [previous_record])
+        self.assertEqual(
+            saved["collection_status"]["scopus"]["status"],
+            "error_preserved_previous_data",
+        )
+        self.assertEqual(saved["collection_status"]["scopus"]["error"], "ZenRows HTTP 422")
+
     def test_zenrows_builds_target_url_without_browser(self):
         with mock.patch.dict(os.environ, {"ZENROWS_API_KEY": "test-secret"}):
             session = SintaSession(45)
@@ -153,6 +201,52 @@ class ParserTests(unittest.TestCase):
         self.assertTrue(1 <= call["params"]["session_id"] <= 99999)
         self.assertEqual(response.url, call["params"]["url"])
         self.assertEqual(session.known_credits, 1)
+
+    def test_zenrows_422_rotates_ip_then_recovers(self):
+        with mock.patch.dict(os.environ, {"ZENROWS_API_KEY": "test-secret"}):
+            session = SintaSession(90)
+        fake_http = FakeHttp([
+            FakeApiResponse(422, None),
+            FakeApiResponse(200, "10"),
+        ])
+        session.http.close()
+        session.http = fake_http
+        session.session_id = 101
+
+        session.get("https://sinta.kemdiktisaintek.go.id/authors/profile/6795719")
+
+        self.assertEqual(len(fake_http.calls), 2)
+        self.assertEqual(fake_http.calls[0]["params"]["session_id"], 101)
+        self.assertNotEqual(
+            fake_http.calls[0]["params"]["session_id"],
+            fake_http.calls[1]["params"]["session_id"],
+        )
+        self.assertEqual(fake_http.calls[1]["params"]["proxy_country"], "id")
+        self.assertNotIn("js_render", fake_http.calls[1]["params"])
+        self.assertEqual(session.known_credits, 10)
+
+    def test_zenrows_422_uses_progressive_fallbacks(self):
+        with mock.patch.dict(os.environ, {"ZENROWS_API_KEY": "test-secret"}):
+            session = SintaSession(90)
+        fake_http = FakeHttp([
+            FakeApiResponse(422, None),
+            FakeApiResponse(422, None),
+            FakeApiResponse(422, None),
+            FakeApiResponse(200, "25"),
+        ])
+        session.http.close()
+        session.http = fake_http
+
+        session.get("https://sinta.kemdiktisaintek.go.id/authors/profile/6795719")
+
+        self.assertEqual(len(fake_http.calls), 4)
+        self.assertEqual(fake_http.calls[0]["params"]["proxy_country"], "id")
+        self.assertEqual(fake_http.calls[1]["params"]["proxy_country"], "id")
+        self.assertNotIn("proxy_country", fake_http.calls[2]["params"])
+        self.assertNotIn("js_render", fake_http.calls[2]["params"])
+        self.assertNotIn("proxy_country", fake_http.calls[3]["params"])
+        self.assertEqual(fake_http.calls[3]["params"]["js_render"], "true")
+        self.assertEqual(session.known_credits, 25)
 
 
 if __name__ == "__main__":

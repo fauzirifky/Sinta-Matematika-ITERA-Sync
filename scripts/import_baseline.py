@@ -118,7 +118,14 @@ def parse_author(author_id: str, name: str, body: str, original: dict | None) ->
         "affiliation_url": "https://sinta.kemdiktisaintek.go.id/affiliations/profile/537",
         "department": "S1 - Matematika",
         "department_url": "https://sinta.kemdiktisaintek.go.id/departments/profile/537/002014/44201",
-        "avatar_url": None, "subjects": [], "scores": {},
+        "avatar_url": None,
+        "subjects": [],
+        "subject_details": [],
+        "scores": {},
+        "sinta_score_overall": None,
+        "sinta_score_3yr": None,
+        "affil_score": None,
+        "affil_score_3yr": None,
     }
     if original:
         profile = original["profile"]

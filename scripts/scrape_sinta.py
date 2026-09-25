@@ -114,6 +114,10 @@ class SintaSession:
         self.known_credits = 0
         self.unknown_cost_requests = 0
 
+    @staticmethod
+    def _new_session_id() -> int:
+        return int.from_bytes(os.urandom(4), "big") % 99999 + 1
+
     def get(self, url: str, params: dict[str, Any] | None = None):
         prepared = requests.Request("GET", url, params=params).prepare()
         target_url = prepared.url
@@ -123,33 +127,76 @@ class SintaSession:
         # Session IDs must be in ZenRows' documented range 1..99999. Using the
         # same ID for this run keeps the exit IP stable across author tabs.
         if self.session_id is None:
-            self.session_id = int.from_bytes(os.urandom(4), "big") % 99999 + 1
-        try:
-            response = self.http.get(
-                ZENROWS_ENDPOINT,
-                params={
-                    "apikey": self.api_key,
-                    "url": target_url,
-                    "premium_proxy": "true",
-                    "proxy_country": "id",
-                    "session_id": self.session_id,
-                },
-                timeout=self.timeout,
-            )
-        except requests.RequestException as exc:
-            # The full request URL contains the API key; never log the exception.
-            raise RuntimeError(
-                f"ZenRows network error ({type(exc).__name__}). Check the service "
-                "status and GitHub Actions connectivity."
-            ) from None
-        if response.status_code >= 400:
-            raise RuntimeError(
-                f"ZenRows API returned HTTP {response.status_code}. "
-                "Check the API key, remaining credits, and provider dashboard."
-            )
+            self.session_id = self._new_session_id()
+
+        # A 422 from ZenRows can be caused by one unhealthy residential exit
+        # IP. Recover progressively without making every request expensive:
+        # new Indonesian IP -> unrestricted-country Premium IP -> JS fallback.
+        attempts = (
+            ("Premium Indonesia", True, False),
+            ("Premium Indonesia with a new IP", True, False),
+            ("Premium with an unrestricted country", False, False),
+            ("Premium with JavaScript fallback", False, True),
+        )
+        response = None
+        for attempt_index, (label, use_country, use_javascript) in enumerate(attempts):
+            if attempt_index:
+                self.session_id = self._new_session_id()
+            request_params = {
+                "apikey": self.api_key,
+                "url": target_url,
+                "premium_proxy": "true",
+                "session_id": self.session_id,
+            }
+            if use_country:
+                request_params["proxy_country"] = "id"
+            if use_javascript:
+                request_params["js_render"] = "true"
+            try:
+                response = self.http.get(
+                    ZENROWS_ENDPOINT,
+                    params=request_params,
+                    timeout=self.timeout,
+                )
+            except requests.RequestException as exc:
+                # The full request URL contains the API key; never log the exception.
+                if attempt_index == 0:
+                    print(
+                        f"    ZenRows network error ({type(exc).__name__}); retrying with a new IP...",
+                        flush=True,
+                    )
+                    continue
+                raise RuntimeError(
+                    f"ZenRows network error ({type(exc).__name__}) after retry. "
+                    "Check the service status and GitHub Actions connectivity."
+                ) from None
+
+            if response.status_code == 422 and attempt_index < len(attempts) - 1:
+                print(f"    ZenRows HTTP 422 using {label}; trying the next fallback...", flush=True)
+                continue
+            if response.status_code >= 400:
+                if response.status_code == 422:
+                    raise RuntimeError(
+                        "ZenRows returned HTTP 422 after new-IP, unrestricted-country, "
+                        "and JavaScript fallbacks."
+                    )
+                raise RuntimeError(
+                    f"ZenRows API returned HTTP {response.status_code}. "
+                    "Check the API key, remaining credits, and provider dashboard."
+                )
+            if attempt_index:
+                print(f"    Recovered using {label}.", flush=True)
+            break
+
+        if response is None:
+            raise RuntimeError("ZenRows did not return a response.")
 
         if not self._announced:
-            print("  Fetch transport: ZenRows Premium Proxy (Indonesia, no JavaScript)", flush=True)
+            print(
+                "  Fetch transport: ZenRows Premium Proxy "
+                "(Indonesia first, automatic HTTP 422 fallbacks)",
+                flush=True,
+            )
             self._announced = True
 
         request_cost = clean_text(response.headers.get("X-Request-Cost"))
@@ -171,7 +218,7 @@ class SintaSession:
 
     def start_author(self) -> None:
         """Use one stable exit IP per author, then rotate for the next author."""
-        self.session_id = int.from_bytes(os.urandom(4), "big") % 99999 + 1
+        self.session_id = self._new_session_id()
 
 
 class FetchedResponse:
@@ -239,17 +286,35 @@ def parse_profile(soup: BeautifulSoup, configured_id: str) -> dict[str, Any]:
                 if match:
                     discovered_id = match.group(1)
 
+    # Pair every score label with the number in the same Bootstrap column.
+    # Selecting by .pr-txt instead of a fixed .col-4 class keeps this working
+    # if SINTA changes its responsive grid classes.
     scores: dict[str, int | str | None] = {}
-    for block in soup.select(".stat-profile .col-4"):
-        label = clean_text(block.select_one(".pr-txt").get_text(" ", strip=True)) if block.select_one(".pr-txt") else None
-        number = clean_text(block.select_one(".pr-num").get_text(" ", strip=True)) if block.select_one(".pr-num") else None
+    for label_node in soup.select(".stat-profile .pr-txt"):
+        block = label_node.find_parent(class_=lambda value: value and "col-" in " ".join(value) if isinstance(value, list) else value and "col-" in value)
+        if block is None:
+            block = label_node.parent
+        number_node = block.select_one(".pr-num") if isinstance(block, Tag) else None
+        label = clean_text(label_node.get_text(" ", strip=True))
+        number = clean_text(number_node.get_text(" ", strip=True)) if number_node else None
         if label:
-            scores[label] = integer_from_text(number) if integer_from_text(number) is not None else number
+            parsed_number = integer_from_text(number)
+            scores[label] = parsed_number if parsed_number is not None else number
 
-    subjects = [
-        clean_text(node.get_text(" ", strip=True))
-        for node in soup.select(".profile-subject .subject-list a")
-    ]
+    subject_details = []
+    for node in soup.select(".profile-subject .subject-list a"):
+        subject_name = clean_text(node.get_text(" ", strip=True))
+        if not subject_name:
+            continue
+        subject_url = absolute_url(DEFAULT_BASE_URL, node.get("href"))
+        subject_id_match = re.search(r"/subjects/detail/(\d+)", subject_url or "")
+        subject_details.append({
+            "name": subject_name,
+            "url": subject_url,
+            "sinta_subject_id": subject_id_match.group(1) if subject_id_match else None,
+        })
+
+    subjects = [subject["name"] for subject in subject_details]
 
     return {
         "name": clean_text(name_node.get_text(" ", strip=True)) if name_node else None,
@@ -259,8 +324,13 @@ def parse_profile(soup: BeautifulSoup, configured_id: str) -> dict[str, Any]:
         "department": department,
         "department_url": department_url,
         "avatar_url": avatar.get("src") if isinstance(avatar, Tag) else None,
-        "subjects": [subject for subject in subjects if subject],
+        "subjects": subjects,
+        "subject_details": subject_details,
         "scores": scores,
+        "sinta_score_overall": scores.get("SINTA Score Overall"),
+        "sinta_score_3yr": scores.get("SINTA Score 3Yr"),
+        "affil_score": scores.get("Affil Score"),
+        "affil_score_3yr": scores.get("Affil Score 3Yr"),
     }
 
 
@@ -499,6 +569,28 @@ def write_json(path: Path, payload: Any) -> None:
     temporary.replace(path)
 
 
+def record_view_failure(
+    output_dir: Path,
+    author: dict[str, Any],
+    view: str,
+    error: Exception,
+) -> None:
+    """Record a safe failure without deleting any previously collected data."""
+    author_path = output_dir / f"{author['sinta_id']}.json"
+    payload = load_json(author_path, None)
+    if not isinstance(payload, dict):
+        return
+    checked_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    statuses = payload.setdefault("collection_status", {})
+    statuses[view] = {
+        "status": "error_preserved_previous_data",
+        "checked_at": checked_at,
+        "error": clean_text(str(error)),
+    }
+    payload["last_attempt_at"] = checked_at
+    write_json(author_path, payload)
+
+
 def validate_author(author: dict[str, Any]) -> dict[str, Any]:
     name = clean_text(str(author.get("name", "")))
     sinta_id = clean_text(str(author.get("sinta_id", "")))
@@ -539,6 +631,11 @@ def scrape_author(
         raise RuntimeError(
             f"Configured SINTA ID {author['sinta_id']} does not match page ID {profile.get('sinta_id')}"
         )
+    if profile.get("sinta_score_overall") is None:
+        raise RuntimeError(
+            f"SINTA Score Overall was not found on the public profile for {author['sinta_id']}. "
+            "The SINTA HTML structure may have changed; existing JSON was preserved."
+        )
     collections: dict[str, Any] = previous.get("collections", {}).copy()
     statuses: dict[str, Any] = previous.get("collection_status", {}).copy()
     metrics = previous.get("metrics", {})
@@ -563,6 +660,8 @@ def scrape_author(
         profile["subjects"] = previous["profile"]["subjects"]
     if not profile.get("scores") and previous.get("profile", {}).get("scores"):
         profile["scores"] = previous["profile"]["scores"]
+    if not profile.get("subject_details") and previous.get("profile", {}).get("subject_details"):
+        profile["subject_details"] = previous["profile"]["subject_details"]
 
     payload = {
         "schema_version": SCHEMA_VERSION,
@@ -574,6 +673,11 @@ def scrape_author(
         },
         "configured_author": author,
         "profile": profile,
+        "profile_status": {
+            "checked_at": now,
+            "sinta_score_overall_present": profile.get("sinta_score_overall") is not None,
+            "subjects_present": bool(profile.get("subjects")),
+        },
         "collections": collections,
         "metrics": metrics,
         "collection_status": statuses,
@@ -602,6 +706,9 @@ def build_manifest(output_dir: Path, authors_config: list[dict[str, Any]]) -> di
                 "sinta_id": profile.get("sinta_id"),
                 "file": f"{profile.get('sinta_id')}.json",
                 "status": "ok" if payload.get("generated_at") else "manual_baseline",
+                "sinta_score_overall": profile.get("sinta_score_overall"),
+                "sinta_score_3yr": profile.get("sinta_score_3yr"),
+                "subjects": profile.get("subjects", []),
                 "counts": counts,
             }
         )
@@ -664,22 +771,34 @@ def main() -> int:
         for author in authors:
             session.start_author()
             print(f"Scraping {author['name']} (SINTA ID {author['sinta_id']})...", flush=True)
-            try:
-                for index, chosen in enumerate(views):
-                    if index:
-                        time.sleep(args.delay)
+            author_had_errors = False
+            payload = None
+            for index, chosen in enumerate(views):
+                if index:
+                    time.sleep(args.delay)
+                try:
                     payload, had_errors = scrape_author(session, author, args.output, args.delay, chosen)
-                results.append((payload, had_errors))
+                except Exception as exc:
+                    author_had_errors = True
+                    fatal_errors.append(
+                        f"{author['name']} ({author['sinta_id']}) [{chosen}]: {exc}"
+                    )
+                    print(f"  ERROR [{chosen}]: {exc}", file=sys.stderr, flush=True)
+                    record_view_failure(args.output, author, chosen, exc)
+                    # Continue with other views and authors. A new ZenRows
+                    # session will be used for the next author.
+                    continue
+                author_had_errors = author_had_errors or had_errors
+
+            if payload is not None:
+                results.append((payload, author_had_errors))
                 print(
                     f"  saved {args.output / (author['sinta_id'] + '.json')}"
-                    + (" with partial/stale sections" if had_errors else ""),
+                    + (" with partial/stale sections" if author_had_errors else ""),
                     flush=True,
                 )
-            except Exception as exc:
-                fatal_errors.append(f"{author['name']} ({author['sinta_id']}): {exc}")
-                print(f"  ERROR: {exc}", file=sys.stderr, flush=True)
-                # Do not spend another author's API credits after a provider failure.
-                break
+            else:
+                print("  no fresh views saved; previous JSON preserved", flush=True)
             if author != authors[-1]:
                 time.sleep(args.delay)
     finally:
@@ -690,9 +809,8 @@ def main() -> int:
         )
         session.close()
 
-    if results:
-        manifest = build_manifest(args.output, configured_authors)
-        print(f"Saved manifest for {manifest['authors_count']} author(s).", flush=True)
+    manifest = build_manifest(args.output, configured_authors)
+    print(f"Saved manifest for {manifest['authors_count']} author(s).", flush=True)
 
     if fatal_errors:
         print("Fatal author failures:", file=sys.stderr)
