@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-25T01:57:50.247312Z",
+  "generated_at": "2026-10-01T23:15:39.619090Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
     "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=books",
@@ -24,8 +24,7 @@
       "Matematika Keuangan",
       "Optimasi",
       "Analisis Diferensial",
-      "Analisis Numerik",
-      "Matematika Fisika"
+      "Analisis Numerik"
     ],
     "subject_details": [
       {
@@ -47,26 +46,21 @@
         "name": "Analisis Numerik",
         "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/2902",
         "sinta_subject_id": "2902"
-      },
-      {
-        "name": "Matematika Fisika",
-        "url": "https://sinta.kemdiktisaintek.go.id/subjects/detail/31508",
-        "sinta_subject_id": "31508"
       }
     ],
     "scores": {
-      "SINTA Score Overall": 530,
+      "SINTA Score Overall": 571,
       "SINTA Score 3Yr": 238,
       "Affil Score": 0,
       "Affil Score 3Yr": 0
     },
-    "sinta_score_overall": 530,
+    "sinta_score_overall": 571,
     "sinta_score_3yr": 238,
     "affil_score": 0,
     "affil_score_3yr": 0
   },
   "profile_status": {
-    "checked_at": "2026-09-25T01:57:50.247312Z",
+    "checked_at": "2026-10-01T23:15:39.619090Z",
     "sinta_score_overall_present": true,
     "subjects_present": true
   },
@@ -548,7 +542,7 @@
       "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 4,
+      "records_collected": 5,
       "public_access_limited": true,
       "records": [
         {
@@ -594,6 +588,17 @@
           "authors": "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad",
           "publisher": "Itera Press",
           "isbn": "9786347013231"
+        },
+        {
+          "id": "7050714bdebfe2f06182",
+          "title": "Komputasi matematika keuangan : disertai implementasi dengan matlab dan python",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011?view=books",
+          "category": "BUKU REFERENSI",
+          "authors": "Werry Febrianti ; editor, Harits Setyawan",
+          "publisher": "Itera Press",
+          "isbn": "9786347903365"
         }
       ]
     }
@@ -601,11 +606,11 @@
   "collection_status": {
     "scopus": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:57:05.715672Z"
+      "checked_at": "2026-10-01T23:15:24.000091Z"
     },
     "garuda": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:57:14.891968Z"
+      "checked_at": "2026-10-01T23:15:25.818566Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -615,19 +620,19 @@
     },
     "researches": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:57:23.492819Z"
+      "checked_at": "2026-10-01T23:15:33.049116Z"
     },
     "community_services": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:57:30.959443Z"
+      "checked_at": "2026-10-01T23:15:36.303652Z"
     },
     "iprs": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:57:39.715294Z"
+      "checked_at": "2026-10-01T23:15:38.046887Z"
     },
     "books": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:57:50.247312Z"
+      "checked_at": "2026-10-01T23:15:39.619090Z"
     }
   },
   "manual_baseline": {

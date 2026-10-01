@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-25T02:03:54.518931Z",
+  "generated_at": "2026-10-01T23:18:34.691127Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
     "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283?view=books",
@@ -31,18 +31,18 @@
       }
     ],
     "scores": {
-      "SINTA Score Overall": 518,
+      "SINTA Score Overall": 526,
       "SINTA Score 3Yr": 353,
       "Affil Score": 0,
       "Affil Score 3Yr": 0
     },
-    "sinta_score_overall": 518,
+    "sinta_score_overall": 526,
     "sinta_score_3yr": 353,
     "affil_score": 0,
     "affil_score_3yr": 0
   },
   "profile_status": {
-    "checked_at": "2026-09-25T02:03:54.518931Z",
+    "checked_at": "2026-10-01T23:18:34.691127Z",
     "sinta_score_overall_present": true,
     "subjects_present": true
   },
@@ -64,7 +64,7 @@
           "classification": "Q2 as Journal",
           "publication": "Journal of Multidisciplinary Applied Natural Science",
           "publication_url": "https://www.scopus.com/sourceid/21101147602",
-          "author_order": "0 of 3",
+          "author_order": "1 of 3",
           "creator": "Muliawati T.",
           "citations": 0
         },
@@ -985,11 +985,11 @@
   "collection_status": {
     "scopus": {
       "status": "ok",
-      "checked_at": "2026-09-25T02:03:16.272940Z"
+      "checked_at": "2026-10-01T23:18:07.331518Z"
     },
     "garuda": {
       "status": "ok",
-      "checked_at": "2026-09-25T02:03:23.499468Z"
+      "checked_at": "2026-10-01T23:18:11.873258Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -999,19 +999,19 @@
     },
     "researches": {
       "status": "ok",
-      "checked_at": "2026-09-25T02:03:29.981445Z"
+      "checked_at": "2026-10-01T23:18:17.771955Z"
     },
     "community_services": {
       "status": "ok",
-      "checked_at": "2026-09-25T02:03:38.217881Z"
+      "checked_at": "2026-10-01T23:18:22.184635Z"
     },
     "iprs": {
       "status": "ok",
-      "checked_at": "2026-09-25T02:03:45.788234Z"
+      "checked_at": "2026-10-01T23:18:27.575177Z"
     },
     "books": {
       "status": "ok",
-      "checked_at": "2026-09-25T02:03:54.518931Z"
+      "checked_at": "2026-10-01T23:18:34.691127Z"
     }
   },
   "manual_baseline": {

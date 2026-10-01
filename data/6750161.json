@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-25T01:56:13.600063Z",
+  "generated_at": "2026-10-01T23:15:05.825921Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
     "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=books",
@@ -60,7 +60,7 @@
     "affil_score_3yr": 0
   },
   "profile_status": {
-    "checked_at": "2026-09-25T01:56:13.600063Z",
+    "checked_at": "2026-10-01T23:15:05.825921Z",
     "sinta_score_overall_present": true,
     "subjects_present": true
   },
@@ -892,11 +892,11 @@
   "collection_status": {
     "scopus": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:55:32.509455Z"
+      "checked_at": "2026-10-01T23:14:43.784002Z"
     },
     "garuda": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:55:41.806137Z"
+      "checked_at": "2026-10-01T23:14:50.525519Z"
     },
     "google_scholar": {
       "status": "ok",
@@ -907,19 +907,19 @@
     },
     "researches": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:55:50.826801Z"
+      "checked_at": "2026-10-01T23:14:54.047698Z"
     },
     "community_services": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:55:59.362832Z"
+      "checked_at": "2026-10-01T23:14:57.708317Z"
     },
     "iprs": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:56:06.065334Z"
+      "checked_at": "2026-10-01T23:15:01.834103Z"
     },
     "books": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:56:13.600063Z"
+      "checked_at": "2026-10-01T23:15:05.825921Z"
     },
     "metrics": {
       "status": "ok",

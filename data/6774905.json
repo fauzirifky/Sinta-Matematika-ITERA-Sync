@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-25T02:00:05.894325Z",
+  "generated_at": "2026-10-01T23:16:40.472554Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
     "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905?view=books",
@@ -32,17 +32,17 @@
     ],
     "scores": {
       "SINTA Score Overall": 222,
-      "SINTA Score 3Yr": 154,
+      "SINTA Score 3Yr": 152,
       "Affil Score": 0,
       "Affil Score 3Yr": 0
     },
     "sinta_score_overall": 222,
-    "sinta_score_3yr": 154,
+    "sinta_score_3yr": 152,
     "affil_score": 0,
     "affil_score_3yr": 0
   },
   "profile_status": {
-    "checked_at": "2026-09-25T02:00:05.894325Z",
+    "checked_at": "2026-10-01T23:16:40.472554Z",
     "sinta_score_overall_present": true,
     "subjects_present": true
   },
@@ -61,7 +61,7 @@
           "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105035881946&origin=resultslist",
           "year": 2026,
           "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6774905",
-          "classification": "Q4 as Journal",
+          "classification": "Q3 as Journal",
           "publication": "Barekeng",
           "publication_url": "https://www.scopus.com/sourceid/21101272725",
           "author_order": "1 of 3",
@@ -383,11 +383,11 @@
   "collection_status": {
     "scopus": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:59:28.375734Z"
+      "checked_at": "2026-10-01T23:16:30.461662Z"
     },
     "garuda": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:59:35.580140Z"
+      "checked_at": "2026-10-01T23:16:32.780925Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -397,19 +397,19 @@
     },
     "researches": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:59:42.325188Z"
+      "checked_at": "2026-10-01T23:16:34.830051Z"
     },
     "community_services": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:59:51.683247Z"
+      "checked_at": "2026-10-01T23:16:36.716685Z"
     },
     "iprs": {
       "status": "ok",
-      "checked_at": "2026-09-25T01:59:59.581290Z"
+      "checked_at": "2026-10-01T23:16:38.687995Z"
     },
     "books": {
       "status": "ok",
-      "checked_at": "2026-09-25T02:00:05.894325Z"
+      "checked_at": "2026-10-01T23:16:40.472554Z"
     }
   },
   "manual_baseline": {
