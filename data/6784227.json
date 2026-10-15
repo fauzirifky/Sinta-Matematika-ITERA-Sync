@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-01T23:16:23.481827Z",
+  "generated_at": "2026-10-15T22:27:16.528056Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
     "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784227?view=books",
@@ -49,18 +49,18 @@
       }
     ],
     "scores": {
-      "SINTA Score Overall": 341,
-      "SINTA Score 3Yr": 283,
+      "SINTA Score Overall": 342,
+      "SINTA Score 3Yr": 282,
       "Affil Score": 0,
       "Affil Score 3Yr": 0
     },
-    "sinta_score_overall": 341,
-    "sinta_score_3yr": 283,
+    "sinta_score_overall": 342,
+    "sinta_score_3yr": 282,
     "affil_score": 0,
     "affil_score_3yr": 0
   },
   "profile_status": {
-    "checked_at": "2026-10-01T23:16:23.481827Z",
+    "checked_at": "2026-10-15T22:27:16.528056Z",
     "sinta_score_overall_present": true,
     "subjects_present": true
   },
@@ -412,7 +412,7 @@
       "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 1,
+      "records_collected": 3,
       "public_access_limited": true,
       "records": [
         {
@@ -450,6 +450,50 @@
             }
           ],
           "funding_idr": 3000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
+        },
+        {
+          "id": "b1fc2cefd335b2f2b05a",
+          "title": "PEMANFAATAN TEKNOLOGI UNTUK MENINGKATKAN KESIAPAN SISWA SMA N 12 BANDAR LAMPUNG PADA TES KEMAMPUAN AKADEMIK (TKA)",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784227?view=services",
+          "leader": "Mira Mustika",
+          "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA ( PPKK )",
+          "personnel": [
+            {
+              "name": "Achmad Suryadi Nasution",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784227"
+            },
+            {
+              "name": "Dewi Suhika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6172406"
+            }
+          ],
+          "funding_idr": 3000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
+        },
+        {
+          "id": "8cbdb04c71bc01a65299",
+          "title": "MODEL PEMBERDAYAAN MASYARAKAT BERBASIS LINGKUNGAN HIDUP DAN PENGUATAN SEKTOR UMKM MENDUKUNG PEMBANGUNAN BERKELANJUTAN (SDGS) DI DESA PAKU KECAMATAN KELUMBAYAN KABUPATEN TANGGAMUS",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784227?view=services",
+          "leader": "Achmad Suryadi Nasution",
+          "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA ( BKS PTN BARAT )",
+          "personnel": [
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Werry Febrianti",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011"
+            }
+          ],
+          "funding_idr": 20000000,
           "status": "Approved",
           "funding_source_type": "INTERNAL"
         }
@@ -584,11 +628,11 @@
   "collection_status": {
     "scopus": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:16:00.470126Z"
+      "checked_at": "2026-10-15T22:27:06.412012Z"
     },
     "garuda": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:16:04.954774Z"
+      "checked_at": "2026-10-15T22:27:08.567741Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -598,19 +642,19 @@
     },
     "researches": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:16:09.736396Z"
+      "checked_at": "2026-10-15T22:27:10.635721Z"
     },
     "community_services": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:16:14.701556Z"
+      "checked_at": "2026-10-15T22:27:12.534798Z"
     },
     "iprs": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:16:18.959965Z"
+      "checked_at": "2026-10-15T22:27:14.463946Z"
     },
     "books": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:16:23.481827Z"
+      "checked_at": "2026-10-15T22:27:16.528056Z"
     }
   },
   "manual_baseline": {

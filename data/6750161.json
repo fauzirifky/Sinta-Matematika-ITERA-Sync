@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-01T23:15:05.825921Z",
+  "generated_at": "2026-10-15T22:26:12.079177Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
     "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=books",
@@ -60,7 +60,7 @@
     "affil_score_3yr": 0
   },
   "profile_status": {
-    "checked_at": "2026-10-01T23:15:05.825921Z",
+    "checked_at": "2026-10-15T22:26:12.079177Z",
     "sinta_score_overall_present": true,
     "subjects_present": true
   },
@@ -458,7 +458,7 @@
       "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 8,
+      "records_collected": 10,
       "public_access_limited": true,
       "records": [
         {
@@ -676,6 +676,70 @@
           "funding_idr": 40000000,
           "status": "Approved",
           "funding_source_type": "INTERNAL"
+        },
+        {
+          "id": "6b81a1095d67d21cbaf5",
+          "title": "PENGEMBANGAN MODEL SPASIO-TEMPORAL DBD KABUPATEN/KOTA LAMPUNG UNTUK PEMETAAN RISIKO BERBASIS SURVEILANS–METEOROLOGI",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches",
+          "leader": "Tiara Shofi Edriani",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2026 ( PENELITIAN BERBASIS KEPAKARAN )",
+          "personnel": [
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            }
+          ],
+          "funding_idr": 20000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
+        },
+        {
+          "id": "e5f8c8f88f3a2abc5f01",
+          "title": "PERANCANGAN KEBIJAKAN VAKSINASI, DETEKSI, DAN ISOLASI CAMPAK YANG ROBUST BERBASIS DATA MENGGUNAKAN KONTROL SLIDING MODE ADAPTIF UNTUK MENDUKUNG KOLABORASI PENGENDALIAN WABAH",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=researches",
+          "leader": "Dewi Suhika",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2026 ( PENELITIAN PENGUATAN KELOMPOK KEILMUAN )",
+          "personnel": [
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Lutfi Mardianto",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6710014"
+            },
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Werry Febrianti",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011"
+            }
+          ],
+          "funding_idr": 8000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
@@ -684,7 +748,7 @@
       "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 4,
+      "records_collected": 6,
       "public_access_limited": true,
       "records": [
         {
@@ -806,6 +870,50 @@
           "funding_idr": 10000000,
           "status": "Approved",
           "funding_source_type": "INTERNAL"
+        },
+        {
+          "id": "3f848408342aa1ad9b19",
+          "title": "PENGUATAN KOMPETENSI GURU MATEMATIKA SMP DI KECAMATAN BATANGHARI DALAM MERANCANG ASESMEN BERBASIS PENALARAN DAN PEMECAHAN MASALAH MELALUI PENDAMPINGAN BERBASIS KEPAKARAN",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=services",
+          "leader": "Rifky Fauzi",
+          "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA ( PMLK )",
+          "personnel": [
+            {
+              "name": "Dewi Suhika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6172406"
+            },
+            {
+              "name": "Nurul Indah Safitri",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461"
+            }
+          ],
+          "funding_idr": 10000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
+        },
+        {
+          "id": "8cbdb04c71bc01a65299",
+          "title": "MODEL PEMBERDAYAAN MASYARAKAT BERBASIS LINGKUNGAN HIDUP DAN PENGUATAN SEKTOR UMKM MENDUKUNG PEMBANGUNAN BERKELANJUTAN (SDGS) DI DESA PAKU KECAMATAN KELUMBAYAN KABUPATEN TANGGAMUS",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161?view=services",
+          "leader": "Achmad Suryadi Nasution",
+          "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA ( BKS PTN BARAT )",
+          "personnel": [
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Werry Febrianti",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011"
+            }
+          ],
+          "funding_idr": 20000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
@@ -892,11 +1000,11 @@
   "collection_status": {
     "scopus": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:14:43.784002Z"
+      "checked_at": "2026-10-15T22:25:50.878844Z"
     },
     "garuda": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:14:50.525519Z"
+      "checked_at": "2026-10-15T22:25:55.305710Z"
     },
     "google_scholar": {
       "status": "ok",
@@ -907,19 +1015,19 @@
     },
     "researches": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:14:54.047698Z"
+      "checked_at": "2026-10-15T22:25:59.177189Z"
     },
     "community_services": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:14:57.708317Z"
+      "checked_at": "2026-10-15T22:26:04.182919Z"
     },
     "iprs": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:15:01.834103Z"
+      "checked_at": "2026-10-15T22:26:08.198852Z"
     },
     "books": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:15:05.825921Z"
+      "checked_at": "2026-10-15T22:26:12.079177Z"
     },
     "metrics": {
       "status": "ok",

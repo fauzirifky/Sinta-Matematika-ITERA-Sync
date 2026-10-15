@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-01T23:20:05.541147Z",
+  "generated_at": "2026-10-15T22:31:02.894306Z",
   "authors_count": 16,
   "authors": [
     {
@@ -21,8 +21,8 @@
         "garuda": 9,
         "google_scholar": 8,
         "rama": 0,
-        "researches": 8,
-        "community_services": 4,
+        "researches": 10,
+        "community_services": 6,
         "iprs": 4,
         "books": 1
       }
@@ -32,7 +32,7 @@
       "sinta_id": "6784215",
       "file": "6784215.json",
       "status": "ok",
-      "sinta_score_overall": 169,
+      "sinta_score_overall": 172,
       "sinta_score_3yr": 129,
       "subjects": [
         "Matematika Terapan"
@@ -42,7 +42,7 @@
         "garuda": 4,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 6,
+        "researches": 8,
         "community_services": 3,
         "iprs": 0,
         "books": 1
@@ -66,8 +66,8 @@
         "garuda": 4,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 5,
-        "community_services": 2,
+        "researches": 6,
+        "community_services": 3,
         "iprs": 1,
         "books": 5
       }
@@ -85,8 +85,8 @@
         "garuda": 0,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 1,
-        "community_services": 1,
+        "researches": 2,
+        "community_services": 2,
         "iprs": 0,
         "books": 2
       }
@@ -96,8 +96,8 @@
       "sinta_id": "6784227",
       "file": "6784227.json",
       "status": "ok",
-      "sinta_score_overall": 341,
-      "sinta_score_3yr": 283,
+      "sinta_score_overall": 342,
+      "sinta_score_3yr": 282,
       "subjects": [
         "Operation Research",
         "Game Theory",
@@ -110,7 +110,7 @@
         "google_scholar": 0,
         "rama": 0,
         "researches": 4,
-        "community_services": 1,
+        "community_services": 3,
         "iprs": 6,
         "books": 3
       }
@@ -120,18 +120,18 @@
       "sinta_id": "6774905",
       "file": "6774905.json",
       "status": "ok",
-      "sinta_score_overall": 222,
-      "sinta_score_3yr": 152,
+      "sinta_score_overall": 225,
+      "sinta_score_3yr": 151,
       "subjects": [
-        "Analysis and Applied Mathematics"
+        "Bifurcation Analysis and Nonlinear Dynamics"
       ],
       "counts": {
         "scopus": 5,
         "garuda": 1,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 4,
-        "community_services": 1,
+        "researches": 5,
+        "community_services": 2,
         "iprs": 1,
         "books": 2
       }
@@ -151,7 +151,7 @@
         "garuda": 5,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 5,
+        "researches": 6,
         "community_services": 3,
         "iprs": 6,
         "books": 6
@@ -174,7 +174,7 @@
         "garuda": 5,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 4,
+        "researches": 6,
         "community_services": 4,
         "iprs": 2,
         "books": 2
@@ -195,7 +195,7 @@
         "garuda": 3,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 6,
+        "researches": 8,
         "community_services": 3,
         "iprs": 0,
         "books": 2
@@ -218,8 +218,8 @@
         "garuda": 7,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 5,
-        "community_services": 3,
+        "researches": 6,
+        "community_services": 5,
         "iprs": 0,
         "books": 3
       }
@@ -239,8 +239,8 @@
         "garuda": 19,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 13,
-        "community_services": 6,
+        "researches": 16,
+        "community_services": 7,
         "iprs": 3,
         "books": 2
       }
@@ -260,7 +260,7 @@
         "garuda": 3,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 5,
+        "researches": 7,
         "community_services": 3,
         "iprs": 0,
         "books": 2
@@ -283,8 +283,8 @@
         "garuda": 4,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 4,
-        "community_services": 3,
+        "researches": 5,
+        "community_services": 4,
         "iprs": 0,
         "books": 0
       }
@@ -317,7 +317,7 @@
       "sinta_id": "6700033",
       "file": "6700033.json",
       "status": "ok",
-      "sinta_score_overall": 198,
+      "sinta_score_overall": 200,
       "sinta_score_3yr": 107,
       "subjects": [
         "Teori Optimisasi",
@@ -329,9 +329,9 @@
         "google_scholar": 0,
         "rama": 0,
         "researches": 2,
-        "community_services": 3,
+        "community_services": 4,
         "iprs": 1,
-        "books": 4
+        "books": 5
       }
     },
     {
@@ -349,7 +349,7 @@
         "garuda": 6,
         "google_scholar": 0,
         "rama": 0,
-        "researches": 3,
+        "researches": 4,
         "community_services": 1,
         "iprs": 0,
         "books": 4

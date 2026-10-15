@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-01T23:15:57.480529Z",
+  "generated_at": "2026-10-15T22:27:04.256871Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
     "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461?view=books",
@@ -34,7 +34,7 @@
     "affil_score_3yr": 0
   },
   "profile_status": {
-    "checked_at": "2026-10-01T23:15:57.480529Z",
+    "checked_at": "2026-10-15T22:27:04.256871Z",
     "sinta_score_overall_present": true,
     "subjects_present": false
   },
@@ -80,7 +80,7 @@
       "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 1,
+      "records_collected": 2,
       "public_access_limited": true,
       "records": [
         {
@@ -124,6 +124,44 @@
           "funding_idr": 8000000,
           "status": "Approved",
           "funding_source_type": "INTERNAL"
+        },
+        {
+          "id": "47a4c6344c2e191597c2",
+          "title": "ANALISIS BIFURKASI MODEL KOMPARTEMEN DINAMIKA DEMAM BERDARAH DENGUE DENGAN RESPONS FUNGSI HOLLING TIPE II DAN STRATEGI PENGENDALIAN FUMIGASI DI LAMPUNG SELATAN",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461?view=researches",
+          "leader": "Gusrian Putra",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2026 ( PENELITIAN PENGUATAN KELOMPOK KEILMUAN )",
+          "personnel": [
+            {
+              "name": "Triyana Muliawati",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6151283"
+            },
+            {
+              "name": "Sri Efrinita Irwan",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6196160"
+            },
+            {
+              "name": "Tri Utomo",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6653329"
+            },
+            {
+              "name": "Aswan Anggun Pribadi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6773216"
+            },
+            {
+              "name": "Tiara Shofi Edriani",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784215"
+            },
+            {
+              "name": "Nurul Indah Safitri",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461"
+            }
+          ],
+          "funding_idr": 8000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
@@ -132,7 +170,7 @@
       "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 1,
+      "records_collected": 2,
       "public_access_limited": true,
       "records": [
         {
@@ -170,6 +208,28 @@
             }
           ],
           "funding_idr": 3000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
+        },
+        {
+          "id": "3f848408342aa1ad9b19",
+          "title": "PENGUATAN KOMPETENSI GURU MATEMATIKA SMP DI KECAMATAN BATANGHARI DALAM MERANCANG ASESMEN BERBASIS PENALARAN DAN PEMECAHAN MASALAH MELALUI PENDAMPINGAN BERBASIS KEPAKARAN",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461?view=services",
+          "leader": "Rifky Fauzi",
+          "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA ( PMLK )",
+          "personnel": [
+            {
+              "name": "Dewi Suhika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6172406"
+            },
+            {
+              "name": "Nurul Indah Safitri",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6966461"
+            }
+          ],
+          "funding_idr": 10000000,
           "status": "Approved",
           "funding_source_type": "INTERNAL"
         }
@@ -220,11 +280,11 @@
   "collection_status": {
     "scopus": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:15:41.414712Z"
+      "checked_at": "2026-10-15T22:26:53.526904Z"
     },
     "garuda": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:15:45.397929Z"
+      "checked_at": "2026-10-15T22:26:55.543451Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -234,19 +294,19 @@
     },
     "researches": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:15:50.471869Z"
+      "checked_at": "2026-10-15T22:26:57.534723Z"
     },
     "community_services": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:15:53.609526Z"
+      "checked_at": "2026-10-15T22:26:59.794702Z"
     },
     "iprs": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:15:55.454581Z"
+      "checked_at": "2026-10-15T22:27:02.034945Z"
     },
     "books": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:15:57.480529Z"
+      "checked_at": "2026-10-15T22:27:04.256871Z"
     }
   },
   "manual_baseline": {

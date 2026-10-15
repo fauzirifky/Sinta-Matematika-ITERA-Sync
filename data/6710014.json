@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-01T23:20:02.319330Z",
+  "generated_at": "2026-10-15T22:30:51.273236Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
     "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6710014?view=books",
@@ -42,7 +42,7 @@
     "affil_score_3yr": 0
   },
   "profile_status": {
-    "checked_at": "2026-10-01T23:20:02.319330Z",
+    "checked_at": "2026-10-15T22:30:51.273236Z",
     "sinta_score_overall_present": true,
     "subjects_present": true
   },
@@ -246,7 +246,7 @@
       "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 3,
+      "records_collected": 4,
       "public_access_limited": true,
       "records": [
         {
@@ -322,6 +322,40 @@
           "funding_idr": 48300000,
           "status": "Approved",
           "funding_source_type": "BIMA"
+        },
+        {
+          "id": "e5f8c8f88f3a2abc5f01",
+          "title": "PERANCANGAN KEBIJAKAN VAKSINASI, DETEKSI, DAN ISOLASI CAMPAK YANG ROBUST BERBASIS DATA MENGGUNAKAN KONTROL SLIDING MODE ADAPTIF UNTUK MENDUKUNG KOLABORASI PENGENDALIAN WABAH",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6710014?view=researches",
+          "leader": "Dewi Suhika",
+          "scheme": "PENDANAAN PENELITIAN ITERA TA 2026 ( PENELITIAN PENGUATAN KELOMPOK KEILMUAN )",
+          "personnel": [
+            {
+              "name": "Nela Rizka",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6795719"
+            },
+            {
+              "name": "Dear Michiko Mutiara Noor",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6693907"
+            },
+            {
+              "name": "Lutfi Mardianto",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6710014"
+            },
+            {
+              "name": "Rifky Fauzi",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6750161"
+            },
+            {
+              "name": "Werry Febrianti",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/5979011"
+            }
+          ],
+          "funding_idr": 8000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
@@ -440,11 +474,11 @@
   "collection_status": {
     "scopus": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:19:44.819843Z"
+      "checked_at": "2026-10-15T22:30:35.578138Z"
     },
     "garuda": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:19:49.995617Z"
+      "checked_at": "2026-10-15T22:30:38.034121Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -454,19 +488,19 @@
     },
     "researches": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:19:53.867918Z"
+      "checked_at": "2026-10-15T22:30:41.160798Z"
     },
     "community_services": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:19:57.005219Z"
+      "checked_at": "2026-10-15T22:30:45.312085Z"
     },
     "iprs": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:19:59.120995Z"
+      "checked_at": "2026-10-15T22:30:48.100194Z"
     },
     "books": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:20:02.319330Z"
+      "checked_at": "2026-10-15T22:30:51.273236Z"
     }
   },
   "manual_baseline": {

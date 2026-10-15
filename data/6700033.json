@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-01T23:19:42.713651Z",
+  "generated_at": "2026-10-15T22:30:33.853448Z",
   "source": {
     "service": "SINTA - Science and Technology Index",
     "profile_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033?view=books",
@@ -37,18 +37,18 @@
       }
     ],
     "scores": {
-      "SINTA Score Overall": 198,
+      "SINTA Score Overall": 200,
       "SINTA Score 3Yr": 107,
       "Affil Score": 0,
       "Affil Score 3Yr": 0
     },
-    "sinta_score_overall": 198,
+    "sinta_score_overall": 200,
     "sinta_score_3yr": 107,
     "affil_score": 0,
     "affil_score_3yr": 0
   },
   "profile_status": {
-    "checked_at": "2026-10-01T23:19:42.713651Z",
+    "checked_at": "2026-10-15T22:30:33.853448Z",
     "sinta_score_overall_present": true,
     "subjects_present": true
   },
@@ -198,7 +198,7 @@
       "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 3,
+      "records_collected": 4,
       "public_access_limited": true,
       "records": [
         {
@@ -298,6 +298,28 @@
           "funding_idr": 3000000,
           "status": "Approved",
           "funding_source_type": "INTERNAL"
+        },
+        {
+          "id": "b1fc2cefd335b2f2b05a",
+          "title": "PEMANFAATAN TEKNOLOGI UNTUK MENINGKATKAN KESIAPAN SISWA SMA N 12 BANDAR LAMPUNG PADA TES KEMAMPUAN AKADEMIK (TKA)",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033?view=services",
+          "leader": "Mira Mustika",
+          "scheme": "PENDANAAN PENGABDIAN KEPADA MASYARAKAT ITERA ( PPKK )",
+          "personnel": [
+            {
+              "name": "Achmad Suryadi Nasution",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6784227"
+            },
+            {
+              "name": "Dewi Suhika",
+              "url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6172406"
+            }
+          ],
+          "funding_idr": 3000000,
+          "status": "Approved",
+          "funding_source_type": "INTERNAL"
         }
       ]
     },
@@ -328,7 +350,7 @@
       "scope": "public_first_page_plus_preserved_records",
       "pages_collected": 1,
       "reported_total": null,
-      "records_collected": 4,
+      "records_collected": 5,
       "public_access_limited": true,
       "records": [
         {
@@ -374,6 +396,17 @@
           "authors": "Nela Rizka, Dear Michiko Mutiara Noor, Cherlin Andika, Eristia Arfi, Rifky Fauzi, Syatibi Abdurrohrnan, Tia Anezka Laetisia Tanafa, Berlian Dwi Safitri, Mia Syntia Br Sinaga, Tri Anjelly Silalahi, Erika Nur Rahmahdina, Fitri Muzayyanah, Achmad Suryad",
           "publisher": "Itera Press",
           "isbn": "9786347013231"
+        },
+        {
+          "id": "d82174eef2bc4132e7c3",
+          "title": "Matematika diskrit",
+          "url": null,
+          "year": 2026,
+          "source_page": "https://sinta.kemdiktisaintek.go.id/authors/profile/6700033?view=books",
+          "category": "BUKU AJAR",
+          "authors": "penulis, Wamiliana, Mira Mustika, Dina Eka Nurvazly, Notiragayu",
+          "publisher": "CV. Anugrah Utama Raharja",
+          "isbn": "9786232115378"
         }
       ]
     }
@@ -381,11 +414,11 @@
   "collection_status": {
     "scopus": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:19:26.124881Z"
+      "checked_at": "2026-10-15T22:30:22.497691Z"
     },
     "garuda": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:19:33.060158Z"
+      "checked_at": "2026-10-15T22:30:24.321686Z"
     },
     "google_scholar": {
       "status": "not_provided"
@@ -395,19 +428,19 @@
     },
     "researches": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:19:36.265589Z"
+      "checked_at": "2026-10-15T22:30:27.295230Z"
     },
     "community_services": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:19:38.616648Z"
+      "checked_at": "2026-10-15T22:30:29.149889Z"
     },
     "iprs": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:19:40.806076Z"
+      "checked_at": "2026-10-15T22:30:32.142432Z"
     },
     "books": {
       "status": "ok",
-      "checked_at": "2026-10-01T23:19:42.713651Z"
+      "checked_at": "2026-10-15T22:30:33.853448Z"
     }
   },
   "manual_baseline": {
